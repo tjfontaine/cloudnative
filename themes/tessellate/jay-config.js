@@ -5,6 +5,7 @@ module.exports = {
     author: 'You!',
     title: `Gatsby Default (Blog) Starter`,
   },
+  pathPrefix: '/cloudnative',
   plugins: [
     'gatsby-plugin-react-next',
     'gatsby-plugin-catch-links',
