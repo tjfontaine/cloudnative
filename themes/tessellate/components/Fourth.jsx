@@ -8,14 +8,13 @@ export default function Fourth(props) {
 		<section id="fourth" className="main">
 			<header>
 				<div className="container">
-					<h2>Some OCI resources</h2>
-					<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
-					feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
+					<h2>Find out more</h2>
+					<p>Haven't learned enough? See the links below to dive deepter into OCI and Cloud Native development.</p>
 					<br/>
 					<ol>
-					<li>asdsa</li>
-					<li>asdsa</li>
-					<li>asdsa</li>
+						<li><a href="https://cloud.oracle.com/home">OCI Home</a></li>
+						<li><a href="https://docs.us-phoenix-1.oraclecloud.com/Content/home.htm">OCI Documentation</a></li>
+						<li><a href="https://blogs.oracle.com/cloudnative/">Cloud Native Blog</a></li>
 					</ol>
 				</div>
 			</header>
