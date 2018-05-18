@@ -25,25 +25,16 @@ export default function Second(props) {
           <div className="row">
             <div className="4u 12u(narrow)">
               <section>
-                <h3>Augue vivamus sed ipsum commodo lorem dolor</h3>
-                <p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
-                tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
-                vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus
-                augue cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
-                lorem ipsum dolor placerat magna tempus feugiat.</p>
-                <p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
-                accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida dolore
-                euismod lorem ipsum dolor.</p>
+                <h3>Cloud Native Curriculum</h3>
+                <p>Every journey starts with a step. This is your first.</p>
                 <footer>
-                  <a href="#third" className="button scrolly">Accumsan nisi tempor</a>
+                  
                 </footer>
               </section>
             </div>
             <div className="8u 12u(narrow)">
               <div className="row">
-                <div className="6u"><a href="#" className="image fit"><img src={image_0} alt="" /></a></div>
-                <div className="6u"><a href="#" className="image fit"><img src={image_1} alt="" /></a></div>
-                <div className="6u"><a href="#" className="image fit"><img src={image_2} alt="" /></a></div>
+                <div className="6u"><a href="#" className="image fit"><img src={image_3} alt="" /></a></div>
                 <div className="6u"><a href="#" className="image fit"><img src={image_3} alt="" /></a></div>
                 <div className="6u"><a href="#" className="image fit"><img src={image_4} alt="" /></a></div>
                 <div className="6u"><a href="#" className="image fit"><img src={image_5} alt="" /></a></div>

@@ -7,11 +7,13 @@ export default function Header(props) {
   return (
     <section id="header" className="dark">
       <header>
-        <h1>Welcome to Tessellate</h1>
-        <p>A free responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
+        <span class="icon major fa-cloud" style={{"font-size":"125px"}}data-reactid="4"></span>
+        <h1>Welcome to Oracle <strong>Cloud Native</strong></h1>
+        
+        <p>A collection of tutorials and solutions on Cloud Native development on <a href="https://cloud.oracle.com/en_US/iaas">OCI</a></p>
       </header>
       <footer>
-        <a href="#first" className="button scrolly">Proceed to second phase</a>
+        <a href="#first" className="button scrolly">Curriculum Overview</a>
       </footer>
     </section>
   );

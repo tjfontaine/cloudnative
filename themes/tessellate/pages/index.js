@@ -15,9 +15,9 @@ export default function Index({ data }) {
   return (
     <div>
         <Header />
-        <First />
+        
         <Second />
-        <Third />
+        
         <Fourth />
         <Footer />
     </div>

@@ -11,8 +11,7 @@ export default function Third(props) {
 			<header>
 				<div className="container">
 					<h2>Ornare varius lorem ipsum ante lectus</h2>
-					<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
-					feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
+					<p>asdasds</p>
 				</div>
 			</header>
 			<div className="content dark style3">
