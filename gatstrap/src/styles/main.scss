@@ -1,6 +1,6 @@
 .hero {
   background: linear-gradient(#fc0000, #dc281e);
-  padding: 5em 0 5em;
+  padding: 13em 0 13em;
   color: #fff;
 
   h1 {
@@ -11,5 +11,69 @@
   .right {
     font-size: 200px;
     text-align: center;
+  }
+}
+
+.customers {
+  .logos {
+    padding: 8em 0 5em 0;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      li {
+        margin-right: 25px;
+        > img {
+          filter: grayscale(100%);
+        }
+      }
+    }
+  }
+}
+
+.topics {
+  padding: 0em 0 5em 0;
+
+  .title {
+    margin-bottom: 5em;
+  }
+
+  .card {
+    text-align: center;
+    width: 13em;
+    padding-top: 0;
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .card:hover {
+    animation: pulse 0.5s;
+  }
+
+  img:hover {
+    animation: none;
+  }
+
+  a,
+  a:hover {
+    color: inherit;
+  }
+}
+
+.footer {
+  padding: 8em 0 5em 0;
+  background: #e8e8e55c;
+  color: #666;
+
+  ul {
+    list-style-type: none;
+  }
+
+  .icons {
+    margin-bottom: 5em;
   }
 }

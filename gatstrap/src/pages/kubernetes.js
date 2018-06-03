@@ -19,53 +19,6 @@ import topic_k8s from '../../static/img/topics/kubernetes.png'
 export default function Index({ data }) {
   return (
     <div>
-      <div className="hero">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-6 left">
-              <h1 className="">Are you Cloudnative?</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                rutrum nibh neque, eu varius dui suscipit vel. Vestibulum
-                pretium urna eget purus fermentum iaculis.
-              </p>
-              <p>
-                Duis venenatis at metus quis scelerisque. Aliquam sed ultricies
-                lectus. Cras et enim imperdiet, venenatis ipsum non, tempus
-                neque. Ut hendrerit pellentesque ante vel tincidunt.
-                Pellentesque purus nisl, pretium in libero ut, accumsan posuere
-                leo. Vivamus fermentum blandit varius. Phasellus hendrerit
-                mattis purus.
-              </p>
-            </div>
-            <div className="col-xl-6 right">
-              <img src={hero} />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="customers">
-        <div className="container">
-          <div className="row">
-            <div className="col logos">
-              <ul>
-                <li>
-                  <img className="img-fluid" src={customer_1} />
-                </li>
-                <li>
-                  <img className="img-fluid" src={customer_2} />
-                </li>
-                <li>
-                  <img className="img-fluid" src={customer_3} />
-                </li>
-                <li>
-                  <img className="img-fluid " src={customer_4} />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="topics">
         <div className="container">
           <div className="row mx-auto title">

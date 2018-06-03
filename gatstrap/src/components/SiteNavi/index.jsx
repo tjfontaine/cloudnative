@@ -10,7 +10,7 @@ class SiteNavi extends React.Component {
         <div className="container">
           <span className="fas fa-cloud logo" />
           <Link className="text-center" to="/">
-            <h1 className="navbar-brand mb-0">Cloudnative</h1>
+            <h1 className="navbar-brand mb-0">Oracle Cloudnative</h1>
           </Link>
           <div className="navbar-nav flex-row ml-md-auto d-none d-md-flex" />
         </div>
