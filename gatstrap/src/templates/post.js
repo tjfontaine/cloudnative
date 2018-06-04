@@ -4,7 +4,6 @@ import Link from 'gatsby-link'
 import React from 'react'
 
 import SitePost from '../components/SitePost'
-import SitePage from '../components/SitePage'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -14,21 +13,17 @@ class BlogPostTemplate extends React.Component {
     const title = get(post, 'frontmatter.title')
     const siteTitle = get(site, 'meta.title')
 
-    let template = ''
-    if (layout != 'page') {
-      template = <SitePost data={post} site={site} isIndex={false} />
-    } else {
-      template = <SitePage {...this.props} />
-    }
+    let template = <SitePost data={post} site={site} isIndex={false} />
     return (
       <div>
         <Helmet
           title={`${title} | ${siteTitle}`}
           meta={[
-            { name: 'twitter:card', content: 'summary' },
-            { name: 'twitter:site', content: `@${get(site, 'meta.twitter')}` },
             { property: 'og:title', content: get(post, 'frontmatter.title') },
-            { property: 'og:type', content: 'article' },
+            {
+              property: 'og:curriculum',
+              content: get(post, 'frontmatter.curriculum'),
+            },
             {
               property: 'og:description',
               content: get(post, 'html')
@@ -56,19 +51,15 @@ export const pageQuery = graphql`
         title
         description
         url: siteUrl
-        author
-        twitter
-        adsense
       }
     }
     post: markdownRemark(frontmatter: { path: { eq: $path } }) {
       id
       html
       frontmatter {
-        layout
         title
+        curriculum
         path
-        categories
         date(formatString: "YYYY/MM/DD")
       }
     }

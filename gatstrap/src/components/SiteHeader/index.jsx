@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import './style.scss'
 
-class SiteNavi extends React.Component {
+class SiteHeader extends React.Component {
   render() {
     const { location, title } = this.props
     return (
@@ -19,4 +19,4 @@ class SiteNavi extends React.Component {
   }
 }
 
-export default SiteNavi
+export default SiteHeader

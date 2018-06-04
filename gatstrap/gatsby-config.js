@@ -3,6 +3,9 @@ module.exports = {
     title: 'CloudNative',
     description: 'Oracle CloudNative',
     siteUrl: 'https://cloudnative.oracle.com',
+    author: 'riceo',
+    twitter: 'riceo',
+    adsense: '',
   },
   pathPrefix: '/',
   plugins: [

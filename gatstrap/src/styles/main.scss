@@ -68,6 +68,7 @@
   padding: 8em 0 5em 0;
   background: #e8e8e55c;
   color: #666;
+  width: 100%;
 
   ul {
     list-style-type: none;
@@ -75,5 +76,21 @@
 
   .icons {
     margin-bottom: 5em;
+  }
+}
+
+.content {
+  padding-top: 5em;
+
+  > .container {
+    min-height: 60em;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .page-content {
+    margin-top: 2em;
   }
 }
