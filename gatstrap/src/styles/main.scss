@@ -86,11 +86,18 @@
     min-height: 60em;
   }
 
-  ul {
-    list-style: none;
+  .menu {
+    ul {
+      list-style: none;
+    }
   }
 
   .page-content {
     margin-top: 2em;
+
+    h2,
+    h3 {
+      margin: 2em 0 2em 0;
+    }
   }
 }
