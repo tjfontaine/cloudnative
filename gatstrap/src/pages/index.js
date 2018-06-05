@@ -23,20 +23,7 @@ export default function Index({ data }) {
         <div className="container">
           <div className="row">
             <div className="col-xl-6 left">
-              <h1 className="">Are you Cloudnative?</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                rutrum nibh neque, eu varius dui suscipit vel. Vestibulum
-                pretium urna eget purus fermentum iaculis.
-              </p>
-              <p>
-                Duis venenatis at metus quis scelerisque. Aliquam sed ultricies
-                lectus. Cras et enim imperdiet, venenatis ipsum non, tempus
-                neque. Ut hendrerit pellentesque ante vel tincidunt.
-                Pellentesque purus nisl, pretium in libero ut, accumsan posuere
-                leo. Vivamus fermentum blandit varius. Phasellus hendrerit
-                mattis purus.
-              </p>
+              <h1 className="">Go Cloud-Native with Oracle</h1>
             </div>
             <div className="col-xl-6 right">
               <img src={hero} />

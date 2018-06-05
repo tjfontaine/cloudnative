@@ -8,9 +8,8 @@ class SiteHeader extends React.Component {
     return (
       <nav className="navbar navbar-expand navbar-dark flex-column flex-md-row">
         <div className="container">
-          <span className="fas fa-cloud logo" />
           <Link className="text-center" to="/">
-            <h1 className="navbar-brand mb-0">Oracle Cloudnative</h1>
+            <img className="oracle" src="img/oracle_logo.png" />
           </Link>
           <div className="navbar-nav flex-row ml-md-auto d-none d-md-flex" />
         </div>
