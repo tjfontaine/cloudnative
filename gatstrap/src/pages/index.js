@@ -15,6 +15,9 @@ import customer_3 from '../../static/img/customers/customer_3.png'
 import customer_4 from '../../static/img/customers/customer_4.png'
 
 import topic_k8s from '../../static/img/topics/kubernetes.png'
+import topic_microservices from '../../static/img/topics/microservices.png'
+import topic_cloudops from '../../static/img/topics/cloudops.png'
+import topic_serverless from '../../static/img/topics/fnproject.png'
 
 export default function Index({ data }) {
   return (
@@ -70,8 +73,8 @@ export default function Index({ data }) {
                 />
                 <div className="card-body">
                   <p className="card-text">
-                    Prepare a production-ready Kubernetes cluster on OCI simply,
-                    and easily.
+                    From beginner to advances topics. Learn everything there is
+                    to know about Kubernetes on top of OCI.
                   </p>
                 </div>
               </div>
