@@ -6,7 +6,6 @@
     margin-bottom: 25px;
     font-weight: 400;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin-left: 150px;
   }
 
   .right {
@@ -43,12 +42,13 @@
   }
 
   .card {
-    text-align: center;
+    text-align: left;
     width: 13em;
     padding-top: 0;
     margin-left: 1.5em;
     margin-bottom: 1.5em;
     border: 2px solid rgba(0, 0, 0, 0.05);
+    height: 380px;
   }
 
   .card:hover {

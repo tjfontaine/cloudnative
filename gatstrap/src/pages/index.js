@@ -16,7 +16,7 @@ import customer_4 from '../../static/img/customers/customer_4.png'
 
 import topic_k8s from '../../static/img/topics/kubernetes.png'
 import topic_microservices from '../../static/img/topics/microservices.png'
-import topic_cloudops from '../../static/img/topics/cloudops.png'
+import topic_cloudops from '../../static/img/topics/terraform-1.png'
 import topic_serverless from '../../static/img/topics/fnproject.png'
 
 export default function Index({ data }) {
@@ -27,6 +27,10 @@ export default function Index({ data }) {
           <div className="row">
             <div className="col-xl-6 left">
               <h1 className="">Go Cloud-Native with Oracle</h1>
+              <h2 className="subheader">
+                Learn about the latest developments on building modern
+                applications on top of Oracle Cloud Infrastructure
+              </h2>
             </div>
             <div className="col-xl-6 right">
               <img src={hero} />
@@ -60,7 +64,7 @@ export default function Index({ data }) {
         <div className="container">
           <div className="row mx-auto title">
             <h1 className="mx-auto">
-              Get started with the Cloudnative curriculum
+              Get started with the Cloud-Native curriculum
             </h1>
           </div>
           <div className="row mx-auto">
@@ -72,73 +76,61 @@ export default function Index({ data }) {
                   alt="Card image cap"
                 />
                 <div className="card-body">
+                  <h3>Kubernetes</h3>
                   <p className="card-text">
-                    From beginner to advances topics. Learn everything there is
-                    to know about Kubernetes on top of OCI.
+                    From beginner to advanced topics. Get started with this
+                    popular container scheduling platform.
                   </p>
                 </div>
               </div>
             </a>
 
-            <a href="#">
+            <a href="/microservices">
               <div className="card">
                 <img
                   className="card-img-top"
-                  src={topic_k8s}
+                  src={topic_microservices}
                   alt="Card image cap"
                 />
                 <div className="card-body">
+                  <h3>Microservices</h3>
                   <p className="card-text">
-                    Prepare a production-ready Kubernetes cluster on OCI simply,
-                    and easily.
+                    Start breaking up the monolith and get started with
+                    microservices and the frameworks that power them.
                   </p>
                 </div>
               </div>
             </a>
 
-            <a href="#">
+            <a href="/cloudops">
               <div className="card">
                 <img
                   className="card-img-top"
-                  src={topic_k8s}
+                  src={topic_cloudops}
                   alt="Card image cap"
                 />
                 <div className="card-body">
+                  <h3>Cloud-Ops</h3>
                   <p className="card-text">
-                    Prepare a production-ready Kubernetes cluster on OCI simply,
-                    and easily.
+                    Treat your infrastructure as code and automate the
+                    provisioning of OCI using tools such as Terraform.
                   </p>
                 </div>
               </div>
             </a>
 
-            <a href="#">
+            <a href="/serverless">
               <div className="card">
                 <img
                   className="card-img-top"
-                  src={topic_k8s}
+                  src={topic_serverless}
                   alt="Card image cap"
                 />
                 <div className="card-body">
+                  <h3>Serverless</h3>
                   <p className="card-text">
-                    Prepare a production-ready Kubernetes cluster on OCI simply,
-                    and easily.
-                  </p>
-                </div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={topic_k8s}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <p className="card-text">
-                    Prepare a production-ready Kubernetes cluster on OCI simply,
-                    and easily.
+                    Learn everything there is to know about the next paradigm in
+                    cloud-native development. and easily.
                   </p>
                 </div>
               </div>

@@ -11,7 +11,11 @@ class SiteHeader extends React.Component {
           <Link className="text-center" to="/">
             <img className="oracle" src="img/oracle_logo.png" />
           </Link>
-          <div className="navbar-nav flex-row ml-md-auto d-none d-md-flex" />
+          <div className="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+            <a className="signup" href="#">
+              sign up for OCI
+            </a>
+          </div>
         </div>
       </nav>
     )
