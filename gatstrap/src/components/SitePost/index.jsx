@@ -4,7 +4,10 @@ import forEach from 'lodash/forEach'
 import get from 'lodash/get'
 import size from 'lodash/size'
 
+import './style.scss'
+
 import PostNavi from '../PostNavi'
+import post_hero from '../../../static/img/post_hero.png'
 
 class SitePost extends React.Component {
   render() {
@@ -17,9 +20,12 @@ class SitePost extends React.Component {
 
     return (
       <div className="content">
-        <div className="container">
+        <div className="post-hero text-center">
+          <img src={post_hero} />
+        </div>
+        <div className="container h-100">
           <div className="row">
-            <div className="col-xl-4 menu">
+            <div className="col-xl-4">
               <PostNavi curriculum={curriculum} />
             </div>
             <div className="col-xl-8 post-container">

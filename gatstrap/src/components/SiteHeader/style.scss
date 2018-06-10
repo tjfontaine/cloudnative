@@ -1,6 +1,6 @@
 .navbar {
-  background: #ff0000;
-
+  height: 48px;
+  background: linear-gradient(90deg, #FF0000 51%, #FFFFFF 50%);
   .oracle {
     margin-top: 10px;
     margin-right: 10px;
@@ -11,6 +11,10 @@
     font-size: 25px;
     margin-right: 10px;
     color: #fff;
+
+    img {
+      margin-bottom: 0;
+    }
   }
   .signup {
     color: #fff;

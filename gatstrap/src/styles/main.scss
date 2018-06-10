@@ -1,3 +1,9 @@
+body {
+  img:hover {
+    animation: none;
+  }
+}
+
 .hero {
   padding: 7em 0 0em;
 
@@ -43,9 +49,9 @@
 
   .card {
     text-align: left;
-    width: 13em;
+    width: 15em;
     padding-top: 0;
-    margin-left: 1.5em;
+    margin-left: 2.5em;
     margin-bottom: 1.5em;
     border: 2px solid rgba(0, 0, 0, 0.05);
     height: 380px;
@@ -81,7 +87,6 @@
 }
 
 .content {
-  padding-top: 5em;
 
   > .container {
     min-height: 60em;
@@ -90,7 +95,20 @@
   .menu {
     ul {
       list-style: none;
+
+      li {
+        padding: 0 0 1em 0;
+        font-size: 24px;
+      }
     }
+
+    background: #F5F5F5;
+    padding: 2em;
+  }
+
+  .post-hero {
+    height: 413px;
+    background: #FFC8C8;
   }
 
   .page-content {
@@ -100,5 +118,9 @@
     h3 {
       margin: 2em 0 2em 0;
     }
+  }
+
+  .post {
+    margin-top: 2em;
   }
 }

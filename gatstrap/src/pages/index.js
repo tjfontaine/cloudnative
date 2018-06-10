@@ -39,34 +39,9 @@ export default function Index({ data }) {
         </div>
       </div>
       <div className="customers">
-        <div className="container">
-          <div className="row">
-            <div className="col logos">
-              <ul>
-                <li>
-                  <img className="img-fluid" src={customer_1} />
-                </li>
-                <li>
-                  <img className="img-fluid" src={customer_2} />
-                </li>
-                <li>
-                  <img className="img-fluid" src={customer_3} />
-                </li>
-                <li>
-                  <img className="img-fluid " src={customer_4} />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
       <div className="topics">
         <div className="container">
-          <div className="row mx-auto title">
-            <h1 className="mx-auto">
-              Get started with the Cloud-Native curriculum
-            </h1>
-          </div>
           <div className="row mx-auto">
             <a href="/kubernetes">
               <div className="card">
