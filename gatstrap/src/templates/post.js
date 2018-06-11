@@ -25,12 +25,6 @@ class BlogPostTemplate extends React.Component {
               content: get(post, 'frontmatter.curriculum'),
             },
             {
-              property: 'og:description',
-              content: get(post, 'html')
-                .replace(/<("[^"]*"|'[^']*'|[^'">])*>/g, '')
-                .substr(0, 200),
-            },
-            {
               property: 'og:url',
               content: get(site, 'meta.url') + get(post, 'frontmatter.path'),
             },
