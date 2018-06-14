@@ -57,5 +57,19 @@ export const pageQuery = graphql`
         date(formatString: "YYYY/MM/DD")
       }
     }
+	allPosts: allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+		totalCount
+			edges {
+				node {
+					frontmatter {
+						title
+						date
+						curriculum
+					  }
+					  excerpt
+					  timeToRead
+				}
+			}
+	  }
   }
 `

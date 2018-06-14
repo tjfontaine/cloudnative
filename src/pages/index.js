@@ -16,8 +16,8 @@ import customer_4 from '../../static/img/customers/customer_4.png'
 
 import topic_k8s from '../../static/img/topics/kubernetes.png'
 import topic_microservices from '../../static/img/topics/microservices.png'
-import topic_cloudops from '../../static/img/topics/terraform-1.png'
-import topic_serverless from '../../static/img/topics/fnproject.png'
+import topic_cloudops from '../../static/img/topics/terraform.png'
+import topic_serverless from '../../static/img/topics/serverless.png'
 
 export default function Index({ data }) {
   return (
@@ -27,10 +27,10 @@ export default function Index({ data }) {
           <div className="row">
             <div className="col-xl-6 left">
               <h1 className="">Go Cloud-Native with Oracle</h1>
-              <h2 className="subheader">
+              <h3 className="subheader">
                 Learn about the latest developments on building modern
                 applications on top of Oracle Cloud Infrastructure
-              </h2>
+              </h3>
             </div>
             <div className="col-xl-6 right">
               <img src={hero} />
@@ -38,80 +38,61 @@ export default function Index({ data }) {
           </div>
         </div>
       </div>
-      <div className="customers">
-      </div>
       <div className="topics">
-        <div className="container">
+        <div className="container cards">
           <div className="row mx-auto">
             <Link to="/kubernetes">
               <div className="card">
-                <img
-                  className="card-img-top"
-                  src={topic_k8s}
-                  alt="Card image cap"
-                />
+		<div className="card-head" id="kubernetes"><img src={topic_k8s} /></div>
                 <div className="card-body">
                   <h3>Kubernetes</h3>
-                  <p className="card-text">
-                    From beginner to advanced topics. Get started with this
-                    popular container scheduling platform.
-                  </p>
                 </div>
               </div>
             </Link>
 
             <Link to="/microservices">
               <div className="card">
-                <img
-                  className="card-img-top"
-                  src={topic_microservices}
-                  alt="Card image cap"
-                />
+		<div className="card-head" id="microservices"><img src={topic_microservices} /></div>
                 <div className="card-body">
                   <h3>Microservices</h3>
-                  <p className="card-text">
-                    Start breaking up the monolith and get started with
-                    microservices and the frameworks that power them.
-                  </p>
                 </div>
               </div>
             </Link>
 
             <Link to="/cloudops">
               <div className="card">
-                <img
-                  className="card-img-top"
-                  src={topic_cloudops}
-                  alt="Card image cap"
-                />
+		<div className="card-head" id="cloudops"><img src={topic_cloudops} /></div>
                 <div className="card-body">
                   <h3>Cloud-Ops</h3>
-                  <p className="card-text">
-                    Treat your infrastructure as code and automate the
-                    provisioning of OCI using tools such as Terraform.
-                  </p>
                 </div>
               </div>
             </Link>
 
             <Link to="/serverless">
               <div className="card">
-                <img
-                  className="card-img-top"
-                  src={topic_serverless}
-                  alt="Card image cap"
-                />
+		<div className="card-head" id="serverless"><img src={topic_serverless} /></div>
                 <div className="card-body">
                   <h3>Serverless</h3>
-                  <p className="card-text">
-                    Learn everything there is to know about the next paradigm in
-                    cloud-native development. and easily.
-                  </p>
                 </div>
               </div>
             </Link>
           </div>
         </div>
+      </div>
+      <div className="customers">
+      	<div className="container">
+		<div className="row">
+			<div className="col-xl-6">
+				<h2>A Customer Casestudy</h2>
+				<h3>Learn how customer achieved x with Oracle Cloudnative</h3>
+				<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta ex tellus, eu pellentesque sem eleifend at. Morbi vitae massa orci. Maecenas rhoncus felis et ligula dictum ultrices.</strong></p>
+				<button type="button" class="btn btn-primary">Read More...</button>
+			</div>
+			<div className="col-xl-6">
+				<img src="http://via.placeholder.com/600x272" />
+			</div>
+		</div>
+	</div>
       </div>
     </div>
   )

@@ -30,9 +30,9 @@ class SitePost extends React.Component {
             </div>
             <div className="col-xl-8 post-container">
               <div className="post">
-                <h1>
+                <h2>
                   {curriculum} - {title}
-                </h1>
+                </h2>
                 <div
                   className="page-content"
                   dangerouslySetInnerHTML={{ __html: html }}
