@@ -145,11 +145,19 @@ body {
 
     background: #F5F5F5;
     padding: 2em;
+
   }
 
   .post-hero {
     height: 413px;
     background: #FFC8C8;
+    background-repeat: no-repeat;
+	background-position: center;
+
+	h2 {
+		font-size: 30px;
+		padding-top: 10em;
+	}
   }
 
   .page-content {
@@ -159,6 +167,7 @@ body {
     h3 {
       margin: 2em 0 2em 0;
     }
+
   }
 
   .post {

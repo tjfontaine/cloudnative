@@ -20,8 +20,10 @@ class SitePost extends React.Component {
 
     return (
       <div className="content">
-        <div className="post-hero text-center">
-          <img src={post_hero} />
+        <div className="post-hero text-center" style={{backgroundImage: "url(" + post_hero + ")"}}>
+	    <h2>
+                {curriculum} - {title}
+            </h2>
         </div>
         <div className="container h-100">
           <div className="row">
@@ -30,9 +32,6 @@ class SitePost extends React.Component {
             </div>
             <div className="col-xl-8 post-container">
               <div className="post">
-                <h2>
-                  {curriculum} - {title}
-                </h2>
                 <div
                   className="page-content"
                   dangerouslySetInnerHTML={{ __html: html }}
