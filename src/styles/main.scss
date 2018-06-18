@@ -3,10 +3,6 @@ body {
     animation: none;
   }
 
-  h1 {
-	font-size: 72px;
-  }
-
   .btn-primary {
 	color: #ff0000;
     border: 3px solid #ff0000;
@@ -15,38 +11,48 @@ body {
 
   color: #000;
 
+  h1 { font-size: 48px; }
+  h2 { font-size: 24px; }
+
 }
 
 .hero {
-  padding: 7em 0 0em;
-
-  h1 {
-    margin-bottom: 25px;
-    font-weight: 400;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 5em 0 0em;
+ 
+  > .container {
+    min-height: 35em;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    margin-bottom: 5em;
   }
 
-  .right {
-    font-size: 200px;
-    text-align: center;
+  .subheader {
+    width: 80%;
+    font-size: 24px;
+    padding: 1em 0 1em 0;
   }
+
 }
 
 .customers {
-	padding: 8em 0 8em 0;
-	min-height: 500px;
+    padding: 8em 0 8em 0;
+    min-height: 500px;
 
-	p {
-		color: #9B9B9B;
-	}
+    p {
+    	color: #9B9B9B;
+    }
 
-	h2 {
-		padding-bottom: 1em;
-	}
+    h1 {
+    	padding-bottom: 0.5em;
+    }
 
-	h3, p {
-		padding-bottom: 0.5em;
-	}
+    h2, p {
+    	padding-bottom: 0.5em;
+    }
+
+    .casestudy-text {
+        padding-bottom: 3em;
+    }
 
 }
 
@@ -55,12 +61,15 @@ body {
   background: #F6F6F6;
 
   .card {
-	text-align: center;
+    text-align: center;
     width: 15em;
+    height: 25em;
     padding-top: 0;
     margin-left: 2.5em;
     margin-bottom: 1.5em;
     border: 2px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 28px 0 rgba(0, 0, 0, 0.12), 0 0px 10px 0 rgba(0, 0, 0, 0.01);
+
   }
 
   .card:hover {
@@ -87,6 +96,10 @@ body {
 
   .card-body {
 	padding-bottom: 1.25rem;
+
+	> span {
+	    color: #9B9B9B;
+        }
   }
 
   h3 {
@@ -156,7 +169,7 @@ body {
 
 	h2 {
 		font-size: 30px;
-		padding-top: 10em;
+		padding-top: 10.5em;
 	}
   }
 
