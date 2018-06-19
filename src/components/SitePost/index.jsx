@@ -20,10 +20,11 @@ class SitePost extends React.Component {
 
     return (
       <div className="content">
-        <div className="post-hero text-center" style={{backgroundImage: "url(" + post_hero + ")"}}>
-	    <h2>
-                {curriculum} - {title}
-            </h2>
+        <div
+          className="post-hero text-center"
+          style={{ backgroundImage: 'url(' + post_hero + ')' }}
+        >
+          <h1>{title}</h1>
         </div>
         <div className="container h-100">
           <div className="row">
