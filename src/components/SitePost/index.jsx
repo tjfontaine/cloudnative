@@ -29,7 +29,7 @@ class SitePost extends React.Component {
         <div className="container h-100">
           <div className="row">
             <div className="col-xl-4">
-              <PostNavi curriculum={curriculum} />
+              <PostNavi {...this.props} />
             </div>
             <div className="col-xl-8 post-container">
               <div className="post">

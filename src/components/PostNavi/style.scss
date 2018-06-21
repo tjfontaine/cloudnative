@@ -1,0 +1,46 @@
+.menu {
+  ul {
+    list-style: none;
+
+    li {
+      padding: 0 0 1em 0;
+      font-size: 14px;
+    }
+  }
+
+  .btn-link {
+    color: black;
+    font-size: 24px;
+  }
+
+  a:hover {
+    color: #ff0000;
+  }
+
+  .card,
+  .card-body,
+  .card-header {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  .card-body {
+    a {
+      color: black;
+    }
+
+    a:hover,
+    a.active {
+      color: #ff0000;
+    }
+  }
+
+  .card-header {
+    background-repeat: no-repeat;
+    background-position: center right 2em;
+  }
+
+  background: #e8e8e55c;
+  padding: 2em;
+  height: 100%;
+}

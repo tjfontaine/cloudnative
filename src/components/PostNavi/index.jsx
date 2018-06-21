@@ -2,195 +2,102 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import './style.scss'
+import bullet from '../../../static/img/post_bullet.png'
 
 class PostNavi extends React.Component {
   render() {
-    const curriculum = this.props.curriculum
-    const { site, data, isIndex } = this.props
-    var links = []
-
-    if (curriculum == 'Kubernetes') {
-      links.push(
-        <li>
-          <Link to="/kubernetes/terraform-deployment">
-            Installing Kubernetes on OCI with Terraform
-          </Link>
-        </li>
-      )
-      links.push(
-        <li>
-          <Link to="/kubernetes/smoke-test">
-            Performing a Smoke Test on a new Kubernetes Cluster
-          </Link>
-        </li>
-      )
-      links.push(
-        <li>
-          <Link to="/kubernetes/services">An introduction to Services</Link>
-        </li>
-      )
-      links.push(
-        <li>
-          <Link to="/kubernetes/ingress">
-            Configuring Ingress &amp; Routing{' '}
-          </Link>
-        </li>
-      )
-    } else if (curriculum == 'Microservices') {
-      links.push(
-        <li>
-          <Link to="/microservices/">Introduction</Link>
-        </li>
-      )
-      links.push(
-        <li>
-          <Link to="/microservices/api-design">
-            API Design for Microservices
-          </Link>
-        </li>
-      )
-      links.push(
-        <li>
-          <Link to="/microservices/api-implementation">
-            API Implementation for Microservices
-          </Link>
-        </li>
-      )
-    } else if (curriculum == 'Serverless') {
-      links.push(
-        <li>
-          <Link to="/serverless/">Introduction</Link>
-        </li>
-      )
-    } else if (curriculum == 'Cloudops') {
-      links.push(
-        <li>
-          <Link to="/cloudops/">Introduction</Link>
-        </li>
-      )
-      links.push(
-        <li>
-          <Link to="/cloudops/terraform-installation">
-            Installing Terraform for Oracle Cloud Infrastructure
-          </Link>
-        </li>
-      )
-      links.push(
-        <li>
-          <Link to="/cloudops/iam">
-            Setting up Identity and Access Management on OCI using Terraform
-          </Link>
-        </li>
-      )
-    } else {
-      links.push('Coming soon...')
+    const currentCurr = this.props.data.frontmatter.curriculum
+    const currentPath = this.props.data.frontmatter.path
+    const posts = {
+      Kubernetes: {
+        _: 'Introduction',
+        'terraform-deployment': 'Installing Kubernetes on OCI with Terraform',
+        'smoke-test': 'Performing a Smoke Test on a new Kubernetes Cluster',
+        services: 'An Introduction to Services',
+        ingress: 'Configuring Ingress &amp; Routing',
+      },
+      Microservices: {
+        _: 'Introduction',
+        'api-design': 'API Design for Microservices',
+        'api-implementation': 'API Implementation for Microservices',
+      },
+      Serverless: {
+        _: 'Introduction',
+      },
+      Cloudops: {
+        _: 'Introduction',
+        'terraform-installation': 'Installing Terraform for OCI',
+        iam: 'Setting up Identity and Access Management on OCI using Terraform',
+      },
     }
 
-    return (
-      <div id="accordion">
+    const makeList = (curr, linksObj) => {
+      let links = []
+
+      for (var link in linksObj) {
+        var slug = link == '_' ? '' : '/' + link
+        let url = '/' + curr.toLowerCase() + slug
+        let state = url == currentPath ? 'active' : 'inactive'
+
+        links.push(
+          <li>
+            <Link className={state} to={url}>
+              {linksObj[link]}
+            </Link>
+          </li>
+        )
+      }
+
+      return links
+    }
+
+    const makeMenuItem = (curr, links) => {
+      let state = currentCurr == curr ? 'show' : ''
+
+      return (
         <div className="card">
-          <div className="card-header" id="headingOne">
+          <div
+            className="card-header"
+            id={'heading' + curr}
+            style={{ backgroundImage: 'url(' + bullet + ')' }}
+          >
             <h5 className="mb-0">
               <button
                 className="btn btn-link"
                 data-toggle="collapse"
-                data-target="#collapseOne"
+                data-target={'#collapse' + curr}
                 aria-expanded="true"
-                aria-controls="collapseOne"
+                aria-controls={'collapse' + curr}
               >
-                Collapsible Group Item #1
+                {curr}
               </button>
             </h5>
           </div>
+          <div
+            id={'collapse' + curr}
+            className={'collapse' + state}
+            aria-labelledby={'heading' + curr}
+            data-parent="#accordion"
+          >
+            <div className="card-body">
+              <ul>{links}</ul>
+            </div>
+          </div>
+        </div>
+      )
+    }
 
-          <div
-            id="collapseOne"
-            className="collapse show"
-            aria-labelledby="headingOne"
-            data-parent="#accordion"
-          >
-            <div className="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-              on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-              lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them
-              accusamus labore sustainable VHS.
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-header" id="headingTwo">
-            <h5 className="mb-0">
-              <button
-                className="btn btn-link collapsed"
-                data-toggle="collapse"
-                data-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Collapsible Group Item #2
-              </button>
-            </h5>
-          </div>
-          <div
-            id="collapseTwo"
-            className="collapse"
-            aria-labelledby="headingTwo"
-            data-parent="#accordion"
-          >
-            <div className="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-              on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-              lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them
-              accusamus labore sustainable VHS.
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-header" id="headingThree">
-            <h5 className="mb-0">
-              <button
-                className="btn btn-link collapsed"
-                data-toggle="collapse"
-                data-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Collapsible Group Item #3
-              </button>
-            </h5>
-          </div>
-          <div
-            id="collapseThree"
-            className="collapse"
-            aria-labelledby="headingThree"
-            data-parent="#accordion"
-          >
-            <div className="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-              on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-              lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them
-              accusamus labore sustainable VHS.
-            </div>
-          </div>
-        </div>
+    let menu = []
+
+    for (let curr in posts) {
+      let links = makeList(curr, posts[curr])
+      let menuItem = makeMenuItem(curr, links)
+      menu.push(menuItem)
+    }
+
+    return (
+      <div id="accordion" className="menu">
+        {menu}
       </div>
     )
   }
