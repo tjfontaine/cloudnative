@@ -23,7 +23,10 @@ export default function Index({ data }) {
   return (
     <div>
       <div className="hero">
-        <div className="container" style={{backgroundImage: "url(" + hero + ")"}}>
+        <div
+          className="container"
+          style={{ backgroundImage: 'url(' + hero + ')' }}
+        >
           <div className="row">
             <div className="col-xl-7 left">
               <h1>Go Cloud-Native with Oracle</h1>
@@ -40,46 +43,60 @@ export default function Index({ data }) {
           <div className="row mx-auto">
             <Link to="/kubernetes">
               <div className="card">
-		<div className="card-head" id="kubernetes"><img src={topic_k8s} /></div>
+                <div className="card-head" id="kubernetes">
+                  <img src={topic_k8s} />
+                </div>
                 <div className="card-body">
                   <h3>Kubernetes</h3>
-	  	  <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                  <span>
+                    From beginner to advanced topics. Get started with this
+                    popular container scheduling platform.
+                  </span>
                 </div>
               </div>
             </Link>
 
             <Link to="/microservices">
               <div className="card">
-		<div className="card-head" id="microservices"><img src={topic_microservices} /></div>
+                <div className="card-head" id="microservices">
+                  <img src={topic_microservices} />
+                </div>
                 <div className="card-body">
                   <h3>Microservices</h3>
-	  	  <span>
-		      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta ex tellus, eu pellentesque sem eleifend at.
-		  </span>
+                  <span>
+                    Start breaking up the monolith and get started with
+                    microservices and the frameworks that power them.
+                  </span>
                 </div>
               </div>
             </Link>
 
             <Link to="/cloudops">
               <div className="card">
-		<div className="card-head" id="cloudops"><img src={topic_cloudops} /></div>
+                <div className="card-head" id="cloudops">
+                  <img src={topic_cloudops} />
+                </div>
                 <div className="card-body">
                   <h3>Cloud-Ops</h3>
-		<span>
-		      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta ex tellus, eu pellentesque sem eleifend at.
-		</span>
+                  <span>
+                    Treat your infrastructure as code and automate the
+                    provisioning of OCI using tools such as Terraform.
+                  </span>
                 </div>
               </div>
             </Link>
 
             <Link to="/serverless">
               <div className="card">
-		<div className="card-head" id="serverless"><img src={topic_serverless} /></div>
+                <div className="card-head" id="serverless">
+                  <img src={topic_serverless} />
+                </div>
                 <div className="card-body">
                   <h3>Serverless</h3>
-		  <span>
-		      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta ex tellus, eu pellentesque sem eleifend at.
-		  </span>
+                  <span>
+                    Learn everything there is to know about the next paradigm in
+                    cloud-native development. and easily.
+                  </span>
                 </div>
               </div>
             </Link>
@@ -87,19 +104,25 @@ export default function Index({ data }) {
         </div>
       </div>
       <div className="customers">
-      	<div className="container">
-		<div className="row">
-			<div className="col-xl-6 casestudy-text">
-				<h1>A Customer Casestudy</h1>
-				<h2>Learn how customer achieved x with Oracle Cloudnative</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta ex tellus, eu pellentesque sem eleifend at. Morbi vitae massa orci. Maecenas rhoncus felis et ligula dictum ultrices.</p>
-				<button type="button" class="btn btn-primary">Read More...</button>
-			</div>
-			<div className="col-xl-6">
-				<img src="http://via.placeholder.com/600x272" />
-			</div>
-		</div>
-	</div>
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-6 casestudy-text">
+              <h1>A Customer Casestudy</h1>
+              <h2>Learn how customer achieved x with Oracle Cloudnative</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                porta ex tellus, eu pellentesque sem eleifend at. Morbi vitae
+                massa orci. Maecenas rhoncus felis et ligula dictum ultrices.
+              </p>
+              <button type="button" class="btn btn-primary">
+                Read More...
+              </button>
+            </div>
+            <div className="col-xl-6">
+              <img src="http://via.placeholder.com/600x272" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )

@@ -14,7 +14,7 @@ class PostNavi extends React.Component {
         'terraform-deployment': 'Installing Kubernetes on OCI with Terraform',
         'smoke-test': 'Performing a Smoke Test on a new Kubernetes Cluster',
         services: 'An Introduction to Services',
-        ingress: 'Configuring Ingress &amp; Routing',
+        ingress: 'Configuring Ingress & Routing',
       },
       Microservices: {
         _: 'Introduction',

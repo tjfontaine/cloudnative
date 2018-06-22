@@ -9,6 +9,8 @@ import './style.scss'
 import PostNavi from '../PostNavi'
 import post_hero from '../../../static/img/post_hero.png'
 
+require('prismjs/themes/prism-coy.css')
+
 class SitePost extends React.Component {
   render() {
     const { site, data, isIndex } = this.props
