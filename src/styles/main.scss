@@ -1,0 +1,173 @@
+body {
+  img:hover {
+    animation: none;
+  }
+
+  .btn-primary {
+    color: #ff0000;
+    border: 3px solid #ff0000;
+    background: inherit;
+  }
+
+  color: #000;
+
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+
+.hero {
+  padding: 5em 0 0em;
+
+  > .container {
+    min-height: 35em;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    margin-bottom: 5em;
+  }
+
+  .subheader {
+    width: 80%;
+    font-size: 24px;
+    padding: 1em 0 1em 0;
+  }
+}
+
+.customers {
+  padding: 8em 0 8em 0;
+  min-height: 500px;
+
+  p {
+    color: #9b9b9b;
+  }
+
+  h1 {
+    padding-bottom: 0.5em;
+  }
+
+  h2,
+  p {
+    padding-bottom: 0.5em;
+  }
+
+  .casestudy-text {
+    padding-bottom: 3em;
+  }
+}
+
+.topics {
+  padding: 8em 0 7em 0;
+  background: #f6f6f6;
+
+  .card {
+    text-align: center;
+    width: 15em;
+    height: 23em;
+    padding-top: 0;
+    margin-left: 2.5em;
+    margin-bottom: 1.5em;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 28px 0 rgba(0, 0, 0, 0.12),
+      0 0px 10px 0 rgba(0, 0, 0, 0.01);
+  }
+
+  .card:hover {
+    animation: pulse 0.5s;
+    .card-head {
+      background: #d20005;
+    }
+  }
+
+  .card-head {
+    height: 175px;
+    background: #fb3237;
+
+    > img {
+      padding-top: 2.5em;
+    }
+  }
+
+  .card-head#cloudops,
+  .card-head#serverless {
+    > img {
+      padding-top: 4em;
+    }
+  }
+
+  .card-body {
+    padding-bottom: 1.25rem;
+
+    > span {
+      color: #9b9b9b;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  a,
+  a:hover {
+    color: inherit;
+  }
+}
+
+.footer {
+  background: #e8e8e55c;
+  width: 100%;
+  padding-bottom: 5em;
+
+  p {
+    font-size: 10px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .icons {
+    margin-bottom: 5em;
+  }
+
+  hr {
+    margin: 3em 0 3em 0;
+    width: 100%;
+    border: 2px solid black;
+  }
+}
+
+.content {
+  > .container {
+    min-height: 60em;
+  }
+
+  .post-hero {
+    height: 413px;
+    background: #ffc8c8;
+    background-repeat: no-repeat;
+    background-position: 60% center;
+
+    h1 {
+      padding-top: 4em;
+      padding-left: 20%;
+    }
+  }
+
+  .page-content {
+    margin-top: 2em;
+
+    h2,
+    h3 {
+      margin: 2em 0 2em 0;
+    }
+  }
+
+  .post {
+    margin-top: 2em;
+  }
+}
