@@ -11,36 +11,19 @@ The subdirectories for each curriculum title are there for the sake of tidiness 
 How to add new content pages:
 
 1. Creat a subdirectory for your new post in `pages/curriculum/{section}`
-2. The post must be a markdown file
-3. The top of the markdown file must include a section like:
+1. The post must be a markdown file
+1. The top of the markdown file must include some metadata for routing/naming. Copy an existing post to use as a template and pay particular attention to the url path.
+1. Place images in the same directory as your post and reference them in your markdown as such, e.g `![](./photo.png)`
+1. To add posts to the site navigation, edit the `posts` const in `https://github.com/oracle/cloudnative/blob/master/src/components/PostNavi/index.jsx#L11`. Note that "\_" means the root node of a section.
+
+Once this is done, build and deploy via:
 
 ```
---
-title: "Configuring Ingress and Routing"
-date: "2018-06-04T00:00:00.000Z"
-path: "/kubernetes/ingress"
-curriculum: "Kubernetes"
----
+gatsby build --prefix-paths && ./node_modules/gh-pages/bin/gh-pages -d public
 ```
 
-The path should match the curriculum name, which should match the subdirectory name of the curriculum that it resides in.
-
-Eventually, menu items will be populated dynamically, but for now must be done manually in `components/PostNavi/index.jsx'
-
-Create new menu items to match your path names above as required.
-
+Gatsby will carry out some magic that will push the built version of the site to the `public` branch of this repo. The site will be visible on `http://oracle.github.io/cloudnative` within a few minutes. 
 
 ## Todo
 
-### Styling/Content
-
-* Get the footer tacked to the bottom of the page
-* Make the navbar cloud a link
-* Replace homepage content
-* Get real customer logos
-* Get social FA icons working
-* Change font
-
-### Functionality
-* Make the topics dynamic
-* Make the footer links dynamic
+* Dynamically load the navigation bar based on the existing posts.
