@@ -43,8 +43,9 @@ Based upon the current plan for content, the directory layout would be as shown.
 │   │   ├── ceph
 │   │   ├── oci-cloud-provider
 │   │   └── persistent-volumes-on-kubernetes
-│   ├── file-s   ├── nfs-server
+│   ├── file-system-storage
 │   │   └── oci-cloud-provider
+│   │   ├── nfs-server
 │   ├── infra-as-code
 │   │   └── terraform
 │   └── object-storage
