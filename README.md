@@ -48,7 +48,6 @@ Based upon the current plan for content, the directory layout would be as shown.
 │   │   ├── nfs-server
 │   ├── infra-as-code
 │   │   └── terraform
-│   └── object-storage
 └── observability-and-analysis
     ├── distributed-tracing
     │   ├── jaeger
