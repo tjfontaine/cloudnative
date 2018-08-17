@@ -16,46 +16,37 @@ The layout for this repository is a flat structure dictated by the content heira
 Based upon the current plan for content, the directory layout would be as shown.
 
 ```
-.
+
 ├── application-development
 │   ├── ci-cd
-│   │   ├── jenkins-x
-│   │   ├── spinnaker
-│   │   └── wercker
+│   │   └── spinnaker - pending 
 │   ├── microservices
-│   │   ├── api-design-and-implementation
-│   │   └── grpc-and-protocol-buffers
+│   │   └── introduction to microservices and api design (3x posts) 
 │   ├── package-management
-│   │   └── introduction-to-helm
-│   └── serverless
-│       └── fn-project
+│   ├── serverless
+│   │   └── intro to serverless - pending 
 ├── distributed-systems-management
 │   ├── container-orchestration
-│   │   ├── docker-basics
-│   │   └── kubernetes
+│   │   └── kubernetes 101  (3x posts)
+│   │   └── persistent-volumes-on-kubernetes - pending 
 │   ├── queuing-streaming
-│   │   └── kafka
-│   └── service-mesh-and-discovery
-│       ├── envoy
-│       └── istio
+│   ├── service-mesh-and-discovery
 ├── infrastructure
-│   ├── block-storage
-│   │   ├── ceph
-│   │   ├── oci-cloud-provider
-│   │   └── persistent-volumes-on-kubernetes
-│   ├── file-system-storage
-│   │   └── oci-cloud-provider
-│   │   ├── nfs-server
 │   ├── infra-as-code
-│   │   └── terraform
+│   │   └── kubernetes-on-oci-with-terraform (3x posts)
+│   ├── block-storage
+│   ├── file-system-storage
+│   ├── object-storage
 └── observability-and-analysis
-    ├── distributed-tracing
-    │   ├── jaeger
-    │   └── zipkin
-    ├── logging
-    │   └── efk-stack
-    └── telemetry
-        └── prometheus-stack
+│   ├── distributed-tracing
+│   ├── logging
+│   │   └── efk-stack-introduction (2 x posts)
+│   ├── telemetry
+│      └── getting-started-with-helm-and-prometheus (1x post)
+└── machine-learning
+│   ├── tensorflow
+│      └── kubeflow - pending 
+
 ```
 
 ## Style Guide
