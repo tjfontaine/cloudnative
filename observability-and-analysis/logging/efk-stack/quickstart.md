@@ -1,4 +1,4 @@
-# Log Like You Mean It! A Quick Start for Logging Kubernetes Applications via an EFK Stack 
+# A Quick Start for Logging Kubernetes Applications via an EFK Stack 
 
 By Aaron Rice
 
