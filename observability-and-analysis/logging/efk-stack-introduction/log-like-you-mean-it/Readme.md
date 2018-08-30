@@ -16,7 +16,7 @@ An [Oracle Cloud Infrastructure](https://cloud.oracle.com/en_US/iaas) account wi
 
 Over the last few years Elasticsearch has become an industry standard for storing and indexing logs. Setting up and operating an Elasticsearch cluster can be a challenge for your team and paying for a hosted service can be expensive. If only there were an easy way to run Elasticsearch on existing infrastructure. Luckily this is easy to do with Kubernetes. To do so, we will leverage Kubernetes stateful sets, the Oracle Cloud Infrastructure (OCI) volume provisioner, and Helm to coordinate deployments to our cluster. 
 
-Follow [the EFK quick start guide](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html) for help creating a Kubernetes cluster with OKE and read this [article](https://gitlab-odx.oracledx.com/cloudnative/devcenter/blob/master/content/elasticsearch/quickstart.md) for getting Helm set up on your cluster.
+Follow [the EFK quick start guide](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html) for help creating a Kubernetes cluster with OKE and read this [article](quickstart.md) for getting Helm set up on your cluster.
 
 
 The first step is to modify our Elasticsearch Helm chart template to fit your environment. 
@@ -716,7 +716,7 @@ You should now have a running deployment of Elasticsearch to store logs, Fluentd
 
 ### More in this series
 
-* [EFK Quickstart.](https://gitlab-odx.oracledx.com/cloudnative/devcenter/blob/master/content/elasticsearch/quickstart.md)
+* [EFK Quickstart.](./quickstart.md)
 
 #### License
 
