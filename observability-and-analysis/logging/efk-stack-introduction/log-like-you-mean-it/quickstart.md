@@ -30,7 +30,7 @@ This will connect to your Kubernetes cluster via your already configured `kubect
 Download and extract our Helm chart. This will simplify the process of installing the EFK stack:
 
 ```
-wget https://github.com/oracle/cloudnative/releases/download/efk-quickstart/efk.tar.gz
+wget https://github.com/oracle/cloudnative/tree/master/observability-and-analysis/logging/efk-stack-introduction/log-like-you-mean-it/efk.tar.gz
 tar -xzvf ./efk.tar.gz
 ```
 
