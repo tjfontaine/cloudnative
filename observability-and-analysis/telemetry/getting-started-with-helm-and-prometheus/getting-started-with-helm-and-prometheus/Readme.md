@@ -66,7 +66,7 @@ helm install --namespace monitoring coreos/prometheus-operator
 Next, let's install kube-prometheus which gives us some Kubernetes manifests for Grafana dashboards and Prometheus rules that allow us to operate Kubernetes, but first we will to download some values to use for our deployment:
 
 ```
-wget https://gitlab-odx.oracledx.com/cloudnative/devcenter/blob/add-prometheus-article/content/prometheus/values.yaml
+wget https://raw.githubusercontent.com/oracle/cloudnative/master/observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/getting-started-with-helm-and-prometheus/values.yaml
 ```
 
 And install it with the following command:
