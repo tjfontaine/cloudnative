@@ -1,0 +1,13 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Helm or High Water: Package Management for Kubernetes Services",
+          "file": "Readme.md"
+        }
+      ]
+    }
+  ]
+}

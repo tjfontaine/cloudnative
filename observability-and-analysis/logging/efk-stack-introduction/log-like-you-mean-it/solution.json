@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Log like you mean it!",
+          "file": "Readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Quickstart",
+          "file": "quickstart.md"
+        }
+      ]
+    }
+  ]
+}
