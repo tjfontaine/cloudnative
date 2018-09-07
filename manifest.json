@@ -8,7 +8,7 @@
           "solutions": [
             {
               "fragment": "getting-started-with-helm-and-prometheus", 
-              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/getting-started-with-helm-and-prometheus/solution.json",
+              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/getting-started-with-helm-and-prometheus",
               "logoUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/getting-started-with-helm-and-prometheus/prometheus_stack_landing.png",
               "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/getting-started-with-helm-and-prometheus/prometheus_stack_course_pg.png",
               "title": "Prometheus and Grafana"
@@ -22,7 +22,7 @@
           "solutions": [
             {
               "fragment": "log-like-you-mean-it",
-              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack-introduction/log-like-you-mean-it/solution.json",
+              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack-introduction/log-like-you-mean-it",
               "logoUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack-introduction/efk_stack_landing.png",
               "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack-introduction/efk_stack_course_pg.png",
               "title": "Elasticsearch, Fluentd and Kibana"
@@ -43,7 +43,7 @@
             {
               "fragment": "helm-or-high-water",
               "title": "Helm",
-              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/solution.json",
+              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management",
               "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/helm_landing.png",
               "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/helm_course_pg.png"
             }
