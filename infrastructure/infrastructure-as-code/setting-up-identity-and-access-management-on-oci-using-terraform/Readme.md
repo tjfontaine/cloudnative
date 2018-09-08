@@ -1,15 +1,12 @@
 # Setting up Identity and Access Management on OCI Using Terraform
 
-By Micha Hernandez van Leuffen
+## Overview
 
-## Overview 
-
-Welcome to our Kubernetes on OCI with Terraform series. This article describes how to set up users, policies, and access management using the open source tool Terraform. 
+Welcome to our Kubernetes on OCI with Terraform series. This article describes how to set up users, policies, and access management using the open source tool Terraform.
 
 ## What is Terraform?
 
-[Terraform](https://terraform.io) is an open source automation toolchain and orchestration language (HCL) for cloud infrastructure. It was created by 
-Hashicorp and features a plugin model for different infrastructure providers. It treats "infrastructure as code," meaning resources can be provisioned in a repeatable and reliable fashion. Because the code can be version controlled it can be leveraged in modern continuous integration and deployment practices.
+[Terraform](https://terraform.io) is an open source automation toolchain and orchestration language (HCL) for cloud infrastructure. It was created by Hashicorp and features a plugin model for different infrastructure providers. It treats "infrastructure as code," meaning resources can be provisioned in a repeatable and reliable fashion. Because the code can be version controlled it can be leveraged in modern continuous integration and deployment practices.
 
 ## Key OCI Concepts Covered in This Series
 

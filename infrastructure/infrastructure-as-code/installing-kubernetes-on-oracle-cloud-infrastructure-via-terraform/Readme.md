@@ -1,8 +1,6 @@
 # Installing Kubernetes on Oracle Cloud Infrastructure via Terraform
 
-By Kaslin Fields
-
-# Overview 
+# Overview
 
 Welcome to our Kubernetes on Oracle Cloud Infrastructure (OCI) with Terraform series. This article walks you through the steps to deploy a Kubernetes cluster on OCI using Terraform with the OCI Terraform Provider. If you need assistance installing Terraform and/or the OCI Terraform Provider, please find the instructions to do so in our blog post: [Installing Terraform for Oracle Cloud Infrastructure](../installing-terraform-for-oracle-cloud-infrastructure/Readme.md)
 
