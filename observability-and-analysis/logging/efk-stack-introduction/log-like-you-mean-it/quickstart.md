@@ -1,7 +1,5 @@
 # Log Like You Mean It! A Quick Start for Logging Kubernetes Applications via an EFK Stack 
 
-By Aaron Rice
-
 ## Overview
 
 Welcome to our EFK stack (Elastic Search, FluentD, Kibana) introduction series. This article will show you how to get up and running with EFK, quickly.

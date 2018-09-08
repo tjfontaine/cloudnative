@@ -1,7 +1,5 @@
 # Installing Terraform for Oracle Cloud Infrastructure
 
-By Micha Hernandez van Leuffen
-
 ## Overview
 
 Welcome to our Kubernetes on OCI with Terraform series. This overview walks you through the steps you need to start using Terraform to manage resources on Oracle Cloud Infrastructure. We'll go through getting Terraform up and running on a MacOS, Windows, or Oracle Linux system, and then install the OCI Terraform Provider. Here is the official documentation for this process: https://github.com/oracle/terraform-provider-oci/#terraform-provider-for-oracle-cloud-infrastructure

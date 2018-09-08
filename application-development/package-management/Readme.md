@@ -1,7 +1,5 @@
 # Helm or High Water: Package Management for Kubernetes Services
 
-By Mickey Boxell 
-
 ## Context 
 
 Efficient management of Kubernetes resources can be challenging. Kubernetes requires handing many of objects: pods, services, persistent volumes, etc. In addition, the dynamic nature of the platform requires the management of many releases of each object. Packaging these objects into standardized and reusable deployments while simultaneously keeping track of releases is key to successful development. 

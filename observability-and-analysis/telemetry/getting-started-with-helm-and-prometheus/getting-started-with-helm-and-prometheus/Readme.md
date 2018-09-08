@@ -2,8 +2,6 @@
 
 ## Getting Started with Helm and Prometheus
 
-By Faiq Raza
-
 ## Overview 
 
 Application observability is critical throughout the lifecycle of a project. Monitoring and alerting through agent-based metrics collection has been the standard for enabling data insight for years, but how does this approach mesh with the dynamic nature of containers and schedulers? The agent-based approach would have to be re-imagined, metrics would have to be collected effortlessly from within the container, and, to allow for scalability, the solution would need to avoid requiring additional effort as new containers are spun up.
