@@ -1,4 +1,4 @@
-# Helm or High Water: Package Management for Kubernetes Services
+# Package Management for Kubernetes Services with Helm
 
 ## Context 
 
@@ -6,7 +6,7 @@ Efficient management of Kubernetes resources can be challenging. Kubernetes requ
 
 ## Helm
 
-In a nautical setting, a helm is a wheel used to steer a ship. In the world of containers, the open source tool Helm has a similar purpose: it is used to steer or manage Kubernetes applications. Helm addresses the challenges above by providing a method for repeatable application installation through the use of charts, repositories, and releases. 
+Helm addresses the challenges above by providing a method for repeatable application installation through the use of charts, repositories, and releases. 
 
 * Chart: a Helm package consisting of the yaml file used to described the components of complex applications designed to run in a Kubernetes cluster and searchable metadata. 
 * Repository: a searchable collection of Helm charts. 
