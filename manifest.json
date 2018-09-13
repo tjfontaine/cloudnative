@@ -53,28 +53,8 @@
         }
       ],
       "title": "Application Development"
-    },
-    {
-      "fragment": "infrastructure", 
-      "subcategories": [
-        {
-          "fragment": "infrastructure-as-code", 
-          "solutions": [
-            {
-              "fragment": "installing-kubernetes-on-oracle-cloud-infrastructure-via-terraform",
-              "title": "Kubernetes with Terraform",
-              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/infrastructure-as-code/installing-kubernetes-on-oracle-cloud-infrastructure-via-terraform",
-              "logoUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/infrastructure-as-code/installing-kubernetes-on-oracle-cloud-infrastructure-via-terraform/terraform_landing.png",
-              "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/infrastructure/infrastructure-as-code/installing-kubernetes-on-oracle-cloud-infrastructure-via-terraform/terraform_course_pg.png"
-            }
-          ],
-          "description": "Terraform simplifies the installation of Kubernetes on Oracle Cloud Infrastructure (OCI). Learn how you can quickly build a Kubernetes Cluster on the Oracle Cloud with the OCI Terraform provider.",
-          "title": "Installing Kubernetes on Oracle Cloud Infrastructure via Terraform"
-        }
-      ],
-      "title": "Application Development"
     }
-  ],
+  ], 
   "features": [
     {
       "title": "Prometheus",
