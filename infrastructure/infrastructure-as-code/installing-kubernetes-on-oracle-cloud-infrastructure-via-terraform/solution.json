@@ -1,0 +1,12 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Installing Kubernetes on Oracle Cloud Infrastructure via Terraform",
+          "file": "Readme.md"
+        }
+      ]
+    }]
+}
