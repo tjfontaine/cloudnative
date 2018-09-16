@@ -1,14 +1,14 @@
-# Log Like You Mean It! A Quick Start for Logging Kubernetes Applications via an EFK Stack 
+# Log Like You Mean It! A Quickstart for Logging Kubernetes Applications via an EFK Stack 
 
 ## Overview
 
 Welcome to our EFK stack (Elastic Search, FluentD, Kibana) introduction series. This article will show you how to get up and running with EFK, quickly.
 
-In this quick start we will apply the theory learned in our EFK Stack blogpost to create a production-ready logging and analysis stack installed on an Oracle Container Engine for Kubernetes (OKE) cluster through the use of Elasticsearch, FluentD, and Kibana. Check out our [EFK Stack Overview](./Readme.md) for a more in-depth explanation of how and why we are creating an EFK stack. 
+In this quickstart we will apply the theory learned in our EFK Stack blogpost to create a production-ready logging and analysis stack installed on an Oracle Container Engine for Kubernetes (OKE) cluster through the use of Elasticsearch, FluentD, and Kibana. Check out our [EFK Stack Overview](./Readme.md) for a more in-depth explanation of how and why we are creating an EFK stack. 
 
 ## Requirements
 
-You will need a Kubernetes cluster accessible via a configured kubectl command. We will be using an OKE cluster. OKE allows for Helm to be pre-installed, which enables you to skip step one of this quick start.
+You will need a Kubernetes cluster accessible via a configured kubectl command. We will be using an OKE cluster. OKE allows for Helm to be pre-installed, which enables you to skip step one of this quickstart.
 
 ## Quickstart!
 
@@ -16,7 +16,7 @@ You will need a Kubernetes cluster accessible via a configured kubectl command. 
 
 _If you are using OKE, make sure you tick the option to include Helm/Tiller when launching your cluster. Doing so will allow you to skip this step._
 
-The first step is to download Helm and configure Tiller on to your Kubernetes cluster. This will allow you to install Helm charts via the Helm client. For an in-depth explanation of Helm and Tiller check out the  [Helm tutorial](https://docs.helm.sh/using_helm/).
+Download Helm and configure Tiller on to your Kubernetes cluster. This will allow you to install Helm charts via the Helm client. For an in-depth explanation of Helm and Tiller check out the  [Helm tutorial](https://docs.helm.sh/using_helm/).
 
 1. Download and unpack the latest release of Helm from the [Github repo Release page](https://github.com/kubernetes/helm/releases) to your development machine. If you are running MacOS and have Homebrew installed, you can run `brew install kubernetes-helm` instead.
 2. Run `helm init`. 
@@ -110,7 +110,7 @@ This will output an endpoint for accessing your Kibana web interface!
 
 By following the steps above, you have gone from a raw Kubernetes cluster to one with a complete logging and visualization solution by means of the EFK stack. To read more about what we just did, check out our in-depth [EFK Stack Overview](./Readme.md).
 
-### More in this series
+### More in this Series
 
 * [Log it like you mean it! Logging Kubernetes applications via an EFK stack](./Readme.md)
 
