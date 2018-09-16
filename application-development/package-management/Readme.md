@@ -2,13 +2,13 @@
 
 ## Context 
 
-Efficient management of Kubernetes resources can be challenging. Kubernetes requires handing many of objects: pods, services, persistent volumes, etc. In addition, the dynamic nature of the platform requires the management of many releases of each object. Packaging these objects into standardized and reusable deployments while simultaneously keeping track of releases is key to successful development. 
+Efficient management of Kubernetes resources can be challenging. Kubernetes requires handing many objects: pods, services, persistent volumes, etc. In addition, the dynamic nature of the platform requires the management of many releases of each object. Packaging these objects into standardized and reusable deployments while simultaneously keeping track of releases is key to successful development. 
 
 ## Helm
 
 Helm addresses the challenges above by providing a method for repeatable application installation through the use of charts, repositories, and releases. 
 
-* Chart: a Helm package consisting of the yaml file used to described the components of complex applications designed to run in a Kubernetes cluster and searchable metadata. 
+* Chart: a Helm package consisting of the YAML file used to described the components of complex applications designed to run in a Kubernetes cluster and searchable metadata. 
 * Repository: a searchable collection of Helm charts. 
 * Release: an instance of a Helm chart deployed to a Kubernetes cluster. There is a new release created each time a chart is installed. 
 
@@ -39,7 +39,7 @@ Once you have Helm downloaded, initialize the local CLI and install Tiller into 
 ```
 helm init
 ```
-After `helm init`, you can now run `kubectl get pods --namespace kube-system` and see Tiller running.
+After `helm init` you can now run `kubectl get pods --namespace kube-system` and see Tiller running.
 
 To upgrade Tiller run: 
 ```
@@ -77,7 +77,7 @@ To install a new package, use the `helm install` command. At its simplest, it ta
 helm install stable/nginx-ingress
 ```
 
-Whenever a chart is installed it creates a new release object. A Release is an instance of a chart running in a Kubernetes cluster. The release made when we installed the nginx chart is named ringed-butterfly. You may use the `--name` flag on `helm install` if you prefer to use a specific release name.
+Whenever a chart is installed it creates a new release object. A release is an instance of a chart running in a Kubernetes cluster. The release made when we installed the NGINX chart is named ringed-butterfly. You may use the `--name` flag on `helm install` if you prefer to use a specific release name.
 
 ```
 $helm install stable/nginx-ingress 
@@ -94,9 +94,9 @@ The Helm client will display information about resource creation, the release st
 helm status ringed-butterfly  
 ```
 
-It is easy to roll back to a previous release using the release name and the revision number. Every time a release is installed, upgraded, or rolled back, the revision number will be incremented by 1. Helm will also keep track of deleted releases. This featured is useful if you need to audit a cluster’s history or roll back to a previous release. 
+It is easy to roll back to a previous release using the release name and the revision number. Every time a release is installed, upgraded, or rolled back, the revision number will be incremented by one. Helm will also keep track of deleted releases. This feature is useful if you need to audit a cluster’s history or roll back to a previous release.
 
-For example, we can roll back our nginx chart to its original version:
+For example, we can roll back our NGINX chart to its original version:
 
 ```
 helm rollback ringed-butterfly 1
@@ -116,7 +116,7 @@ helm delete ringed-butterfly
 
 ## Configuring additional chart repositories
 
-A Repository is the place where charts can be collected and shared. So far, we’ve been installing charts only from the stable repository. But you can also configure Helm to use other repositories. In this case we will add the `example` repository:
+A repository is the place where you can collect and share Charts. So far, we’ve been installing charts only from the stable repository. But you can also configure Helm to use other repositories. In this case we will add the `example` repository:
 
 ```
 helm repo add example https://example.com/dev-charts
@@ -149,7 +149,7 @@ templates/
 * Chart.yaml file holds metadata about the current chart 
 * values.yaml file is where you store variables
 
-When it’s time to package the chart for distribution, run the helm package command:
+When it’s time to package the Chart for distribution, run the Helm package command:
 
 ```
 helm package example

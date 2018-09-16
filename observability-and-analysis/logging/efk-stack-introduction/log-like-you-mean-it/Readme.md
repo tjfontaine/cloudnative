@@ -1,4 +1,5 @@
-# Log Like You Mean It! Logging Kubernetes Applications via an EFK Stack
+# Log Like You Mean It!
+# Logging Kubernetes Applications via an EFK Stack
 
 ## Overview 
 
@@ -14,7 +15,7 @@ An [Oracle Cloud Infrastructure](https://cloud.oracle.com/en_US/iaas) account wi
 
 Over the last few years Elasticsearch has become an industry standard for storing and indexing logs. Setting up and operating an Elasticsearch cluster can be a challenge for your team and paying for a hosted service can be expensive. If only there were an easy way to run Elasticsearch on existing infrastructure. Luckily this is easy to do with Kubernetes. To do so, we will leverage Kubernetes stateful sets, the Oracle Cloud Infrastructure (OCI) volume provisioner, and Helm to coordinate deployments to our cluster. 
 
-Follow [the EFK quick start guide](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html) for help creating a Kubernetes cluster with OKE and read this [article](quickstart.md) for getting Helm set up on your cluster.
+Follow [the EFK quickstart guide](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html) for help creating a Kubernetes cluster with OKE and read this [article](quickstart.md) for getting Helm set up on your cluster.
 
 
 The first step is to modify our Elasticsearch Helm chart template to fit your environment. 
@@ -704,7 +705,7 @@ Once you have your Helloworld service deployed, navigate to the `Management` tab
 
 ![kibana image2](images/Screen_Shot_2018-08-09_at_2.50.05_PM.png "Title")
 
-Choose `@timestamp` as your Time Field filter name and then click `Create index pattern` to complete the process. This pattern can then visualized to gain insight into your service. Navigate to `Discover` for some sample visualization options. 
+Choose `@timestamp` as your Time Field filter name and then click `Create index pattern` to complete the process. This pattern can be visualized to gain insight into your service. Navigate to `Discover` for some sample visualization options. 
 
 ![kibana image3](images/Screen_Shot_2018-08-09_at_2.50.53_PM.png "Title")
 
@@ -712,7 +713,7 @@ Choose `@timestamp` as your Time Field filter name and then click `Create index 
 
 You should now have a running deployment of Elasticsearch to store logs, Fluentd to format and forward them along, and Kibana to view them. Those are all the pieces you need to get up and running with an EFK stack on Oracle Container Engine for Kubernetes. We hope this means you're one step closer to debugging all of those nasty production bugs!
 
-### More in this series
+### More in this Series
 
 * [EFK Quickstart.](./quickstart.md)
 

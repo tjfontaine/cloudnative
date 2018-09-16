@@ -10,16 +10,16 @@ Application observability is critical throughout the lifecycle of a project. Mon
 
 When it comes to open source cloud-native monitoring, Prometheus is widely considered to be the best place to start. Prometheus is a systems monitoring and alerting toolkit that Cloud Computing Native Foundation (CNCF) recommends for container-based infrastructure. It recently became the second project to graduate from the CNCF program. It boasts powerful tools to scrape data applications, a multidimensional data model, a flexible query language to create powerful visualizations, and a built-in alert manager. 
 
-We will also be installing Grafana on our cluster to enhance the metrics gathered by Prometheus. Grafana is another OSS solution often paired with Prometheus and other monitoring tools to model they data collected into beautiful and useful dashboards. 
+In this tutorial, we will install Prometheus on our cluster to gather metrics, and Grafana to enhance the metrics. Grafana is another OSS solution often paired with Prometheus and other monitoring tools to model the data collected into beautiful and useful dashboards.
 
 ### Getting started 
 For this solution we will use Prometheus and Grafana to monitor a containerized environment managed by Kubernetes. We will use Oracle Container Engine for Kubernetes (OKE) for our Kubernetes cluster. OKE a fully-managed, scalable, and highly available service that you can use to deploy your containerized applications to the cloud. To start an OKE cluster follow this [friendly guide](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html).
 
-We can get started with Helm as soon as our cluster is ready. You can find the proper binary to download and install Helm on your system in the [GitHub repository of the project](https://github.com/kubernetes/helm#install). After the download is complete, open a terminal window and type in `helm`. You should see an output similar to this:
+We can get started with Helm as soon as our cluster is ready. You can find the proper binary to download and install Helm on your system in the [GitHub repository of the project](https://github.com/kubernetes/helm#install). After the download is complete, open a terminal window and type in `helm` You will see an output similar to this:
 
 ![helm image](images/helm.png "Title")
 
-If you've gotten this far, you're halfway there! Now we install the Prometheus operator to our cluster. To do this, we run the following:
+If you've gotten this far, you're halfway there! Now we install the Prometheus operator to our cluster. To do this, run:
 
 ```
 helm repo add coreos https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
@@ -35,7 +35,7 @@ helm init --upgrade
 
 There is no need to worry if you chose not to check that box. If so, follow these steps to configure Tiller.
 
-First, create a service account on our cluster that's configured with the proper permissions.
+First, create a service account on your cluster that's configured with the proper permissions.
 
 ```
 kubectl -n kube-system create sa tiller
@@ -47,13 +47,13 @@ Next, we create a cluster role binding for our service account, to give it the p
 kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
 ```
 
-Lastly, we configure Helm to use this Tiller by running:
+Lastly, we configure Helm to use Tiller by running:
 
 ```
 helm init --service-account tiller
 ```
 
-Now you should be ready to install the operator on your system in a separate namespace.
+Now you are ready to install the operator on your system in a separate namespace.
 
 ```
 helm install --namespace monitoring coreos/prometheus-operator
@@ -61,7 +61,7 @@ helm install --namespace monitoring coreos/prometheus-operator
 
 ### Installing Prometheus 
 
-Next, let's install kube-prometheus which gives us some Kubernetes manifests for Grafana dashboards and Prometheus rules that allow us to operate Kubernetes, but first we will to download some values to use for our deployment:
+Next, let's install kube-prometheus which gives us some Kubernetes manifests for Grafana dashboards, and Prometheus rules that allow us to operate Kubernetes. But first we need to download some values to use for our deployment:
 
 ```
 wget https://raw.githubusercontent.com/oracle/cloudnative/master/observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/getting-started-with-helm-and-prometheus/values.yaml
@@ -73,7 +73,7 @@ And install it with the following command:
 helm install coreos/kube-prometheus --name kube-prometheus --namespace monitoring --values values.yaml
 ```
 
-You should be able to view all of your newly started pods by running:
+You can view all of your newly started pods by running:
 
 ```
 kubectl get po --namespace monitoring
@@ -99,7 +99,7 @@ prometheus:
 
 This specifies the use of an OCI Block Volume. This allows for our metrics to persist in the event of a pod restart. If you find you need additional space, simply change the configuration.
 
-The Prometheus endpoint is exposed by default as a ClusterIp, which means that it will not be reachable outside of the cluster. To make it reachable instead edit the service and replace 'ClusterIp' with 'NodePort':
+The Prometheus endpoint is exposed by default as a ClusterIP, which means that it will not be reachable outside of the cluster. To make it reachable, edit the service and replace 'ClusterIP' with 'NodePort':
 
 ```
 kubectl edit svc kube-prometheus -n monitoring
@@ -125,7 +125,7 @@ Try querying for basic pod information. For example, you can search 'kube_pod_st
 ![Prometheus image3](images/Screen_Shot_2018-08-10_at_2.33.28_PM.png "Title")
 
 
-The next thing it does is add custom dashboards to Grafana to make our cluster monitoring a little bit easier. We are going to once again leverage our Helm chart's values.yaml file to accomplish this. Let's edit the values `serverDashboardFiles` under the Grafana object in this file. The dashboards tend to be a bit long, so we'll go over this at a very high level.
+The next thing to do is to add custom dashboards to Grafana to make our cluster monitoring easier. We are going to once again leverage our Helm chart's values.yaml file to accomplish this. Let's edit the values `serverDashboardFiles` under the Grafana object in this file. The dashboards tend to be a bit long, so we'll go over this at a very high level.
 
 In order to include alternative ways of looking at cluster health you can create a new file under the `serverDashboardFiles` that holds the dashboard information within it. If you want to add more, simply write a new file with a dashboard in it!
 
