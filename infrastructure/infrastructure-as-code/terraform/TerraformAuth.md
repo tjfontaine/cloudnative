@@ -19,7 +19,7 @@ First, let's go over the fundamental concepts that make up OCI:
 
 ## Prerequisites
 
-Please refer to [this installation article.](../installing-terraform-for-oracle-cloud-infrastructure/Readme.md)
+Please refer to [this installation article.](Readme.md)
 
 ## Defining Our Infrastructure
 
@@ -110,8 +110,8 @@ Terraform is a powerful way to maintain your infrastructure resources. Through T
 
 ### More in this series
 
-* [Installing Terraform for Oracle Cloud Infrastructure](../installing-terraform-for-oracle-cloud-infrastructure/Readme.md)
-* [Installing Kubernetes on Oracle Cloud Infrastructure via Terraform](../installing-kubernetes-on-oracle-cloud-infrastructure-via-terraform/Readme.md)
+* [Installing Terraform for Oracle Cloud Infrastructure](Readme.md)
+* [Installing Kubernetes on Oracle Cloud Infrastructure via Terraform](KubernetesWithTerraform.md)
 
 
 #### License
