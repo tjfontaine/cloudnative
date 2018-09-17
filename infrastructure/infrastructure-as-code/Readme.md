@@ -4,4 +4,4 @@ Infrastructure as code (IaC) is the process of creating and using software that 
 
 However, IaC poses a learning curve and leaves little room for error, making tracking revisions via version control more important  and have comprehensive pre-release testing.
 
-The articles in this category should leave you with a good understanding of successful adoption efforts, common pitfalls, and questions to ask yourself and your team regarding IaC
+The articles in this category should leave you with a good understanding of successful adoption efforts, common pitfalls, and questions to ask yourself and your team regarding IaC.

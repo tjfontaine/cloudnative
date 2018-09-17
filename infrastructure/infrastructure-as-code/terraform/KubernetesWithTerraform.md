@@ -126,7 +126,7 @@ _Note:_ Remember to remove the security list rule when you are done with this ch
 You can use the terraform.tfvars (a copy or renamed version of the terraform.example.tfvars file discussed in the [Configuring Security Lists for Connection via kubectl](#configuring-security-lists-for-connection-via-kubectl) section) to scale the size of your cluster. If you make changes to the terraform.tfvars file after your cluster has been deployed and then rerun `terraform plan`, Terraform will describe the changes the new terraform.tfvars file will make to your cluster. Running `terraform apply` will apply those changes. Let's walk through an example of scaling up the cluster you will create by default without making any modifications to terraform.example.tfvars.
 
 The default cluster includes only one master and one worker node. You can see these nodes by running `kubectl get nodes`<br/>
-![kubectl get nodes (default)](images/infrastructure_infra-as-code_Installing-Kubernetes-on-Oracle-Cloud-Infrastructure-via-Terraform_kubectl_nodes_default.png "kubectl get nodes (default)")<br/>
+![kubectl get nodes (default)](./images/kubectl_nodes_default.png "kubectl get nodes (default)")<br/>
 In this output, you can see the current master and worker nodes.
 
 In terraform.tfvars (created from terraform.example.tfvars) we add or change the following lines:<br/>
@@ -141,7 +141,7 @@ This tells us that Terraform will destroy two objects, change one object, and ad
 *If you created a security list rule manually as described in this post, this change will remove that rule. To persist the rule allowing connectivity from the internet to your Kubernetes API Server, you will need to include that rule via terraform.*
 
 If you run `terraform apply` with these changes, Terraform will take a couple of minutes to destroy the old worker(s) and create the new ones. Once the apply is complete, a `kubectl get nodes` command should output:<br/>
-![kubectl get nodes (modified)](images/infrastructure_infra-as-code_Installing-Kubernetes-on-Oracle-Cloud-Infrastructure-via-Terraform_kubectl_nodes_mod.png "kubectl get nodes (modified)")<br/>
+![kubectl get nodes (modified)](./images/kubectl_nodes_mod.png "kubectl get nodes (modified)")<br/>
 In this output, you can see the same one master, as well as 3 new workers.
 
 *NOTE: If you try to perform a scale up or scale down operation while running containers on your Kubernetes cluster, you will experience some brief downtime as Terraform performs destroys, and then creates.*
@@ -152,8 +152,8 @@ We recommend following the smoke test outlined in our post: [Performing a Smoke 
 
 ### More in this Series
 
-* [Setting up Identity and Access Management on OCI using Terraform](../setting-up-identity-and-access-management-on-oci-using-terraform/Readme.md)
-* [Installing Terraform for Oracle Cloud Infrastructure](../installing-terraform-for-oracle-cloud-infrastructure/Readme.md)
+* [Setting up Identity and Access Management on OCI using Terraform](TerraformAuth.md)
+* [Installing Terraform for Oracle Cloud Infrastructure](Readme.md)
 
 
 

@@ -1,0 +1,30 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Installing Terraform for Oracle Cloud Infrastructure",
+          "file": "Readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Installing Kubernetes on Oracle Cloud Infrastructure via Terraform",
+          "file": "Readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Setting up Identity and Access Management on Oracle Cloud Infrastructure Using Terraform",
+          "file": "Readme.md"
+        }
+      ]
+    }]
+}

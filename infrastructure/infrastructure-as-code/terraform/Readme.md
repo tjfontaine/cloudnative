@@ -165,8 +165,8 @@ $ terraform destroy
 Another good example to explore is the "Manage instances with multiple attached volumes" example. You can find instructions for running this example in the [docs/compute/instances](https://github.com/oracle/terraform-provider-oci/tree/master/docs/examples/compute/instance) folder.
 
 ### More in this Series
-* [Setting up Identity and Access Management on OCI using Terraform](../setting-up-identity-and-access-management-on-oci-using-terraform/Readme.md)
-* [Installing Kubernetes on Oracle Cloud Infrastructure via Terraform](../installing-kubernetes-on-oracle-cloud-infrastructure-via-terraform/Readme.md)
+* [Setting up Identity and Access Management on OCI using Terraform](TerraformAuth.md)
+* [Installing Kubernetes on Oracle Cloud Infrastructure via Terraform](KubernetesWithTerraform.md)
 
 
 #### License

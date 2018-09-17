@@ -53,8 +53,28 @@
         }
       ],
       "title": "Application Development"
+    },
+    {
+      "fragment": "infrastructure",
+      "subcategories": [
+        {
+          "fragment": "infrastructure-as-code",
+          "solutions": [
+            {
+              "fragment": "setup-k8s-on-oci-with-tf",
+              "title": "Kubernetes with Terraform",
+              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/infrastructure-as-code/terraform",
+              "logoUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/infrastructure-as-code/terraform/terraform_landing.png",
+              "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/infrastructure/infrastructure-as-code/terraform/terraform_course_pg.png"
+            }
+          ],
+          "description": "Terraform simplifies the building of infrastructure on Oracle Cloud Infrastructure (OCI). Learn how you can quickly build various components on the Oracle Cloud with the OCI Terraform provider.",
+          "title": "Terraform"
+        }
+      ],
+      "title": "Infrastructure"
     }
-  ], 
+  ],
   "features": [
     {
       "title": "Prometheus",
