@@ -14,7 +14,7 @@
       "files": [
         {
           "title": "Installing Kubernetes on Oracle Cloud Infrastructure via Terraform",
-          "file": "Readme.md"
+          "file": "KubernetesWithTerraform.md"
         }
       ]
     },
@@ -23,7 +23,7 @@
       "files": [
         {
           "title": "Setting up Identity and Access Management on Oracle Cloud Infrastructure Using Terraform",
-          "file": "Readme.md"
+          "file": "TerraformAuth.md"
         }
       ]
     }]
