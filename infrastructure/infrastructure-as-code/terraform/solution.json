@@ -15,12 +15,7 @@
         {
           "title": "Installing Kubernetes on Oracle Cloud Infrastructure via Terraform",
           "file": "KubernetesWithTerraform.md"
-        }
-      ]
-    },
-    {
-      "section": "guides",
-      "files": [
+        },
         {
           "title": "Setting up Identity and Access Management on Oracle Cloud Infrastructure Using Terraform",
           "file": "TerraformAuth.md"
