@@ -1,20 +1,9 @@
 # Introduction to Kubeflow 
 ## A Kubeflow Quickstart
 
-By Aaron Rice 
+As discussed in the [Overview](Readme.md) the goal of this quickstart is to take an existing OKE cluster, configure and install Kubeflow on it, launch a Jupyter notebook via Kubeflow, and run a demo TensorFlow project that will train a very simple model based on the MNSIT image dataset.
 
-## Introduction
-
-[Kubeflow](https://www.kubeflow.org/) is an open-source project designed to make running Machine Learning workloads on Kubernetes a breeze. After installation on to a Cluster, you can easily launch frameworks such as Pytorch, or Tensorflow. We will focus on the latter Framework in this Quickstart.
-
-The goal of this quickstart is to take an existing OKE cluster, configure and install Kubeflow on to it, then launch a Jupyter notebook via Kubeflow and run a demo TensorFlow project that will train a very simple model based on the MNSIT image dataset.
-
-## Requirements
-* An OKE Cluster, with access to said cluster via a properly configured `kubectl` utility on your development machine.
-* `ksonnet` installed on your development machine. This can be done via `brew install ksonnet/tap/ks` using Homebrew. For other platforms, see the ksonnet readme. 
-* A Bash-like development environment, with access to `wget` (or similar). 
-* An understanding of [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
-* At least a basic understanding of Machine Learning.
+You can find the prerequisites for this quickstart in the Overview as mentioned above. 
 
 ## Step One: Installing Kubeflow
 
@@ -27,15 +16,15 @@ chmod +x deploy.sh
 ./deploy.sh
 ```
 
-This will download the Kubeflow quickstart deploy script to your development machine and begin running it. The script will create a Ksonnet project and begin running it. 
+This will download the Kubeflow quickstart deploy script to your development machine and begin running it. The script will create a ksonnet project and begin running it. 
 
-The Ksonnet project will likely break during running due to OKE clusters using RBAC authorization. Fret not, the fix is simply a case of creating a cluster role binding for the Kubernetes user that Ksonnet is using. This can be seen from the error message and will look something like:
+The ksonnet project will likely break during running due to OKE clusters using RBAC authorization. Fret not, the fix is simply to create a cluster role binding for the Kubernetes user that ksonnet is using. This can be seen from the error message and will look something like:
 
 ```
 ocid1.user.oc1..aaaaaaaajxscsvyafzdtj3zsgylm4b2rzl6nfg2fkxbvkuizadyzjo4lghla
 ```
 
-The Cluster Role binding can be created via the following command:
+The cluster role binding can be created via the following command:
 
 ```
 kubectl create clusterrolebinding default-admin --clusterrole=cluster-admin --user=<USER FROM ERROR MESSAGE>
@@ -53,7 +42,7 @@ tf-job-operator-v1alpha2   1         1         1            1           1m
 ```
 
 
-## Step Two: Fire up a Jupyter notebook
+## Step Two: Fire up a Jupyter Notebook
 
 Jupyter is an open-source service that allows you to (among other things) write code in a notepad-like format in your browser. It's incredibly useful for hacking and executing scripts together, and is generally the industry standard for ML and Data Science projects.
 
@@ -68,23 +57,23 @@ kubectl port-forward  $PODNAME 8000:8000
 
 You should then be able to hit `http://127.0.0.1:8000` in your browser, and log in with any credentials. I use username/password "test".
 
-### Spawn a new Jupyter Notebook instance
+### Spawn a New Jupyter Notebook Instance
 
-Next, you need to launch a new Jupyter Notebook instance with Tensorflow available to it. This is a simple process of selecting a Tensorflow/Jupyter notebook image from the "Image" dropdown. I used version 1.8.0, geared for CPUs. You may want to use the GPU version if your underlying hardware supports it.
+Next, you need to launch a new Jupyter notebook instance with TensorFlow available to it. This is a simple process of selecting a TensorFlow/Jupyter notebook image from the "Image" dropdown. I used version 1.8.0, geared for CPUs. You may want to use the GPU version if your underlying hardware supports it.
 
 ![](jupyter-create.png)
 
-The process of launching the new instance can take some time as a new Kubernetes pod is being launched in the background. This will vary depending on your underlying hardware, but somewhere in the region of 10-30 minutes is about normal. 
+The process of launching the new instance can take some time as a new Kubernetes pod is being launched in the background. This will vary depending on your underlying hardware, but approximately 10-30 minutes is normal. 
 
-You don't need to do anything but wait, however, if interested you could use `kubectl get events -w` from your development machine to see the status of the provisioning. Running this command can also give you the pod name that can, in turn, be used with `kubectl logs <pod name>` to get a more in-depth view of what the new pod is actually doing. These two commands will be invaluable for debugging any issues during launch.
+You don't need to do anything but wait. However, if interested you can use `kubectl get events -w` from your development machine to see the status of the provisioning. Running this command can also give you the pod name that can, in turn, be used with `kubectl logs <pod name>`, which will give you a more in-depth view of what the new pod is actually doing. These two commands will be invaluable for debugging any issues during launch.
 
-### Create your notebook!
+### Create Your Notebook!
 
-Once the Jupyter Notebook application instance has been spawned, you will be dropped into a webpage that has a file browser. This is where you will need to create your notebook, which can be done by selecting the "new" dropdown, and selecting Python 7.
+Once the Jupyter notebook application instance has started, you will see a webpage that has a file browser. This is where you will need to create your notebook, which can be done by selecting the "new" dropdown, and selecting Python 7.
 
 ![](new-notebook.png)
 
-Once launched, the most important things to pay attention to inside of your notebook are:
+Once launched, the most important things to pay attention to inside your notebook are:
 
 1. The notebook code areas. This is where you write/paste the Python code you want to run. You can have one or many blocks of code.
 2. The "Run" button. This will execute the selected code area. Any output generated will be displayed directly beneath the code area.
@@ -93,9 +82,9 @@ Once launched, the most important things to pay attention to inside of your note
 
 ## Step Three: Demo Script
 
-The demo TensorFlow script we'll run is adapted from the [TensorFlow MNIST tutorial](https://www.tensorflow.org/versions/r1.1/get_started/mnist/pros). This script is a deep convolutional MNIST classifier that will run 20,000 training iterations. Its intention is to benchmark different OKE Instance shapes running a ML workload.
+The demo TensorFlow script we'll run is adapted from the [TensorFlow MNIST tutorial](https://www.tensorflow.org/versions/r1.1/get_started/mnist/pros). This script is a deep convolutional MNIST classifier that will run 20,000 training iterations. Its intention is to benchmark different OKE instance shapes running a ML workload.
 
-Running it is a simple case of pasting it into a Jupyter Notebook code area:
+Running it is a simple case of pasting it into a Jupyter notebook code area:
 
 ```
 from tensorflow.examples.tutorials.mnist import input_data
@@ -178,7 +167,7 @@ print("test accuracy %g"%accuracy.eval(feed_dict={
 sess.close()
 ```
 
-The training can take some time to complete, depending on the OKE Node Pool instances used, but expect an output like the following:
+The training can take some time to complete, depending on the OKE node pool instances used, but expect an output like the following:
 
 ```
 Extracting MNIST_data/train-images-idx3-ubyte.gz
@@ -216,12 +205,12 @@ test accuracy 0.9926
 ```
 ![](jupyter-example-output.png)
 
-## Cleanup
+## Clean Up
 
-If you'd like to remove everything from your cluster that we've configured in this quickstart, it's a simple case of running the following from the directory you ran the code in step one from:
+To remove everything from your cluster that we've configured in this quickstart, simply run the following from the directory in which you ran the code in step one:
 
-1. `cd kubeflow_ks_app` - the directory created by the deploy.sh script. This contains the ksonnet package that created your Kubeflow environment
-2. `ks delete default` - Deletes everything that was configured by ksonnet!
+1. `cd kubeflow_ks_app` - the directory created by the deploy.sh script. This contains the ksonnet package that created your Kubeflow environment.
+2. `ks delete default` - deletes everything that was configured by ksonnet!
 
 The second command should give you an output similar to:
 
@@ -267,4 +256,4 @@ Gone!
 
 ## Conclusion
 
-At this point (assuming you didn't also run the cleanup section!) you should have a platform for Machine Learning on Kubernetes using Tensorflow with a script that can benchmark different Node Pool instance shapes against a common workload. Next up -- running this on GPUs!
+At this point (assuming you didn't also run the clean up section!) you should have a platform for Machine Learning on Kubernetes using TensorFlow with a script that can benchmark different node pool instance shapes against a common workload. Next up -- running this on GPUs!
