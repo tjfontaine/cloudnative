@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Kubeflow",
+          "file": "Readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Introduction to Kubeflow",
+          "file": "quickstart.md"
+        }
+      ]
+    }
+  ]
+}

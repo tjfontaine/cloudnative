@@ -73,6 +73,26 @@
         }
       ],
       "title": "Infrastructure"
+    },
+    {
+      "fragment": "machine-learning",
+      "subcategories": [
+        {
+          "fragment": "kubeflow",
+          "solutions": [
+            {
+              "fragment": "kubeflow",
+              "title": "Introduction to Kubeflow",
+              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/machine-learning/kubeflow",
+              "logoUrl": "https://rawgit.com/oracle/cloudnative/master/machine-learning/kubeflow/kubeflow_landing.png",
+              "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/machine-learning/kubeflow/kubeflow_course_pg.png"
+            }
+          ],
+          "description": "Kubeflow is a composable, portable, and scalable machine learning (ML) stack built on top of Kubernetes.",
+          "title": "Kubeflow"
+        }
+      ],
+      "title": "Machine Learning"
     }
   ],
   "features": [
