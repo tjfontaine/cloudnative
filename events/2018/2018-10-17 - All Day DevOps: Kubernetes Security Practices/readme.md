@@ -1,6 +1,6 @@
 # All Day DevOps: Kubernetes Security Practices
 
-2018-11-17 00:00  - Online
+2018-10-17 00:00  - Online
 
 ## Description
 
