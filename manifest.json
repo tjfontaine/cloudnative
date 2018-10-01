@@ -131,19 +131,30 @@
       "ribbonText": "Meetup"
     }, 
     {
-      "description": "Hear what's next for_Java! Meet the Oracle Cloud Native Labs_team and be emp[owered as part of the next big_thing in our ecosystem, with Java, containers, serverless, machine learning, and more. Pit_your skill against open source ML games; try your hand at mini-labs, and meet the thought leaders!", 
-      "title": "The Next Big Thing Developer Appreciation Event", 
-      "subtitle": "Brews, food, entertaining learning - 10th annual Thirsty Bear party",
-      "ctaUrl": "https://cloudnative.dyn.com/ThirstyBear_RegistrationLP.html?utm_source=Cloud-Native-Team&utm_content=Not-Available&utm_campaign=RS_ThirstyBear_21Oct2018&LSD=RS_ThirstyBear_Cloud-Native-Team_21Oct2018&LS=Event&ATD=CNL&AT=Not-Available", 
+      "description": "We'll deploy a Serverless application on Kubernetes, while providing an overview of Oracle Cloud Infrastructure, Oracle Container Engine and open source, cloud agnostic Fn Project. We'll then deploy this application to a managed cluster service, and examine why you may want to do so in the first place.", 
+      "title": "Serverless NYC: Running Serverless on Oracle Cloud", 
+      "subtitle": "Why deploy a Serverless app to a managed cluster service? You'll see in this demo!",
+      "ctaUrl": "https://www.meetup.com/Serverless-NYC/events/253437499/", 
       "ctaText": "Register", 
-      "location": "San Francisco, CA", 
-      "date": "2018-09-21 00:00:00", 
-      "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center2_sm.jpg",
-      "ribbonText": "Mixer"
+      "location": "New York, NY", 
+      "date": "2018-10-11 00:00:00", 
+      "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center1_sm.jpg",
+      "ribbonText": "Meetup"
     }, 
     {
-      "description": "What is Serverless? How does it work? Why is it compelling? Find out in this introduction to the Fn Project, an open source, cloud-agnostic functions platform.", 
-      "title": "All Day DevOps: Serverless with Fn and OCI", 
+      "description": "Kubernetes has become the go-to platform of choice for many cloud native organizations. Recently we've seen many security exploits surrounding this and various CNCF tools! Let's dig into these hacks, and understand how to build more secure clusters.", 
+      "title": "All Day DevOps: Kubernetes Security Practices", 
+      "subtitle": "Beware the Kubernetes security vulnerabilities! With Karthik Gaekwad",
+      "ctaUrl": "https://www.alldaydevops.com/", 
+      "ctaText": "Register", 
+      "location": "Online", 
+      "date": "2018-10-17 00:00:00", 
+      "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center2_sm.jpg",
+      "ribbonText": "Online"
+    }, 
+    {
+      "description": "Development teams are looking more and more to Serverless for new projects, and for many teams that means using a managed Functions service. But, there are options. In this talk, we'll take a spin with the Fn Project, an open source, cloud-agnostic functions platform which can be deployed across your existing cloud estate.", 
+      "title": "All Day DevOps: Serverless with the Fn Project", 
       "subtitle": "With Jesse Butler",
       "ctaUrl": "https://alldaydevops2018.sched.com/event/GEgX/serverless-with-the-fn-project", 
       "ctaText": "Register", 
@@ -164,33 +175,22 @@
       "ribbonText": "Meetup"
     }, 
     {
-      "description": "We'll deploy a Serverless application on Kubernetes, while providing an overview of Oracle Cloud Infrastructure, Oracle Container Engine and open source, cloud agnostic Fn Project. We'll then deploy this application to a managed cluster service, and exami", 
-      "title": "Serverless NYC: Running Serverless on Oracle Cloud", 
-      "subtitle": "Why deploy a Serverless app to a managed cluster service? You'll see in this demo!",
-      "ctaUrl": "https://www.meetup.com/Serverless-NYC/events/253437499/", 
+      "description": "Hear what's next for Java! Meet the Oracle Cloud Native Labs team and be empowered as part of the next big thing in our ecosystem, with Java, containers, serverless, machine learning, and more. Pit your skill against open source ML games, try your hand at mini-labs, and meet the thought leaders!", 
+      "title": "The Next Big Thing Developer Appreciation Event", 
+      "subtitle": "Brews, food, entertaining learning - 10th annual Thirsty Bear party",
+      "ctaUrl": "https://cloudnative.dyn.com/ThirstyBear_RegistrationLP.html?utm_source=Cloud-Native-Team&utm_content=Not-Available&utm_campaign=RS_ThirstyBear_21Oct2018&LSD=RS_ThirstyBear_Cloud-Native-Team_21Oct2018&LS=Event&ATD=CNL&AT=Not-Available", 
       "ctaText": "Register", 
-      "location": "New York, NY", 
-      "date": "2018-11-11 00:00:00", 
-      "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center1_sm.jpg",
-      "ribbonText": "Meetup"
-    }, 
-    {
-      "description": "Kubernetes has become the go-to platform of choice for many cloud native organizations. Recently we've seen many security exploits surrounding this and various CNCF tools! Let's dig into these hacks, and understand how to build more secure clusters.", 
-      "title": "All Day DevOps: Kubernetes Security Practices", 
-      "subtitle": "Beware the Kubernetes security vulnerabilities! With Karthik Gaekwad",
-      "ctaUrl": "https://www.alldaydevops.com/", 
-      "ctaText": "Register", 
-      "location": "Online", 
-      "date": "2018-11-17 00:00:00", 
+      "location": "San Francisco, CA", 
+      "date": "2018-10-21 00:00:00", 
       "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center2_sm.jpg",
-      "ribbonText": "Online"
+      "ribbonText": "Mixer"
     }, 
     {
       "description": "Cloud native development exists in a world of constantly evolving practices and emerging technologies. Serverless promises more abstractions and greater efficiencies. We'll discuss Kubernetes and Serverless development patterns and show demos of both in practice. ", 
       "title": "Developer Playground at Oracle Cloud Day", 
       "subtitle": "Technology Keynote: Cloud Native Workflows, Served Two Ways; Jesse Butler",
       "ctaUrl": "https://eventreg.oracle.com/profile/web/index.cfm?PKwebID=0x578589abcd", 
-      "ctaText": "https://www.oracle.com/cloudday/na/index.html", 
+      "ctaText": "More Info", 
       "location": "Toronto, Canada", 
       "date": "2018-12-04 00:00:00", 
       "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center1_sm.jpg",
