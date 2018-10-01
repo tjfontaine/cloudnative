@@ -18,7 +18,7 @@ Over the last few years Elasticsearch has become an industry standard for storin
 Follow [the EFK quickstart guide](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html) for help creating a Kubernetes cluster with OKE and read this [article](quickstart.md) for getting Helm set up on your cluster.
 
 
-The first step is to modify our Elasticsearch Helm chart template to fit your environment. 
+The first step is to modify our Helm chart template to fit your environment. 
 We can do so by making our stateful set deployment complete with a volume claim that will be fulfilled by an OCI block volume. Here is the template that we will use: 
 
 
@@ -686,7 +686,7 @@ spec:
 So how do we get all of this running?
 
 ```bash
-helm install elasticsearch/ --namespace devops --values elasticsearch/values.yaml
+helm install efk/ --namespace devops --values efk/values.yaml
 ```
 
 After a few minutes of the cluster launching things, you will see the services that you have exposed by running:

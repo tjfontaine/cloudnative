@@ -34,12 +34,12 @@ tar -xzvf ./efk.tar.gz
 
 ### Step Three: Run the Helm chart!
 
-At this point you should have a folder called `elasticsearch` in your working directory, access to the `helm` command, and working access to your Kubernetes cluster via the `kubectl` command. 
+At this point you should have a folder called `efk` in your working directory, access to the `helm` command, and working access to your Kubernetes cluster via the `kubectl` command. 
 
 Run the following to install the EFK stack:
 
 ```
-helm install elasticsearch/ --namespace devops --values elasticsearch/values.yaml
+helm install efk/ --namespace devops --values efk/values.yaml
 ```
 
 Note that it's good practice to use a namespace dedicated to this infrastructure as it will stop your `kubectl get x` commands from being polluted with your infrastructure-related objects. You can read more about this in our [EFK Stack Overview](./Readme.md), which goes into much more detail about what we're trying to achieve in this quickstart.
