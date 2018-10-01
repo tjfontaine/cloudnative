@@ -78,7 +78,7 @@
       "fragment": "machine-learning",
       "subcategories": [
         {
-          "fragment": "kubeflow",
+          "fragment": "machine-learning-1",
           "solutions": [
             {
               "fragment": "kubeflow",
