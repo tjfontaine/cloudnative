@@ -1,0 +1,102 @@
+{
+  "title": "Get Function'l with Kubernetes",
+  "subtitle": "",
+  "location": "Austin, TX",
+  "date": "2018-07-17 07:00:00-5:00",
+  "bgImage": "assets/images/event_banners/conference_center1_lg.jpg",
+  "registerLinkText": "Register",
+  "registerLink": "[marketoID]",
+  "registerLinkClass": "modalForm",
+  "speakers": [
+    {
+      "name": "TJ Fontaine",
+      "title": "Software Engineer, Oracle",
+      "photoUrl": "assets/images/event_speakers/featured_speaker1.jpg",
+      "featured": true,
+      "info": [
+        {
+          "title": "Sessions",
+          "htmlBlock": "6:10pm – 6:40pm Kubernetes service delivery at scale without magic: a FaaS case study"
+        },
+        {
+          "title": "Bio",
+          "htmlBlock": "TJ Fontaine is a software engineer at Oracle responsible for architecting and delivering highly available cloud-native containerized services and is the technical lead for Kubernetes contributions. He is also a veteran open source contributor to Node.js, Linux, and Mono. While Node.js Project Lead, he guided community expansion and enterprise adoption."
+        }
+      ],
+      "social": {
+        "linkedin": "http://linkedin.com/timothyjfontaine",
+        "twitter": "http://twitter.com/tjfontaine"
+      }
+    },
+    {
+      "name": "Karthik Gaekwad",
+      "title": "Cloud Native Develper Advocate, Oracle",
+      "photoUrl": "assets/images/event_speakers/featured_speaker3.jpg",
+      "featured": true,
+      "info": [
+        {
+          "title": "Sessions",
+          "htmlBlock": "5:35pm - 6:05pm Kube Apps in Action"
+        },
+        {
+          "title": "Bio",
+          "htmlBlock": "Karthik Gaekwad is a developer, engineer, author, and evangelist who focuses on cloud and container products for Oracle. He graduated from the University of Arizona with a BS and MS in computer engineering and has worked in the cloud industry since 2007 and enjoys working on the development side of the DevOps paradigm. He also is an organizer for DevOpsDays Austin and Cloud Austin."
+        }
+      ],
+      "social": {
+        "twitter": "https://twitter.com/@iteration1"
+      }
+    },
+    {
+      "name": "Bob Quillin",
+      "title": "Vice President of Developer Relations, Oracle",
+      "photoUrl": "assets/images/event_speakers/featured_speaker2.jpg",
+      "featured": true,
+      "info": [
+        {
+          "title": "Sessions",
+          "htmlBlock": "5:30pm – 5:35pm Welcome</p>6:50pm – 7:30pm Cloud Native in an AI and Big Data World"
+        },
+        {
+          "title": "Bio",
+          "htmlBlock": "Bob Quillin is Vice President of Developer Relations for Oracle’s Application Development portfolio.  He was previously CEO and co-founder of StackEngine, an Austin-based Docker and container management platform startup acquired by Oracle."
+        }
+      ],
+      "social": {
+        "twitter": "https://twitter.com/bobquillin"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "pageTitle": "About",
+      "pageType": "default",
+      "modules": [
+        {
+          "type": "basic",
+          "header": "About the Event",
+          "htmlBlock": "Hear from technical instructors, contributors, and startup innovators as they share their real-world experience from developing with CNCF tools to building a cloud scale FaaS on Kubernetes."
+        },
+        {
+          "type": "speakers-featured",
+          "header": "Featured Speakers"
+        },
+        {
+          "type": "basic",
+          "header": "Agenda",
+          "htmlBlock": "<ul>\n<li>5:00pm - 5:30pm Mix and Mingle</li>\n\n<li>5:30pm - 5:35pm Welcome, Bob Quillin</li>\n\n<li>5:35pm - 6:05pm Kube Apps in Action, Karthik Gaekwad\n    <p>There are many Kubernetes presentations, but seeing is believing! In this talk, we'll run through some demos of popular tooling provided by the Cloud Native Computing Foundation (CNCF) that help you build resilient microservices based applications. We'll start by deploying a sample Java web application on top of Oracle Kubernetes Engine, and build an ingress controller for the application. Next, we'll verify that our application logs flow into Kibana using Fluentd, followed by looking at application metrics, monitoring using Prometheus, and tracing application issues using Jaeger. At the end of the session, you'll have a better understanding of all of the tooling that cloud native developers use to build, and monitor their microservices.</p>\n</li>\n\n<li>6:10pm - 6:40pm Kubernetes service delivery at scale without magic: a FaaS case study, TJ Fontaine\n    <p>Sift through the hype of Kubernetes to learn how to build a cloud scale Functions-as-a-Service using the open source Fn Project. In this talk we'll cover being able to identify the key requirements for your service, how to translate those requirements into useful Kubernetes abstractions, understanding the availability and blast radius for your service, when and when not to lean into Kubernetes, and how to leverage Helm for deployments and rollbacks.</p>\n    </li>\n\n<li>6:50pm - 7:30pm Cloud Native in an AI and Big Data World, Bob Quillin (Moderator)\n    <p>Hear from local Austin tech leaders who will explore the future of cloud native technology (open source, containers, Kubernetes, serverless, etc) as we move into an AI and Big Data driven world and economy. <p><br />\n Panelists: \n\n\n<ul>\n<li>Blaize Berry  Senior Software Engineer, Machine Learning - Walmart Tech </li>\n\n<li>Andrew Busey Co-Founder, Chief Product Officer, Chairman -- Conversable @andrewbusey</li>\n\n<li>Lee Calcote Head of Technology Strategy -- Solarwinds @lcalcote</li>\n\n<li>Rob Hirschfeld Founder, CEO -- RackN @zehicle</li>\n\n<li>Dustin Kirkland Product Manager - Google Cloud @DustinKirkland</li></ul>\n</li>\n\n<li>7:30pm - 8:30pm Networking, demos, and labs, oh my! Try your hand at our Functions and Kubernetes Labs!</li>\n</ul>\n"
+        }
+      ]
+    },
+    {
+      "pageTitle": "Speakers",
+      "pageType": "default",
+      "modules": [
+        {
+          "type": "speakers-all",
+          "header": "Speakers"
+        }
+      ]
+    }
+  ]
+}
