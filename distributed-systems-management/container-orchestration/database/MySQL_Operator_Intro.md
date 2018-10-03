@@ -1,4 +1,4 @@
-# Intro to the MySQL Kubernetes Operator
+# Introduction to the MySQL Kubernetes Operator
 
 ## What's an Operator?
 A Kubernetes Operator is a tool which creates a custom resource definition for Kubernetes when installed on a Kubernetes cluster.
