@@ -218,12 +218,14 @@ For this step, you will need to be in the directory where you cloned the mysql-o
 helm delete --purge mysql-operator/mysql-operator
 ```
 
-4) Remove your namespace
+4) Remove tutorial namespaces
 
-For this step, You can delete all namespaces, and every object in every namespace (but not un-namespaced objects, like nodes and some events) with this command.
-
+Finally, remove the namespaces we created during this tutorial. Any objects remaining in those namespaces will be cleaned up as well
 ```
-kubectl delete --all namespaces
+helm delete ns mysql-cluster
+```
+```
+helm delete ns mysql-operator
 ```
 
 No need to remove the Pod you created in the smoke test. The --rm flag means the Pod is cleaned up as soon as it finishes running!
@@ -269,7 +271,4 @@ This guide taught you how to get started by installing the MySQL Operator on a K
 
 Remember, the MySQL Operator is still considered to be an "alpha" version, so it isn't recommended for production use.  But the tooling it provides is still a big step toward making MySQL on Kubernetes easy and accessible for everyone.  Keep an eye on the [MySQL Operator GitHub Repo](https://github.com/oracle/mysql-operator) for new and upcoming features.
 
-
-## Further Learning
-We hope you've learned some useful things about MySQL, Databases on Kubernetes, and Kubernetes Operators!
 
