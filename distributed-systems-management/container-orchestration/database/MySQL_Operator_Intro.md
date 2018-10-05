@@ -250,7 +250,7 @@ Probably the most important component of running a highly available, production-
 Having backups is no good if you can't use them! [This guide](https://github.com/oracle/mysql-operator/blob/master/docs/user/restore.md) gives an example of how to restore your Kubernetes MySQLCluster from a backup.
 
 ### Connecting an Application to Your MySQLCluster via MySQL Router
-The recommended method for connecting an application to your MySQLCluster is by using MySQL Router.  [This doc](https://github.com/oracle/mysql-operator/blob/master/docs/user/router.md) gives an example of deploying an application with a MySQL Router sidecar to effectively route database traffic from the application to appropriate back-end MySQL Servers.
+The recommended method for connecting an application to your MySQLCluster is by using MySQL Router.  [This article](https://github.com/oracle/mysql-operator/blob/master/docs/user/router.md) gives an example of deploying an application with a MySQL Router sidecar to effectively route database traffic from the application to appropriate back-end MySQL Servers.
 
 ### Monitoring with Prometheus
 The MySQL Operator provides a few custom metrics for use with Prometheus monitoring. The custom metrics the MySQL Operator offers are:
