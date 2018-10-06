@@ -83,13 +83,13 @@
             {
               "fragment": "kubeflow",
               "title": "Introduction to Kubeflow",
-              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/machine-learning/kubeflow",
-              "logoUrl": "https://rawgit.com/oracle/cloudnative/master/machine-learning/kubeflow/kubeflow_landing.png",
-              "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/machine-learning/kubeflow/kubeflow_course_pg.png"
+              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/machine-learning/deployment/kubeflow",
+              "logoUrl": "https://rawgit.com/oracle/cloudnative/master/machine-learning/deployment/kubeflow/kubeflow_landing.png",
+              "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/machine-learning/deployment/kubeflow/kubeflow_course_pg.png"
             }
           ],
-          "description": "Kubeflow is a composable, portable, and scalable machine learning (ML) stack built on top of Kubernetes.",
-          "title": "Kubeflow"
+          "description": "Deploying machine learning at scale is complex problem today faced by the data science community. As the paradigm grows and the machine learning (ML) stacks get more complicated, this problem will get even more complicated. The topics in this section are dedicated to integrating the cloud native and machine learning worlds together.",
+          "title": "Deployment"
         }
       ],
       "title": "Machine Learning"
