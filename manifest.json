@@ -1,40 +1,6 @@
 {
   "content": [
     {
-      "fragment": "observability-and-analysis", 
-      "subcategories": [
-        {
-          "fragment": "telemetry", 
-          "solutions": [
-            {
-              "fragment": "getting-started-with-helm-and-prometheus", 
-              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/getting-started-with-helm-and-prometheus",
-              "logoUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/getting-started-with-helm-and-prometheus/prometheus_stack_landing.png",
-              "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/getting-started-with-helm-and-prometheus/prometheus_stack_course_pg.png",
-              "title": "Prometheus and Grafana"
-            }
-          ], 
-          "description": "Telemetry involves big data technologies that take enormous amounts of relatively unstructured time series data. This data is aggregated in \"data-rich\" centralized systems with the aim of providing sophisticated and detailed reports to help organizations operate more efficiently, better understand customers, improve decision-making, and increase the value of the business. Organizations in a variety of industries are using IoT.", 
-          "title": "Telemetry"
-        }, 
-        {
-          "fragment": "logging", 
-          "solutions": [
-            {
-              "fragment": "log-like-you-mean-it",
-              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack-introduction/log-like-you-mean-it",
-              "logoUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack-introduction/efk_stack_landing.png",
-              "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack-introduction/efk_stack_course_pg.png",
-              "title": "Elasticsearch, Fluentd and Kibana"
-            }
-          ], 
-          "description": "Logging is a foundational part of application development and has many variations from applications and languages. There are two reasons logging is performed: diagnostic and audit.<br/><br/>Diagnostic logs can provide a developer tasked with debugging or maintaining code with useful clues when trying to understand what the offending code does, and thus how to maintain it or fix it.<br/><br/>Audit logging is a business requirement. Where the diagnostic logging takes care of recording the events that happen during runtime, audit logging is responsible for recording more abstract, business logic events in the system (adding/editing/removing content, transactions, and access data), and these are what management and legal are interested in.",
-          "title": "Logging"
-        }
-      ], 
-      "title": "Observability And Analysis"
-    }, 
-    {
       "fragment": "application-development", 
       "subcategories": [
         {
@@ -93,6 +59,40 @@
         }
       ],
       "title": "Machine Learning"
+    },
+    {
+      "fragment": "observability-and-analysis", 
+      "subcategories": [
+        {
+          "fragment": "telemetry", 
+          "solutions": [
+            {
+              "fragment": "getting-started-with-helm-and-prometheus", 
+              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/getting-started-with-helm-and-prometheus",
+              "logoUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/getting-started-with-helm-and-prometheus/prometheus_stack_landing.png",
+              "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/getting-started-with-helm-and-prometheus/prometheus_stack_course_pg.png",
+              "title": "Prometheus and Grafana"
+            }
+          ], 
+          "description": "Telemetry involves big data technologies that take enormous amounts of relatively unstructured time series data. This data is aggregated in \"data-rich\" centralized systems with the aim of providing sophisticated and detailed reports to help organizations operate more efficiently, better understand customers, improve decision-making, and increase the value of the business. Organizations in a variety of industries are using IoT.", 
+          "title": "Telemetry"
+        }, 
+        {
+          "fragment": "logging", 
+          "solutions": [
+            {
+              "fragment": "log-like-you-mean-it",
+              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack-introduction/log-like-you-mean-it",
+              "logoUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack-introduction/efk_stack_landing.png",
+              "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack-introduction/efk_stack_course_pg.png",
+              "title": "Elasticsearch, Fluentd and Kibana"
+            }
+          ], 
+          "description": "Logging is a foundational part of application development and has many variations from applications and languages. There are two reasons logging is performed: diagnostic and audit.<br/><br/>Diagnostic logs can provide a developer tasked with debugging or maintaining code with useful clues when trying to understand what the offending code does, and thus how to maintain it or fix it.<br/><br/>Audit logging is a business requirement. Where the diagnostic logging takes care of recording the events that happen during runtime, audit logging is responsible for recording more abstract, business logic events in the system (adding/editing/removing content, transactions, and access data), and these are what management and legal are interested in.",
+          "title": "Logging"
+        }
+      ], 
+      "title": "Observability And Analysis"
     }
   ],
   "features": [
