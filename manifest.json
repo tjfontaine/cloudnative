@@ -23,7 +23,7 @@
             {
               "fragment": "getting-started-with-fn",
               "title": "Getting Started with the Fn Project",
-              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/serverless",
+              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/serverless/getting-started-with-fn",
               "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/serverless/getting-started-with-fn/fn_landing.png",
               "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/serverless/getting-started-with-fn/fn_course_pg.png"
             }
