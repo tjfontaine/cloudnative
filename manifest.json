@@ -16,6 +16,20 @@
           ],
           "description": "Package managers are designed to ease installs and updates and manage dependencies. This is particularly useful in complex systems.",
           "title": "Package Management"
+        },
+        {
+          "fragment": "serverless",
+          "solutions": [
+            {
+              "fragment": "getting-started-with-fn",
+              "title": "Getting Started with the Fn Project",
+              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/serverless",
+              "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/serverless/getting-started-with-fn/fn_landing.png",
+              "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/serverless/getting-started-with-fn/fn_course_pg.png"
+            }
+          ],
+          "description": "Serverless is an event-driven application architecture which abstracts infrastructure resources and enables teams to focus on writing code. Applications are implemented as groups of loosely coupled functions, and these functions are deployed and invoked for the user by the platform. When leveraging a managed Serverless platform users are typically billed only for execution time, which can result in considerable savings as idle time does not incur cost. Resources are automatically scaled up and down based upon need, without the user needing to worry about host provisioning, maintenance and other infrastructure concerns.",
+          "title": "Serverless"
         }
       ],
       "title": "Application Development"
@@ -54,7 +68,7 @@
               "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/machine-learning/deployment/kubeflow/kubeflow_course_pg.png"
             }
           ],
-          "description": "Deploying machine learning at scale is complex problem today faced by the data science community. As the paradigm grows and the machine learning (ML) stacks get more complicated, this problem will get even more complicated. The topics in this section are dedicated to integrating the cloud native and machine learning worlds together.",
+          "description": "Deploying machine learning (ML) at scale is a complex problem today faced by the data science community. As the paradigm grows and the ML stacks get more complicated, this problem will get even more complicated. The topics in this section are dedicated to integrating the cloud native and machine learning worlds together.",
           "title": "Deployment"
         }
       ],

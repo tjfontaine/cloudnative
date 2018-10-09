@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Serverless Computing",
+          "file": "Readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Getting Started with the Fn Project",
+          "file": "Tutorial.md"
+        }
+      ]
+    }
+  ]
+}
