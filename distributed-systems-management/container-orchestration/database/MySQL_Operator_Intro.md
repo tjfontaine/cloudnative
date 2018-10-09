@@ -11,7 +11,7 @@ This results in a custom resource definition, teaching Kubernetes all the best p
 ## The MySQL Operator
 The MySQL Operator is, as its name suggests, a Kubernetes Operator to simplify the task of running MySQL in Kubernetes. The operator is currently in alpha (at the time of this writing), so it's not recommended for all workloads just yet. Keep an eye out for a 1.0 release in the near future.
 
-Creating a MySQLCluster Kubernetes object via the MySQL Operator is similar to a Deployment in that it spins up a set of Pods. However, in a normal Deployment, you would need to specify a variety of features of the Pod(s) to be created, such as the container(s) (container images) to be run in the Pod, port mappings, etc. The MySQL Operator is opinionated about the way MySQL should be run on Kubernetes, so you don't have to worry about a lot of the normal details. The MySQL Operator already knows how the Pods should be configured, and it even has an opinion about the minimum number of Pods you should have to make up, a production-ready MySQL Cluster. Because of the MySQL Operator's built-in knowledge of running MySQL on Kubernetes, you can have a MySQLCluster resource definition as simple as:
+Creating a MySQLCluster Kubernetes object via the MySQL Operator is similar to a Deployment in that it spins up a set of Kubernetes Pods (One or more containers which Kubernetes can manage together). However, in a normal Deployment, you would need to specify a variety of features of the Pod(s) to be created, such as the container(s) (container images) to be run in the Pod, port mappings, etc. The MySQL Operator is opinionated about the way MySQL should be run on Kubernetes, so you don't have to worry about a lot of the normal details. The MySQL Operator already knows how the Pods should be configured, and it even has an opinion about the minimum number of Pods you should have to make a production-ready MySQL Cluster. Because of the MySQL Operator's built-in knowledge of running MySQL on Kubernetes, you can have a MySQLCluster resource definition as simple as:
 ```
 apiVersion: mysql.oracle.com/v1alpha1
 kind: Cluster
@@ -19,7 +19,7 @@ metadata:
   name: my-app-db
   namespace: mysql-cluster
 ```
-As in the example above, this definition tells Kubernetes that you want a MySQL Cluster named "my-app-db" and the MySQL Operator installed on your Kubernetes cluster tells Kubernetes how to take care of the rest.
+In the example above, this definition tells Kubernetes that you want a MySQL Cluster named "my-app-db" and the MySQL Operator which you have installed on your Kubernetes cluster (we'll go over how to install it later) tells Kubernetes how to take care of the rest.
 
 The MySQL Operator is aware of [MySQL Group Replication](https://dev.mysql.com/doc/refman/5.7/en/group-replication-replication-technologies.html), which means it knows how to spin up multiple MySQL instances and connect them into a group. In a group, actions that happen on one instance of MySQL, also happen on other instances in the same group. This keeps the whole group in sync, and provides reliable redundancy in case one MySQL instance should go down. This can be accomplished by creating a "Primary" cluster, where only one instance of MySQL can receive writes, or by creating "Multi-Primary" cluster where all nodes can receive writes. Multi-Primary clusters are more complex and are generally recommended only for advanced MySQL users. The MySQL Operator makes use of group replication alongside [MySQL InnoDB clustering](https://dev.mysql.com/doc/refman/5.7/en/mysql-innodb-cluster-introduction.html) to create highly available MySQL clusters within Kubernetes.
 
@@ -53,8 +53,10 @@ You will need to have installed and configured kubectl, Kubernetes' CLI control 
 export KUBECONFIG=*path to your kubeconfig*
 ```
 
-Or by putting your kubeconfig in `$HOME/.kube/config`. Whatever option you choose, make sure you're connected to the right cluster with kubectl before you try to complete the rest of the steps in this article.
-x
+Or by putting your kubeconfig in `$HOME/.kube/config`. 
+
+Whatever option you choose, make sure you're connected to the right cluster with kubectl before you try to complete the rest of the steps in this article.
+
 NOTE:
 You can do this by trying `kubectl get nodes` to confirm that the addresses of the nodes in the Kubernetes cluster kubectl is attached to, match the addresses you expect.
 
@@ -64,7 +66,7 @@ You will also need to make sure the network for your Kubernetes cluster is confi
 To install the MySQL Kubernetes Operator, we will use the Kubernetes package manager, Helm. You can learn more about Helm in our article [here](https://blogs.oracle.com/cloudnative/helm-kubernetes-package-management).
 
 #### Installing Helm
-[Helm has instructions for installations for a variety of operating systems](https://docs.helm.sh/using_helm/#installing-helm). And if you want a more generic approach, you can install from a script using curl:
+[Helm has instructions for installations for a variety of operating systems](https://docs.helm.sh/using_helm/#installing-helm). For a fairly generic approach, you can install from a script using curl:
 
 ```
 $ curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > get_helm.sh
@@ -107,7 +109,7 @@ We will create the cluster in a new namespace separate from the namespace we cre
 kubectl create ns mysql-cluster
 ```
 #### Create a ServiceAccount and RoleBinding
-First, you will need to create a service account and rolebinding for the MySQL Operator to use when spinning up resources on your Kubernetes cluster.  Create a file called `serviceAccount.yaml` which contains the text below:
+First, you will need to create a service account and rolebinding for the MySQL Operator to use when spinning up resources on your Kubernetes cluster.  Create a file called `serviceAccount.yaml` with the following contents:
 
 ```
 apiVersion: v1
@@ -133,7 +135,7 @@ subjects:
 Then run `kubectl apply -f serviceAccount.yaml` to create the serviceaccount and rolebinding on your Kubernetes cluster.
 
 #### Creating the MySQL Cluster
-Now we can create the cluster. First, we define the cluster in a file called `cluster.yaml` which contains:
+Now we can create the MySQL cluster. First, we define the cluster in a file called `cluster.yaml` which contains:
 
 ```
 apiVersion: mysql.oracle.com/v1alpha1
