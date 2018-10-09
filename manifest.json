@@ -35,6 +35,26 @@
       "title": "Application Development"
     },
     {
+      "fragment": "distributed-systems-management",
+      "subcategories": [
+        {
+          "fragment": "container-orchestration",
+          "solutions": [
+            {
+              "fragment": "oke",
+              "title": "Oracle Container Engine for Kubernetes",
+              "githubUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/container-orchestration/oke",
+              "logoUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/container-orchestration/oke/terraform_landing.png",
+              "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/container-orchestration/oke/terraform_course_pg.png"
+            }
+          ],
+          "description": "The advent of containers has significantly impacted how we ship and run software in the cloud. Managing containers at scale often means deploying and managing hundreds or thousands of containers at any given time. Container orchestration provides management of infrastructure resources as well as deployment and supervision of containers across those resources. Features such as scaling workloads up and down, restarting failed containers and linking containers together into meangingful groups are all part of the orchestration ecosystem.",
+          "title": "Container Orchestration"
+        }
+      ],
+      "title": "Distributed Systems Management"
+    },
+    {
       "fragment": "infrastructure",
       "subcategories": [
         {

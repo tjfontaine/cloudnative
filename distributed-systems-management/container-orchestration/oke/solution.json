@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Overview",
+          "file": "Readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Getting Started with Oracle Container Engine for Kubernetes",
+          "file": "quickstart.md"
+        }
+      ]
+    }
+  ]
+}

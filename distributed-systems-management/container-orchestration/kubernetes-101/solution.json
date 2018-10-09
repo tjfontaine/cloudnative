@@ -1,0 +1,30 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Overview",
+          "file": "Readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Ingress and Routing",
+          "file": "/ingress-and-routing/Readme.md"
+        },
+        {
+          "title": "Service Types in Kubernetes",
+          "file": "/service-types/Readme.md"
+        },
+        {
+          "title": "Smoke Tests",
+          "file": "/smoke-tests/Readme.md"
+        }
+      ]
+    }
+  ]
+}
