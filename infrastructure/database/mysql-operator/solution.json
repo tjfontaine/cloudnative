@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "The MySQL Operator",
+          "file": "readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Introduction to the MySQL Kubernetes Operator",
+          "file": "quickstart.md"
+        }
+      ]
+    }
+  ]
+}
