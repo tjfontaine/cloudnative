@@ -72,7 +72,7 @@
           "title": "Infrastructure as code"
         },
         {
-          "fragment": "block-storage", //For icon mapping
+          "fragment": "block-storage",
           "solutions": [
             {
               "fragment": "mysql-operator",
