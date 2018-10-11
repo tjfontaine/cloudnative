@@ -72,7 +72,7 @@
           "title": "Infrastructure as code"
         },
         {
-          "fragment": "block-storage",
+          "fragment": "database",
           "solutions": [
             {
               "fragment": "mysql-operator",
