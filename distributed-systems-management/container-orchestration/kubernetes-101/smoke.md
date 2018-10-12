@@ -111,5 +111,5 @@ You should see no resources named "nginx" in the outputs of these commands.
 
 ## More in this Series 
 
-* [Ingress and Routing](../ingress-and-routing/Readme.md)
-* [Introduction to Service Types](../service-types/Readme.md)
+* [Ingress and Routing](ingress.md)
+* [Introduction to Service Types](services.md)

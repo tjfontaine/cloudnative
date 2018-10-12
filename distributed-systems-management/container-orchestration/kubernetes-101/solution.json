@@ -14,15 +14,15 @@
       "files": [
         {
           "title": "Ingress and Routing",
-          "file": "/ingress-and-routing/Readme.md"
+          "file": "ingress.md"
         },
         {
           "title": "Service Types in Kubernetes",
-          "file": "/service-types/Readme.md"
+          "file": "services.md"
         },
         {
           "title": "Smoke Tests",
-          "file": "/smoke-tests/Readme.md"
+          "file": "smoke.md"
         }
       ]
     }

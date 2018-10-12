@@ -3,7 +3,7 @@
 
 ## Overview
 
-Welcome to our Kubernetes 101 series. This tutorial is part of a series about building and deploying applications in a highly available, observable, and scalable way. Other modules in the series include [Introduction to Service Types on Kubernetes](../service-types/Readme.md) and [Performing Smoke Tests on Kubernetes](../smoke-tests/Readme.md).
+Welcome to our Kubernetes 101 series. This tutorial is part of a series about building and deploying applications in a highly available, observable, and scalable way. Other modules in the series include [Introduction to Service Types on Kubernetes](services.md) and [Performing Smoke Tests on Kubernetes](smoke.md).
 
 ## Introduction
 
@@ -247,8 +247,8 @@ This tutorial has touched on some best practices for writing applications destin
 
 ## More in this Series
 
-* [Introduction to service types on Kubernetes](../service-types/Readme.md)
-* [Performing a Smoke Test on a New Kubernetes Cluster](../smoke-tests/Readme.md)
+* [Introduction to service types on Kubernetes](services.md)
+* [Performing a Smoke Test on a New Kubernetes Cluster](smoke.md)
 
 
 

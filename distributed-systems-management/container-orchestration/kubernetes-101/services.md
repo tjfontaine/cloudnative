@@ -24,5 +24,5 @@ There are four Kubernetes Service types, which describe the different ways Kuber
 
 ## More in this Series
 
-* [Ingress and Routing](../ingress-and-routing/Readme.md)
-* [Performing a Smoke Test on a New Kubernetes Cluster](../smoke-tests/Readme.md)
+* [Ingress and Routing](ingress.md)
+* [Performing a Smoke Test on a New Kubernetes Cluster](smoke.md)
