@@ -1,7 +1,3 @@
 # Logging
 
-Logging is a foundational part of application development and has many variations from applications and languages. There are two reasons logging is performed: diagnostic and audit.
-
-Diagnostic logs can provide a developer tasked with debugging or maintaining code with useful clues when trying to understand what the offending code does, and thus how to maintain it or fix it.
-
-Audit logging is a business requirement. Where the diagnostic logging takes care of recording the events that happen during runtime, audit logging is responsible for recording more abstract, business logic events in the system (adding/editing/removing content, transactions, and access data), and these are what management and legal are interested in.
+Logging is an integral part of production software deployment. When dealing with the layered abstractions and ephemeral components of cloud computing at scale, it’s more important than ever to have software and services that create clear, well-formed logging messages. Once created, these logs must be collected, managed, and made available to other services for analytic and reporting purposes. In the world of cloud native computing, logging provides vital data to other services that help us make sense of what is happening in our cloud estate.

@@ -1,3 +1,3 @@
 # Telemetry
 
-Telemetry involves big data technologies that take enormous amounts of relatively unstructured time series data. This data is aggregated in "data-rich" centralized systems with the aim of providing sophisticated and detailed reports to help organizations operate more efficiently, better understand customers, improve decision-making, and increase the value of the business. Organizations in a variety of industries are using IoT.
+Telemetry is broadly classified as a combination of three things: logging, monitoring, and metrics. In general, it allows you to understand the inner workings of your applications to operate more efficiently, better understand customer needs, improve decision-making, and increase the value of the business.
