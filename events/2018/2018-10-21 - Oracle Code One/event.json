@@ -1,0 +1,120 @@
+{
+    "title": "Oracle Code One",
+    "subtitle": "Join the #CloudNative team at #CodeOne",
+    "location": "San Francisco, CA",
+    "date": "2018-10-21 07:00:00-5:00",
+    "bgImage": "assets/images/event_banners/conference_center1_lg.jpg",
+    "registerLinkText": "Register",
+    "registerLink": "https://www.oracle.com/code-one/register.html?source=:ow:o:h:gts:&intcmp=:ow:o:h:gts:coh",
+    "registerLinkClass": "",
+    "speakers": [{
+            "name": "Bob Quillin",
+            "title": "Vice President of Developer Relations, Oracle",
+            "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/bob-quillin.jpeg",
+            "featured": true,
+            "info": [{
+                    "title": "Sessions",
+                    "htmlBlock": "<b>Thursday, Oct 25, 9:00 a.m. - 9:45 a.m. | Moscone West - Room 2014</b> Cloud Native Developer Panel: Innovative Startup Use Cases [DEV5600]"
+                },
+                {
+                    "title": "Bio",
+                    "htmlBlock": "Bob Quillin is Vice President of Developer Relations for Oracle’s Application Development portfolio.  He was previously CEO and co-founder of StackEngine, an Austin-based Docker and container management platform startup acquired by Oracle."
+                }
+            ],
+            "social": {
+                "twitter": "https://twitter.com/bobquillin"
+            }
+        },
+        {
+            "name": "Chad Arimura",
+            "title": "Vice President Serverless Advocacy, Oracle",
+            "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/chad-arimura.jpg",
+            "featured": true,
+            "info": [{
+                    "title": "Sessions",
+                    "htmlBlock": "<b>Monday, Oct 22, 1:30 p.m. - 2:15 p.m | Moscone West - Room 2014</b> Operating a Global-Scale FaaS on Top of Kubernetes [DEV5599]"
+                },
+                {
+                    "title": "Bio",
+                    "htmlBlock": "I am a 3x entrepreneur, most recently as co-founder and CEO of <a href=\"https://iron.io\">Iron.io</a> where we grew a multi-million dollar ARR business helping pioneer serverless computing including some of the earliest usages of the term \"serverless\" in 2010. Sorry for that. We sold the company in 2017 and joined Oracle.<p>I am now VP Serverless Advocacy at Oracle, currently leading The <a href=\"https://fnproject.io\">Fn Project</a>, open source serverless FaaS platform and orchestration.</p><p>I try my best to lead with passion, integrity, and transparency, and am always striving to be better in these areas.</p>"
+                }
+            ],
+            "social": {
+                "twitter": "https://twitter.com/chadarimura"
+            }
+        },
+        {
+            "name": "Karthik Gaekwad",
+            "title": "Cloud Native Develper Advocate, Oracle",
+            "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/karthik-gaekwad.jpg",
+            "featured": true,
+            "info": [{
+                    "title": "Sessions",
+                    "htmlBlock": "<b>Tuesday, Oct 23, 2:30 p.m. - 3:15 p.m. | Moscone West - Room 2009</b> Kube Me This! Kubernetes Ideas and Best Practices [DEV5369]"
+                },
+                {
+                    "title": "Bio",
+                    "htmlBlock": "Karthik Gaekwad is a developer, engineer, author, and evangelist who focuses on cloud and container products for Oracle. He graduated from the University of Arizona with a BS and MS in computer engineering and has worked in the cloud industry since 2007 and enjoys working on the development side of the DevOps paradigm. He also is an organizer for DevOpsDays Austin and Cloud Austin."
+                }
+            ],
+            "social": {
+                "twitter": "https://twitter.com/@iteration1"
+            }
+        },
+        {
+            "name": "Vish Abrams",
+            "title": "Architect, Oracle",
+            "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/vish-abrams.jpg",
+            "featured": true,
+            "info": [{
+                    "title": "Sessions",
+                    "htmlBlock": "<b>Thursday, Oct 25, 9:00 a.m. - 9:45 a.m. | Moscone West - Room 2007</b> GraphPipe: Blazingly Fast Machine Learning Inference [DEV5593]"
+                },
+                {
+                    "title": "Bio",
+                    "htmlBlock": "Vish Abrams is an architect focusing on cloud, virtualization, and container technologies at Oracle. He was formerly chief technology officer of Nebula, Inc. A founding engineer of OpenStack, he was elected to the first OpenStack Technical Committee, served four consecutive terms as the OpenStack Compute Project Technical Lead, and was a board member of the OpenStack Foundation. in addition to his programming and systems skills, Vish has spent over a decade teaching, most recently classes in object oriented analysis and design."
+                }
+            ],
+            "social": {
+                "twitter": "https://twitter.com/@vish"
+            }
+        },
+        {
+            "name": "Patrick Galbraith",
+            "title": "Principal Platform Engineer, Oracle",
+            "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/patrick-galbraith.jpg",
+            "featured": true,
+            "info": [{
+                    "title": "Sessions",
+                    "htmlBlock": "<b>Monday, Oct 22, 11:30 a.m. - 12:15 p.m. | Moscone West - Room 2009</b> Containerized MySQL [DEV6110]"
+                },
+                {
+                    "title": "Bio",
+                    "htmlBlock": "Patrick Galbraith has been involved in MySQL, Linux, and other Open Source (OSS) projects back to the early days of Slackware. He has worked broad spectrum of companies throughout his career, including Slashdot, MySQL, Blue Gecko, Hewlett-Packard, and now Oracle, and contributed to a number of Oper Source projects such as MySQL, Drizzle, DBD::mysql, Kubernetes, Helm charts for MySQL and Galera. During his tenure in Hewlett-Packard's Advanced Technology Group (ATG) for Cloud and Open Source, Patrick had a focus on containerization with emphasis on Kubernetes; this focus, like all ATG endeavors, included participation in the associated OSS communities that continues to this day. Patrick has a keen, and long-standing interest in the effective marriage databases and Kubernetes with a bent toward MySQL. To this end, Patrick's \"MySQL on Kubernetes\" demonstration is a deep-rooted passion of his.<p>Patrick has spoken at a number of conferences including last year at Kubecon in Austin, TX. The talk can be seen on <a href=\"https://www.youtube.com/watch?v=J7h0F34iBx0\">youtube</a></p><p>He is an author of two books. one in both English and Mandarin, \"Developing Web Applications with Apache, MySQL, memcached, and Perl\" and \"Expert PHP and MySQL\" (both Wiley)</p><p>His other conferences can be seen <a href=\"http://patg.net/speaking.html\">here</a></p>"
+                }
+            ],
+            "social": {
+                "linkedin": "https://www.linkedin.com/in/galbraithpatrick"
+            }
+        }
+    ],
+    "pages": [{
+        "pageTitle": "About",
+        "pageType": "default",
+        "modules": [{
+                "type": "basic",
+                "header": "Join Us",
+                "htmlBlock": "<p>Here’s where you can find the cloud native team at Oracle Code One – our flagship developer conference.</p><h3 style=\"text-align: center;\">The Next Big Thing Developer Event, Sunday, October 21 at 6:30pm</h3><p>Come out to the Thirsty Bear for drinks, demos, and luminaries – <a href=\"https://cloudnative.dyn.com/ThirstyBear_RegistrationLP.html?utm_source=Cloud-Native-Team&amp;utm_content=Not-Available&amp;utm_campaign=RS_ThirstyBear_21Oct2018&amp;LSD=RS_ThirstyBear_Cloud-Native-Team_21Oct2018&amp;LS=Event&amp;ATD=CNL&amp;AT=Not-Available&amp;mkt_tok=eyJpIjoiWTJOa05HRXlOMkUyTmpFeSIsInQiOiJkSzlrdUtlQ2djY0FYaHBNVEo5T0t1azlLTkp0SjkwYUxtUVJSQVMwdDN0ME85SjYyaVBxNEVmU3lxYjhvRDdQSVRteEo1dmczeVloc1lHUllydVY2UT09In0%3D\">Save your spot today</a></p><h3 style=\"text-align: center;\">Plan Your Week October 22-25</h3><p>Check out the full session list below - bookmark this page, sign up for HOLs, and add the Meet the Expert sessions to your schedule.</p>"
+            },
+            {
+                "type": "speakers-featured",
+                "header": "Featured Speakers"
+            },
+            {
+                "type": "basic",
+                "header": "Plan your week",
+                "htmlBlock": "Scroll below or see a full page <a href=\"https://events.rainfocus.com/widget/oracle/oow18/1539820453632001NgJu\">view here</a><iframe src=\"https://events.rainfocus.com/widget/oracle/oow18/1539820453632001NgJu\" height=\"600\" width=\"800\"></iframe>"
+            }
+        ]
+    }]
+}
