@@ -154,10 +154,10 @@
             "title": "Get Function'l with Kubernetes",
             "subtitle": "",
             "ctaUrl": "events/2018/2018-07-17 - Get Function'l with Kubernetes/event",
-            "ctaText": "Register",
+            "ctaText": "View Event",
             "location": "Austin, TX",
             "date": "2018-07-17 00:00:00",
-            "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center1_sm.jpg",
+            "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/conference_center1_sm.jpg",
             "ribbonText": "Meetup"
         },
         {
@@ -168,7 +168,7 @@
             "ctaText": "Register",
             "location": "New York, NY",
             "date": "2018-10-11 00:00:00",
-            "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center1_sm.jpg",
+            "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/conference_center1_sm.jpg",
             "ribbonText": "Meetup"
         },
         {
@@ -179,7 +179,7 @@
             "ctaText": "Register",
             "location": "Online",
             "date": "2018-10-17 00:00:00",
-            "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center2_sm.jpg",
+            "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/conference_center2_sm.jpg",
             "ribbonText": "Online"
         },
         {
@@ -190,7 +190,7 @@
             "ctaText": "Register",
             "location": "Online",
             "date": "2018-10-17 00:00:00",
-            "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center1_sm.jpg",
+            "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/conference_center1_sm.jpg",
             "ribbonText": "Online"
         },
         {
@@ -201,7 +201,7 @@
             "ctaText": "Register",
             "location": "Boston, MA",
             "date": "2018-10-18 00:00:00",
-            "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center2_sm.jpg",
+            "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/conference_center2_sm.jpg",
             "ribbonText": "Meetup"
         },
         {
@@ -212,18 +212,18 @@
             "ctaText": "Register",
             "location": "San Francisco, CA",
             "date": "2018-10-21 00:00:00",
-            "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center2_sm.jpg",
+            "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/conference_center2_sm.jpg",
             "ribbonText": "Mixer"
         },
         {
             "description": "Join the #CloudNative team at #CodeOne",
             "title": "Oracle Code One",
             "subtitle": "",
-            "ctaUrl": "events/2018/2018-10-22 - Oracle Code One/event",
-            "ctaText": "Register",
+            "ctaUrl": "events/2018/2018-10-21 - Oracle Code One/event",
+            "ctaText": "View Event",
             "date": "2018-10-21 00:00:00",
             "location": "San Francisco, CA",
-            "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center1_sm.jpg",
+            "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/conference_center1_sm.jpg",
             "ribbonText": "Conference"
         },
         {
@@ -234,7 +234,7 @@
             "ctaText": "More Info",
             "location": "Toronto, Canada",
             "date": "2018-12-04 00:00:00",
-            "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center1_sm.jpg",
+            "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/conference_center1_sm.jpg",
             "ribbonText": "Conference"
         },
         {
@@ -245,7 +245,7 @@
             "ctaText": "Register",
             "location": "New York, NY",
             "date": "2019-01-15 00:00:00",
-            "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center2_sm.jpg",
+            "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/conference_center2_sm.jpg",
             "ribbonText": "Conference"
         },
         {
@@ -256,7 +256,7 @@
             "ctaText": "Register",
             "location": "Atlanta, GA",
             "date": "2019-01-17 00:00:00",
-            "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center1_sm.jpg",
+            "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/conference_center1_sm.jpg",
             "ribbonText": "Conference"
         },
         {
@@ -267,7 +267,7 @@
             "ctaText": "Register",
             "location": "Boston, MA",
             "date": "2019-01-30 00:00:00",
-            "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center2_sm.jpg",
+            "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/conference_center2_sm.jpg",
             "ribbonText": "Conference"
         },
         {
@@ -278,7 +278,7 @@
             "ctaText": "Register",
             "location": "Chicago, IL",
             "date": "2019-02-05 00:00:00",
-            "bgImage": "https://cdn.rawgit.com/oracle/cloudnative/master/images/event_banners/conference_center1_sm.jpg",
+            "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/conference_center1_sm.jpg",
             "ribbonText": "Conference"
         }
     ]
