@@ -3,7 +3,7 @@
             "fragment": "application-development",
             "subcategories": [
                 {
-                    "fragment": "cicd",
+                    "fragment": "ci-cd",
                     "solutions": [{
                         "fragment": "jenkinsx",
                         "title": "Jenkins X",
