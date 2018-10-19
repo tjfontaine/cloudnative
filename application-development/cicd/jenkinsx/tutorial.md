@@ -124,11 +124,11 @@ pipelinecontroller-55d65ccc6-qnksx               1/1       Running   0          
 
 During the installation process the system will also output the URL for your Jenkins X deployment and the admin password for Jenkins X. Jenkins X will attempt to automatically log in for you and pull your Jenkins API token. If there are issues, you can simply navigate to the URL provided and use `admin` as your username and the password provided above.
 
-![Jenkinsx-login](jenkinsx-login.png)
+![Jenkinsx-login](images/jenkinsx-login.png)
 
 This step is only required if the Jenkins X installer is unable to automatically log in: The next step is to get your Jenkins API Token. Click on the 'admin' user in the upper right corner, and then navigate to the Configure tab, copy the API token, and post it into the command line after you are prompted for your `API Token`. 
 
-![Jenkinsx-API](jenkinsx-api.png)
+![Jenkinsx-API](images/jenkinsx-api.png)
 
 After the installation is complete, Jenkins X will create your first pipeline connected to your GitHub provider. This process results in the creation of a "Staging" and "Production" environment along with associated repositories.
 
@@ -171,7 +171,7 @@ Run this to convert to base64:
 
 Copy and paste the output into the appropriate section of the console. Click "Test Connection" to verify your credentials. Click "Save" at the bottom of the page. When this is complete you will have established a secured connection to your Kubernetes environment. 
 
-![jenkinsx-kubernetes-authorization](jenkinsx-kubernetes-authorization.png)
+![jenkinsx-kubernetes-authorization](images/jenkinsx-kubernetes-authorization.png)
 
 NOTE: again, the command `pbpaste` is MacOS specific. 
 
@@ -185,13 +185,13 @@ In order to connect the Oracle Container Registry to our Jenkins X deployment we
     enter phx as the region code for Phoenix
     
 
-![registry-url](registry-url.png)
+![registry-url](images/registry-url.png)
 
 Remember to hit "Save" at the bottom of the page. 
 
 To generate an auth token, in the Oracle Cloud Infrastructure (OCI) console navigate to "Identity" and then "Users". Click your user name, and then click the "Auth Tokens" tab. Click "Generate Token" and provide a name for your token. Be sure to copy your token to a notepad because you will not be able to access this token again.
 
-![oci-auth-token](oci-auth-token.png)
+![oci-auth-token](images/oci-auth-token.png)
 
 Now we need to enable Jenkins X to authenticate to OCIR, to push and pull images from the repository when build commands are run. Add your variables to the command below: 
 
@@ -223,11 +223,11 @@ For more help on available commands see: https://jenkins-x.io/developing/browsin
 
 This will create a quickstart application (in my case this was called sample) in your current directory and import the application into GitHub. If you navigate to your GitHub "Repositories" tab you will see the newly created `sample` environment. 
 
-![sample-1](sample-1.png)
+![sample-1](images/sample-1.png)
 
 The same information will be available in the Jenkins X UI: 
 
-![sample-2](sample-2.png)
+![sample-2](images/sample-2.png)
 
 According to the Jenkins X documentation, the following is automated for you when choosing a quickstart project:
 
@@ -261,11 +261,11 @@ We also recommend that you change the name of the image URL inside of the same d
 
 Here's what the change to our sample application's deployment looked like:
 
-![image-pull-secret](image-pull-secret.png)
+![image-pull-secret](images/image-pull-secret.png)
 
 Next you will want to modify the skaffold.yaml file (/app_name/skaffold.yaml) to make sure the build templates and image repository are pointed to your tenancy. In the `template` section add your tenancy name between `{{.DOCKER_REGISTRY}}/` and the name of your deployment. Here is an example:
 
-![build-templates](build-templates.png)
+![build-templates](images/build-templates.png)
 
 After editing the deployment.yaml file, commit it: 
 
@@ -281,11 +281,11 @@ This will automatically trigger a build. You can view the build by running:
 
 Or by navigating to the Jenkins X UI: 
 
-![jenkinsx-build](jenkinsx-build.png)
+![jenkinsx-build](images/jenkinsx-build.png)
 
 or the Blue Ocean plugin: 
 
-![blue-ocean](blue-ocean.png)
+![blue-ocean](images/blue-ocean.png)
 
 When the pipeline is completed you can connect to your application by running: 
 

@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Overview",
+          "file": "readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Jenkins X: Cloud Native Continuous Integration and Deployment",
+          "file": "tutorial.md"
+        }
+      ]
+    }
+  ]
+}
