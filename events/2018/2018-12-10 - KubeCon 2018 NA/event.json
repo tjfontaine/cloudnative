@@ -42,7 +42,7 @@
         "Twitter": "<p><a href=\"https://twitter.com/@krisnova\">@krisnova</a></p>"
       }, 
       "featured": true, 
-      "photoUrl": "https://oracle.github.io/cloudnative/events/2018/2018-12-10%20-%20KubeCon%2018%20NA/images/kris-nova.jpg", 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2018/2018-12-10%20-%20KubeCon%202018%20NA/images/kris-nova.jpg", 
       "title": "<p>Senior Developer Advocate, Heptio</p>"
     }, 
     {
@@ -61,7 +61,7 @@
         "Twitter": "<p><a href=\"https://twitter/@ashleymcnamara\">@ashleymcnamara</a></p>"
       }, 
       "featured": true, 
-      "photoUrl": "https://oracle.github.io/cloudnative/events/2018/2018-12-10%20-%20KubeCon%2018%20NA/images/ashley-mcnamara.jpg", 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2018/2018-12-10%20-%20KubeCon%202018%20NA/images/ashley-mcnamara.jpg", 
       "title": "<p>Developer Advocate, Microsoft</p>"
     }, 
     {
@@ -99,7 +99,7 @@
         "Twitter": "<p><a href=\"https://twitter.com/@chryswoods\">@chryswoods</a></p>"
       }, 
       "featured": true, 
-      "photoUrl": "https://oracle.github.io/cloudnative/events/2018/2018-12-10%20-%20KubeCon%2018%20NA/images/christopher-woods.png", 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2018/2018-12-10%20-%20KubeCon%202018%20NA/images/christopher-woods.png", 
       "title": "<p>Research Software Engineer, University of Bristol</p>"
     }, 
     {
@@ -194,7 +194,7 @@
         "Twitter": "<p><a href=\"https://twitter.com/@johnharris85\">@johnharris85</a></p>"
       }, 
       "featured": false, 
-      "photoUrl": "https://oracle.github.io/cloudnative/events/2018/2018-12-10%20-%20KubeCon%2018%20NA/images/john-harris.jpg", 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2018/2018-12-10%20-%20KubeCon%202018%20NA/images/john-harris.jpg", 
       "title": "<p>Technical Account Manager, Docker</p>"
     }, 
     {
