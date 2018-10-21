@@ -251,6 +251,17 @@
             "ribbonText": "Conference"
         },
         {
+            "description": "Join some of the industry's top cloud native minds for a concentrated dose of technical talks paired with hands-on learning.",
+            "title": "KubeCon + CloudNativeCon North America",
+            "subtitle": "Sign up for the Oracle Summit Dec 10th at registration",
+            "ctaUrl": "events/2018/2018-12-10 - KubeCon 18 NA/event",
+            "ctaText": "Learn More",
+            "location": "Seattle, Washington",
+            "date": "2018-12-10 00:00:00",
+            "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/large_auditorium3_sm.jpg",
+            "ribbonText": "Conference"
+        },
+        {
             "description": "Enterprises require a cloud with all the tooling expected from a cloud, while also being interoperable with open source tooling. Karthik will share cloud native patterns he sees with users in his Evangelist role, thoughts about Oracle's overall cloud strategy, and the cool things we're doing in open source. ",
             "title": "Developer Technology Keynote: Oracle Cloud Hearts Cloud Native",
             "subtitle": "Developer Playground at Oracle Cloud Day NYC with Karthik Gaekwad",

@@ -1,0 +1,274 @@
+{
+  "title": "KubeCon + CloudNativeCon North America", 
+  "subtitle": "Sign up for the Oracle Summit Dec 10th at registration", 
+  "registerLinkText": "Register", 
+  "registerLinkUrl": "https://www.oracle.com/code-one/register.html?source=:ow:o:h:gts:&intcmp=:ow:o:h:gts:coh", 
+  "date": "2018-12-10 00:00:00", 
+  "location": "Seattle, Washington", 
+  "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/large_auditorium3_lg.jpg", 
+  "speakers": [
+    {
+      "name": "Kaslin Fields", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Monday, December 10 | Oracle Summit at KubeCon + CloudNativeCon</em>\nPanel moderator : Cloud Native Past, Present, Future</p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Kaslin Fields is a Solutions Architect focusing on containers (particularly\nKubernetes) at Oracle Cloud Infrastructure. As a Solutions Architect, she\nspends most of her time creating blog posts, demos, and other materials to help\nguide Oracle's customers into the world of containerization. Kaslin has spoken\nabout the cloud and containers at the Kubernetes, Docker, CloudTalk, and\nCloud-Native and Kubernetes meetup groups in the Seattle area.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@kaslinfields\">@kaslinfields</a></p>"
+      }, 
+      "featured": true, 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/kaslin-fields.jpg", 
+      "title": "<p>Solutions Architect, Oracle</p>"
+    }, 
+    {
+      "name": "Kris Nova", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Monday, December 10 | Oracle Summit at KubeCon + CloudNativeCon</em>\nPanel: Cloud Native Past, Present, Future</p>\n<p><em>Tuesday, December 11, 3:40pm</em>\n<a href=\"https://kccna18.sched.com/event/GrWT/use-the-cluster-api-to-deploy-clusters-on-prem-and-in-public-clouds-loc-nguyen-vmware-kris-nova-heptio\">Use the Cluster API to Deploy Clusters On-Prem and in Public\nClouds</a></p>\n<p><em>Thursday, December 13, 1:45pm</em>\n<a href=\"https://kccna18.sched.com/event/GrYV/you-cant-have-a-cluster-bleep-without-a-cluster-kris-nova-heptio\">You Can't Have a Cluster [BLEEP] Without a\nCluster</a></p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Kris Nova is a senior developer advocate at Heptio focusing on containers,\ninfrastructure, and Kubernetes. Kris is also an ambassador for the Cloud Native\nComputing Foundation. Previously, she was a developer advocate and an engineer\non Kubernetes in Azure at Microsoft. Kris has a deep technical background in\nthe Go programming language and has authored many successful tools in Go. She\nis a Kubernetes maintainer and the creator of kubicorn, a successful Kubernetes\ninfrastructure management tool. Kris organizes a special interest group in\nKubernetes and is a leader in the community. She understands the grievances\nwith running cloud-native infrastructure via a distributed cloud-native\napplication and recently authored an O'Reilly book on the topic, Cloud Native\nInfrastructure. Kris lives in Seattle and spends her free time mountaineering\nand rock climbing.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@krisnova\">@krisnova</a></p>"
+      }, 
+      "featured": true, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2018/2018-12-10%20-%20KubeCon%2018%20NA/images/kris-nova.jpg", 
+      "title": "<p>Senior Developer Advocate, Heptio</p>"
+    }, 
+    {
+      "name": "Ashley McNamara", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Monday, December 10 | Oracle Summit at KubeCon + CloudNativeCon</em>\nPanel: Cloud Native Past, Present, Future</p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Ashley McNamara is a Developer Advocate at Microsoft specializing in Linux,\nContainers, Go, and Web Technologies.</p>\n<p>Ashley acts as a bridge between outside developers and Microsoft, driving\nplatform adoption through developer communities and driving change into\nproducts based on real-world customer/developer feedback.</p>\n<p>Ashley was a 2014 Hackbright engineering fellow and in her spare time, she's a\nmentor at WeWork, General Assembly, AngelHack, and CapitalFactory.</p>\n<p>Ashley is passionate about helping more underrepresented individuals join and\nfeel comfortable in tech and is often a resource for new developers trying to\nfind their way.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter/@ashleymcnamara\">@ashleymcnamara</a></p>"
+      }, 
+      "featured": true, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2018/2018-12-10%20-%20KubeCon%2018%20NA/images/ashley-mcnamara.jpg", 
+      "title": "<p>Developer Advocate, Microsoft</p>"
+    }, 
+    {
+      "name": "Chad Arimura", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Monday, December 10 | Oracle Summit at KubeCon + CloudNativeCon</em></p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>I am a 3x entrepreneur, most recently as co-founder and CEO of\n<a href=\"https://www.crunchbase.com/organization/iron-io\">Iron.io</a> where we grew a\nmulti-million dollar ARR business helping pioneer serverless computing\nincluding some of the earliest usages of the term \"serverless\" in 2010. Sorry\nfor that. We sold the company in 2017 and joined Oracle.  I am now VP\nServerless Advocacy at Oracle, currently leading The <a href=\"http://fnproject.io/\">Fn\nProject</a>, open source serverless FaaS platform and\norchestration.  I try my best to lead with passion, integrity, and\ntransparency, and am always striving to be better in these areas.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@chadarimura\">@chadarimura</a></p>"
+      }, 
+      "featured": true, 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/chad-arimura.jpg", 
+      "title": "<p>VP Serverless Advocacy, Oracle</p>"
+    }, 
+    {
+      "name": "Christopher Woods", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Monday, December 10 | Oracle Summit at KubeCon + CloudNativeCon</em>\n<em>Thursday, Dec 13, 11:40am</em>\n<a href=\"https://sched.co/GraL\">Running Serverless HPC Workloads on Top of Kubernetes and Jupyter Notebooks</a></p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Christopher Woods manages the Research Software Engineering (RSE) Group at the\nUniversity of Bristol. He is an EPSRC RSE Fellow and Joint-Chair of the UK RSE\nAssociation. He obtained his undergraduate and postgraduate degrees in\nChemistry from the University of Southampton, working with Prof Jonathan Essex,\nbefore moving to the University of Bristol as a chemist developing novel\nsoftware and algorithms for modelling biological molecules. In 2016 he started\nthe University of Bristol's RSE Group within the Advanced Computing Research\nCentre. He is a lead researcher on the BioSimSpace project working with\nMicrosoft and Oracle to adapt biomolecular simulation software so that it can\nbe used commercially in the cloud.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@chryswoods\">@chryswoods</a></p>"
+      }, 
+      "featured": true, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2018/2018-12-10%20-%20KubeCon%2018%20NA/images/christopher-woods.png", 
+      "title": "<p>Research Software Engineer, University of Bristol</p>"
+    }, 
+    {
+      "name": "Kire Filipovski", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Monday, December 10 | Oracle Summit at KubeCon + CloudNativeCon</em>\nAutonomous workload management: Declarative Application Development</p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Kire Filipovski works as a Cloud Architect at Oracle leading design and\nimplementation of a distributed application management system. Previously Kire\nworked as a Distinguished Cloud Architect at Walmart where he designed\ncomputing platforms that transformed the world's largest company into a digital\nbusiness. He joined Walmart in 2013 as part of the OneOps acquisition, a\ncompany which he co-founded in 2011.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@kfilipovski\">@kfilipovski</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/kire-filipovski.jpg", 
+      "title": "<p>Cloud Architect, Oracle</p>"
+    }, 
+    {
+      "name": "TJ Fontaine", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Monday, December 10 | Oracle Summit at KubeCon + CloudNativeCon</em>\nKubernetes service delivery at scale without magic: a FaaS case study</p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>TJ Fontaine is a software engineer at Oracle responsible for architecting and\ndelivering highly available cloud-native containerized services and is the\ntechnical lead for Kubernetes contributions. He is also a veteran open source\ncontributor to Node.js, Linux, and Mono. While Node.js Project Lead, he guided\ncommunity expansion and enterprise adoption.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com\">@tjfontaine</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/tj-fontaine.jpg", 
+      "title": "<p>Software Engineer, Oracle</p>"
+    }, 
+    {
+      "name": "Karthik Gaekwad", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Wednesday, December 12, 4:30pm</em>\n<a href=\"https://sched.co/GrTZ\">Noobernetes 101: Top 10 Questions We Get From New K8s Users</a></p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Karthik Gaekwad is a developer, engineer, author, and evangelist who focuses on\ncloud and container products for Oracle. He graduated from the University of\nArizona with a BS and MS in computer engineering and has worked in the cloud\nindustry since 2007 and enjoys working on the development side of the DevOps\nparadigm. He also is an organizer for DevOpsDays Austin and Cloud Austin.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@iteration1\">@iteration1</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/karthik-gaekwad.jpg", 
+      "title": "<p>Cloud Native Developer Advocate, Oracle</p>"
+    }, 
+    {
+      "name": "Patrick Galbraith", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Thursday, December 13, 3:40pm</em>\n<a href=\"https://sched.co/Grb4\">Running MySQL on Kubernetes</a></p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Patrick Galbraith has been involved in MySQL, Linux, and other Open Source\n(OSS) projects back to the early days of Slackware. He has worked broad\nspectrum of companies throughout his career, including Slashdot, MySQL, Blue\nGecko, Hewlett-Packard, and now Oracle, and contributed to a number of Oper\nSource projects such as MySQL, Drizzle, DBD::mysql, Kubernetes, Helm charts for\nMySQL and Galera. During his tenure in Hewlett-Packard's Advanced Technology\nGroup (ATG) for Cloud and Open Source, Patrick had a focus on containerization\nwith emphasis on Kubernetes; this focus, like all ATG endeavors, included\nparticipation in the associated OSS communities that continues to this day.\nPatrick has a keen, and long-standing interest in the effective marriage\ndatabases and Kubernetes with a bent toward MySQL. To this end, Patrick's\n\"MySQL on Kubernetes\" demonstration is a deep-rooted passion of his. </p>\n<p>Patrick has spoken at a number of conferences including last year at Kubecon in\nAustin, TX. The talk can be seen at\nhttps://www.youtube.com/watch?v=J7h0F34iBx0.</p>\n<p>He is an author of two books. one in both English and Mandarin, \"Developing Web\nApplications with Apache, MySQL, memcached, and Perl\" and \"Expert PHP and\nMySQL\" (both Wiley)</p>\n<p>His other conferences can be seen here: http://patg.net/speaking.html</p>"
+        }
+      ], 
+      "social": {
+        "Linkedin": "<p><a href=\"https://linkedin.com/in/galbraithpatrick\">galbraithpatrick</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/patrick-galbraith.jpg", 
+      "title": "<p>Principal Platform Engineer, Oracle</p>"
+    }, 
+    {
+      "name": "John Harris", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Monday, December 10 | Oracle Summit at KubeCon + CloudNativeCon</em>\nPanel: Cloud Native Past, Present, Future</p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>John Harris is a Technical Account Manager at Docker. He works with customers\nto help implement and adopt container platforms with a focus on Kubernetes.\nPreviously he ran Continuous Delivery and DevOps services for a London-based\nconsultancy. Outside of work he is active in the Seattle tech community where\nhe co-leads several Meetup groups and is a volunteer mentor for Ada Developers\nAcademy.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@johnharris85\">@johnharris85</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2018/2018-12-10%20-%20KubeCon%2018%20NA/images/john-harris.jpg", 
+      "title": "<p>Technical Account Manager, Docker</p>"
+    }, 
+    {
+      "name": "Kristen Jacobs", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Thursday, December 13, 1:45pm</em>\n<a href=\"https://sched.co/GrWx\">Container Networking From Scratch</a></p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Kristen Jacobs is a principal software engineer in Oracle's cloud\ninfrastructure group. He spent the first 15 years of his career working in\nmicroprocessor development, but for the past 3 (ish) years has switched from\nthe very small to the very large and is now working on CI/CD tools and cloud\ninfrastructure. More specifically, he is focused on Kubernetes integration with\nthe Oracle cloud.</p>"
+        }
+      ], 
+      "social": {}, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/kristen-jacobs.jpeg", 
+      "title": "<p>Pincipal Software Engineer, Oracle</p>"
+    }, 
+    {
+      "name": "Bob Quillin", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Monday, December 10 | Oracle Summit at KubeCon + CloudNativeCon</em></p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Bob Quillin is Vice President of Developer Relations for Oracle's Application\nDevelopment portfolio. He was previously CEO and co-founder of StackEngine, an\nAustin-based Docker and container management platform startup acquired by\nOracle.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@bobquillin\">@bobquillin</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/bob-quillin.jpeg", 
+      "title": "<p>Vice President of Developer Relations, Oracle</p>"
+    }
+  ], 
+  "pages": [
+    {
+      "pageTitle": "About", 
+      "pageType": "default", 
+      "modules": [
+        {
+          "type": "basic", 
+          "header": "Connect", 
+          "htmlBlock": "<p>Find us at our booth, try a lab in our lounge, check out our speakers below,\nand be sure to sign up or add our summit to your <a href=\"https://www.regonline.com/KCNA2018?_ga=2.97918175.1934848703.1539979200-631312331.1508361175\">KubeCon + CloudNativeCon registration</a>.</p>"
+        }, 
+        {
+          "header": "Featured Speakers", 
+          "type": "speakers-featured"
+        }, 
+        {
+          "type": "basic", 
+          "header": "The Cloud Native Culture & Industry Summit", 
+          "htmlBlock": "<h3 style=\"text-align: center;\">Presented by Oracle</h3>\n\n<p>Join some of the industry's top cloud native minds for a concentrated dose of\ntechnical talks paired with hands-on learning.</p>\n<p>We'll host an innovator's panel, cover all things serverless, including the Fn\nProject, how to extend Kubernetes to ease application development, how to\ndeploy secure, agile microservices on top of Kubernetes, and much more.</p>\n<p>You won't want to miss the Cloud Native Past, Present, and Future panel as it's\nchock full of your favorite practitioners, innovators, and maintainers\nincluding Kris Nova, Ashley McNamara, John Harris, and more. They will delve\ninto milestones of our evolution, what's driving key technology choices today,\nand how innovation is being defined for the future. These influencers will hash\nout what's at stake and distill what really matters.</p>\n<p>Hear from the creator of the Fn Project, the container-native serverless\nplatform, and former Co-Founder and CEO of Iron.IO, Chad Arimura, and from an\nHPC Fn user, Christopher Woods who is pushing the boundaries of compute with\nopen source.</p>\n<p>The former Co-Founder of OneOps, now Cloud Architect at Oracle leading design\nand implementation of a distributed application management system, will share\nhis team's latest open sourced tooling for creating a fully autonomous modern\napplication development framework.</p>"
+        }, 
+        {
+          "type": "basic", 
+          "header": "How to register", 
+          "htmlBlock": "<p>Pre-registration is required, simply sign up or add to your <a href=\"https://www.regonline.com/KCNA2018?_ga=2.97918175.1934848703.1539979200-631312331.1508361175\">KubeCon + CloudNativeCon registration</a>.\nEvent fee will be donated to Women Who Code.</p>"
+        }
+      ]
+    }, 
+    {
+      "pageTitle": "Speakers", 
+      "pageType": "default", 
+      "modules": [
+        {
+          "header": "Speakers", 
+          "type": "speakers-all"
+        }
+      ]
+    }
+  ]
+}
