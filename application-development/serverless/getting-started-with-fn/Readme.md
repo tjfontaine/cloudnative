@@ -1,5 +1,3 @@
-### Overview
-
 Cloud native development encompasses a continually evolving set of practices and emerging technologies. Container workflows have become commonplace, leveraging Kubernetes to abstract infrastructure resources and deploy and scale complex systems with relative ease.
 
 The advent of Serverless provides even more powerful abstractions and promises potentially greater efficiencies, leveraging the same underlying cloud native technologies. With Serverless, we abstract resources one step further, allowing teams to simply write and push code. The platform takes care of building, deploying and scaling our software for us.

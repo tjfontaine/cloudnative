@@ -4,7 +4,7 @@
       "section": "overview",
       "files": [
         {
-          "title": "Kubeflow",
+          "title": "Introduction to Kubeflow",
           "file": "Readme.md"
         }
       ]
@@ -13,7 +13,7 @@
       "section": "guides",
       "files": [
         {
-          "title": "Introduction to Kubeflow",
+          "title": "Kubeflow",
           "file": "quickstart.md"
         }
       ]

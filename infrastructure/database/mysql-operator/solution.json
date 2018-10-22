@@ -4,7 +4,7 @@
       "section": "overview",
       "files": [
         {
-          "title": "The MySQL Operator",
+          "title": "Introduction to the MySQL Kubernetes Operator",
           "file": "readme.md"
         }
       ]
@@ -13,7 +13,7 @@
       "section": "guides",
       "files": [
         {
-          "title": "Introduction to the MySQL Kubernetes Operator",
+          "title": "The MySQL Operator",
           "file": "quickstart.md"
         }
       ]

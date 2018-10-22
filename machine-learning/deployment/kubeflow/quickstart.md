@@ -1,4 +1,4 @@
-# Introduction to Kubeflow 
+# Kubeflow
 ## A Kubeflow Quickstart
 
 As discussed in the [Overview](Readme.md) the goal of this quickstart is to take an existing OKE cluster, configure and install Kubeflow on it, launch a Jupyter notebook via Kubeflow, and run a demo TensorFlow project that will train a very simple model based on the MNSIT image dataset.
