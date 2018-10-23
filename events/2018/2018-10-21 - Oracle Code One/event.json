@@ -2,7 +2,7 @@
     "title": "Oracle Code One",
     "subtitle": "Join the #CloudNative team at #CodeOne",
     "location": "San Francisco, CA",
-    "date": "2018-10-21 07:00:00-5:00",
+    "date": ["2018-10-21 07:00:00-5:00", "2018-10-21 07:00:00-5:00"],
     "bgImage": "assets/images/event_banners/conference_center1_lg.jpg",
     "registerLinkText": "Register",
     "registerLink": "https://www.oracle.com/code-one/register.html?source=:ow:o:h:gts:&intcmp=:ow:o:h:gts:coh",

@@ -254,7 +254,7 @@
             "subtitle": "",
             "ctaUrl": "events/2018/2018-10-21 - Oracle Code One/event",
             "ctaText": "View Event",
-            "date": "2018-10-21 00:00:00",
+            "date": ["2018-10-21 00:00:00", "2018-10-25 00:00:00"],
             "location": "San Francisco, CA",
             "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/conference_center1_sm.jpg",
             "ribbonText": "Conference"

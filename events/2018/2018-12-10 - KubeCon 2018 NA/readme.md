@@ -2,11 +2,11 @@
 
 Sign up for the Oracle Summit Dec 10th at registration
 
-[Register](https://www.oracle.com/code-one/register.html?source=:ow:o:h:gts:&intcmp=:ow:o:h:gts:coh)
+[Register](https://www.regonline.com/registration/Checkin.aspx?EventID=2246960&_ga=2.88305819.1633336954.1540332242-631312331.1508361175)
 
 ## Date
 
-December 10 2018
+December 10 2018 - December 13 2018
 
 ## Location
 
