@@ -10,15 +10,7 @@
                         "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/jenkinsx",
                         "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/jenkinsx/jenkinsx_landing.png",
                         "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/jenkinsx/jenkinsx_course_pg.png"
-                    },
-                    {
-                        "fragment": "wercker",
-                        "title": "Wercker",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/wercker",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/wercker/wercker_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/wercker/wercker_course_pg.png"
-                    }
-                ],
+                    }],
                     "description": "Continuous integration (CI) is the practice of building, testing, and shipping changes in software as they are committed, and continuous deployment (CD) is the practice of deploying the latest release of software into production. The marriage of these two practices, known as CI/CD, helps organizations identify and address issues early on and always be running the latest versions in production.",
                     "title": "CI/CD"
                 },

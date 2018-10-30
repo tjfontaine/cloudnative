@@ -1,4 +1,7 @@
-Wercker is a Continuous-Integration and Continuous-Delivery (CI/CD) tool. It enables the creation of automated workflows, or pipelines, which specify a series of tasks or commands that are run on your code whenever a change is pushed to the source repository. In order achieve this, Wercker "listens" to GitHub so that, for example, when there is a commit (new code or changes made to a branch or the master), Wercker can automatically build a container image from that change without manual intervention. 
+Wercker is a Continuous-Integration and Continuous-Delivery (CI/CD) tool. It enables the creation of automated workflows, or pipelines, which specify a series of 
+tasks or commands that are run on your code whenever a change is pushed to the source repository. In order achieve this, Wercker "listens" to GitHub so that, for 
+example, when there is a commit (new code or changes made to a branch or the master), Wercker can automatically build a container image from that change without 
+manual intervention. 
 
 In the case of a commit to master, Wercker runs a pipeline and builds the image, pushes the image to Oracle Container Repository (OCIR) and then deploys the container to an instance of OKE, replacing the running containers/pods, and thus updating the application.
 
