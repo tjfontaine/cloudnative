@@ -1,9 +1,5 @@
 # Deploying Instrumented Helidon on Oracle Container Engine for Kubernetes 
 
-## Prerequisites
-
-[Here](https://helidon.io/docs/latest/#/getting-started/01_prerequisites) is the list of pre-requisites for using Helidon. In order to push to Oracle Cluster Engine for Kubernetes (OKE) you will need access to an OKE cluster and the Oracle Container Registry (OCIR).  
-
 ## Helidon on OKE 
 
 In this walkthrough we will create a Hello World application in Helidon, push it to the Oracle Container Registry, deploy it into an Oracle Container Engine for Kubernetes cluster, and then modify the application to collect service metrics that will be displayed in Prometheus. Check out [this article](https://cloudnative.oracle.com/template.html#observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/Readme.md) for more information about deploying Prometheus on OKE. 
