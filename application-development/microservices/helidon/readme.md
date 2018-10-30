@@ -2,7 +2,7 @@
 
 ## Summary and Context
 
-Last month Oracle released Helidon, an open source set of Java libraries used to write microservices. According to the official documentation, "Helidon is a collection of Java libraries for writing microservices that run on a fast web core powered by Netty... There is no unique tooling or deployment model. Your microservice is just a Java SE application." 
+Project Helidon is an open source set of Java libraries used to write microservices. According to the official documentation, "Helidon is a collection of Java libraries for writing microservices that run on a fast web core powered by Netty... There is no unique tooling or deployment model. Your microservice is just a Java SE application." 
 
 There are two different flavors of Helidon: Standard Edition (SE) and MicroProfile (MP). 
 
