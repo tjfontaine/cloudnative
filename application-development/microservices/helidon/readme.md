@@ -13,3 +13,7 @@ There are two different flavors of Helidon: Standard Edition (SE) and MicroProfi
 - Helidon SE is a functional programming style that uses the Helidon WebServer, Config and Security APIs directly. This provides an intentionally small featureset and gives you full transparency and control. JDK is used at runtime. 
 - Helidon MP is a declarative model that supports the Eclipse MicroProfile family of APIs. This provides a development experience familiar to Java EE/Jakarta EE developers. Helidon MP is a thin layer on top of Helidon SE components.
 
+
+## Prerequisites
+
+[Here](https://helidon.io/docs/latest/#/getting-started/01_prerequisites) is the list of pre-requisites for using Helidon. In order to push to Oracle Cluster Engine for Kubernetes (OKE) you will need access to an OKE cluster and the Oracle Container Registry (OCIR).  
