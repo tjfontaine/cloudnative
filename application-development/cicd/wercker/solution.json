@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Overview",
+          "file": "readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Continuous Integration and Deployment with Wercker",
+          "file": "tutorial.md"
+        }
+      ]
+    }
+  ]
+}
