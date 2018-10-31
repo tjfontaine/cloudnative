@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Microservices with Helidon",
+          "file": "readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Deploying Instrumented Helidon on Oracle Container Engine for Kubernetes",
+          "file": "tutorial.md"
+        }
+      ]
+    }
+  ]
+}
