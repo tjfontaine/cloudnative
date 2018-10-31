@@ -23,6 +23,18 @@
                     "title": "CI/CD"
                 },
                 {
+                    "fragment": "microservices",
+                    "solutions": [{
+                        "fragment": "helidon",
+                        "title": "Helidon",
+                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/microservices/helidon",
+                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/microservices/helidon/helidon_landing.png",
+                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/microservices/helidon/helidon_course_pg.png"
+                    }],
+                    "description": "Microservice architecture is an application development paradigm which decomposes an application into modular, lightweight, discrete pieces. This eases development and testing and makes applications more resilient and easier to scale.",
+                    "title": "Microservices"
+                },
+                {
                     "fragment": "package-management",
                     "solutions": [{
                         "fragment": "helm-or-high-water",
