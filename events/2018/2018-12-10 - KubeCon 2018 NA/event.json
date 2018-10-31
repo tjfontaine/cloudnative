@@ -3,10 +3,7 @@
   "subtitle": "Sign up for the Oracle Summit Dec 10th at registration", 
   "registerLinkText": "Register", 
   "registerLinkUrl": "https://www.regonline.com/registration/Checkin.aspx?EventID=2246960&_ga=2.88305819.1633336954.1540332242-631312331.1508361175", 
-  "date": [
-    "2018-12-10 00:00:00", 
-    "2018-12-13 00:00:00"
-  ], 
+  "date": "2018-12-10 00:00:00", 
   "location": "Seattle, Washington", 
   "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/large_auditorium3_lg.jpg", 
   "speakers": [
