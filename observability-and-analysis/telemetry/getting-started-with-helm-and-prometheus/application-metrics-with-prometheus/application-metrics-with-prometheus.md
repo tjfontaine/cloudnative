@@ -82,7 +82,7 @@ COPY main-no-monitor.go main.go
 RUN go build main.go
 ```
 
-You can launch this application image on your Kubernetes cluster with the following Service and Deployment configuration:
+You can launch this application image on your Kubernetes cluster with the following Service and Deployment configuration, which will create a Kubernetes Deployment that pulls the application Image, launches it as a Container, then creates a NodePort service pointing to that deployment:
 
 `kubernetes.yml`
 
