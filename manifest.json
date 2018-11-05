@@ -164,7 +164,7 @@
             "title": "Prometheus",
             "description": "Get your system wired-up with this service-monitoring tool for metric collection, alerting, and visualization of your cloud native environment.",
             "ctaText": "Learn more",
-            "ctaUrl": "#observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus",
+            "ctaUrl": "#observability-and-analysis/telemetry/prometheus",
             "bgImage": "assets/images/learn_landing_banner1_1441.jpg"
         },
         {

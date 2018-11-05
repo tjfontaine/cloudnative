@@ -2,7 +2,7 @@
 
 ## Helidon on OKE 
 
-In this walkthrough we will create a Hello World application in Helidon, push it to the Oracle Container Registry, deploy it into an Oracle Container Engine for Kubernetes cluster, and then modify the application to collect service metrics that will be displayed in Prometheus. Check out [this article](https://cloudnative.oracle.com/template.html#observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/Readme.md) for more information about deploying Prometheus on OKE. 
+In this walkthrough we will create a Hello World application in Helidon, push it to the Oracle Container Registry, deploy it into an Oracle Container Engine for Kubernetes cluster, and then modify the application to collect service metrics that will be displayed in Prometheus. Check out [this article](https://cloudnative.oracle.com/template.html#observability-and-analysis/telemetry/prometheus/readme.md) for more information about deploying Prometheus on OKE. 
 
 Begin by following the [Helidon Quickstart](https://helidon.io/docs/latest/#/getting-started/02_base-example). This will walk you through the steps to generate a project using either Helidon SE or Helidon MP. I will be using Helidon SE for my example. 
 
@@ -121,7 +121,7 @@ Run `kubectl get svc -n helidon` to get the NodePort for your new pod. Run `kube
 
 ### Adding Metrics
 
-The next step is to instrument our application to export metrics. We will then ingest those metrics into Prometheus, an open source monitoring solution. You will need Prometheus to continue with this section. For more information about deploying Prometheus on your Kubernetes cluster, check out [this documentation](https://www.oracle.com/webfolder/s/assets/microsite/cloud-native/template.html#observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/Readme.md). 
+The next step is to instrument our application to export metrics. We will then ingest those metrics into Prometheus, an open source monitoring solution. You will need Prometheus to continue with this section. For more information about deploying Prometheus on your Kubernetes cluster, check out [this documentation](https://www.oracle.com/webfolder/s/assets/microsite/cloud-native/template.html#observability-and-analysis/telemetry/prometheus/readme.md). 
 
 The first import to define is in the quickstart-se/src/main/java/io/helidon/examples/quickstart/se/Main.java file. Here we will add `import io.helidon.metrics.MetricsSupport;` to the top of the document containing the other imports in order to register metrics support with the WebServer. 
 
