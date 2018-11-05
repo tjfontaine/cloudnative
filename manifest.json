@@ -135,10 +135,10 @@
             "subcategories": [{
                     "fragment": "telemetry",
                     "solutions": [{
-                        "fragment": "getting-started-with-helm-and-prometheus",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/getting-started-with-helm-and-prometheus",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/getting-started-with-helm-and-prometheus/prometheus_stack_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/getting-started-with-helm-and-prometheus/getting-started-with-helm-and-prometheus/prometheus_stack_course_pg.png",
+                        "fragment": "prometheus",
+                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/prometheus",
+                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/prometheus/prometheus_stack_landing.png",
+                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/prometheus/prometheus_stack_course_pg.png",
                         "title": "Prometheus and Grafana"
                     }],
                     "description": "Telemetry is broadly classified as a combination of three things: logging, monitoring, and metrics. In general, it allows you to understand the inner workings of your applications to operate more efficiently, better understand customer needs, improve decision-making, and increase the value of the business.",

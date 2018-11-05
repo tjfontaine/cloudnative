@@ -1,14 +1,6 @@
 # Monitoring and Visualization with Prometheus and Grafana
 
-## Getting Started with Helm and Prometheus
-
-## Overview 
-
-Application observability is critical throughout the lifecycle of a project. Monitoring and alerting through agent-based metrics collection has been the standard for enabling data insight for years, but how does this approach mesh with the dynamic nature of containers and schedulers? The agent-based approach would have to be re-imagined, metrics would have to be collected effortlessly from within the container, and, to allow for scalability, the solution would need to avoid requiring additional effort as new containers are spun up.
-
 ## Illuminating your environment with Prometheus
-
-When it comes to open source cloud-native monitoring, Prometheus is widely considered to be the best place to start. Prometheus is a systems monitoring and alerting toolkit that Cloud Computing Native Foundation (CNCF) recommends for container-based infrastructure. It recently became the second project to graduate from the CNCF program. It boasts powerful tools to scrape data applications, a multidimensional data model, a flexible query language to create powerful visualizations, and a built-in alert manager. 
 
 In this tutorial, we will install Prometheus on our cluster to gather metrics, and Grafana to enhance the metrics. Grafana is another OSS solution often paired with Prometheus and other monitoring tools to model the data collected into beautiful and useful dashboards.
 

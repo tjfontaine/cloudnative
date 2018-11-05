@@ -4,8 +4,17 @@
       "section": "overview",
       "files": [
         {
+          "title": "Prometheus",
+          "file": "readme.md"
+        },
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
           "title": "Monitoring and Visualization with Prometheus and Grafana",
-          "file": "Readme.md"
+          "file": "prometheus101.md"
         },
         {
           "title": "Monitoring Application Metrics",
