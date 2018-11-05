@@ -1,6 +1,6 @@
 # Prometheus: How to Monitor Your Applications
 
-So, you have followed the [Prometheus 101 Tutorial](https://gitlab-odx.oracledx.com/cloudnative/devcenter/tree/master/content/prometheus), your OCI Kubernetes cluster is running Prometheus, with the operator installed, and even has Grafana configured. What now?
+So, you have followed the [Prometheus 101 Tutorial](Readme.md), your OCI Kubernetes cluster is running Prometheus, with the operator installed, and even has Grafana configured. What now?
 
 Well, now that you have your monitoring infrastructure in place, it's time to utilize it to actually get some visibility into your applications!
 
@@ -13,7 +13,7 @@ In this post, we will:
 
 ## Requirements
 
-As above, you'll need an OKE cluster configured (watch those network rules!) with Prometheus. If you don't already have this, I recommend following the comprehensive [OKE quick start documentation](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html) to launch an OKE cluster, followed by the [first part of this tutorial series](https://gitlab-odx.oracledx.com/cloudnative/devcenter/tree/master/content/prometheus.html) to get your Prometheus infrastructure in place.
+As above, you'll need an OKE cluster configured (watch those network rules!) with Prometheus. If you don't already have this, I recommend following the comprehensive [OKE quick start documentation](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html) to launch an OKE cluster, followed by the [first part of this tutorial series](Readme.md) to get your Prometheus infrastructure in place.
 
 ## Application Metrics?
 
@@ -383,7 +383,7 @@ _Again, you can use a Dockerfile if you want to build this version of the applic
 
 You should now have your application running on your Kubernetes cluster, with a Prometheus metrics endpoint exposed. Now it's time to configure Prometheus to poll and display those metrics!
 
-At this point, you may want to reference the [first part of this post series](https://gitlab-odx.oracledx.com/cloudnative/devcenter/tree/master/content/prometheus.html) to ensure you have access to the Prometheus web interface on your cluster. 
+At this point, you may want to reference the [first part of this post series](Readme.md) to ensure you have access to the Prometheus web interface on your cluster. 
 
 To do this, we will need to modify our Kubernetes Service for the application, and add a new [Prometheus Operator](https://coreos.com/blog/the-prometheus-operator.html) definition to tell Prometheus that the demo application exposes a metrics endpoint and that we want to pull metrics from it.
 
@@ -512,7 +512,7 @@ spec:
 
 We've done everything needed to get our application exposing a /metrics endpoint, with Prometheus configured to poll for metrics from it. How do we test this?
 
-Hit the Prometheus Web interface on your cluster ([reference the first part of this post series](https://gitlab-odx.oracledx.com/cloudnative/devcenter/tree/master/content/prometheus.html) if you are unsure how), and add "rate(requests_total[1m])"into the query box, then select "Graph". 
+Hit the Prometheus Web interface on your cluster ([reference the first part of this post series](Readme.md) if you are unsure how), and add "rate(requests_total[1m])"into the query box, then select "Graph". 
 
 It should look a little like this:
 

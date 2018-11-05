@@ -6,6 +6,10 @@
         {
           "title": "Monitoring and Visualization with Prometheus and Grafana",
           "file": "Readme.md"
+        },
+        {
+          "title": "Monitoring Application Metrics",
+          "file": "application-metrics-with-prometheus.md"
         }
       ]
     }
