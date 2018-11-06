@@ -311,5 +311,5 @@ The Good:
 
 The Bad:
 
-* The jx tool does a lot of heavy lifting, but unfortunately this leads to some unexpected changes to your kuberenetes configuration. The tool will change your current namespace to 'jx'.
+* The `jx` tool does a lot of heavy lifting, but unfortunately this leads to some unexpected changes to your Kubernetes configuration. The tool will change your current namespace to 'jx'.
 * Much of what Jenkins X can do can simply be done with Kubectl or Helm.
