@@ -147,10 +147,10 @@
                 {
                     "fragment": "logging",
                     "solutions": [{
-                        "fragment": "log-like-you-mean-it",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack-introduction/log-like-you-mean-it",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack-introduction/efk_stack_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack-introduction/efk_stack_course_pg.png",
+                        "fragment": "efk-stack",
+                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack",
+                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack/efk_stack_landing.png",
+                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack/efk_stack_course_pg.png",
                         "title": "Elasticsearch, Fluentd and Kibana"
                     }],
                     "description": "Logging is an integral part of production software deployment. When dealing with the layered abstractions and ephemeral components of cloud computing at scale, it’s more important than ever to have software and services that create clear, well-formed logging messages. Once created, these logs must be collected, managed, and made available to other services for analytic and reporting purposes. In the world of cloud native computing, logging provides vital data to other services that help us make sense of what is happening in our cloud estate.",
@@ -171,7 +171,7 @@
             "title": "EFK",
             "description": "Try your hand at creating a scalable log collection and analytics pipeline to gain insight into your cloud native environment.",
             "ctaText": "Learn more",
-            "ctaUrl": "#observability-and-analysis/logging/log-like-you-mean-it",
+            "ctaUrl": "#observability-and-analysis/logging/efk-stack",
             "bgImage": "assets/images/learn_landing_banner2_1441.jpg"
         },
         {

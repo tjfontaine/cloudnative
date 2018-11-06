@@ -1,5 +1,4 @@
 # Log Like You Mean It!
-# Logging Kubernetes Applications via an EFK Stack
 
 ## Overview 
 
@@ -15,7 +14,7 @@ An [Oracle Cloud Infrastructure](https://cloud.oracle.com/en_US/iaas) account wi
 
 Over the last few years Elasticsearch has become an industry standard for storing and indexing logs. Setting up and operating an Elasticsearch cluster can be a challenge for your team and paying for a hosted service can be expensive. If only there were an easy way to run Elasticsearch on existing infrastructure. Luckily this is easy to do with Kubernetes. To do so, we will leverage Kubernetes stateful sets, the Oracle Cloud Infrastructure (OCI) volume provisioner, and Helm to coordinate deployments to our cluster. 
 
-Follow [the EFK quickstart guide](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html) for help creating a Kubernetes cluster with OKE and read this [article](quickstart.md) for getting Helm set up on your cluster.
+Follow [the EFK quickstart guide](quickstart.md) for help creating a Kubernetes cluster with OKE and read this [article](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html) for getting Helm set up on your cluster.
 
 
 The first step is to modify our Helm chart template to fit your environment. 
@@ -715,7 +714,7 @@ You should now have a running deployment of Elasticsearch to store logs, Fluentd
 
 ### More in this Series
 
-* [EFK Quickstart.](./quickstart.md)
+* [EFK Quickstart.](quickstart.md)
 
 #### License
 

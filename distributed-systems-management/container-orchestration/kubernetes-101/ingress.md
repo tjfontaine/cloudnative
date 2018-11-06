@@ -193,7 +193,7 @@ In our demo case, we don't need to pass any sensitive variables so we're going t
 
 Most popular languages will have their own logging libraries and helpers. Whether it's Log4j in Java land or the `logging` module in Python land, they are almost always worth using rather than dumping log lines yourself as they make it easy to create a standard format for logs that you can carry across your applications and microservices. 
 
-This standardization is invaluable when you begin pushing your logs to a centralized logging system such as an [ELK stack](../../../observability-and-analysis/logging/efk-stack-introduction/log-like-you-mean-it/Readme.md), or [Graylog](https://www.graylog.org/), as searching for several different names for "Client IP address" can be a nightmare during red-alert scenarios when debugging an outage. Trust me, your SREs will thank you!
+This standardization is invaluable when you begin pushing your logs to a centralized logging system such as an [ELK stack](https://github.com/oracle/cloudnative/blob/master/observability-and-analysis/logging/efk-stack/Readme.md), or [Graylog](https://www.graylog.org/), as searching for several different names for "Client IP address" can be a nightmare during red-alert scenarios when debugging an outage. Trust me, your SREs will thank you!
 
 An additional consideration when deploying to Kubernetes is the format to use when you output your logs. My preferred method is to send messages to stdout and stderr rather than write log files, as it allows me to quickly see the log output of a running deployment via `kubectl`, _and_ integrates easily with any centralized logging solution on the cluster with 0 configuration, whereas log files would need to have their persistence managed.
 

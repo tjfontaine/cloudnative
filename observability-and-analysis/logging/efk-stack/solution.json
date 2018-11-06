@@ -4,8 +4,8 @@
       "section": "overview",
       "files": [
         {
-          "title": "Log Like You Mean It",
-          "file": "Readme.md"
+          "title": "The Elasticsearch, FluentD, Kibana (EFK) stack",
+          "file": "readme.md"
         }
       ]
     },
@@ -15,7 +15,12 @@
         {
           "title": "Quickstart",
           "file": "quickstart.md"
+        },
+        {
+          "title": "EFK stack details",
+          "file": "logging.md"
         }
+
       ]
     }
   ]

@@ -4,7 +4,7 @@
 
 Welcome to our EFK stack (Elastic Search, FluentD, Kibana) introduction series. This article will show you how to get up and running with EFK, quickly.
 
-In this quickstart we will apply the theory learned in our EFK Stack blogpost to create a production-ready logging and analysis stack installed on an Oracle Container Engine for Kubernetes (OKE) cluster through the use of Elasticsearch, FluentD, and Kibana. Check out our [EFK Stack Overview](./Readme.md) for a more in-depth explanation of how and why we are creating an EFK stack. 
+In this quickstart we will apply the theory learned in our EFK Stack blogpost to create a production-ready logging and analysis stack installed on an Oracle Container Engine for Kubernetes (OKE) cluster through the use of Elasticsearch, FluentD, and Kibana. Check out our [EFK Stack Overview](logging.md) for a more in-depth explanation of how and why we are creating an EFK stack. 
 
 ## Requirements
 
@@ -28,7 +28,7 @@ This will connect to your Kubernetes cluster via your already configured `kubect
 Download and extract our Helm chart. This will simplify the process of installing the EFK stack:
 
 ```
-wget https://raw.githubusercontent.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack-introduction/log-like-you-mean-it/efk.tar.gz
+wget https://raw.githubusercontent.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack/efk.tar.gz
 tar -xzvf ./efk.tar.gz
 ```
 
@@ -42,7 +42,7 @@ Run the following to install the EFK stack:
 helm install efk/ --namespace devops --values efk/values.yaml
 ```
 
-Note that it's good practice to use a namespace dedicated to this infrastructure as it will stop your `kubectl get x` commands from being polluted with your infrastructure-related objects. You can read more about this in our [EFK Stack Overview](./Readme.md), which goes into much more detail about what we're trying to achieve in this quickstart.
+Note that it's good practice to use a namespace dedicated to this infrastructure as it will stop your `kubectl get x` commands from being polluted with your infrastructure-related objects. You can read more about this in our [EFK Stack Overview](logging.md), which goes into much more detail about what we're trying to achieve in this quickstart.
 
 This should result in an output similar to:
 
@@ -108,11 +108,11 @@ This will output an endpoint for accessing your Kibana web interface!
 
 ### Conclusion
 
-By following the steps above, you have gone from a raw Kubernetes cluster to one with a complete logging and visualization solution by means of the EFK stack. To read more about what we just did, check out our in-depth [EFK Stack Overview](./Readme.md).
+By following the steps above, you have gone from a raw Kubernetes cluster to one with a complete logging and visualization solution by means of the EFK stack. To read more about what we just did, check out our in-depth [EFK Stack Overview](logging.md).
 
 ### More in this Series
 
-* [Log it like you mean it! Logging Kubernetes applications via an EFK stack](./Readme.md)
+* [Log it like you mean it! Logging Kubernetes applications via an EFK stack](logging.md)
 
 #### License
 
