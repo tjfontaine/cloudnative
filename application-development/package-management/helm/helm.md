@@ -1,12 +1,8 @@
 # Package Management for Kubernetes Services with Helm
 
-## Context 
-
-Efficient management of Kubernetes resources can be challenging. Kubernetes requires handing many objects: pods, services, persistent volumes, etc. In addition, the dynamic nature of the platform requires the management of many releases of each object. Packaging these objects into standardized and reusable deployments while simultaneously keeping track of releases is key to successful development. 
-
 ## Helm
 
-Helm addresses the challenges above by providing a method for repeatable application installation through the use of charts, repositories, and releases. 
+Helm addresses the package mangement for Kubernetes applications by providing a method for repeatable application installation through the use of charts, repositories, and releases. 
 
 * Chart: a Helm package consisting of the YAML file used to described the components of complex applications designed to run in a Kubernetes cluster and searchable metadata. 
 * Repository: a searchable collection of Helm charts. 

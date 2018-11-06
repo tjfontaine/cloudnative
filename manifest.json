@@ -37,11 +37,11 @@
                 {
                     "fragment": "package-management",
                     "solutions": [{
-                        "fragment": "helm-or-high-water",
+                        "fragment": "helm",
                         "title": "Helm",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/helm_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/helm_course_pg.png"
+                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/helm",
+                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/helm/helm_landing.png",
+                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/helm/helm_course_pg.png"
                     }],
                     "description": "Package managers are designed to ease installs and updates and manage dependencies. This is particularly useful in complex systems.",
                     "title": "Package Management"
@@ -178,7 +178,7 @@
             "title": "Helm",
             "description": "Learn how to consistently and simply deploy complex applications through the use of this Kubernetes package manager.",
             "ctaText": "Learn more",
-            "ctaUrl": "#application-development/package-management/helm-or-high-water",
+            "ctaUrl": "#application-development/package-management/helm",
             "bgImage": "assets/images/learn_landing_banner3_1441.jpg"
         }
     ],
