@@ -3,7 +3,10 @@
   "subtitle": "Sign up for the Oracle Summit Dec 10th at registration", 
   "registerLinkText": "Register", 
   "registerLink": "https://www.regonline.com/registration/Checkin.aspx?EventID=2246960&_ga=2.88305819.1633336954.1540332242-631312331.1508361175", 
-  "date": "2018-12-10 00:00:00", 
+  "date": [
+    "2018-12-10 00:00:00", 
+    "2018-12-13 00:00:00"
+  ], 
   "location": "Seattle, Washington", 
   "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/large_auditorium3_lg.jpg", 
   "speakers": [
@@ -240,22 +243,30 @@
       "pageType": "default", 
       "modules": [
         {
+          "header": "Join Us", 
           "type": "basic", 
-          "header": "Connect", 
-          "htmlBlock": "<p>Find us at our booth, try a lab in our lounge, check out our speakers below,\nand be sure to sign up or add our summit to your <a href=\"https://www.regonline.com/KCNA2018?_ga=2.97918175.1934848703.1539979200-631312331.1508361175\">KubeCon + CloudNativeCon registration</a>.</p>"
+          "htmlBlock": "<p><a href=\"https://www.regonline.com/KCNA2018?_ga=2.97918175.1934848703.1539979200-631312331.1508361175\">Sign up for our summit during\nregistration</a>,\ncheck out our speakers and sessions below, and stop by our booth to try a lab!</p>"
+        }, 
+        {
+          "header": "Watch the teaser", 
+          "type": "video", 
+          "videotype": "youtube", 
+          "videoID": "Dj6aYLdvch8", 
+          "subtitle": "Get amped, and register!", 
+          "description": ""
         }, 
         {
           "header": "Featured Speakers", 
           "type": "speakers-featured"
         }, 
         {
-          "type": "basic", 
           "header": "The Cloud Native Culture & Industry Summit", 
+          "type": "basic", 
           "htmlBlock": "<h3 style=\"text-align: center;\">Presented by Oracle</h3>\n\n<p>Join some of the industry's top cloud native minds for a concentrated dose of\ntechnical talks paired with hands-on learning.</p>\n<p>We'll host an innovator's panel, cover all things serverless, including the Fn\nProject, how to extend Kubernetes to ease application development, how to\ndeploy secure, agile microservices on top of Kubernetes, and much more.</p>\n<p>You won't want to miss the Cloud Native Past, Present, and Future panel as it's\nchock full of your favorite practitioners, innovators, and maintainers\nincluding Kris Nova, Ashley McNamara, John Harris, and more. They will delve\ninto milestones of our evolution, what's driving key technology choices today,\nand how innovation is being defined for the future. These influencers will hash\nout what's at stake and distill what really matters.</p>\n<p>Hear from the creator of the Fn Project, the container-native serverless\nplatform, and former Co-Founder and CEO of Iron.IO, Chad Arimura, and from an\nHPC Fn user, Christopher Woods who is pushing the boundaries of compute with\nopen source.</p>\n<p>The former Co-Founder of OneOps, now Cloud Architect at Oracle leading design\nand implementation of a distributed application management system, will share\nhis team's latest open sourced tooling for creating a fully autonomous modern\napplication development framework.</p>"
         }, 
         {
-          "type": "basic", 
           "header": "How to register", 
+          "type": "basic", 
           "htmlBlock": "<p>Pre-registration is required, simply sign up or add to your <a href=\"https://www.regonline.com/KCNA2018?_ga=2.97918175.1934848703.1539979200-631312331.1508361175\">KubeCon + CloudNativeCon registration</a>.\nEvent fee will be donated to Women Who Code.</p>"
         }
       ]

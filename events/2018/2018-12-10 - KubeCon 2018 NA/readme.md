@@ -12,10 +12,19 @@ December 10 2018 - December 13 2018
 
 Seattle, Washington
 
-## Connect
+## Join Us
 
-Find us at our booth, try a lab in our lounge, check out our speakers below,
-and be sure to sign up or add our summit to your [KubeCon + CloudNativeCon registration](https://www.regonline.com/KCNA2018?_ga=2.97918175.1934848703.1539979200-631312331.1508361175).
+[Sign up for our summit during
+registration](https://www.regonline.com/KCNA2018?_ga=2.97918175.1934848703.1539979200-631312331.1508361175),
+check out our speakers and sessions below, and stop by our booth to try a lab!
+
+## Watch the teaser
+
+Get amped, and register!
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Dj6aYLdvch8/0.jpg)](https://www.youtube.com/watch?v=Dj6aYLdvch8)
+
+[//]: # (module_video)
 
 ## Featured Speakers
 
