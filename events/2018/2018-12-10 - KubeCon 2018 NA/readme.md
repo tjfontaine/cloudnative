@@ -65,4 +65,4 @@ Event fee will be donated to Women Who Code.
 
 #### Misc
 
-![bgImage](../../../images/event_banners/large_auditorium3_lg.jpg)
+[//]: # (bgImage:../../../images/event_banners/large_auditorium3_lg.jpg)

@@ -362,4 +362,49 @@ Development portfolio. He was previously CEO and co-founder of StackEngine, an
 Austin-based Docker and container management platform startup acquired by
 Oracle.
 
+## Micha "mies" Hernandez van Leuffen
 
+![Micha "mies" Hernandez van Lueffen](../../../images/speakers/mies-hernandez-van-leuffen.jpg)
+
+### Twitter
+
+[@mies](https://twitter.com/@mies)
+
+### Role 
+
+Vice President of Solution Development, Oracle
+
+### Sessions
+
+#### Monday, December 10 | The Cloud Native Culture & Industry Summit at KubeCon + CloudNativeCon
+
+Cloud Native Java: Not your grandfather's Cup of Joe
+
+### Bio
+
+Micha "mies" Hernandez van Leuffen was the founder and CEO of Wercker, a
+container-native CI/CD platform, which was acquired by Oracle in May of 2017.
+He's now a VP of Software Development inside the container native group at
+Oracle where he's bringing the next generation of developer automation for the
+modern cloud to market through OSS.
+
+## Laird Nelson
+
+### Role
+
+Consulting Member of Technical Staff, Oracle
+
+### Sessions
+
+#### Monday, December 10 | The Cloud Native Culture & Industry Summit at KubeCon + CloudNativeCon
+
+Cloud Native Java: Not your grandfather's Cup of Joe
+
+### Bio
+
+Laird has worked with Java SE since it was in beta and Java EE since its
+inception.  He has contributed to Glassfish, fabric8, Weld, JBoss, Narayana,
+Kubernetes Helm and other open source software projects for 17 years and
+counting.  He currently works for Oracle on Project Helidon at the intersection
+of Java, Kubernetes and the enterprise.  When the work day ends, he plays a
+mean Hammond B3 in and around Bainbridge Island, WA, USA.

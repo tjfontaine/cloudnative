@@ -235,6 +235,42 @@
       "featured": false, 
       "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/bob-quillin.jpeg", 
       "title": "<p>Vice President of Developer Relations, Oracle</p>"
+    }, 
+    {
+      "name": "Micha \"mies\" Hernandez van Leuffen", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Monday, December 10 | The Cloud Native Culture &amp; Industry Summit at KubeCon + CloudNativeCon</em>\nCloud Native Java: Not your grandfather's Cup of Joe</p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Micha \"mies\" Hernandez van Leuffen was the founder and CEO of Wercker, a\ncontainer-native CI/CD platform, which was acquired by Oracle in May of 2017.\nHe's now a VP of Software Development inside the container native group at\nOracle where he's bringing the next generation of developer automation for the\nmodern cloud to market through OSS.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@mies\">@mies</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/mies-hernandez-van-leuffen.jpg", 
+      "title": "<p>Vice President of Solution Development, Oracle</p>"
+    }, 
+    {
+      "name": "Laird Nelson", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Monday, December 10 | The Cloud Native Culture &amp; Industry Summit at KubeCon + CloudNativeCon</em>\nCloud Native Java: Not your grandfather's Cup of Joe</p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Laird has worked with Java SE since it was in beta and Java EE since its\ninception.  He has contributed to Glassfish, fabric8, Weld, JBoss, Narayana,\nKubernetes Helm and other open source software projects for 17 years and\ncounting.  He currently works for Oracle on Project Helidon at the intersection\nof Java, Kubernetes and the enterprise.  When the work day ends, he plays a\nmean Hammond B3 in and around Bainbridge Island, WA, USA.</p>"
+        }
+      ], 
+      "social": {}, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2018/2018-12-10%20-%20KubeCon%202018%20NA", 
+      "title": "<p>Consulting Member of Technical Staff, Oracle</p>"
     }
   ], 
   "pages": [
@@ -278,6 +314,17 @@
         {
           "header": "Speakers", 
           "type": "speakers-all"
+        }
+      ]
+    }, 
+    {
+      "pageTitle": "Agenda", 
+      "pageType": "default", 
+      "modules": [
+        {
+          "type": "basic", 
+          "module": "Join Us!", 
+          "htmlBlock": "<h3>9:00am Check-in</h3>\n<h3>9:30am Keynote</h3>\n<p>Bob Quillin</p>\n<h3>10:00am Cloud Native Past, Present, Future</h3>\n<p>Hear from community leaders, end users, and open source contributors as they\ndiscuss the state of our cloud native ecosystem. They will delve into\nmilestones of our evolution, what's driving key technology choices today, and\nhow innovation is being defined for the future. These influencers will hash out\nwhat's at stake and distill what really matters.</p>\n<p>Kaslin Fields, Kris Nova, Christopher Woods, Ashley McNamara, John Harris</p>\n<h3>11:00am Autonomous workload management: Declarative Application Development</h3>\n<p>Today's application development still demands a lot of process, communication,\nand skill required to make everything work in production. Applications and\nservices must be defined in detail and then associated with particular\nclusters. Also, clusters and infrastructure need to be allocated in advance of\napplications being deployed. What if developers only had to focus on writing\ntheir applications? Come join us as we demo tooling to solve these problems\nthat leads the way to a fully <em>autonomous</em> modern application development\nframework. Including continuous integration, delivery and operations of modern\napplications and services - from commit to getting the job done.</p>\n<p>Kire Filipovski</p>\n<h3>11:45am Lunch</h3>\n<h3>12:45pm Serverless and Events Ecosystem</h3>\n<p>The CNCF Serverless Working Group is a subgroup of the Cloud Native Computing\nFoundation created to explore the intersection of cloud native and serverless\ntechnology. The group has since created a whitepaper laying out the definitions\nof serverless computing and its use cases, a landscape doc with the ecosystem\nof players, as well as its first major contribution back to the community with\nCloudEvents, a vendor-neutral specification for defining the format of event\ndata.  In this talk, Chad Arimura, VP Serverless Advocacy at Oracle, will share\nthe latest updates from the working group, demonstrate CloudEvents through a\ncode demo, introduce the next areas of work being discussed by the group, and\nideally convince you, the audience, the get involved in the community-driven\nefforts.</p>\n<p>Chad Arimura</p>\n<h3>1:30pm Serverless Lab</h3>\n<h3>2:00pm Kubernetes service delivery at scale without magic: a FaaS case study</h3>\n<p>Sift through the hype of Kubernetes to learn how to build a cloud scale\nFunctions-as-a-Service using the open source Fn Project. In this talk we'll\ncover being able to identify the key requirements for your service, how to\ntranslate those requirements into useful Kubernetes abstractions, understanding\nthe availability and blast radius for your service, when and when not to lean\ninto Kubernetes, and how to leverage Helm for deployments and rollbacks.</p>\n<p>TJ Fontaine</p>\n<h3>2:45pm Kubernetes Lab</h3>\n<h3>3:15pm Break</h3>\n<h3>3:30pm Cloud Native Java: Not your grandfather's Cup of Joe</h3>\n<p>Java has evolved in the last year; a 6-month release cadence, and powerful new\nfeatures. In this talk we will give a birds-eye view of how Java has evolved\nand present Helidon, a new framework to build microservices for a cloud native\nworld. Helidon includes powerful hooks for Prometheus and distributed tracing\nlibraries such as Zipkin. We will show how Helidon goes hand in hand with\nOracle's Cloud Native Platform, showcasing how to build, deploy and operate a\ncloud native Java application using this powerful new framework.</p>\n<p>Micha \"mies\" Hernandez van Leuffen, Laird Nelson</p>\n<h3>4:15pm Microservices Lab</h3>\n<h3>4:45pm Closing</h3>"
         }
       ]
     }
