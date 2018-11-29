@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Distributed Application Logging with Zipkin",
+          "file": "readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Zipkin - An Introduction",
+          "file": "zipkin-an-introduction.md"
+        }
+      ]
+    }
+  ]
+}
