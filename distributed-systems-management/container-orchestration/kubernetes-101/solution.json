@@ -27,10 +27,6 @@
         {
           "title": "Persistent Storage",
           "file": "storage.md"
-        },
-        {
-          "title": "s",
-          "file": "https://raw.githubusercontent.com/oracle/cloudnative/master/infrastructure/database/Persistent-storage/persistentStorage.md"
         }
       ]
     }
