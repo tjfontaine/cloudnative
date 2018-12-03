@@ -17,16 +17,16 @@
           "file": "ingress.md"
         },
         {
+          "title": "Persistent Storage",
+          "file": "storage.md"
+        },
+        {
           "title": "Service Types in Kubernetes",
           "file": "services.md"
         },
         {
           "title": "Smoke Tests",
           "file": "smoke.md"
-        },
-        {
-          "title": "Persistent Storage",
-          "file": "storage.md"
         }
       ]
     }
