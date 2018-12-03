@@ -314,7 +314,7 @@
             "ctaUrl": "events/2018/2018-12-10 - KubeCon 2018 NA/event",
             "ctaText": "Learn More",
             "location": "Seattle, Washington",
-            "date": "2018-12-10 00:00:00",
+            "date": ["2018-12-10 00:00:00", "2018-12-13 00:00:00"],
             "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/large_auditorium3_sm.jpg",
             "ribbonText": "Conference"
         },

@@ -322,9 +322,129 @@
       "pageType": "default", 
       "modules": [
         {
-          "type": "basic", 
-          "module": "Join Us!", 
-          "htmlBlock": "<h3>9:00am Check-in</h3>\n<h3>9:30am Keynote</h3>\n<p>Bob Quillin</p>\n<h3>10:00am Cloud Native Past, Present, Future</h3>\n<p>Hear from community leaders, end users, and open source contributors as they\ndiscuss the state of our cloud native ecosystem. They will delve into\nmilestones of our evolution, what's driving key technology choices today, and\nhow innovation is being defined for the future. These influencers will hash out\nwhat's at stake and distill what really matters.</p>\n<p>Kaslin Fields, Kris Nova, Christopher Woods, Ashley McNamara, John Harris</p>\n<h3>11:00am Autonomous workload management: Declarative Application Development</h3>\n<p>Today's application development still demands a lot of process, communication,\nand skill required to make everything work in production. Applications and\nservices must be defined in detail and then associated with particular\nclusters. Also, clusters and infrastructure need to be allocated in advance of\napplications being deployed. What if developers only had to focus on writing\ntheir applications? Come join us as we demo tooling to solve these problems\nthat leads the way to a fully <em>autonomous</em> modern application development\nframework. Including continuous integration, delivery and operations of modern\napplications and services - from commit to getting the job done.</p>\n<p>Kire Filipovski</p>\n<h3>11:45am Lunch</h3>\n<h3>12:45pm Serverless and Events Ecosystem</h3>\n<p>The CNCF Serverless Working Group is a subgroup of the Cloud Native Computing\nFoundation created to explore the intersection of cloud native and serverless\ntechnology. The group has since created a whitepaper laying out the definitions\nof serverless computing and its use cases, a landscape doc with the ecosystem\nof players, as well as its first major contribution back to the community with\nCloudEvents, a vendor-neutral specification for defining the format of event\ndata.  In this talk, Chad Arimura, VP Serverless Advocacy at Oracle, will share\nthe latest updates from the working group, demonstrate CloudEvents through a\ncode demo, introduce the next areas of work being discussed by the group, and\nideally convince you, the audience, the get involved in the community-driven\nefforts.</p>\n<p>Chad Arimura</p>\n<h3>1:30pm Serverless Lab</h3>\n<h3>2:00pm Kubernetes service delivery at scale without magic: a FaaS case study</h3>\n<p>Sift through the hype of Kubernetes to learn how to build a cloud scale\nFunctions-as-a-Service using the open source Fn Project. In this talk we'll\ncover being able to identify the key requirements for your service, how to\ntranslate those requirements into useful Kubernetes abstractions, understanding\nthe availability and blast radius for your service, when and when not to lean\ninto Kubernetes, and how to leverage Helm for deployments and rollbacks.</p>\n<p>TJ Fontaine</p>\n<h3>2:45pm Kubernetes Lab</h3>\n<h3>3:15pm Break</h3>\n<h3>3:30pm Cloud Native Java: Not your grandfather's Cup of Joe</h3>\n<p>Java has evolved in the last year; a 6-month release cadence, and powerful new\nfeatures. In this talk we will give a birds-eye view of how Java has evolved\nand present Helidon, a new framework to build microservices for a cloud native\nworld. Helidon includes powerful hooks for Prometheus and distributed tracing\nlibraries such as Zipkin. We will show how Helidon goes hand in hand with\nOracle's Cloud Native Platform, showcasing how to build, deploy and operate a\ncloud native Java application using this powerful new framework.</p>\n<p>Micha \"mies\" Hernandez van Leuffen, Laird Nelson</p>\n<h3>4:15pm Microservices Lab</h3>\n<h3>4:45pm Closing</h3>"
+          "header": "Agenda", 
+          "type": "agenda-all", 
+          "days": [
+            {
+              "date": "Mon Dec 10", 
+              "items": [
+                {
+                  "title": "Check-in", 
+                  "startTime": "9:00am", 
+                  "endTime": "9:30am", 
+                  "description": "", 
+                  "location": "Chelan 2 @ The Conference Center (TCC)"
+                }, 
+                {
+                  "title": "Keynote", 
+                  "startTime": "9:30am", 
+                  "endTime": "10:00am", 
+                  "description": "", 
+                  "location": "Chelan 2 @ The Conference Center (TCC)", 
+                  "speakers": [
+                    "Bob Quillin"
+                  ]
+                }, 
+                {
+                  "title": "Cloud Native Past, Present, Future", 
+                  "startTime": "10:00am", 
+                  "endTime": "10:45am", 
+                  "description": "Hear from community leaders, end users, and open source contributors as they\ndiscuss the state of our cloud native ecosystem. They will delve into\nmilestones of our evolution, what's driving key technology choices today, and\nhow innovation is being defined for the future. These influencers will hash out\nwhat's at stake and distill what really matters.", 
+                  "location": "Chelan 2 @ The Conference Center (TCC)", 
+                  "speakers": [
+                    "Kaslin Fields", 
+                    "Kris Nova", 
+                    "Christopher Woods", 
+                    "Ashley McNamara", 
+                    "John Harris"
+                  ]
+                }, 
+                {
+                  "title": "Converging infrastructure and container orchestration with Kubernetes", 
+                  "startTime": "11:00am", 
+                  "endTime": "11:45am", 
+                  "description": "Kubernetes and its model for container orchestration has won the battle, but\nwhen it comes to managing our infrastructure we reach for our old tools and\nmethodologies. Given Kubernetes' flexibility and extensibility, why aren't we\nusing it to orchestrate more than just containers? In this talk, we'll cover\nour tooling to simplify orchestrating infrastructure by leveraging Kubernetes\nCustom Resource Defintions and Controller/Operator patterns to achieve:</p>\n<ul>\n<li>Resilience: make your infrastructure resilient by declaring it inside an\n      active control plane with continuous monitoring and reconciliation\n      against a desired state</li>\n<li>Scale: optimize the management and provisioning speed of large and complex\n      infrastructure compositions by using model-event-driven approach</li>\n<li>Simplicity: simplify the user experience when managing infrastructure by\n      using your favorite Kubernetes tooling like kubectl, helm, ksonnet,\n      kustomize and many others, they're not just for containers</li>\n<li>Extensibility: extend the automation by leveraging the operator pattern for\n      non-containerized applications and platforms</li>\n</ul>", 
+                  "location": "Chelan 2 @ The Conference Center (TCC)", 
+                  "speakers": [
+                    "Kire Filipovski"
+                  ]
+                }, 
+                {
+                  "title": "Lunch", 
+                  "startTime": "11:45am", 
+                  "endTime": "12:45am", 
+                  "description": "", 
+                  "location": "Chelan 2 @ The Conference Center (TCC)"
+                }, 
+                {
+                  "title": "Serverless and Events Ecosystem", 
+                  "startTime": "12:45pm", 
+                  "endTime": "1:30pm", 
+                  "description": "The CNCF Serverless Working Group is a subgroup of the Cloud Native Computing\nFoundation created to explore the intersection of cloud native and serverless\ntechnology. The group has since created a whitepaper laying out the definitions\nof serverless computing and its use cases, a landscape doc with the ecosystem\nof players, as well as its first major contribution back to the community with\nCloudEvents, a vendor-neutral specification for defining the format of event\ndata.  In this talk, Chad Arimura, VP Serverless Advocacy at Oracle, will share\nthe latest updates from the working group, demonstrate CloudEvents through a\ncode demo, introduce the next areas of work being discussed by the group, and\nideally convince you, the audience, the get involved in the community-driven\nefforts.", 
+                  "location": "Chelan 2 @ The Conference Center (TCC)", 
+                  "speakers": [
+                    "Chad Arimura"
+                  ]
+                }, 
+                {
+                  "title": "Serverless Lab", 
+                  "startTime": "1:30pm", 
+                  "endTime": "2:00pm", 
+                  "description": "", 
+                  "location": "Chelan 2 @ The Conference Center (TCC)"
+                }, 
+                {
+                  "title": "Kubernetes service delivery at scale without magic: a FaaS case study", 
+                  "startTime": "2:00pm", 
+                  "endTime": "2:45pm", 
+                  "description": "Sift through the hype of Kubernetes to learn how to build a cloud scale\nFunctions-as-a-Service using the open source Fn Project. In this talk we'll\ncover being able to identify the key requirements for your service, how to\ntranslate those requirements into useful Kubernetes abstractions, understanding\nthe availability and blast radius for your service, when and when not to lean\ninto Kubernetes, and how to leverage Helm for deployments and rollbacks.", 
+                  "location": "Chelan 2 @ The Conference Center (TCC)", 
+                  "speakers": [
+                    "TJ Fontaine"
+                  ]
+                }, 
+                {
+                  "title": "Kubernetes Lab", 
+                  "startTime": "2:45pm", 
+                  "endTime": "3:15pm", 
+                  "description": "", 
+                  "location": "Chelan 2 @ The Conference Center (TCC)"
+                }, 
+                {
+                  "title": "Break", 
+                  "startTime": "3:15pm", 
+                  "endTime": "3:30pm", 
+                  "description": "", 
+                  "location": "Chelan 2 @ The Conference Center (TCC)"
+                }, 
+                {
+                  "title": "Cloud Native Java: Not your grandfather's Cup of Joe", 
+                  "startTime": "3:30pm", 
+                  "endTime": "4:15pm", 
+                  "description": "Java has evolved in the last year; a 6-month release cadence, and powerful new\nfeatures. In this talk we will give a birds-eye view of how Java has evolved\nand present Helidon, a new framework to build microservices for a cloud native\nworld. Helidon includes powerful hooks for Prometheus and distributed tracing\nlibraries such as Zipkin. We will show how Helidon goes hand in hand with\nOracle's Cloud Native Platform, showcasing how to build, deploy and operate a\ncloud native Java application using this powerful new framework.", 
+                  "location": "Chelan 2 @ The Conference Center (TCC)", 
+                  "speakers": [
+                    "Micha \"mies\" Hernandez van Leuffen", 
+                    "Laird Nelson"
+                  ]
+                }, 
+                {
+                  "title": "Microservices Lab", 
+                  "startTime": "4:15pm", 
+                  "endTime": "4:45pm", 
+                  "description": "", 
+                  "location": "Chelan 2 @ The Conference Center (TCC)"
+                }, 
+                {
+                  "title": "Closing", 
+                  "startTime": "4:45pm", 
+                  "endTime": "5:00pm", 
+                  "description": "", 
+                  "location": "Chelan 2 @ The Conference Center (TCC)"
+                }
+              ]
+            }
+          ]
         }
       ]
     }

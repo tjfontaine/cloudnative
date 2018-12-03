@@ -1,10 +1,22 @@
-### 9:00am Check-in		
+# 2018-12-10
 
-### 9:30am Keynote
+## 9:00am - 9:30am Check-in
+
+### Location
+
+Chelan 2 @ The Conference Center (TCC)
+
+## 9:30am - 10:00am Keynote
+
+### Location
+
+Chelan 2 @ The Conference Center (TCC)
+
+### Speakers
 
 Bob Quillin
 
-### 10:00am Cloud Native Past, Present, Future
+## 10:00am - 10:45am Cloud Native Past, Present, Future
 
 Hear from community leaders, end users, and open source contributors as they
 discuss the state of our cloud native ecosystem. They will delve into
@@ -12,25 +24,49 @@ milestones of our evolution, what's driving key technology choices today, and
 how innovation is being defined for the future. These influencers will hash out
 what's at stake and distill what really matters.
 
+### Location
+
+Chelan 2 @ The Conference Center (TCC)
+
+### Speakers
+
 Kaslin Fields, Kris Nova, Christopher Woods, Ashley McNamara, John Harris
 
-### 11:00am Autonomous workload management: Declarative Application Development
+## 11:00am - 11:45am Converging infrastructure and container orchestration with Kubernetes
 
-Today's application development still demands a lot of process, communication,
-and skill required to make everything work in production. Applications and
-services must be defined in detail and then associated with particular
-clusters. Also, clusters and infrastructure need to be allocated in advance of
-applications being deployed. What if developers only had to focus on writing
-their applications? Come join us as we demo tooling to solve these problems
-that leads the way to a fully *autonomous* modern application development
-framework. Including continuous integration, delivery and operations of modern
-applications and services - from commit to getting the job done.
+Kubernetes and its model for container orchestration has won the battle, but
+when it comes to managing our infrastructure we reach for our old tools and
+methodologies. Given Kubernetes' flexibility and extensibility, why aren't we
+using it to orchestrate more than just containers? In this talk, we'll cover
+our tooling to simplify orchestrating infrastructure by leveraging Kubernetes
+Custom Resource Defintions and Controller/Operator patterns to achieve:
+
+  * Resilience: make your infrastructure resilient by declaring it inside an
+      active control plane with continuous monitoring and reconciliation
+      against a desired state
+  * Scale: optimize the management and provisioning speed of large and complex
+      infrastructure compositions by using model-event-driven approach
+  * Simplicity: simplify the user experience when managing infrastructure by
+      using your favorite Kubernetes tooling like kubectl, helm, ksonnet,
+      kustomize and many others, they're not just for containers
+  * Extensibility: extend the automation by leveraging the operator pattern for
+      non-containerized applications and platforms
+
+### Location
+
+Chelan 2 @ The Conference Center (TCC)
+
+### Speakers
 
 Kire Filipovski
 
-### 11:45am Lunch
+## 11:45am - 12:45am Lunch
 
-### 12:45pm Serverless and Events Ecosystem
+### Location
+
+Chelan 2 @ The Conference Center (TCC)
+
+## 12:45pm - 1:30pm Serverless and Events Ecosystem
 
 The CNCF Serverless Working Group is a subgroup of the Cloud Native Computing
 Foundation created to explore the intersection of cloud native and serverless
@@ -44,11 +80,21 @@ code demo, introduce the next areas of work being discussed by the group, and
 ideally convince you, the audience, the get involved in the community-driven
 efforts.
 
+### Location
+
+Chelan 2 @ The Conference Center (TCC)
+
+### Speakers
+
 Chad Arimura
 
-### 1:30pm Serverless Lab
+## 1:30pm - 2:00pm Serverless Lab
 
-### 2:00pm Kubernetes service delivery at scale without magic: a FaaS case study
+### Location
+
+Chelan 2 @ The Conference Center (TCC)
+
+## 2:00pm - 2:45pm Kubernetes service delivery at scale without magic: a FaaS case study
 
 Sift through the hype of Kubernetes to learn how to build a cloud scale
 Functions-as-a-Service using the open source Fn Project. In this talk we'll
@@ -57,13 +103,27 @@ translate those requirements into useful Kubernetes abstractions, understanding
 the availability and blast radius for your service, when and when not to lean
 into Kubernetes, and how to leverage Helm for deployments and rollbacks.
 
+### Location
+
+Chelan 2 @ The Conference Center (TCC)
+
+### Speakers
+
 TJ Fontaine
 
-### 2:45pm Kubernetes Lab
+## 2:45pm - 3:15pm Kubernetes Lab
 
-### 3:15pm Break
+### Location
 
-### 3:30pm Cloud Native Java: Not your grandfather's Cup of Joe
+Chelan 2 @ The Conference Center (TCC)
+
+## 3:15pm - 3:30pm Break
+
+### Location
+
+Chelan 2 @ The Conference Center (TCC)
+
+## 3:30pm - 4:15pm Cloud Native Java: Not your grandfather's Cup of Joe
 
 Java has evolved in the last year; a 6-month release cadence, and powerful new
 features. In this talk we will give a birds-eye view of how Java has evolved
@@ -73,14 +133,22 @@ libraries such as Zipkin. We will show how Helidon goes hand in hand with
 Oracle's Cloud Native Platform, showcasing how to build, deploy and operate a
 cloud native Java application using this powerful new framework.
 
+### Location
+
+Chelan 2 @ The Conference Center (TCC)
+
+### Speakers
+
 Micha "mies" Hernandez van Leuffen, Laird Nelson
 
-### 4:15pm Microservices Lab
+## 4:15pm - 4:45pm Microservices Lab
 
-### 4:45pm Closing 
+### Location
 
+Chelan 2 @ The Conference Center (TCC)
 
+## 4:45pm - 5:00pm Closing 
 
+### Location
 
-
-
+Chelan 2 @ The Conference Center (TCC)
