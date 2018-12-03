@@ -3,7 +3,7 @@ One of the biggest pain points in the container world is using persistent storag
 
 In this article, I'm going to talk about Kubernetes Persistent Volumes and Persistent Volume Claims. I'll generally explain what they do, which should give you an idea for when you would need to use them. We'll focus on Oracle Cloud Infrastructure as a concrete example.
 
-### <a name="OCIFlexVolumeDriver" href="#"></a>[OCI FlexVolume Driver](https://github.com/oracle/oci-flexvolume-driver)
+### [OCI FlexVolume Driver](https://github.com/oracle/oci-flexvolume-driver)
 
 You can click the header of this section to check out the github repo for this project. The FlexVolume Driver provides the ability to use OCI Block Volumes as Kubernetes Persistent Volumes. Let's walk through what that looks like.
 
@@ -45,7 +45,7 @@ Also, when your pod is deleted, your environment will go back to looking like th
 
 Your pod will be deleted, and your block storage will be unmounted from the Kubernetes Worker. But the block volume itself will remain, thus *persisting* your data.
 
-### <a name="OCIVolumeProvisioner" href="#"></a>[OCI Volume Provisioner](https://github.com/oracle/oci-volume-provisioner/)
+### [OCI Volume Provisioner](https://github.com/oracle/oci-volume-provisioner/)
 
 In some cases, being aware of where the storage for your containerized workloads actually lives is very important. In those cases, using a FlexVolume Plugin may be sufficient to get the functionality needed.
 
