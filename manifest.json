@@ -5,6 +5,13 @@
                 {
                     "fragment": "ci-cd",
                     "solutions": [{
+                        "fragment": "spinnaker",
+                        "title": "Armory Spinnaker",
+                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/armory-spinnaker",
+                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/armory-spinnaker/spinnaker_landing.png",
+                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/armory-spinnaker/spinnaker_course_pg.png"
+                    },
+                    {
                         "fragment": "jenkinsx",
                         "title": "Jenkins X",
                         "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/jenkinsx",
@@ -63,9 +70,18 @@
         },
         {
             "fragment": "distributed-systems-management",
-            "subcategories": [{
+            "subcategories": [
+                {
                 "fragment": "container-orchestration",
-                "solutions": [{
+                "solutions": [
+                    {
+                        "fragment": "docker",
+                        "title": "Docker",
+                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/container-orchestration/docker-basics",
+                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/container-orchestration/docker-basics/docker_landing.png",
+                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/container-orchestration/docker-basics/docker_course_pg.png"
+                    },
+                    {
                         "fragment": "oke",
                         "title": "Oracle Container Engine for Kubernetes",
                         "githubUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/container-orchestration/oke",
@@ -82,6 +98,20 @@
                 ],
                 "description": "The advent of containers has significantly impacted how we ship and run software in the cloud. Managing containers at scale often means deploying and managing hundreds or thousands of containers at any given time. Container orchestration provides management of infrastructure resources as well as deployment and supervision of containers across those resources. Features such as scaling workloads up and down, restarting failed containers, and linking containers together into meaningful groups are all part of the orchestration ecosystem.",
                 "title": "Container Orchestration"
+            },
+            {
+                "fragment": "service-mesh-and-discovery",
+                "solutions": [
+                    {
+                        "fragment": "envoy",
+                        "title": "Envoy",
+                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/service-mesh-and-discovery/Envoy",
+                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/service-mesh-and-discovery/Envoy/envoy_landing.png",
+                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/service-mesh-and-discovery/Envoy/envoy_course_pg.png"
+                    }
+                ],
+                "description": "The service mesh is a configurable infrastructure layer for microservices applications, making communication between service instances flexible, reliable, and fast. It also provides service discovery, load balancing, encryption, authentication, and authorization. Service mesh makes developing, testing, and deploying applications more efficient and observable.",
+                "title": "Service Mesh and Discovery"
             }],
             "title": "Distributed Systems Management"
         },

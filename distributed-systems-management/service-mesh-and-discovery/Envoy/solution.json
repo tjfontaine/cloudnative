@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Envoy",
+          "file": "readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Getting Started with Envoy",
+          "file": "envoy-tutorial.md"
+        }
+      ]
+    }
+  ]
+}

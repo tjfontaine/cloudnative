@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Spinnaker",
+          "file": "overview.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Armory Spinnaker on Oracle Container Engine for Kubernetes",
+          "file": "spinnaker.md"
+        }
+      ]
+    }
+  ]
+}
