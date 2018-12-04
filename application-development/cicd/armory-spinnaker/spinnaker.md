@@ -33,7 +33,8 @@ Enable the Kubernetes provider with: `hal config provider kubernetes enable`
 
 Output: 
 
-```mboxell-mac:~ mboxell$ hal config provider kubernetes enable
+```
+mboxell-mac:~ mboxell$ hal config provider kubernetes enable
 + Get current deployment
   Success
 WARNING: An illegal reflective access operation has occurred
