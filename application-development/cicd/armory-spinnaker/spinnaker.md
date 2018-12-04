@@ -59,7 +59,8 @@ hal config provider kubernetes account add my-k8s-v2-account \
 
 Output: 
 
-```mboxell-mac:~ mboxell$ hal config provider kubernetes account add my-k8s-v2-account     --provider-version v2     --context $(kubectl config current-context)
+```
+mboxell-mac:~ mboxell$ hal config provider kubernetes account add my-k8s-v2-account     --provider-version v2     --context $(kubectl config current-context)
 + Get current deployment
   Success
 WARNING: An illegal reflective access operation has occurred
@@ -79,7 +80,8 @@ Next run:
 
 Output: 
 
-```hal config features edit --artifacts true
+```
+hal config features edit --artifacts true
 + Get current deployment
   Success
 + Get features
@@ -93,7 +95,8 @@ For our environment we will use a distributed installation onto a Kubernetes clu
 
 Output: 
 
-```hal config deploy edit --type distributed --account-name my-k8s-v2-account
+```
+hal config deploy edit --type distributed --account-name my-k8s-v2-account
 + Get current deployment
   Success
 + Get the deployment environment
@@ -151,7 +154,8 @@ hal config storage oracle edit \
 
 Output: 
 
-```+ Get current deployment
+```
++ Get current deployment
 + Get current deployments 
   Success
 + Get persistent store
