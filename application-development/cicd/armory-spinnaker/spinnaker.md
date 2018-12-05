@@ -21,11 +21,7 @@ In order to push to Oracle Cluster Engine for Kubernetes (OKE) you will need acc
 
 #### Installation
 
-You can download the Armory Spinnaker installer and run it with this command:
-
-```
-curl -L https://get.armory.io/halyard/install/latest/macos/InstallArmoryHalyard.sh > InstallArmoryHalyard.sh && sudo bash InstallArmoryHalyard.sh --version latest
-```
+You can download the Armory Spinnaker installer and run it with this command: `curl -L https://get.armory.io/halyard/install/latest/macos/InstallArmoryHalyard.sh > InstallArmoryHalyard.sh && sudo bash InstallArmoryHalyard.sh --version latest`
 
 This should install the `hal` command in `/usr/local/bin`. You can test that you have the correct version in your path by running `hal -v`. `hal` will bring up helpful parameter and commands. 
 
@@ -34,7 +30,7 @@ Enable the Kubernetes provider with: `hal config provider kubernetes enable`
 Output: 
 
 ```
-mboxell-mac:~ mboxell$ hal config provider kubernetes enable
+$ hal config provider kubernetes enable
 + Get current deployment
   Success
 WARNING: An illegal reflective access operation has occurred
@@ -52,7 +48,7 @@ You may see certain warnings pop up in output of your commands. These will not i
 Add a Kubernetes account with:
 
 ```
-hal config provider kubernetes account add my-k8s-v2-account \
+$ hal config provider kubernetes account add my-k8s-v2-account \
     --provider-version v2 \
     --context $(kubectl config current-context)
 ```
@@ -60,7 +56,7 @@ hal config provider kubernetes account add my-k8s-v2-account \
 Output: 
 
 ```
-mboxell-mac:~ mboxell$ hal config provider kubernetes account add my-k8s-v2-account     --provider-version v2     --context $(kubectl config current-context)
+$ hal config provider kubernetes account add my-k8s-v2-account     --provider-version v2     --context $(kubectl config current-context)
 + Get current deployment
   Success
 WARNING: An illegal reflective access operation has occurred
@@ -74,14 +70,12 @@ WARNING: All illegal access operations will be denied in a future release
   kubernetes.
 ```
 
-Next run: 
-
-`hal config features edit --artifacts true`
+Next run: `hal config features edit --artifacts true`
 
 Output: 
 
 ```
-hal config features edit --artifacts true
+$ hal config features edit --artifacts true
 + Get current deployment
   Success
 + Get features
@@ -89,14 +83,12 @@ hal config features edit --artifacts true
 - No changes supplied.
 ```
 
-For our environment we will use a distributed installation onto a Kubernetes cluster. This installation model has Halyard deploy each of the Spinnaker microservices separately. A distributed installation is helpful to limit update-related downtime, making it recommended for use with production environments.
-
-`hal config deploy edit --type distributed --account-name my-k8s-v2-account`
+For our environment we will use a distributed installation onto a Kubernetes cluster. This installation model has Halyard deploy each of the Spinnaker microservices separately. A distributed installation is helpful to limit update-related downtime, making it recommended for use with production environments. To do so enter: `hal config deploy edit --type distributed --account-name my-k8s-v2-account`
 
 Output: 
 
 ```
-hal config deploy edit --type distributed --account-name my-k8s-v2-account
+$ hal config deploy edit --type distributed --account-name my-k8s-v2-account
 + Get current deployment
   Success
 + Get the deployment environment
@@ -141,7 +133,7 @@ You will need the following information to enable Oracle Object Storage in Spinn
 Fill out the Oracle Cloud Infrastructure Object Storage source with your OCI credentials: 
 
 ```
-hal config storage oracle edit \
+$ hal config storage oracle edit \
     --bucket-name $BUCKET_NAME \
     --compartment-id $COMPARTMENT_OCID \
     --fingerprint $API_KEY_FINGERPRINT \
@@ -174,9 +166,7 @@ Problems in default.persistentStorage:
 + Successfully edited persistent store "oracle".
 ```
 
-Set the storage source to Oracle Object Storage: 
-
-`hal config storage edit --type oracle`
+Set the storage source to Oracle Object Storage: `hal config storage edit --type oracle`
 
 Output: 
 
@@ -220,18 +210,7 @@ Deploy Spinnaker: `hal deploy apply`
 Output: 
 
 ```
-+ Get current deployment
-  Success
-WARNING: An illegal reflective access operation has occurred
-WARNING: Illegal reflective access by com.fasterxml.jackson.databind.util.ClassUtil (file:/opt/halyard/lib/jackson-databind-2.8.8.jar) to constructor java.lang.Void()
-WARNING: Please consider reporting this to the maintainers of com.fasterxml.jackson.databind.util.ClassUtil
-WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
-WARNING: All illegal access operations will be denied in a future release
-+ Edit Spinnaker version
-  Success
-+ Spinnaker has been configured to update/install version
-  "1.14.209". Deploy this version of Spinnaker with `hal deploy apply`.
-mboxell-mac:~ mboxell$ hal deploy apply
+$ hal deploy apply
 + Get current deployment
   Success
 + Prep deployment
