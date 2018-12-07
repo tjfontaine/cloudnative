@@ -108,6 +108,13 @@
                         "githubUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/service-mesh-and-discovery/Envoy",
                         "logoUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/service-mesh-and-discovery/Envoy/envoy_landing.png",
                         "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/service-mesh-and-discovery/Envoy/envoy_course_pg.png"
+                    },
+                    {
+                        "fragment": "istio",
+                        "title": "Istio",
+                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/service-mesh-and-discovery/Istio",
+                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/service-mesh-and-discovery/Istio/istio_landing.png",
+                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/service-mesh-and-discovery/Istio/istio_course_pg.png"
                     }
                 ],
                 "description": "The service mesh is a configurable infrastructure layer for microservices applications, making communication between service instances flexible, reliable, and fast. It also provides service discovery, load balancing, encryption, authentication, and authorization. Service mesh makes developing, testing, and deploying applications more efficient and observable.",

@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Istio",
+          "file": "Readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Getting Started with Istio",
+          "file": "Tutorial.md"
+        }
+      ]
+    }
+  ]
+}
