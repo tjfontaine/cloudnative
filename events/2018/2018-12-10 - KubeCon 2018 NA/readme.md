@@ -2,7 +2,7 @@
 
 Sign up for the Oracle Summit Dec 10th at registration
 
-[Register](https://www.regonline.com/registration/Checkin.aspx?EventID=2246960&_ga=2.88305819.1633336954.1540332242-631312331.1508361175)
+[Register](https://sched.co/ITVR)
 
 ## Date
 
@@ -14,9 +14,13 @@ Seattle, Washington
 
 ## Join Us
 
-[Sign up for our summit during
-registration](https://www.regonline.com/KCNA2018?_ga=2.97918175.1934848703.1539979200-631312331.1508361175),
-check out our speakers and sessions below, and stop by our booth to try a lab!
+Support Women Who Code by Adding The Cloud Native Culture & Industry Summit on
+Dec 10th to your registration!
+
+For a limited time, sign up for free and Oracle will donate $100 per
+registration to Women Who Code, and all attendees will receive a t-shirt!
+
+<a class="bttn centered arrow-bttn" target="blank" href="https://sched.co/ITVR"><span class="bttn-txt">Log In to Register</span></a>
 
 ## Watch the teaser
 
@@ -24,7 +28,7 @@ Get amped, and register!
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Dj6aYLdvch8/0.jpg)](https://www.youtube.com/watch?v=Dj6aYLdvch8)
 
-[//]: # (module_video)
+[//]: # (module_video:https://www.youtube.com/watch?v=Dj6aYLdvch8)
 
 ## Featured Speakers
 
