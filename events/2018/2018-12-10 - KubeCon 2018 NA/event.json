@@ -271,6 +271,23 @@
       "featured": false, 
       "photoUrl": "https://oracle.github.io/cloudnative/events/2018/2018-12-10%20-%20KubeCon%202018%20NA", 
       "title": "<p>Consulting Member of Technical Staff, Oracle</p>"
+    }, 
+    {
+      "name": "Mickey Boxell", 
+      "info": [
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Mickey Boxell is a Solutions Architect on the Cloud Native Labs team at Oracle. He is focused on building customer-deployable cloud native/container native solutions to bridge the gap between open source communities and the core Oracle Cloud Infrastructure services. This includes solution tutorials, sample code, technical blog posts all related to the Kubernetes platform.</p>"
+        }, 
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Mon, Dec 10 / CloudNativeCon Cloud Native Java: Not your grandfather's Cup of Joe</em></p>"
+        }
+      ], 
+      "social": {}, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/mickey-boxell.jpg", 
+      "title": "<p>Solution Architect, Oracle</p>"
     }
   ], 
   "pages": [
@@ -425,7 +442,8 @@
                   "location": "Chelan 2 @ The Conference Center (TCC)", 
                   "speakers": [
                     "Micha \"mies\" Hernandez van Leuffen", 
-                    "Laird Nelson"
+                    "Laird Nelson", 
+                    "Mickey Boxell"
                   ]
                 }, 
                 {

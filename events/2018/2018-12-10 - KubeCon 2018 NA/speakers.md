@@ -408,3 +408,19 @@ Kubernetes Helm and other open source software projects for 17 years and
 counting.  He currently works for Oracle on Project Helidon at the intersection
 of Java, Kubernetes and the enterprise.  When the work day ends, he plays a
 mean Hammond B3 in and around Bainbridge Island, WA, USA.
+
+## Mickey Boxell
+
+![Mickey Boxell](../../../images/speakers/mickey-boxell.jpg)
+
+### Role
+
+Solution Architect, Oracle
+
+### Bio
+
+Mickey Boxell is a Solutions Architect on the Cloud Native Labs team at Oracle. He is focused on building customer-deployable cloud native/container native solutions to bridge the gap between open source communities and the core Oracle Cloud Infrastructure services. This includes solution tutorials, sample code, technical blog posts all related to the Kubernetes platform.
+
+### Sessions
+
+#### Mon, Dec 10 / CloudNativeCon Cloud Native Java: Not your grandfather's Cup of Joe

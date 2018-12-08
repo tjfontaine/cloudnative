@@ -139,7 +139,7 @@ Chelan 2 @ The Conference Center (TCC)
 
 ### Speakers
 
-Micha "mies" Hernandez van Leuffen, Laird Nelson
+Micha "mies" Hernandez van Leuffen, Laird Nelson, Mickey Boxell
 
 ## 4:15pm - 4:45pm Microservices Lab
 
