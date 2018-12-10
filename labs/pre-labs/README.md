@@ -12,9 +12,9 @@ Get a demo lab environment assigned to you. If you need help, please see any of 
 
 ## Configure Demo Lab Environment ##
 
-### Connect to your Demo Lab Instance ###
+### Provision your Demo Lab Instance ###
 
-To get started, let's log into the demo lab instance. This a VM running within a demo tenancy, which is assigned to you for labs today.
+Your lab environment may or may not have a demo lab instance already allocated. If you need to create your instance, we'll do that here.
 
 First, log in to the [OCI Console](https://console.us-phoenix-1.oraclecloud.com) with the demo user credentials. The demo user name is `demoN` where 'N' is the number you have. The password is `Password123!`.
 
@@ -22,16 +22,29 @@ Log in to OCI console, and head to compute instances.
 
 ![](img/01_oci_nav_instance.png)
 
-Select your demo compartment (search for `dcN`, which you'll find nested under the `demo` compartment). 
+Click on `Create Instance`, choose a name for your instance (e.g. `demo-N`) and click the `Change Image Source` button.
 
-Find public IP of your demo-lab instance.
+![](img/oci_new_instance.png)
+
+Select the root compartment, and check the box next to the custom image and click the `Select Image` button.
+
+![](img/oci_instance_detail.png)
+
+Scroll to the bottom of the main launch page, and click the `Create` button.
+
+This will bring you to the instance details page, and the status of the instance will update. Also, the public IP address will appear here once ready.
+
+### Connect to your Demo Lab Instance ###
+
+To get started configuring our environment, let's log into the demo lab instance.
+
+Once your demo lab instance is provisioned and you see the public IP address in the details page, we're ready to go.
 
 ![](img/02_oci_instances.png)
 
 You will need to grab the demo user public key to get started. You can grab it [here](https://objectstorage.us-ashburn-1.oraclecloud.com/n/cloudnative-devrel/b/demo/o/demo_key), save it somewhere specific.
 
 Now, log into tenancy via:  ssh -i <`path-to-demo_key`> opc@<`public IP address>
-
 
 ### OCI CLI Setup ###
 
