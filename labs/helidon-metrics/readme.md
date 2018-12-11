@@ -1,10 +1,3 @@
----
-layout: ziplab
-description: Microservice Metrics and Tracing
-tags: Oracle Cloud, Oracle Cloud Infrastructure, OCI, Zipkin, Prometheus, Helidon, Microservice
-permalink: /ziplabs/helidon-metrics-tracing/index.html
----
-
 # Helidon Metric Collection and Tracing
 
 ## Before You Begin
@@ -38,11 +31,7 @@ The following list shows the minimum versions:
 git clone https://github.com/mickeyboxell/helidon
 ```
 
-2. Change into the helidon-se-codeone-2018 directory: 
-
-```
-cd helidon-se-codeone-2018
-```
+2. Change into the helidon-se-codeone-2018 directory
 
 3. Build the application with: 
 
@@ -89,7 +78,7 @@ curl -X GET http://localhost:8080/greet/Jose
 curl -X POST -d '{"greeting" : "Howdy"}' http://localhost:8080/greet/greeting
 
 # Change greeting by POSTing JSON to a slow handler
-# Using asynchronous processig
+# Using asynchronous processing
 curl -X POST -d '{"greeting" : "Hi"}' http://localhost:8080/greet/slowgreeting
 ```
 
@@ -107,9 +96,8 @@ curl -H 'Accept: text/plain' -X GET http://localhost:8080/metrics/
 
 ### Downloading and Running Prometheus on your Local Machine
 
-What use are metrics without a tool to consume them? 
-
-https://prometheus.io/docs/prometheus/latest/getting_started/
+What use are metrics without a tool to consume them? In this lab we will be using a tool called [Prometheus](
+https://prometheus.io/docs/prometheus/latest/getting_started/). 
 
 1. [Download the latest release](https://prometheus.io/download) of Prometheus for your platform, then extract and run it:
 
@@ -205,21 +193,7 @@ kubectl get service quickstart-se  # Get service info
 helm install stable/prometheus -n prometheus
 ```
 
-2. To allow Prometheus to scrape metrics from your Heldion quickstart-se application you will have to modify the service information. Enter: 
-
-```
-kubectl edit svc prometheus-server
-```
-
-3. Under `metadata` add the following: 
-
-```
-annotations:
-    prometheus.io/scrape: "true"
-    prometheus.io/port: "9102"
-```
-
-4. Get the Prometheus server URL by running these commands in the same shell:
+2. Get the Prometheus server URL by running these commands in the same shell:
 
 ```
 export POD_NAME=$(kubectl get pods --namespace default -l "app=prometheus,component=server" -o jsonpath="{.items[0].metadata.name}")
@@ -229,21 +203,21 @@ export POD_NAME=$(kubectl get pods --namespace default -l "app=prometheus,compon
 kubectl --namespace default port-forward $POD_NAME 9090
 ```
 
-5. Once Prometheus is runnining access the console (e.g. `localhost:9090/graph`) and click `Graph`. Enter `application:accessctr` then click `Execute`. You should see the graph plotting the application's `accessctr` metric. Exercise the application some more using the curl commands that were described earlier. Click `Execute` again and you should see the counter increase.
-
-
+3. Once Prometheus is runnining access the console (e.g. `localhost:9090/graph`) and click `Graph`. Enter `application:accessctr` then click `Execute`. You should see the graph plotting the application's `accessctr` metric. Exercise the application some more using the curl commands that were described earlier. Click `Execute` again and you should see the counter increase.
 
 ## Kubernetes Traces: Downloading and Running Zipkin on Kubernetes
 
-1. Clone our example Zipkin yaml file to a local directory and change to that directory. To install Zipkin enter: 
+1. To install Zipkin enter:
 
 ```
-kubectl create -f zipkin.yaml
+kubectl create -f https://raw.githubusercontent.com/mickeyboxell/helidon/master/metrics_tracing/zipkin.yaml
 ```
 
 This will install Zipkin on your cluster with the NodePort of 31001 and the port of 9411. 
 
 2. As mentioned before, the application has been instrumented to share tracing data. By default the application is configured to connect to zipkin at `http://localhost:9411`. This is configured in `application.yaml`. In this example your are deploying to a Kubernetes cluster. In `application.yaml` change the zipkin.endpoint to `zipkin.endpoint: "http://zipkin:9411"`. 
+
+Remember, you will have to re-package the application with `mvn package` and re-build the Docker image with `docker build -t quickstart-se target` everytime the application is modified. 
 
 3. Browse to http://localhost:9411 and choose "greet-service" from the list of available service names. Click "Find Traces" to see tracing data for the service. 
 

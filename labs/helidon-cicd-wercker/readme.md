@@ -1,10 +1,3 @@
----
-layout: ziplab
-description: Use Wercker to set up a CI/CD Pipeline with OCIR and OKE
-tags: Oracle Cloud, Oracle Cloud Infrastructure, OCI, OKE, CI/CD, Wercker, Helidon
-permalink: /ziplabs/helidon-wercker-cicd/index.html
----
-
 # Helidon CI/CD with Wercker, Container Registry, and Oracle Container Engine for Kubernetes
 
 ## Before You Begin
@@ -31,7 +24,7 @@ The following list shows the minimum versions:
 
 ## Create a Wercker Application 
 
-1. Begin by logging into your GitHub account forking the quickstart-se application from [our GitHub repo](https://github.com/mickeyboxell/helidon). 
+1. Begin by logging into your GitHub account forking the quickstart-se application from [our GitHub repo](https://github.com/mickeyboxell/helidon/helidon-se-codeone-2018). 
 
 2. Navigate to https://app.wercker.com/. Create an account if you do not already have one. 
 
@@ -55,7 +48,7 @@ The following list shows the minimum versions:
 
 1. In the **Environment** tab create each of the following environment variables and click **Add** after each one.
 
-   * Docker Username must include the `<tenancy name>/<username>`Docker Password is the `auth_token` for your cluster. Click **Protected** checkbox. NOTE: It must not contain a $ character.
+   * Docker Username must include the `<tenancy name>/<username>`Docker Password is the [authentication token](https://docs.cloud.oracle.com/iaas/Content/Registry/Tasks/registrygettingauthtoken.htm). Click **Protected** checkbox. NOTE: It must not contain a $ character.
    * Docker Repo must include `<region-code>.ocir.io/<tenancy name>/<registry name>`
    * Docker Username must include the `<tenancy name>/<username>`
 
