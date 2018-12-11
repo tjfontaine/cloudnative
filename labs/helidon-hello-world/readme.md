@@ -1,10 +1,3 @@
----
-layout: ziplab
-description: An introduction to building microservices with Helidon
-tags: Oracle Cloud, Oracle Cloud Infrastructure, OCI, Helidon, Microservices
-permalink: /ziplabs/helidon-hello-world/index.html
----
-
 # Helidon Hello World  
 
 ## Before You Begin
@@ -25,8 +18,11 @@ The following list shows the minimum versions:
 - [Maven 3.5](https://maven.apache.org/download.cgi) 
 - [Docker 18.02](https://docs.docker.com/install/)
 - [Kubectl 1.7.4](https://kubernetes.io/docs/tasks/tools/install-kubectl/) 
+- Kubernetes: Enable [Kubernetes Support for Mac](https://docs.docker.com/docker-for-mac/#kubernetes) or [Kubernetes Support for Windows](https://docs.docker.com/docker-for-windows/#kubernetes).
 
 [Here](https://helidon.io/docs/latest/#/getting-started/01_prerequisites) is an updated list of pre-requisites for using Helidon.
+
+
 
 ## Generate The Project
 
@@ -47,7 +43,8 @@ mvn archetype:generate -DinteractiveMode=false \
 2. change directories into the one created by the archetype:
 
 ```
-cd quickstart-se```
+cd quickstart-se
+```
 
 3. Build the application: 
 
@@ -55,10 +52,27 @@ cd quickstart-se```
 mvn package
 ```
 
-4. The project builds an application jar for the example and saves all runtime dependencies in the target/libs directory. This means you can easily start the application by running the application jar file
+4. The project builds an application jar for the example and saves all runtime dependencies in the target/libs directory. This means you can easily start the application by running the application jar file: 
 
 ```
 java -jar target/quickstart-se.jar
+```
+You can now access the application	at http://localhost:8080/greet
+
+The example is a very simple "Hello World" greeting service. It supports GET requests for generating a greeting message, and a PUT request for changing the greeting itself. The response is encoded using JSON. For example: 
+
+```
+curl -X GET http://localhost:31431/greet
+{"message":"Hello World!"}
+
+curl -X GET http://localhost:31431/greet/Joe
+{"message":"Hello Joe!"}
+
+curl -X PUT http://localhost:31431/greet/greeting/Hola
+{"greeting":"Hola"}
+
+curl -X GET http://localhost:31431/greet/Jose
+{"message":"Hola Jose!"}
 ```
 
 5. The project also contains a Docker file so that you can easily build and run a docker image. Because the example’s runtime dependencies are already in target/libs, the Docker file is pretty simple (see target/Dockerfile). To build the Docker image, you need to have Docker installed and running on your system.
@@ -66,6 +80,13 @@ java -jar target/quickstart-se.jar
 ```
 docker build -t quickstart-se target
 ```
+
+6. If you would like to start the application with Docker run: 
+
+```
+docker run --rm -p 8080:8080 quickstart-se:latest
+```
+You can access the application	at http://localhost:8080/greet
 
 ## Deploy the Application to Kubernetes. 
 
@@ -97,27 +118,12 @@ kubectl proxy
 kubectl get service quickstart-se
 ```
 
-5. Note the PORTs. You can now connect to the application using the second port number (the NodePort) instead of 8080. For example:
+5. Note the ports. You can now connect to the application using the second port number (the NodePort) instead of 8080. For example:
 
 ```
-curl -X GET http://localhost:31431/greet
+http://localhost:31431/greet
 ```
 
-6. The example is a very simple "Hello World" greeting service. It supports GET requests for generating a greeting message, and a PUT request for changing the greeting itself. The response is encoded using JSON. For example:
-
-```
-curl -X GET http://localhost:31431/greet
-{"message":"Hello World!"}
-
-curl -X GET http://localhost:31431/greet/Joe
-{"message":"Hello Joe!"}
-
-curl -X PUT http://localhost:31431/greet/greeting/Hola
-{"greeting":"Hola"}
-
-curl -X GET http://localhost:31431/greet/Jose
-{"message":"Hola Jose!"}
-```
 
 ## Clean Up 
 
