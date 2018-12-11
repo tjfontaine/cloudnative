@@ -21,7 +21,7 @@ However, sometimes you need to handle advanced use cases and must take complete 
 
 ### What Do You Need? ###
 
-This tutorial requires you to have both Docker and Fn installed. If you need help with Fn installation you can find instructions in the [Install and Start Fn Tutorial](../install/README.md).
+This tutorial requires you to have both Docker and Fn installed. If you need help with Fn installation you can find instructions in the [Install and Start Fn Tutorial](https://github.com/fnproject/tutorials/blob/master/install/README.md).
 
 If it isn't already running, you'll need to start the Fn server.  We'll run it in the foreground to let us see the server log messages so let's open a new terminal for this.
 
