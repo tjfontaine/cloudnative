@@ -23,9 +23,7 @@ For users looking for a serverless experience with Fn, it is the basis for Oracl
 
 To use Fn, you'll need Docker up and running in your environment, and access to a repository containing the Fn Docker images. Our lab environment has Docker already installed, and for this tutorial we'll use the public images from Docker Hub.
 
-XXX clean up - this will be installed 
-
-Make sure Fn server is up and running by completing the [Install and Start Fn Tutorial](https://github.com/fnproject/tutorials/blob/master/install/README.md).
+Check that Fn is install by invoking <samp>fn version</samp>. If you need to install Fn, please see the [Install and Start Fn Tutorial](https://github.com/fnproject/tutorials/blob/master/install/README.md).
 
 Make sure you have set your Fn context registry value for local development. (for example, "fndemouser". [See here](https://github.com/fnproject/tutorials/blob/master/install/README.md#configure-your-context).)
 

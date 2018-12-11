@@ -26,12 +26,7 @@ The following list shows the minimum versions:
 - [Docker 18.02](https://docs.docker.com/install/)
 - [Kubectl 1.7.4](https://kubernetes.io/docs/tasks/tools/install-kubectl/) 
 
-XXX clean up
-- Kubernetes: Enable [Kubernetes Support for Mac](https://docs.docker.com/docker-for-mac/#kubernetes) or [Kubernetes Support for Windows](https://docs.docker.com/docker-for-windows/#kubernetes).
-
 [Here](https://helidon.io/docs/latest/#/getting-started/01_prerequisites) is an updated list of pre-requisites for using Helidon.
-
-
 
 ## Generate The Project
 

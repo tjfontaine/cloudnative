@@ -219,7 +219,7 @@ imagedims   imagedims:0.0.1   01CWFAS9DBNG8G00RZJ0000002
 With the function deployed let's invoke it to make sure it's working as expected. You'll need a jpeg or png file to test it out. You can either download one, or find the `3x3.jpg` image in the lab environment user's home directory. That image has a height and width of 3 pixels.
 
 ```
-$ cat ~/3x3.jpg | fn invoke tutorial imagedims
+$ cat 3x3.jpg | fn invoke tutorial imagedims
 ```
 
 For this file you should see the following output:
@@ -232,8 +232,6 @@ For this file you should see the following output:
 
 We included an HTTP trigger declaration in the `func.yaml` so we can also call the function with curl.  It's a little more complicated as you need to declare the content type because the request body is binary.  You also need to use the `--data-binary` switch:
 
-
-XXX Test this with home dir image
 ```
 $ curl --data-binary @3x3.jpg -H "Content-Type: application/octet-stream" -X POST http://localhost:8080/t/tutorial/imagedims
 ```
