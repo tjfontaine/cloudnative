@@ -296,9 +296,9 @@
       "pageType": "default", 
       "modules": [
         {
-          "header": "Join Us", 
+          "header": "Thank You", 
           "type": "basic", 
-          "htmlBlock": "<p>Support Women Who Code by Adding The Cloud Native Culture &amp; Industry Summit on\nDec 10th to your registration!</p>\n<p>For a limited time, sign up for free and Oracle will donate $100 per\nregistration to Women Who Code, and all attendees will receive a t-shirt!</p>\n<p><a class=\"bttn centered arrow-bttn\" target=\"blank\" href=\"https://sched.co/ITVR\"><span class=\"bttn-txt\">Log In to Register</span></a></p>"
+          "htmlBlock": "<p>Big thanks to the KubeCon community for the fantastic week!</p>\n<p>Miss the activities? No problem, catch up by checking out our <a href=\"https://blogs.oracle.com/cloudnative/announcing-oracle-cloud-native-framework-at-kubecon-north-america-2018\">announcement of\nthe Oracle Cloud Native\nFramework</a>,\nreading <a href=\"https://thenewstack.io/3-cloud-native-challenges-to-address-now-culture-code-and-cloud/\">The New Stack post on cloud native\nchallenges</a>,\nreliving our\n<a href=\"https://blogs.oracle.com/cloudnative/cloud-native-past%2c-present%2c-and-future-from-the-oracle-cloud-native-summit-at-kubeconcloudnativecon\">summit</a>,\n<a href=\"https://blogs.oracle.com/cloudnative/kubecon-2018-cloud-native-recaps-and-highlights\">recap</a>\nand <a href=\"https://www.youtube.com/playlist?list=PLPIzp-E1msrZn36gtzlo2wV3tf4aDOEpD\">daily\nvideos</a>,\nand checking out these awesome Kubernetes <a href=\"https://blogs.oracle.com/cloudnative/kubernetes-momentum-grows-on-oracle-cloud-with-new-user-stories\">user\nstories</a>.</p>\n<p>We will be posting more photos, videos, session recordings, podcasts, and\ninterviews soon, so stay tuned.</p>"
         }, 
         {
           "header": "Watch the teaser", 
