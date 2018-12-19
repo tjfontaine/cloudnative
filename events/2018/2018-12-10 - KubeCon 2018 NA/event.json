@@ -465,6 +465,84 @@
           ]
         }
       ]
+    }, 
+    {
+      "pageTitle": "Gallery", 
+      "pageType": "default", 
+      "modules": [
+        {
+          "header": "Gallery", 
+          "type": "gallery-all", 
+          "videos": [
+            {
+              "videotype": "youtube", 
+              "header": "Oracle at KubeCon + CloudNativeCon Week In Review", 
+              "videoID": "WuK6KDFVcig", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Oracle at KubeCon + CloudNativeCon Day 1 Recap", 
+              "videoID": "0SUT5t7DAT4", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Oracle at KubeCon + CloudNativeCon Day 2 Recap", 
+              "videoID": "dLFsFoTq5us", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Oracle at KubeCon + CloudNativeCon Day 3 Recap", 
+              "videoID": "D9sRjenN4pE", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Oracle at KubeCon + CloudNativeCon Day 4 Recap", 
+              "videoID": "rKu-iCQ2D08", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Oracle at KubeCon + CloudNativeCon Teaser", 
+              "videoID": "Dj6aYLdvch8", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "The Cloud Native Meetup Community A-Z", 
+              "videoID": "j70XXe16ZN0", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Running Serverless HPC Workloads on Top of Kubernetes and Jupyter Notebooks", 
+              "videoID": "uM_FolsebjM", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Noobernetes 101: Top 10 Questions We Get From New K8s Users", 
+              "videoID": "Y7enbKBBDhA", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Container Networking From Scratch", 
+              "videoID": "6v_BDHIgOY8", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Running MySQL on Kubernetes", 
+              "videoID": "g924HDB81oc", 
+              "description": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
