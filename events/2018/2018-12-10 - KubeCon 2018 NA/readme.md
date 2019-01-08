@@ -1,9 +1,5 @@
 # KubeCon + CloudNativeCon North America
 
-Sign up for the Oracle Summit Dec 10th at registration
-
-[Register](https://sched.co/ITVR)
-
 ## Date
 
 December 10 2018 - December 13 2018

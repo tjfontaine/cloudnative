@@ -1,8 +1,6 @@
 {
   "title": "KubeCon + CloudNativeCon North America", 
-  "subtitle": "Sign up for the Oracle Summit Dec 10th at registration", 
-  "registerLinkText": "Register", 
-  "registerLink": "https://sched.co/ITVR", 
+  "subtitle": "", 
   "date": [
     "2018-12-10 00:00:00", 
     "2018-12-13 00:00:00"
@@ -226,7 +224,7 @@
         }, 
         {
           "title": "Bio", 
-          "htmlBlock": "<p>Bob Quillin is Vice President of Developer Relations for Oracle's Application\nDevelopment portfolio. He was previously CEO and co-founder of StackEngine, an\nAustin-based Docker and container management platform startup acquired by\nOracle.</p>"
+          "htmlBlock": "<p>As Vice President of Developer Relations for Oracle Cloud Infrastructure (OCI),\nBob Quillin leads the Cloud Native Labs team who are responsible for OCI cloud\nnative developer relations, advocacy, engagement, solutions, and lighthouse\nadoption. Bob joined Oracle as part of the StackEngine acquisition by Oracle in\nDecember 2015, where he was co-founder and CEO.  Based in Austin, TX,\nStackEngine was an early container-native pioneer building services and\nplatforms designed to help developers and devops teams build, orchestrate, and\nscale enterprise-grade container apps.</p>\n<p>Prior to his role as co-founder and CEO of StackEngine, Bob was CEO of\nAustin-based CopperEgg, a cloud monitoring SaaS startup acquired by Idera in\n2013.  With previous executive and startup leadership roles at CopperEgg,\nnLayers, EMC, and VMware, Bob has focused his career on applying automation to\nsimplify complex cloud, IT and developer challenges.</p>"
         }
       ], 
       "social": {
@@ -509,6 +507,24 @@
               "header": "Oracle at KubeCon + CloudNativeCon Teaser", 
               "videoID": "Dj6aYLdvch8", 
               "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Mono to Micro to FaaS A Macro Challenge", 
+              "videoID": "UPf8sCKNb4E", 
+              "description": "Panel discussion hosted by The New Stack at KubeCon + CloudNativeCon North\nAmerica 2018 with FaaS and serverless experts discussing their\ndown-in-the-trenches experiences with implementing FaaS on Kubernetes"
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "What Extending Kubernetes Means for Lifecycle Management", 
+              "videoID": "675Mu2eJmJo", 
+              "description": "On this livestream from KubeCon + CloudNativeCon NA, we're discussing what\nextending Kubernetes means for lifecycle management. What makes the Kubernetes\nmodel work for managing the container lifecycle? Why this model is attractive?\nJoin us as we address these questions and more."
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Is Serverless the new PaaS, and do we want that?", 
+              "videoID": "qPFvXVOeZoI", 
+              "description": "On this livestream from KubeCon + CloudNativeCon NA, we're answering the\nquestion: Is serverless the new PaaS? What does that landscape look like for\ndevelopers today? What is the serverless paradigm versus the consumption model,\nand how we can get more from serverless in the future."
             }, 
             {
               "videotype": "youtube", 

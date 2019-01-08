@@ -22,6 +22,32 @@
 
 [//]: # (module_video:https://www.youtube.com/watch?v=Dj6aYLdvch8)
 
+## Mono to Micro to FaaS A Macro Challenge
+
+Panel discussion hosted by The New Stack at KubeCon + CloudNativeCon North
+America 2018 with FaaS and serverless experts discussing their
+down-in-the-trenches experiences with implementing FaaS on Kubernetes
+
+[//]: # (module_video:https://www.youtube.com/watch?v=UPf8sCKNb4E)
+
+## What Extending Kubernetes Means for Lifecycle Management
+
+On this livestream from KubeCon + CloudNativeCon NA, we're discussing what
+extending Kubernetes means for lifecycle management. What makes the Kubernetes
+model work for managing the container lifecycle? Why this model is attractive?
+Join us as we address these questions and more.
+
+[//]: # (module_video:https://www.youtube.com/watch?v=675Mu2eJmJo)
+
+## Is Serverless the new PaaS, and do we want that?
+
+On this livestream from KubeCon + CloudNativeCon NA, we're answering the
+question: Is serverless the new PaaS? What does that landscape look like for
+developers today? What is the serverless paradigm versus the consumption model,
+and how we can get more from serverless in the future.
+
+[//]: # (module_video:https://www.youtube.com/watch?v=qPFvXVOeZoI)
+
 ## The Cloud Native Meetup Community A-Z
 
 [//]: # (module_video:https://www.youtube.com/watch?v=j70XXe16ZN0)
