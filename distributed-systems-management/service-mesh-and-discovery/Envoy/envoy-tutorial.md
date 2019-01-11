@@ -2,10 +2,6 @@
 
 Before running Envoy in a production setting we're going to take it for a test drive on our laptops. By the end of this tutorial you’ll quickly get the idea behind using Envoy to proxy traffic, and learn what place it might have in your network architecture. We’ll walk through how to run Envoy, the various configurations and how to change them. To do this we're going to use Docker and Docker Compose.
 
-### Prerequisites
-
-Latest installation of Docker.
-
 ### Step 1 - Setting Up
 
 Mosey over to the [Envoy GitHub repository](https://github.com/envoyproxy/envoy) and copy the URL. Then in your terminal type: 
