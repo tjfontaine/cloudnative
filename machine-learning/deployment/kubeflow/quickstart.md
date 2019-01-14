@@ -1,5 +1,4 @@
-# Kubeflow
-## A Kubeflow Quickstart
+# A Kubeflow Quickstart
 
 As discussed in the [Overview](Readme.md) the goal of this quickstart is to take an existing OKE cluster, configure and install Kubeflow on it, launch a Jupyter notebook via Kubeflow, and run a demo TensorFlow project that will train a very simple model based on the MNSIT image dataset.
 
@@ -30,7 +29,7 @@ The cluster role binding can be created via the following command:
 kubectl create clusterrolebinding default-admin --clusterrole=cluster-admin --user=<USER FROM ERROR MESSAGE>
 ```
 
-Next, delete the directory `kubeflow_ks_app` then re-run the deploy script with `./deploy.sh`. This will likely take several minutes to complete, but once it has you can check that everything came up properly via `kubectl get pods`. This should result in something like:
+Next, delete the directory `kubeflow_ks_app` then re-run the deploy script with `./deploy.sh` this will likely take several minutes to complete, but once it has you can check that everything came up properly via `kubectl get pods` this should result in something like:
 
 ```
 NAME                       DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
@@ -65,7 +64,7 @@ Next, you need to launch a new Jupyter notebook instance with TensorFlow availab
 
 The process of launching the new instance can take some time as a new Kubernetes pod is being launched in the background. This will vary depending on your underlying hardware, but approximately 10-30 minutes is normal. 
 
-You don't need to do anything but wait. However, if interested you can use `kubectl get events -w` from your development machine to see the status of the provisioning. Running this command can also give you the pod name that can, in turn, be used with `kubectl logs <pod name>`, which will give you a more in-depth view of what the new pod is actually doing. These two commands will be invaluable for debugging any issues during launch.
+You don't need to do anything but wait. However, if interested you can use `kubectl get events -w` from your development machine to see the status of the provisioning. Running this command can also give you the pod name that can, in turn, be used with `kubectl logs <pod name>` which will give you a more in-depth view of what the new pod is actually doing. These two commands will be invaluable for debugging any issues during launch.
 
 ### Create Your Notebook!
 
@@ -256,4 +255,4 @@ Gone!
 
 ## Conclusion
 
-At this point (assuming you didn't also run the clean up section!) you should have a platform for Machine Learning on Kubernetes using TensorFlow with a script that can benchmark different node pool instance shapes against a common workload. Next up -- running this on GPUs!
+At this point (assuming you didn't also run the clean up section!) you should have a platform for Machine Learning on Kubernetes using TensorFlow with a script that can benchmark different node pool instance shapes against a common workload. 

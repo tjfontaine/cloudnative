@@ -1,10 +1,6 @@
-## Getting started with Envoy
+## Getting Started with Envoy
 
-Before running Envoy in a production setting we're going to take it for a test drive on our laptops. By the end of this tutorial you’ll quickly get the idea behind using Envoy to proxy traffic, and learn what place it might have in your network architecture. We’ll walk through how to run Envoy, the various configurations and how to change them. To do this we're going to use Docker and Docker Compose.
-
-### Prerequisites
-
-Latest installation of Docker.
+Before running Envoy in a production setting we're going to take it for a test drive on our laptops. By the end of this tutorial you’ll quickly get the idea behind using Envoy to proxy traffic, and learn what place it might have in your network architecture. We’ll walk through how to run Envoy, the various configurations available and how to change them. To do this we're going to use Docker and Docker Compose.
 
 ### Step 1 - Setting Up
 
@@ -16,7 +12,7 @@ Mosey over to the [Envoy GitHub repository](https://github.com/envoyproxy/envoy)
  ![gitCloneDownload](Images/gitclone2.png)
  ![gitCloneDownload](Images/gitclone3.png)
  
-Now that we have the repo locally, lets take a moment to browse the files and get aquainted. Type:
+Now that we have the repo locally, let's take a moment to browse the files and get aquainted. Type:
 
 ```$ cd envoy/examples/front-proxy```and then ```ls```
 
@@ -31,7 +27,7 @@ The `docker-compose.yaml` file provides a description of how to build, package, 
  
 ### Step 2 - Build a Container
 
-Lets start an instance of the front proxy. 
+Let's start an instance of the front proxy. 
 
 ```$ docker-compose up --build -d```
 
@@ -40,7 +36,7 @@ Lets start an instance of the front proxy.
 
 This starts a single instance of the front proxy and two service instances, one configured as “service1” and the other as “service2”. 
 
-Let's have a look at them, type: 
+Let's have a look at them; type: 
 
 ```$ docker-compose ps```
 
@@ -86,7 +82,7 @@ What you see described above is:
 * Mount the `front-envoy.yaml` file in this directory as `/etc/front-envoy.yaml`
 * Create and use a Docker network named "envoymesh" for this container
 * Expose port 80 to general traffic
-* Expose ports 8001 to the admin server
+* Expose port 8001 to the admin server
 * Map the host port 8000 to container port 80, and the host port 8001 to container port 8001
 
 Let's have a look at the `front-envoy.yaml`
@@ -95,13 +91,13 @@ Let's have a look at the `front-envoy.yaml`
 
 ![configuration](Images/group.png)
 
-The file has two top level elements:
+The file has two top level elements, Static_Resources and Admin:
 
 ### Static_Resources
 
 The `static_resources` block contains definitions for listeners, virtual hosts and clusters. 
 
-* **Listeners** - we have one here, but Envoy configuration can support any number of listeners. Each listener is independently configured with some number of network level (L3/L4) filters. The generic listener architecture is used to perform the vast majority of different proxy tasks that Envoy is used for (e.g., rate limiting, TLS client authentication, HTTP connection management,raw TCP proxy, etc.).
+* **Listeners** - we have one here, but Envoy configuration can support any number of listeners. Each listener is independently configured with some number of network level (L3/L4) filters. The generic listener architecture is used to perform the vast majority of different proxy tasks that Envoy is used for (e.g., rate limiting, TLS client authentication, HTTP connection management, raw TCP proxy, etc.).
 
 * **Virtual hosts** - there is a definition for a single virtual host, configured to accept traffic for all domains. Each virtual host has a logical name as well as a set of domains that get routed to it based on the incoming request's host header. This allows a single listener to service multiple top level domain path trees.
 
@@ -114,7 +110,7 @@ The `static_resources` block contains definitions for listeners, virtual hosts a
 In the Envoy configuration file you can see an `admin:` section, which configures Envoy's admin endpoint. That can be used for checking various diagnostic information about the proxy.
 
 
-### Step 5 - Clean up
+### Step 5 - Clean Up
 
 Throughout this tutorial, you'll have created some stray containers that will eat up disk space. To remove unwanted containers type `docker rm` and the container IDs from the containers you want to get rid of. If you have no idea what the id's are just type `docker ps` and paste them alongside the command `docker rm`
 
@@ -130,7 +126,7 @@ This puts up this warning. In our case press 'y'
 
 ![dockerprune](Images/dockerprune.png)
 
-That's it! Hope you have enjoyed dipping your feet in the water. We'll be writing more complex tutorials about Envoy, so stay tuned! 
+That's it! Hope you have enjoyed dipping your feet in the water.
 
 
 

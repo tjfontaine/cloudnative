@@ -38,7 +38,7 @@ To build the application run `mvn package` while in the /quickstart-se directory
 
 This will create a /target directory containing both the .jar file of your application and a .yaml file. The .yaml makes the process for deploying Helidon on Kubernetes simple. After building a Docker image of our application and uploading it to the Registry service we will modify the .yaml with the address of the image in the repository in order to deploy it to Kubernetes. 
 
-At this stage you are welcome to deploy the application locally with `java -jar target/quickstart-se.jar`  If you navigate to the endpoint in the browser you will see a simple "Hello World!" greeting encoded using JSON. Alternatively you can cURL the URL with `curl -X GET http://localhost:8080/greet` to get the same response `{"message":"Hello World!"}`. 
+At this stage you are welcome to deploy the application locally with `java -jar target/quickstart-se.jar` If you navigate to the endpoint in the browser you will see a simple "Hello World!" greeting encoded using JSON. Alternatively you can cURL the URL with `curl -X GET http://localhost:8080/greet` to get the same response `{"message":"Hello World!"}`. 
 
 ### Build the Docker Image 
 
@@ -56,7 +56,7 @@ You can test the Docker image by running: `docker run --rm -p 8080:8080 quicksta
 
 ### Pushing the Image to OCIR 
 
-For a great walkthrough on how to use the Registry service, check out this article [Pushing an Image to Oracle Cloud Infrastructure Registry](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/registry/index.html). You will need to log into your Oracle Cloud Infrastructure console and make sure you have a native OCI user. Currently [federated users are not supported by OCIR](https://docs.cloud.oracle.com/iaas/Content/knownissues.htm#registryfederateduser).Your user will either need to be a part of the tenancy's Administrators group or another group with the REPOSITORY_CREATE permission. After confirming you have the proper permissions, generate an auth token for your user. Copy the token to a notepad as you will not be able to access it again. 
+For a great walkthrough on how to use the Registry service, check out this article [Pushing an Image to Oracle Cloud Infrastructure Registry](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/registry/index.html). You will need to log into your Oracle Cloud Infrastructure console and make sure you have a native OCI user. Currently [federated users are not supported by OCIR](https://docs.cloud.oracle.com/iaas/Content/knownissues.htm#registryfederateduser). Your user will either need to be a part of the tenancy's Administrators group or another group with the REPOSITORY_CREATE permission. After confirming you have the proper permissions, generate an auth token for your user. Copy the token to a notepad as you will not be able to access it again. 
 
 Navigate to the Registry (OCIR) tab and choose the region to which you would like to push the image. Log into the Registry service Docker CLI with `docker login <region-code>.ocir.io`
 
@@ -79,10 +79,10 @@ Finally we push the image to the Registry:
 
 - `<region-code>` is one of `fra`, `iad`, `lhr`, or `phx`.
 - `ocir.io` is the Oracle Cloud Infrastructure Registry name.
-- `<tenancy-name>` is the name of the tenancy that owns the repository to which you want to push the image (for example, `acme-dev`). Note that your user must have access to the tenancy.
-- `<repo-name>` (if specified) is the name of a repository to which you want to push the image (for example, `project01`). Note that specifying a repository is optional. If you don't specify a repository name, the name of the image is used as the repository name in Oracle Cloud Infrastructure Registry.
-- `<image-name>` is the name you want to give the image in Oracle Cloud Infrastructure Registry (for example, `helloworld`).
-- `<tag>` is an image tag you want to give the image in Oracle Cloud Infrastructure Registry (for example, `latest`).
+- `<tenancy-name>` is the name of the tenancy that owns the repository to which you want to push the image, for example `acme-dev`. Note that your user must have access to the tenancy.
+- `<repo-name>`, if specified, is the name of a repository to which you want to push the image ,for example, `project01`. Note that specifying a repository is optional. If you don't specify a repository name, the name of the image is used as the repository name in Oracle Cloud Infrastructure Registry.
+- `<image-name>` is the name you want to give the image in Oracle Cloud Infrastructure Registry, for example, `helloworld`.
+- `<tag>` is an image tag you want to give the image in Oracle Cloud Infrastructure Registry, for example, `latest`.
 
 Within the Registry UI you will see the newly created repository. By default, the repository will be set to private. If you would like to continue with a private repository, you will have to add an image pull secret which allows Kubernetes to authenticate with a container registry to pull a private image. Let's first create a namespace for this project called "helidon" with `kubectl create namespace helidon`. We will deploy our application to this namespace. Next we will create the secret with: 
 

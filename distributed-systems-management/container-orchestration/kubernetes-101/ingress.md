@@ -1,14 +1,11 @@
 ## Ingress and Routing
 
-
-## Overview
-
 Welcome to our Kubernetes 101 series. This tutorial is part of a series about building and deploying applications in a highly available, observable, and scalable way. Other modules in the series include [Introduction to Service Types on Kubernetes](services.md) and [Performing Smoke Tests on Kubernetes](smoke.md).
 
 ## Introduction
 
  This module focuses specifically on preparing your brand new Kubernetes cluster for hosting your first production-ready application! We are going to:
-
+ 
 * Configure an existing, publicly accessible Kubernetes cluster on Oracle Cloud Infrastructure (OCI) with an ingress controller for exposing applications publicly
 * Configure DNS on OCI, so we don't need to remember IP addresses
 * Write some Kubernetes configuration files for a demo application
@@ -17,7 +14,7 @@ Welcome to our Kubernetes 101 series. This tutorial is part of a series about bu
 
 ## Step One: Prepare the Cluster
 
-Let's assume you have created a brand-new Kubernetes cluster in OCI using Terraform. [(Check out the earlier article in this series of tutorials to find out exactly how to do this)]().
+Let's assume you have created a brand-new Kubernetes cluster in OCI using Terraform. [(Check out the earlier article in this series of tutorials to find out exactly how to do this)](https://cloudnative.oracle.com/template.html#infrastructure/infrastructure-as-code/setup-k8s-on-oci-with-tf/Readme.md).
 
 At this point, you should have a `kubeconfig` file for accessing your cluster, along with a development environment with access to the `kubectl` utility. Note that this module will focus on a Mac OS development environment but the commands should work in any *nix environment.
 
@@ -99,7 +96,7 @@ For example, I'm going to use `riceo.me` as my domain. I'll announce the followi
 * CNAME - *.prod-k8s.riceo.me - prod-k8s.riceo.me
 ```
 
-This will mean that if we launch an application on our cluster with an ingress route for `authentication-api.prod-k8s.riceo.me`, the CNAME wildcard will match and resolve to the A record, which will be pointing at our cluster!
+This will mean that if we launch an application on our cluster with an ingress route for `authentication-api.prod-k8s.riceo.me` the CNAME wildcard will match and resolve to the A record, which will be pointing at our cluster!
 
 #### Configuring DNS on OCI
 
@@ -135,7 +132,7 @@ The demo application that we will be deploy is called [Get IP](https://github.co
 
 I recommend forking the linked demo into your own git repo, and cloning that out locally for this section, as we need to make modifications to the configuration files specific to our clusters and Docker registries.
 
-The application can be launched by installing its required dependencies via pip, then running `python get_ip/get_ip.py`, ensuring we pass its required parameters to launch:
+The application can be launched by installing its required dependencies via pip, then running `python get_ip/get_ip.py` ensuring we pass its required parameters to launch:
 
 ```
 usage: get_ip.py [-h] hostname port
@@ -183,7 +180,7 @@ We are now at the point of deploying our demo application on to our cluster. Bef
 
 The application requires two variables in order to launch, which will be common in most applications you write and deploy. I like to have my applications take runtime variables as either environment variables, or pass them as parameters to the executable. I try to avoid configuration files wherever possible, as using them means you need to store them somewhere (and then worry about security), or you need to generate them at deploy time, which would require additional logic.
 
-In the simplest of cases, we can pass variables to our Kubernetes applications by adding them to our application deployment configuration, which keeps them in a single, easy to see, place. 
+In the simplest of cases, we can pass variables to our Kubernetes applications by adding them to our application deployment configuration, which keeps them in a single, easy to see place. 
 
 However, there are times when "easy to see" is a negative, such as when dealing with passwords. In this case, you can [define secrets as environment variables at the Kubernetes level](https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-environment-variables) that your application can consume from. This keeps the secrets on the cluster only, and out places harder to audit such as git repositories. 
 
@@ -195,7 +192,7 @@ Most popular languages will have their own logging libraries and helpers. Whethe
 
 This standardization is invaluable when you begin pushing your logs to a centralized logging system such as an [ELK stack](https://github.com/oracle/cloudnative/blob/master/observability-and-analysis/logging/efk-stack/Readme.md), or [Graylog](https://www.graylog.org/), as searching for several different names for "Client IP address" can be a nightmare during red-alert scenarios when debugging an outage. Trust me, your SREs will thank you!
 
-An additional consideration when deploying to Kubernetes is the format to use when you output your logs. My preferred method is to send messages to stdout and stderr rather than write log files, as it allows me to quickly see the log output of a running deployment via `kubectl`, _and_ integrates easily with any centralized logging solution on the cluster with 0 configuration, whereas log files would need to have their persistence managed.
+An additional consideration when deploying to Kubernetes is the format to use when you output your logs. My preferred method is to send messages to stdout and stderr rather than write log files, as it allows me to quickly see the log output of a running deployment via `kubectl` _and_ integrates easily with any centralized logging solution on the cluster with 0 configuration, whereas log files would need to have their persistence managed.
 
 #### Horizontal Scaling
 
@@ -209,11 +206,11 @@ We've taken a look at how our application was built, now let's get back to deplo
 
 Inside the demo repo, there's a directory called `kubernetes` with three YAML files in it. These are the three Kubernetes concepts that need to be defined to launch an application publicly - a Deployment, A Service, and an Ingress definition.
 
-Starting with the deployment definition in `deployment.yml`, update the `image` and `imagepullsecrets` name parameters to tell Kubernetes to pull from the registry and location that you pushed your application repository to, and to pull it using the image secret you have defined on your cluster.
+Starting with the deployment definition in `deployment.yml` update the `image` and `imagepullsecrets` name parameters to tell Kubernetes to pull from the registry and location that you pushed your application repository to, and to pull it using the image secret you have defined on your cluster.
 
 Next, we'll take a quick look at the `service.yml` file. We don't need to change anything here, just note that we are using the application name and reference of `v0.1` as a unique identifier for our application. 
 
-Finally, the file that this entire post has been about: `ingress.yml`! Note that this defines a hostname that matches the CNAME wildcard we defined on the OCI DNS dashboard. Update this to reflect the wildcard CNAME you created, ensuring the first section is the application name of `get-ip`.
+Finally, the file that this entire post has been about: `ingress.yml` note that this defines a hostname that matches the CNAME wildcard we defined on the OCI DNS dashboard. Update this to reflect the wildcard CNAME you created, ensuring the first section is the application name of `get-ip`.
 
 These are the only changes you need to make to launch this demo application on your Kubernetes cluster! Time to fire the config files off to your cluster with:
 

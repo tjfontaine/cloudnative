@@ -1,10 +1,10 @@
-# Log Like You Mean It! A Quickstart for Logging Kubernetes Applications via an EFK Stack 
+# Log Like You Mean It! 
+### A Quickstart for Logging Kubernetes Applications via an EFK Stack 
 
-## Overview
 
 Welcome to our EFK stack (Elastic Search, FluentD, Kibana) introduction series. This article will show you how to get up and running with EFK, quickly.
 
-In this quickstart we will apply the theory learned in our EFK Stack blogpost to create a production-ready logging and analysis stack installed on an Oracle Container Engine for Kubernetes (OKE) cluster through the use of Elasticsearch, FluentD, and Kibana. Check out our [EFK Stack Overview](logging.md) for a more in-depth explanation of how and why we are creating an EFK stack. 
+In this quickstart we will apply the theory learned in our EFK Stack guide to create a production-ready logging and analysis stack installed on an Oracle Container Engine for Kubernetes (OKE) cluster through the use of Elasticsearch, FluentD, and Kibana. Check out our [EFK Stack Overview](logging.md) for a more in-depth explanation of how and why we are creating an EFK stack. 
 
 ## Requirements
 
@@ -12,7 +12,7 @@ You will need a Kubernetes cluster accessible via a configured kubectl command. 
 
 ## Quickstart!
 
-### Step One: Install Tiller on your cluster to use Helm
+### Step One: Install Tiller on your Cluster to use Helm
 
 _If you are using OKE, make sure you tick the option to include Helm/Tiller when launching your cluster. Doing so will allow you to skip this step._
 
@@ -23,7 +23,7 @@ Download Helm and configure Tiller on to your Kubernetes cluster. This will allo
 
 This will connect to your Kubernetes cluster via your already configured `kubectl` utility and install Tiller. You can now install packages on to your Kubernetes cluster via `helm` commands!
 
-### Step Two: Download the EFK stack Helm chart
+### Step Two: Download the EFK Stack Helm Chart
 
 Download and extract our Helm chart. This will simplify the process of installing the EFK stack:
 
@@ -32,7 +32,7 @@ wget https://raw.githubusercontent.com/oracle/cloudnative/master/observability-a
 tar -xzvf ./efk.tar.gz
 ```
 
-### Step Three: Run the Helm chart!
+### Step Three: Run the Helm Chart
 
 At this point you should have a folder called `efk` in your working directory, access to the `helm` command, and working access to your Kubernetes cluster via the `kubectl` command. 
 

@@ -119,7 +119,7 @@ prometheus-76db5fddd5-fgpbp              1/1       Running     0          16m
 servicegraph-fc55fc579-964w9             1/1       Running     0          16m
 ```
 
-We have one more action to take. As discussed above, for each pod that you want to be observable by Istio will need a sidecar running within the pod. This can be deployed manually, or automatically. For the purposes of our tutorial, let's use the automatic sidecar injector. You can see that it was deployed in our list of services above.
+We have one more action to take. As discussed above, each pod that you want to be observable by Istio will need a sidecar running within the pod. This can be deployed manually, or automatically. For the purposes of our tutorial, let's use the automatic sidecar injector. You can see that it was deployed in our list of services above.
 
 This service will automatically deploy a sidecar when deploying new pods and is enabled on a per-namespace basis. For the purposes of our tutorial, let's enable it on the <samp>default</samp> namespace.
 
@@ -215,7 +215,7 @@ $ kubectl apply -f samples/bookinfo/networking/virtual-service-all-v1.yaml
 
 Now open the Bookinfo site in your browser. The URL is http://$GATEWAY_URL/productpage, where $GATEWAY_URL is the External IP address of the ingress that we set above.
 
-Notice that reviews part of the page displays with no rating stars, no matter how many times you refresh. This is because all traffic for the reviews service is routed to the version <samp>reviews:v1</samp> which does not access the star ratings service.
+Notice that the reviews part of the page displays with no rating stars, no matter how many times you refresh. This is because all traffic for the reviews service is routed to the version <samp>reviews:v1</samp> which does not access the star ratings service.
 
 Now let's transfer 50% of the traffic from <samp>reviews:v1</samp> to <samp>reviews:v3</samp> with the following command:
 

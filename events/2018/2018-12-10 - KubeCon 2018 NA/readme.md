@@ -1,9 +1,5 @@
 # KubeCon + CloudNativeCon North America
 
-Sign up for the Oracle Summit Dec 10th at registration
-
-[Register](https://sched.co/ITVR)
-
 ## Date
 
 December 10 2018 - December 13 2018
@@ -12,15 +8,25 @@ December 10 2018 - December 13 2018
 
 Seattle, Washington
 
-## Join Us
+## Thank You
 
-Support Women Who Code by Adding The Cloud Native Culture & Industry Summit on
-Dec 10th to your registration!
+Big thanks to the KubeCon community for the fantastic week!
 
-For a limited time, sign up for free and Oracle will donate $100 per
-registration to Women Who Code, and all attendees will receive a t-shirt!
+Miss the activities? No problem, catch up by checking out our [announcement of
+the Oracle Cloud Native
+Framework](https://blogs.oracle.com/cloudnative/announcing-oracle-cloud-native-framework-at-kubecon-north-america-2018),
+reading [The New Stack post on cloud native
+challenges](https://thenewstack.io/3-cloud-native-challenges-to-address-now-culture-code-and-cloud/),
+reliving our
+[summit](https://blogs.oracle.com/cloudnative/cloud-native-past%2c-present%2c-and-future-from-the-oracle-cloud-native-summit-at-kubeconcloudnativecon),
+[recap](https://blogs.oracle.com/cloudnative/kubecon-2018-cloud-native-recaps-and-highlights)
+and [daily
+videos](https://www.youtube.com/playlist?list=PLPIzp-E1msrZn36gtzlo2wV3tf4aDOEpD),
+and checking out these awesome Kubernetes [user
+stories](https://blogs.oracle.com/cloudnative/kubernetes-momentum-grows-on-oracle-cloud-with-new-user-stories).
 
-<a class="bttn centered arrow-bttn" target="blank" href="https://sched.co/ITVR"><span class="bttn-txt">Log In to Register</span></a>
+We will be posting more photos, videos, session recordings, podcasts, and
+interviews soon, so stay tuned.
 
 ## Watch the teaser
 

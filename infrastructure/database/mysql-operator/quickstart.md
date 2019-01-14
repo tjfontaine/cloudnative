@@ -11,7 +11,7 @@ This results in a custom resource definition, teaching Kubernetes all the best p
 ## The MySQL Operator
 The MySQL Operator is, as its name suggests, a Kubernetes Operator to simplify the task of running MySQL in Kubernetes. The operator is currently in alpha (at the time of this writing), so it's not recommended for all workloads just yet. Keep an eye out for a 1.0 release in the near future.
 
-Creating a MySQLCluster Kubernetes object via the MySQL Operator is similar to a Deployment in that it spins up a set of Kubernetes Pods (One or more containers which Kubernetes can manage together). However, in a normal Deployment, you would need to specify a variety of features of the Pod(s) to be created, such as the container(s) (container images) to be run in the Pod, port mappings, etc. The MySQL Operator is opinionated about the way MySQL should be run on Kubernetes, so you don't have to worry about a lot of the normal details. The MySQL Operator already knows how the Pods should be configured, and it even has an opinion about the minimum number of Pods you should have to make a production-ready MySQL Cluster. Because of the MySQL Operator's built-in knowledge of running MySQL on Kubernetes, you can have a MySQLCluster resource definition as simple as:
+Creating a MySQLCluster Kubernetes object via the MySQL Operator is similar to a Deployment in that it spins up a set of Kubernetes Pods (one or more containers which Kubernetes can manage together). However, in a normal Deployment, you would need to specify a variety of features of the Pod(s) to be created, such as the container(s) (container images) to be run in the Pod, port mappings, etc. The MySQL Operator is opinionated about the way MySQL should be run on Kubernetes, so you don't have to worry about a lot of the normal details. The MySQL Operator already knows how the Pods should be configured, and it even has an opinion about the minimum number of Pods you should have to make a production-ready MySQL Cluster. Because of the MySQL Operator's built-in knowledge of running MySQL on Kubernetes, you can have a MySQLCluster resource definition as simple as:
 ```
 apiVersion: mysql.oracle.com/v1alpha1
 kind: Cluster
@@ -25,27 +25,25 @@ The MySQL Operator is aware of [MySQL Group Replication](https://dev.mysql.com/d
 
 The MySQL Operator includes such features as:
 * Cluster management
-* Create and scale MySQL clusters using InnoDB and group replication on Kubernetes
-* When cluster instances die, the MySQL Operator will automatically re-join them into the cluster
-* Use Kubernetes Persistent Volume Claims to store data on local disk or network attached storage
-Backup and restore
-* Create on-demand backups
-* Create backup schedules to automatically backup databases to Object Storage
-* Restore a database from an existing backup
-Operations
-* Run on any Kubernetes cluster (Oracle Cloud Infrastructure (OCI), AWS, GCP, Azure)
+* Ability to create and scale MySQL clusters using InnoDB and group replication on Kubernetes
+* Automatic rejoining of dead cluster instances to the main cluster
+* Ability to store data on local disk or NAS backup and restore using Kubernetes Persistent Volume Claims
+* Ability to create on-demand backups
+* Ability to schedule automatic backup of databases to Object Storage
+* Restoration of a database from an existing backup operation
+* Ability to run on any Kubernetes cluster (Oracle Cloud Infrastructure (OCI), AWS, GCP, Azure)
 * Prometheus metrics for alerting and monitoring
 * Self-healing clusters
 
 In the rest of this guide, you'll learn how to install the MySQL Operator and create a highly available, production-ready
  MySQL cluster on Kubernetes.  You'll also learn more about using some of the Backup and Restore and monitoring features of the MySQL Operator.
 
- You can find more information about the MySQL Operator on [GitHub](https://github.com/oracle/mysql-operator) or in this [blog post](https://blogs.oracle.com/developers/introducing-the-oracle-mysql-operator-for-kubernetes).
+ You can find more information about the MySQL Operator on [GitHub](https://github.com/oracle/mysql-operator) or in this [guide](https://blogs.oracle.com/developers/introducing-the-oracle-mysql-operator-for-kubernetes).
 
 ## Installing the MySQL Operator
 
 ### PreRequisites
-For this part, you'll need a running Kubernetes cluster. We will use an Oracle Container Engine for Kubernetes cluster. You can find instructions for how to spin one up [here](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html).
+Follow the prerequisites as mentioned in the [Overview ](https://cloudnative.oracle.com/template.html#infrastructure/database/mysql-operator/readme.md).
 
 You will need to have installed and configured kubectl, Kubernetes' CLI control tool, on the machine from which you will be working with your Kubernetes cluster.  For example, if you have an Oracle Container Engine for Kubernetes cluster running in Oracle Cloud Infrastructure, install kubectl on the laptop you use to interact with the cloud. Specify a kubeconfig file to allow kubecutl to connect to your remote cluster. You can do this by setting:
 
@@ -58,7 +56,7 @@ Or by putting your kubeconfig in `$HOME/.kube/config`.
 Whatever option you choose, make sure you're connected to the right cluster with kubectl before you try to complete the rest of the steps in this article.
 
 NOTE:
-You can do this by trying `kubectl get nodes` to confirm that the addresses of the nodes in the Kubernetes cluster kubectl is attached to, match the addresses you expect.
+You can do this by trying `kubectl get nodes` to confirm that the addresses of the nodes in the Kubernetes cluster kubectl is attached to match the addresses you expect.
 
 You will also need to make sure the network for your Kubernetes cluster is configured properly. A configuration similar to the one described [here](https://docs.cloud.oracle.com/iaas/Content/ContEng/Concepts/contengnetworkconfigexample.htm) would work well for the purposes of this guide.
 
@@ -93,7 +91,7 @@ $ helm install --name mysql-operator *path to the cloned mysql-operator director
 ```
 NOTE: The mysql-operator directory you want here is the one within the mysql-operator project. So for example, if the directory of your cloned project was called "mysql-operator", and you were in the directory where you installed the operator, then your command would look like `helm install --name mysql-operator mysql-operator/mysql-operator`
 
-The MySQL Operator should now be installed on your cluster. You can check by running `kubectl get pods -n mysql-operator`, which should give output like:
+The MySQL Operator should now be installed on your cluster. You can check by running `kubectl get pods -n mysql-operator` which should give output like:
 ```
 NAME                            READY     STATUS    RESTARTS   AGE
 mysql-operator-d99c84c9-bjpfz   1/1       Running   0          7h
@@ -246,10 +244,10 @@ Here are some basic functions you need to know to get the most out of the Kubern
 * [Create a cluster with custom server_id values](https://github.com/oracle/mysql-operator/blob/master/docs/user/clusters.md#create-a-cluster-with-custom-server_id-values)
 
 ### Creating MySQL Backups
-Probably the most important component of running a highly available, production-ready MySQL Cluster in Kubernetes is creating and managing backups. (This guide)[https://github.com/oracle/mysql-operator/blob/master/docs/user/backup.md] walks you through examples of creating several types of backups for your Kubernetes MySQLClusters.
+Probably the most important component of running a highly available, production-ready MySQL Cluster in Kubernetes is creating and managing backups. [This guide](https://cloudnative.oracle.com/template.html#infrastructure/database/mysql-operator/quickstart.md) walks you through examples of creating several types of backups for your Kubernetes MySQLClusters.
 
 ### Restoring from a Backup
-Having backups is no good if you can't use them! [This guide](https://github.com/oracle/mysql-operator/blob/master/docs/user/restore.md) gives an example of how to restore your Kubernetes MySQLCluster from a backup.
+Having backups is no good if you can't use them! [This guide](https://cloudnative.oracle.com/template.html#infrastructure/database/mysql-operator/quickstart.md) gives an example of how to restore your Kubernetes MySQLCluster from a backup.
 
 ### Connecting an Application to Your MySQLCluster via MySQL Router
 The recommended method for connecting an application to your MySQLCluster is by using MySQL Router.  [This article](https://github.com/oracle/mysql-operator/blob/master/docs/user/router.md) gives an example of deploying an application with a MySQL Router sidecar to effectively route database traffic from the application to appropriate back-end MySQL Servers.

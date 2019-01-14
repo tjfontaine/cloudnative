@@ -1,16 +1,14 @@
 # Armory Spinnaker on Oracle Container Engine for Kubernetes
 
-## Overview
-
 Spinnaker is an open source continuous delivery platform that enables you to rapidly and reliably release software changes. It can be used to create deployment pipelines to create and destroy server groups, run systems and integration tests, and monitor rollouts. These pipelines can be triggered via numerous sources, including git events, Jenkins, etc. Another benefit of Spinnaker is that it can be used to deploy across multiple cloud vendors through the use of providers. 
 
-This guide will walk through the process of installing and configuring Spinnaker for use with Oracle Container Engine for Kubernetes. After the installation we will perform a manifest-based deployment of a Hello World pod and service. 
+This guide will walk through the process of installing and configuring Spinnaker for use with Oracle Container Engine for Kubernetes (OKE). After the installation we will perform a manifest-based deployment of a Hello World pod and service. 
 
 #### Some Differences Between OSS Spinnaker and Armory Spinnaker
 
 * Armory provides an installer that does many of the configurations required with a single command: `hal armory init`. At this moment this configuration only supports AWS S3 storage. A more flexible storage auto configuration is planned.
 * Armory provides “pipelines as code”, in order for you to store pipeline configurations in source control and have a consistent, versioned method of application deployment: https://www.armory.io/pipelines-as-code. In OSS you can only create pipelines through the UI.
-* Armory develops native integrations of spinnaker with third party tools (https://www.armory.io/integrations). 
+* Armory develops native integrations of Spinnaker with third party tools (https://www.armory.io/integrations). 
 
 
 #### Prerequisites

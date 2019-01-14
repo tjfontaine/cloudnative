@@ -169,11 +169,11 @@ From here, we can add more functions to our application, make changes to and red
 
 ## Integrating Fn with Oracle Cloud Services
 
-Now that we have a super-useful single function application, let's share it with the world. We will move from our local development environment to Fn running on a Kubernetes cluster on OCI's [Oracle Container Engine](https://cloud.oracle.com/containers/kubernetes-engine)(OKE). We'll also make use of [Oracle Container Registry](https://cloud.oracle.com/containers/registry)(OCIR) for our function containers.
+Now that we have a super-useful single function application, let's share it with the world. We will move from our local development environment to Fn running on a Kubernetes cluster on OCI's [Oracle Container Engine](https://cloud.oracle.com/containers/kubernetes-engine) (OKE). We'll also make use of [Oracle Container Registry](https://cloud.oracle.com/containers/registry) (OCIR) for our function containers.
 
 Given Serverless is meant to help us focus on our code and not spend time worrying about infrastructure, this part of our tutorial might seem like we're getting into the weeds a bit. But for the most part, we're just going to fire off a few commands and we'll be up and running. This is what's great about using managed services like OKE and OCIR - we can set things up pretty quickly, and not worry too much about the details. Of course, "managed" doesn't mean "magic", so it's good to get our hands a little dirty.
 
-To summarize the following steps, we're going to point Fn at our container registry instance in OCI for our function images, and we'll be installing Fn server on Kubernetes so that when we deploy applications, they will be running on a managed cluster in OCI.
+To summarize the following steps, we're going to point Fn at our container registry instance in OCI for our function images, and we will install Fn server on Kubernetes so that when we deploy applications, they will be running on a managed cluster in OCI.
 
 If you need more details regarding these components, see the [Oracle Container Engine](https://docs.cloud.oracle.com/iaas/Content/ContEng/Concepts/contengoverview.htm) and [Oracle Container Registry](https://docs.cloud.oracle.com/iaas/Content/Registry/Concepts/registryoverview.htm) documentation.
 

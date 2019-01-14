@@ -1,11 +1,11 @@
 # Monitoring and Visualization with Prometheus and Grafana
 
-## Illuminating your environment with Prometheus
+## Illuminating Your Environment with Prometheus
 
 In this tutorial, we will install Prometheus on our cluster to gather metrics, and Grafana to enhance the metrics. Grafana is another OSS solution often paired with Prometheus and other monitoring tools to model the data collected into beautiful and useful dashboards.
 
-### Getting started 
-For this solution we will use Prometheus and Grafana to monitor a containerized environment managed by Kubernetes. We will use Oracle Container Engine for Kubernetes (OKE) for our Kubernetes cluster. OKE a fully-managed, scalable, and highly available service that you can use to deploy your containerized applications to the cloud. To start an OKE cluster follow this [friendly guide](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html).
+### Getting Started 
+For this solution we will use Prometheus and Grafana to monitor a containerized environment managed by Kubernetes. We will use Oracle Container Engine for Kubernetes (OKE) for our Kubernetes cluster. OKE is a fully-managed, scalable, and highly available service that you can use to deploy your containerized applications to the cloud. To start an OKE cluster follow this [friendly guide](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html).
 
 We can get started with Helm as soon as our cluster is ready. You can find the proper binary to download and install Helm on your system in the [GitHub repository of the project](https://github.com/kubernetes/helm#install). After the download is complete, open a terminal window and type in `helm` You will see an output similar to this:
 
@@ -71,7 +71,7 @@ You can view all of your newly started pods by running:
 kubectl get po --namespace monitoring
 ```
 
-## The magic behind the charts
+## The Magic Behind the Charts
 
 Let's take a look at what we deployed by reviewing our values.yaml file, which contains the default values for our chart. As an example of how this works, let's zoom in on a specific section describing our storage.
 
@@ -175,7 +175,7 @@ It should look something like this:
 
 ![Grafana image](images/Grafana.png "Title")
 
-If you are prompted for login information, use the default username (`admin`) and password (`admin`) specified in the Helm chart. 
+If you are prompted for login information, use the default username `admin` and password `admin` specified in the Helm chart. 
 
 ![Grafana image2](images/Screen_Shot_2018-08-10_at_2.06.35_PM.png "Title")
 

@@ -1,8 +1,6 @@
 {
   "title": "KubeCon + CloudNativeCon North America", 
-  "subtitle": "Sign up for the Oracle Summit Dec 10th at registration", 
-  "registerLinkText": "Register", 
-  "registerLink": "https://sched.co/ITVR", 
+  "subtitle": "", 
   "date": [
     "2018-12-10 00:00:00", 
     "2018-12-13 00:00:00"
@@ -226,7 +224,7 @@
         }, 
         {
           "title": "Bio", 
-          "htmlBlock": "<p>Bob Quillin is Vice President of Developer Relations for Oracle's Application\nDevelopment portfolio. He was previously CEO and co-founder of StackEngine, an\nAustin-based Docker and container management platform startup acquired by\nOracle.</p>"
+          "htmlBlock": "<p>As Vice President of Developer Relations for Oracle Cloud Infrastructure (OCI),\nBob Quillin leads the Cloud Native Labs team who are responsible for OCI cloud\nnative developer relations, advocacy, engagement, solutions, and lighthouse\nadoption. Bob joined Oracle as part of the StackEngine acquisition by Oracle in\nDecember 2015, where he was co-founder and CEO.  Based in Austin, TX,\nStackEngine was an early container-native pioneer building services and\nplatforms designed to help developers and devops teams build, orchestrate, and\nscale enterprise-grade container apps.</p>\n<p>Prior to his role as co-founder and CEO of StackEngine, Bob was CEO of\nAustin-based CopperEgg, a cloud monitoring SaaS startup acquired by Idera in\n2013.  With previous executive and startup leadership roles at CopperEgg,\nnLayers, EMC, and VMware, Bob has focused his career on applying automation to\nsimplify complex cloud, IT and developer challenges.</p>"
         }
       ], 
       "social": {
@@ -296,9 +294,9 @@
       "pageType": "default", 
       "modules": [
         {
-          "header": "Join Us", 
+          "header": "Thank You", 
           "type": "basic", 
-          "htmlBlock": "<p>Support Women Who Code by Adding The Cloud Native Culture &amp; Industry Summit on\nDec 10th to your registration!</p>\n<p>For a limited time, sign up for free and Oracle will donate $100 per\nregistration to Women Who Code, and all attendees will receive a t-shirt!</p>\n<p><a class=\"bttn centered arrow-bttn\" target=\"blank\" href=\"https://sched.co/ITVR\"><span class=\"bttn-txt\">Log In to Register</span></a></p>"
+          "htmlBlock": "<p>Big thanks to the KubeCon community for the fantastic week!</p>\n<p>Miss the activities? No problem, catch up by checking out our <a href=\"https://blogs.oracle.com/cloudnative/announcing-oracle-cloud-native-framework-at-kubecon-north-america-2018\">announcement of\nthe Oracle Cloud Native\nFramework</a>,\nreading <a href=\"https://thenewstack.io/3-cloud-native-challenges-to-address-now-culture-code-and-cloud/\">The New Stack post on cloud native\nchallenges</a>,\nreliving our\n<a href=\"https://blogs.oracle.com/cloudnative/cloud-native-past%2c-present%2c-and-future-from-the-oracle-cloud-native-summit-at-kubeconcloudnativecon\">summit</a>,\n<a href=\"https://blogs.oracle.com/cloudnative/kubecon-2018-cloud-native-recaps-and-highlights\">recap</a>\nand <a href=\"https://www.youtube.com/playlist?list=PLPIzp-E1msrZn36gtzlo2wV3tf4aDOEpD\">daily\nvideos</a>,\nand checking out these awesome Kubernetes <a href=\"https://blogs.oracle.com/cloudnative/kubernetes-momentum-grows-on-oracle-cloud-with-new-user-stories\">user\nstories</a>.</p>\n<p>We will be posting more photos, videos, session recordings, podcasts, and\ninterviews soon, so stay tuned.</p>"
         }, 
         {
           "header": "Watch the teaser", 
@@ -461,6 +459,102 @@
                   "location": "Chelan 2 @ The Conference Center (TCC)"
                 }
               ]
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "pageTitle": "Gallery", 
+      "pageType": "default", 
+      "modules": [
+        {
+          "header": "Gallery", 
+          "type": "gallery-all", 
+          "videos": [
+            {
+              "videotype": "youtube", 
+              "header": "Oracle at KubeCon + CloudNativeCon Week In Review", 
+              "videoID": "WuK6KDFVcig", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Oracle at KubeCon + CloudNativeCon Day 1 Recap", 
+              "videoID": "0SUT5t7DAT4", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Oracle at KubeCon + CloudNativeCon Day 2 Recap", 
+              "videoID": "dLFsFoTq5us", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Oracle at KubeCon + CloudNativeCon Day 3 Recap", 
+              "videoID": "D9sRjenN4pE", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Oracle at KubeCon + CloudNativeCon Day 4 Recap", 
+              "videoID": "rKu-iCQ2D08", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Oracle at KubeCon + CloudNativeCon Teaser", 
+              "videoID": "Dj6aYLdvch8", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Mono to Micro to FaaS A Macro Challenge", 
+              "videoID": "UPf8sCKNb4E", 
+              "description": "Panel discussion hosted by The New Stack at KubeCon + CloudNativeCon North\nAmerica 2018 with FaaS and serverless experts discussing their\ndown-in-the-trenches experiences with implementing FaaS on Kubernetes"
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "What Extending Kubernetes Means for Lifecycle Management", 
+              "videoID": "675Mu2eJmJo", 
+              "description": "On this livestream from KubeCon + CloudNativeCon NA, we're discussing what\nextending Kubernetes means for lifecycle management. What makes the Kubernetes\nmodel work for managing the container lifecycle? Why this model is attractive?\nJoin us as we address these questions and more."
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Is Serverless the new PaaS, and do we want that?", 
+              "videoID": "qPFvXVOeZoI", 
+              "description": "On this livestream from KubeCon + CloudNativeCon NA, we're answering the\nquestion: Is serverless the new PaaS? What does that landscape look like for\ndevelopers today? What is the serverless paradigm versus the consumption model,\nand how we can get more from serverless in the future."
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "The Cloud Native Meetup Community A-Z", 
+              "videoID": "j70XXe16ZN0", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Running Serverless HPC Workloads on Top of Kubernetes and Jupyter Notebooks", 
+              "videoID": "uM_FolsebjM", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Noobernetes 101: Top 10 Questions We Get From New K8s Users", 
+              "videoID": "Y7enbKBBDhA", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Container Networking From Scratch", 
+              "videoID": "6v_BDHIgOY8", 
+              "description": ""
+            }, 
+            {
+              "videotype": "youtube", 
+              "header": "Running MySQL on Kubernetes", 
+              "videoID": "g924HDB81oc", 
+              "description": ""
             }
           ]
         }

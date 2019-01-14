@@ -1,16 +1,5 @@
 The purpose of this solution is to go over the Docker basics which explain containers, images, how they work, where to find them, the architecture (client, daemon), the difference between Docker and VMs, and we will download Docker and an Oracle image and have a play with some commands.
 
-### Prerequisites
-
-This tutorial is for complete beginners that have never played with Docker before.  However, I am going to assume you are familiar with a few concepts before we continue:
-
-* IP addresses and ports
-* Virtual Machines
-* Editing configuration files
-* Basic familiarity with the ideas of code dependencies and building
-* Machine resource usage terms, like CPU percentages, RAM use in bytes, etc.
-* Finally, a Docker hub account https://hub.docker.com/  (it is free)
-
 ## Containers
 
 To understand Docker you have to start at containers. Container technology has been around since the days of the mainframe, but it has resurged in the last couple of years due to the increase in virtualization and the rise of microservice architecture.
@@ -34,7 +23,7 @@ The story of container runtimes has had many twists and turns and makes for exci
 
 * **Rkt** is a container runtime created by CoreOs (part of RedHat and now IBM)
 * **CRI-O** another runtime was built by some RedHat folks to make an even simpler runtime to Rkt; and that would only do what Kubernetes needed
-* Along the same time Docker updated its runtime **Containerd** which was donated to the CNCF last year.
+* Along the same time Docker updated its runtime **Containerd** which was donated to the CNCF in 2018.
 
 And finally we have the **OCI** (Open Container Initiative) which is NOT a runtime (or our Oracle Cloud Infrastructure also known as OCI) but the organization created to manage, define and standardize runtimes. You may ask, why so many runtimes? Well, since its inception Docker has been known as a big project doing too many things, and the other players just wanted a simple, standardized runtime. 
 
@@ -102,17 +91,17 @@ Let's look at the daemon (the bit in the middle in the picture above) in closer 
 ![dockerarch](Images/dockerarch.png)
 
 The Docker daemon (green circle of the picture above) listens for the Docker API requests and manages Docker objects such as images, containers, networks, and volumes. The daemon itself exposes a REST API where a number of different tools can talk to the daemon. 
-Docker client - is the primary way that many Docker users interact with Docker. When you use commands such as `docker run`, the client sends these commands to the daemon which then carries them out. The picture below illustrates this. 
+Docker client - is the primary way that many Docker users interact with Docker. When you use commands such as `docker run` the client sends these commands to the daemon which then carries them out. The picture below illustrates this. 
 
 ![dockerarch](Images/dockerarch3.png)
 
-## What’s the Difference from VM’s? 
+## What’s the Difference from VMs? 
 
 Let's have a look at this diagram below. 
 
 ![vmsandcontainers](Images/vmsandcontainers.png)
 
-With Virtualization, You have three layers: Infrastructure, Host Operating System, and the Hypervisor with each virtual machine containing a copy of the OS and all the required binaries and libraries to run the application (this can get pretty big, pretty fast).
+With virtualization, You have three layers: Infrastructure, Host Operating System, and the Hypervisor with each virtual machine containing a copy of the OS and all the required binaries and libraries to run the application (this can get pretty big, pretty fast).
 
 With containers, the Docker engine replaces the hypervisor and shares the host OS among the containerized applications who themselves only have the required binaries and libraries needed to run the applications (this greatly improves CPU utilization). 
  
@@ -188,7 +177,7 @@ Now that we can see that we have the image on our system, let's run a container 
 
 ![dockerrun](Images/dockerrun.png)
 
-While it looks like nothing happend, actually a lot did. Let's run through what the `run` command does.  The Docker client finds the image, loads up the container and then runs a command in that container. When we ran `docker run oraclelinux` we didn't provide a command, so the container booted up, ran an empty command and then exited. Let's make it do something. Type: 
+While it looks like nothing happened, actually a lot did. Let's run through what the `run` command does.  The Docker client finds the image, loads up the container and then runs a command in that container. When we ran `docker run oraclelinux` we didn't provide a command, so the container booted up, ran an empty command and then exited. Let's make it do something. Type: 
 
 ```
 docker run oraclelinux echo "hello from larry"
@@ -231,9 +220,9 @@ That's it. You have a container on your laptop. Now let's run through some comma
 - `docker port` - shows public facing port of container.
 
 
-## Clean up
+## Clean Up
 
-Throughout this tutorial, you'll have run `docker run` multiple times, and leaving stray containers will eat up disk space. To remove unwanted containers type `docker rm` and the container IDs from the containers you'd like to get rid of. If you have no idea what the ID's are just type `docker ps` and paste them alongside the command `docker rm`
+Throughout this tutorial, you'll have run `docker run` multiple times, and leaving stray containers will eat up disk space. To remove unwanted containers type `docker rm` and the container IDs from the containers you'd like to get rid of. If you have no idea what the IDs are just type `docker ps` and paste them alongside the command `docker rm`
 
 If you have a bunch of containers to delete in one go, copy-pasting IDs can be tedious. In that case, you can simply type:
 

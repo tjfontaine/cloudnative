@@ -357,10 +357,20 @@ Vice President of Developer Relations, Oracle
 
 ### Bio
 
-Bob Quillin is Vice President of Developer Relations for Oracle's Application
-Development portfolio. He was previously CEO and co-founder of StackEngine, an
-Austin-based Docker and container management platform startup acquired by
-Oracle.
+As Vice President of Developer Relations for Oracle Cloud Infrastructure (OCI),
+Bob Quillin leads the Cloud Native Labs team who are responsible for OCI cloud
+native developer relations, advocacy, engagement, solutions, and lighthouse
+adoption. Bob joined Oracle as part of the StackEngine acquisition by Oracle in
+December 2015, where he was co-founder and CEO.  Based in Austin, TX,
+StackEngine was an early container-native pioneer building services and
+platforms designed to help developers and devops teams build, orchestrate, and
+scale enterprise-grade container apps.
+
+Prior to his role as co-founder and CEO of StackEngine, Bob was CEO of
+Austin-based CopperEgg, a cloud monitoring SaaS startup acquired by Idera in
+2013.  With previous executive and startup leadership roles at CopperEgg,
+nLayers, EMC, and VMware, Bob has focused his career on applying automation to
+simplify complex cloud, IT and developer challenges.
 
 ## Micha "mies" Hernandez van Leuffen
 
