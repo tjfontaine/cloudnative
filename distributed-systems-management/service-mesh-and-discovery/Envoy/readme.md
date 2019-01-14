@@ -19,7 +19,7 @@ What does this actually mean? By abstracting the network from application progra
 
 In addition to the above, Envoy can be used as a foundational building block to extend into a variety of use cases, including as an edge proxy, as a service mesh sidecar, and as a substrate for building new product.
 
-All in all, Envoy a great addition to your cloud-native tool box.  
+All in all, Envoy is a great addition to your cloud-native tool box.  
 
 ### Prerequisites
 
