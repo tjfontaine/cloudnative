@@ -1,4 +1,4 @@
-# Package Management for Kubernetes Services with Helm
+# Package Management for Kubernetes Services
 
 ## Helm
 
@@ -9,7 +9,7 @@ Helm addresses the package mangement for Kubernetes applications by providing a 
 * Release: an instance of a Helm chart deployed to a Kubernetes cluster. There is a new release created each time a chart is installed. 
 
 Helm is similar to yum, brew, apt-get, choco, etc., but specifically for Kubernetes. 
-Thanks to repositories and releases charts are easy to update, version, and share. 
+Thanks to repositories and releases, charts are easy to update, version, and share. 
 
 There are two key parts of the Helm architecture: 
 * Helm: a client running on your local system
@@ -42,7 +42,7 @@ To upgrade Tiller run:
 helm init --upgrade
 ```
 
-## Using existing charts
+## Using Existing Charts
 
 There are a number of existing Helm charts for popular software available for consumption. To get the latest set of charts run: 
 ```
@@ -82,7 +82,7 @@ NAME:   ringed-butterfly
 STATUS: DEPLOYED
 ```
 
-## Managing your releases 
+## Managing Your Releases 
 
 The Helm client will display information about resource creation, the release state, and options for additional configuration steps to take. You can use `helm status` with the chart name to keep track of a release’s state and to reread configuration information. 
 
@@ -110,7 +110,7 @@ Use the `helm delete` command to uninstall a release:
 helm delete ringed-butterfly
 ```
 
-## Configuring additional chart repositories
+## Configuring Additional Chart Repositories
 
 A repository is the place where you can collect and share Charts. So far, we’ve been installing charts only from the stable repository. But you can also configure Helm to use other repositories. In this case we will add the `example` repository:
 
@@ -124,7 +124,7 @@ helm repo list
 ```
 
 
-## Creating your own charts 
+## Creating Your Own Charts 
 
 For a more detailed overview of chart creation refer to the [Helm charts guide](https://docs.helm.sh/developing_charts/#charts). 
 

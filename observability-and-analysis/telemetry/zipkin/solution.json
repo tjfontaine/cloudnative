@@ -4,7 +4,7 @@
       "section": "overview",
       "files": [
         {
-          "title": "Distributed Application Logging with Zipkin",
+          "title": "Introduction to Zipkin",
           "file": "readme.md"
         }
       ]
@@ -13,7 +13,7 @@
       "section": "guides",
       "files": [
         {
-          "title": "Zipkin - An Introduction",
+          "title": "An Introduction to Distributed Application Logging with Zipkin",
           "file": "zipkin-an-introduction.md"
         }
       ]

@@ -1,6 +1,6 @@
 # Jenkins X: Cloud Native Continuous Integration and Deployment
 
-In the open source and self-hosted space, Jenkins has been the dominant player for years. But, it requires some work, most of which is repetitive and invites error. You know what that is like, finding the right set of plugins, designing the CD process, writing pipeline definitions, etc... This "lego" approach is the strength, and some would argue, the weakness of Jenkins. Jenkins X has come to simplify how to work with continuous delivery and Kubernetes. 
+In the open source and self-hosted space, Jenkins has been the dominant player for years. But, it requires some work, most of which is repetitive and invites error. You know what that is like, finding the right set of plugins, designing the CD process, writing pipeline definitions, etc... This "Lego" approach is the strength, and some would argue, the weakness of Jenkins. Jenkins X has come to simplify how to work with continuous delivery and Kubernetes. 
 
 Here are a few of the ways Jenkins X removes some complexity from your life: 
 
@@ -13,7 +13,7 @@ The value of Jenkins X is that if you follow the best practices that it has bake
 
 ## Creating an Ingress Controller
 
-Jenkins X requires the use of a ingress controller to access the service over the public internet. To ensure the Jenkins X installation tool can properly access the ingress controller during the installation process, create the ingress controller in the `kube-system` namespace.
+Jenkins X requires the use of an ingress controller to access the service over the public internet. To ensure the Jenkins X installation tool can properly access the ingress controller during the installation process, create the ingress controller in the `kube-system` namespace.
 
 Install an ingress controller with:
 
@@ -126,7 +126,7 @@ During the installation process the system will also output the URL for your Jen
 
 ![Jenkinsx-login](images/jenkinsx-login.png)
 
-This step is only required if the Jenkins X installer is unable to automatically log in: The next step is to get your Jenkins API Token. Click on the 'admin' user in the upper right corner, and then navigate to the Configure tab, copy the API token, and post it into the command line after you are prompted for your `API Token`. 
+This step is only required if the Jenkins X installer is unable to automatically log in; getting your Jenkins API Token. Click on the 'admin' user in the upper right corner, and then navigate to the Configure tab, copy the API token, and post it into the command line after you are prompted for your `API Token`. 
 
 ![Jenkinsx-API](images/jenkinsx-api.png)
 
@@ -204,7 +204,7 @@ After your authorization is complete, you can create a quickstart microservice f
 
 `jx create quickstart`
 
-This will open up a list of templates for you to choose from. Select the one you want to deploy, for instance `golang-http` and click enter. You will be prompted for information related to project name, GitHub user name, repository name, etc. In my case the appliation is named `sample`. After doing so you will receive an output similar to this:
+This will open up a list of templates for you to choose from. Select the one you want to deploy, for instance `golang-http` and click enter. You will be prompted for information related to project name, GitHub user name, repository name, etc. In my case the application is named `sample` After doing so you will receive an output similar to this:
 
 ```
 Creating repository mickeyboxell/sample

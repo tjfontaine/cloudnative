@@ -1,8 +1,8 @@
 # Getting Started with Oracle Container Engine for Kubernetes
 
-This guide is designed to help users who are new to the Oracle Container Engine for Kubernetes (OKE), learn the most efficient way to set up their Kubernetes clusters to get up and running quickly.
+This guide is designed to help users who are new to the Oracle Container Engine for Kubernetes (OKE) learn the most efficient way to set up their Kubernetes clusters to get up and running quickly.
 
-Typical users of OKE will deploy worker nodes in their clusters across multiple Availability Domains (AD). However, for the purposes of a demonstration of the platform, or when working in a development environment, it may be more efficient to just set up a single worker node. This tutorial helps you accomplish just that. To learn the recommended way to set up OKE for a production setting, refer to the official documentation, that illustrates how to [Create a Cluster and Deploy a Sample App](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html).
+Typical users of OKE will deploy worker nodes in their clusters across multiple Availability Domains (AD). However, for the purposes of a demonstration of the platform, or when working in a development environment, it may be more efficient to just set up a single worker node. This tutorial helps you accomplish just that. To learn the recommended way to set up OKE for a production setting, refer to the official documentation, which illustrates how to [Create a Cluster and Deploy a Sample App](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html).
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ There are a couple of things that are required to get your cluster up and runnin
 
 First, make sure that you have access to the OCI console, and have administrator permissions. OKE does not support IDCS or Federated Users today, so verify that you are logging in with your OCI credentials in the console.
 
-Next, create a policy for OKE to manage resources. Navigate to the Identity section in the menu, and click on Policies. Select your root compartment in the dropdown, and click `Create Policy`.  You can name the policy anything you wish, and add a description. In the Policy Statements field, add the following text: `allow service OKE to manage all-resources in tenancy`, and then click the Create button. As shown in the screenshot, I named my policy "okeAllow".
+Next, create a policy for OKE to manage resources. Navigate to the Identity section in the menu, and click on Policies. Select your root compartment in the dropdown, and click `Create Policy`  you can name the policy anything you wish, and add a description. In the Policy Statements field, add the following text: `allow service OKE to manage all-resources in tenancy` and then click the Create button. As shown in the screenshot, I named my policy "okeAllow".
 
 ![Permissions](images/permissions.png)
 
@@ -27,11 +27,11 @@ To create a compartment, navigate to Compartments in the Identity section in the
 
 Next, set up the networking and security lists required to run OKE. Networking is the heart of Kubernetes, so it's important to get this step correct.
 
-Browse the Networking panel in the menu, and select `Virtual Cloud Networks` (VCN). Click on `Create Virtual Cloud Network`. Create your Virtual Cloud Network for your newly created compartment, "oke". Select the radio button that corresponds to `CREATE VIRTUAL CLOUD NETWORK PLUS RELATED RESOURCES`. Finally, verify that the checkbox next to "Use DNS Hostnames in this VCN" is selected. The completed window will look similar to the screenshot below.
+Browse the Networking panel in the menu, and select `Virtual Cloud Networks` (VCN). Click on `Create Virtual Cloud Network` create your Virtual Cloud Network for your newly created compartment, "oke". Select the radio button that corresponds to `CREATE VIRTUAL CLOUD NETWORK PLUS RELATED RESOURCES` finally, verify that the checkbox next to "Use DNS Hostnames in this VCN" is selected. The completed window will look similar to the screenshot below.
 
 ![Networking](images/networking.png)
 
-Once the network is created, update the Security List for the VCN to add allow Kubernetes to use Node Ports (30000-32767). Navigate into the "oke" VCN, and then select Security Lists in the left hand navigation. Clicking on `Default Security List`, will bring up the screen that displays all the security rules for your oke VCN.
+Once the network is created, update the Security List for the VCN to add allow Kubernetes to use Node Ports (30000-32767). Navigate into the "oke" VCN, and then select Security Lists in the left hand navigation. Clicking on `Default Security List` will bring up the screen that displays all the security rules for your oke VCN.
 
 Click on the `Edit All Rules` button, and add `Another Ingress Rule` with the following information:
 * Source Type: CIDR
@@ -72,4 +72,4 @@ Once all the steps above have been completed, the cluster will spin up in a few 
 
 ## Interacting With the Cluster
 
-To interact with the cluster, download the kubeconfig file from the console ![as described in the official documentation](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html#section_5). And finally, you can also run a [simple helloworld application](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html#section_7) to give the cluster a quick whirl.
+To interact with the cluster, download the kubeconfig file from the console [as described in the official documentation](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html#section_5). And finally, you can also run a [simple helloworld application](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html#section_7) to give the cluster a quick whirl.

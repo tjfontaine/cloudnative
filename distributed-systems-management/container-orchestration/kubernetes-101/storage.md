@@ -5,7 +5,7 @@ In this article, I'm going to talk about Kubernetes Persistent Volumes and Persi
 
 ### [OCI FlexVolume Driver](https://github.com/oracle/oci-flexvolume-driver)
 
-You can click the header of this section to check out the github repo for this project. The FlexVolume Driver provides the ability to use OCI Block Volumes as Kubernetes Persistent Volumes. Let's walk through what that looks like.
+The FlexVolume Driver provides the ability to use OCI Block Volumes as Kubernetes Persistent Volumes. Let's walk through what that looks like.
 
 To begin, you should have a Kubernetes cluster already deployed. The easiest way to accomplish this on Oracle Cloud Infrastructure is to use the managed Kubernetes service, OKE. If you would like to learn more about deploying a Kubernetes cluster on OKE, you can check out our article [here](https://cloudnative.oracle.com/template.html#distributed-systems-management/container-orchestration/oke/quickstart.md).
 
@@ -67,7 +67,7 @@ Once you have created a claim on the storage you would like, create a pod defini
 
 You'll see in the pod definition above, I have highlighted the sections pertaining to the storage volume.  In the "volumes" section under "spec" you can see that we simply specify the volume claim that describes the desired storage. The "volumeMounts" section is also a bit simpler; when using the OCI Volume Provisioner, there's no need to have the long volume name like we did before.  You will notice that this time the pod definition does not contain a "nodeSelector" field. This is because we do not need to specify the same AD where the block storage has been created. Kubernetes will automatically create the block storage in the same AD as the pod.
 
-At this point, if you run `kubectl apply -f`, Kubernetes should be able to automatically go and create your block storage and hook it up to your pod for you. When the pod is deleted, the block volume will remain and could be referenced by a new pod.
+At this point, if you run `kubectl apply -f` Kubernetes should be able to automatically go and create your block storage and hook it up to your pod for you. When the pod is deleted, the block volume will remain and could be referenced by a new pod.
 
 # Persistent Storage with Kubernetes
 At this point, you've learned the basic tools you need to be able to utilize persistent storage with Kubernetes workloads on Oracle Cloud Infrastructure.  The concepts you've learned are, however, translatable to other environments as well.  Configuring Persistent Storage with container environments is a common stumbling block along many companies' container journeys, and the area is still developing. With the basics you've learned from this article, you should be prepared to understand any changes in the future, and I hope you will feel empowered to choose the best solutions for your Persistent Storage + Container needs.

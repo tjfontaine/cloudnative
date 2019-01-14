@@ -1,26 +1,5 @@
 # Setting up Identity and Access Management on OCI Using Terraform
 
-## Overview
-
-Welcome to our Kubernetes on OCI with Terraform series. This article describes how to set up users, policies, and access management using the open source tool Terraform.
-
-## What is Terraform?
-
-[Terraform](https://terraform.io) is an open source automation toolchain and orchestration language (HCL) for cloud infrastructure. It was created by Hashicorp and features a plugin model for different infrastructure providers. It treats "infrastructure as code," meaning resources can be provisioned in a repeatable and reliable fashion. Because the code can be version controlled it can be leveraged in modern continuous integration and deployment practices.
-
-## Key OCI Concepts Covered in This Series
-
-First, let's go over the fundamental concepts that make up OCI:
-
-* User - a person or machine account which has a unique id
-* Group - logical grouping of users, for instance "developers" or "operators"
-* Compartment - a logical grouping of resources, for instance by line of business or project
-* Tenancy - organization and top-level or root compartment.
-
-## Prerequisites
-
-Please refer to [this installation article.](Readme.md)
-
 ## Defining Our Infrastructure
 
 The file `variables.tf` defines the Terraform environment input variables that needed for our configuration. In this file, we see variables such as the OCID of our tenancy and our user, as well as the fingerprint of our key and the region to which we will be deploying our infrastructure.
@@ -36,7 +15,7 @@ variable "private_key_path" {}
 
 The `main.tf` file initialzes our input variables. Terraform will either read this from environment variables or from the `variables.tf` file if hard-coded there.
 
-First, we set up the OCI provider with these variables. Second, we create our first user and store this in a variable named `user1`. In this example, the name of our user is `Alice`. In the next statement we set her password.
+First, we set up the OCI provider with these variables. Second, we create our first user and store this in a variable named `user1` In this example, the name of our user is `Alice` In the next statement we set her password.
 
 Next, we want to define a compartment for our user to operate in. We will call it `terraform_compartment`.
 
@@ -97,7 +76,7 @@ terraform apply
 
 Now you can look at the OCI dashboard to see the result of your Terraform script! 
 
-## Cleaning up
+## Clean Up
 After finishing this test we should clean up after ourselves. Now that we have confirmed our script works we can destroy our created resources by issuing the following command:
 
 ```
@@ -108,15 +87,9 @@ terraform destroy
 
 Terraform is a powerful way to maintain your infrastructure resources. Through Terraform you can codify, version, and automate your infrastructure. Terraform is highly extendable through plugins allowing you to create cloud resources that go beyond infrastructure in a repeatable and programmatic way.
 
-### More in this series
+### More in This Series
 
 * [Installing Terraform for Oracle Cloud Infrastructure](Readme.md)
 * [Installing Kubernetes on Oracle Cloud Infrastructure via Terraform](KubernetesWithTerraform.md)
 
 
-#### License
-
-Copyright (c) 2018, Oracle and/or its affiliates. All rights
-reserved.
-This content is licensed under the Universal Permissive
-License 1.0.

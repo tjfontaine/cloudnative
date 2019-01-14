@@ -1,4 +1,4 @@
-# Prometheus: How to Monitor Your Applications
+# How to Monitor Your Applications
 
 So, you have followed the [Prometheus 101 Tutorial](Readme.md), your OCI Kubernetes cluster is running Prometheus, with the operator installed, and even has Grafana configured. What now?
 
@@ -21,7 +21,7 @@ Before we get into the process for deploying an application integrated with Prom
 
 Let's assume we have a simple HTTP API server application deployed on our cluster. Out of the box with Kubernetes, we get some visibility on how much resource its pod is consuming, and we can quickly access the stdout/stderr logs from the container with `kubectl logs -f <pod name>`. 
 
-If we wanted to access these logs more easily, We could set up an EFK or ELK logging stack to pull those logs in to a central place. We could also configure this logging stack to aggregate some metrics around those log files, e.g. "Requests per minute."
+If we wanted to access these logs more easily, we could set up an EFK or ELK logging stack to pull those logs in to a central place. We could also configure this logging stack to aggregate some metrics around those log files, e.g. "Requests per minute."
 
 We might also want to find out just how much resource the pod's underlying node is using, which we could do with Prometheus.
 
@@ -29,13 +29,13 @@ But what if we want to gather metrics _inside_ our application? How many times h
 
 Sure, we could answer some of these questions by adding some kind of [Service Mesh](https://istio.io/docs/concepts/what-is-istio/) between our microservices, but to achieve this without adding extra complexity to your infrastructure, and to keep the freedom to decide exactly what information inside your application is useful, we can modify our application to include a metrics endpoint that Prometheus can call.
 
-## Don't Call Us, We'll Call You.
+## Don't Call Us, We'll Call You
 
 Note that I said Prometheus would call us. Our application will expose a /metrics HTTP endpoint that Prometheus will hit to gather data. This means that we don't need to include information on a Prometheus server to send data to from our application, nor worry about disabling it in environments that aren't using Prometheus. 
 
 The endpoint is there to be consumed by whatever wants to consume it. 
 
-## Lets get GOing
+## Let's Get GOing
 [ಠ_ಠ]
 
 In this tutorial, we're going to take a very simple Go application that serves a message over HTTP, and learn how to expose a metrics endpoint to track the number of times our user-facing endpoint was called, which we'll do by implementing a few Go libraries.
@@ -248,7 +248,7 @@ func main() {
 ```
 ### /metrics, You Say?
 
-Before we package up this application in Docker image, let's take a look at the /metrics endpoint. You can do this by running the Go application on your local machine with:
+Before we package up this application in a Docker image, let's take a look at the /metrics endpoint. You can do this by running the Go application on your local machine with:
 
 ```
 >  go run main.go
@@ -300,7 +300,7 @@ promhttp_metric_handler_requests_total{code="503"} 0
 requests_total 2
 ```
 
-### Deploying the metrics-spouting app
+### Deploying the Metrics-Spouting app
 
 Again, I've packaged up this image and pushed to a public OCIR repo for ease of use. This one can be found at `iad.ocir.io/oracle-cloudnative/prometheus-app-monitor:metrics`.
 
@@ -377,7 +377,7 @@ NAME              STATUS   ROLES   AGE   VERSION
 
 W00t!
 
-_Again, you can use a Dockerfile if you want to build this version of the application yourself. However, this time there are some Go dependencies you need to pull in. Running `docker build .` from this repository will make it easy for you: https://github.com/riceo/oracle-demo-prometheus-metrics_
+Again, you can use a Dockerfile if you want to build this version of the application yourself. However, this time there are some Go dependencies you need to pull in. Running `docker build .` from this repository will make it easy for you: https://github.com/riceo/oracle-demo-prometheus-metrics_
 
 ## Observing Your Observables
 

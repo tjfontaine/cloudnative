@@ -1,4 +1,4 @@
-### Overview
+### Istio
 
 A microservice architecture is a common choice when building new cloud applications and services. It is becoming more common for companies migrating workloads to the cloud to refactor legacy applications using a microservice architecture, breaking down monolithic applications into more discrete and manageable components. Typically, these microservices are built, distributed and managed as containers. With more applications and services deployed as microservices, the number of containers deployed increases.
 

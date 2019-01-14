@@ -49,7 +49,7 @@ You can see them here in this handy image below.
 We're going to create your first application in a few easy steps by following the Wercker wizard prompts. 
 
 * Log into your Wercker account and create your first application. In the wizard make sure that you select your user in the drop down as well as GitHub as your SCM. 
-* Select the **wercker-oke-demo** application you previously forked and click next. Accept the default when it comes to checking out the code...
+* Select the **wercker-oke-demo** application you previously forked and click next. Accept the default when it comes to checking out the code.
 * Finally, click create!
 
 #### Step 2 
@@ -82,7 +82,7 @@ OCIR.
 
 * Login to your OCI instance.
 * Choose the menu icon in the top left corner to display your options.
-* Select Developer Services > Registry (OCIR). Once the list of repositories in the OCI Registry is displayed. 
+* Select Developer Services > Registry (OCIR) once the list of repositories in the OCI Registry is displayed. 
 
 ![OCI](Images/Step3Img1.png)
 
@@ -138,7 +138,7 @@ Switch to Wercker to create the following parameters under the Environment tab.
 
 ![allenvars](Images/allenvars.png)
 
-As an aside, to review the script when a deploy to kubernetes is performed, switch to GitHub and open the wercker.yml file.
+As an aside, to review the script when a deploy to Kubernetes is performed, switch to GitHub and open the wercker.yml file.
 
 * Scroll to to the **deploy-to-kubernetes** area. 
 
@@ -166,7 +166,7 @@ In the end it should look like this
 
 #### Step 6 
 
-In the previous step The new change in the workflow was created successfully. In the next step, we'll deploy the OCI image to kubernetes.
+In the previous step The new change in the workflow was created successfully. In the next step, we'll deploy the OCI image to Kubernetes.
 
 Switch to your GitHub application and select the *wercker.yml* file and click edit. Scroll down to the set deployment timeout area and change the timeout to *300* seconds to make sure there is enough time to complete the deployment. Enter a description for commit and click Commit changes.
 

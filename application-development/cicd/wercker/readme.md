@@ -12,14 +12,12 @@ Wercker enables software teams to increase productivity, reduce risk and improve
 platform. Organizations using Wercker can automatically build, test and deploy their applications, end-to-end, all the way from source to production in a repeatable
 transparent manner. It also provides an open-source CLI and a collection of [curated public steps](https://app.wercker.com/steps), among other benefits. 
 
-This tutorial will walk through: 
+This tutorial will walk through how to push an image in Wercker to OCI Registry and deploy the image as a container to an existing OCI Container Engine for Kubernetes (OKE) cluster.
 
-How to push an image in Wercker to OCI Registry and deploy the image as a container to an existing OCI Container Engine for Kubernetes (OKE) cluster.
+### Prerequisites
 
-### Prerequisites:
-
-* Complete the [tutorial](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html) to create an Oracle Container Engine (OKE) cluster and deploy a sample app.
-* Read the "Gotcha's"section in the tutorial
-* GitHub [Account](https://github.com/).
-* Wercker [Account](https://app.wercker.com/users/new/).
-* You (and the groups to which you belong) must be defined solely in Oracle Cloud Infrastructure Identity and Access Management (see [Federated users are not supported by Container Engine for Kubernetes](https://docs.cloud.oracle.com/iaas/Content/knownissues.htm#contengfederateduser)).
+* Complete the [tutorial](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html) to create an Oracle Container Engine (OKE) cluster and deploy a sample app
+* Read the "Gotcha's" section in the tutorial
+* GitHub [Account](https://github.com/)
+* Wercker [Account](https://app.wercker.com/users/new/)
+* You (and the groups to which you belong) must be defined solely in Oracle Cloud Infrastructure Identity and Access Management (see [Federated users are not supported by Container Engine for Kubernetes](https://docs.cloud.oracle.com/iaas/Content/knownissues.htm#contengfederateduser))
