@@ -1,4 +1,4 @@
-# Spinnaker: Kubernetes Provider V2 (Manifest Based) on Oracle Container Engine for Kubernetes
+# Spinnaker: Oracle Provider Local Debian Installation 
 
 ## Overview
 
@@ -8,17 +8,19 @@ This guide will walk through the process of installing and configuring Spinnaker
 
 ### Prerequisites
 
-In Spinnaker, a **provider** is an integration to the cloud platform on which you deploy applications. To use a provider you need to register credentials, known as **accounts** in Spinnaker.
+In Spinnaker, a **provider** is an integration to the cloud platform on which you deploy applications. To use a provider you need to register credentials, known as **accounts**.
 
-The Oracle Cloud provider supports both instance-based and Kubernetes-based deployments. The instance-based approach supports creating OCI Images, Instances, and Load Balancers. The Kubernetes-based approach supports the standard operations available to Oracle Container Engine for Kubernetes. In order to push to Oracle Cluster Engine for Kubernetes (OKE) you will need access to an OKE cluster. For more information about creating an OKE cluster follow this [guide](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html). Additionally, Spinnaker relies on `kubectl` to manage all API access. Ensure that the config file kubectl defaults to is the one you want to use. The current installer requires your `kubectl` to be version 1.10 or greater and installed on the same machine running Halyard.  
+The Oracle Cloud provider supports both instance-based and Kubernetes-based deployments. The instance-based approach enables the creation of OCI Images, Instances, and Load Balancers. The Kubernetes-based approach supports the standard operations available to Oracle Container Engine for Kubernetes (OKE). In order to push to OKE you will need access to an OKE cluster. For more information about creating an OKE cluster follow this [guide](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html). Additionally, Spinnaker relies on `kubectl` to manage all API access. Ensure that the config file kubectl defaults to is the one you want to use. The current installer requires your `kubectl` to be version 1.10 or greater and installed on the same machine running Halyard.  
 
-[Oracle Object Storage](https://docs.cloud.oracle.com/iaas/Content/Object/Concepts/objectstorageoverview.htm) as a storage provider for the persitent store and as an artifact repository and Oracle [Registry](https://docs.cloud.oracle.com/iaas/Content/Registry/Concepts/registryoverview.htm) is available as a Docker image registry.
+[Oracle Object Storage](https://docs.cloud.oracle.com/iaas/Content/Object/Concepts/objectstorageoverview.htm) is available to be used as a storage provider for the persitent store and as an artifact repository. Oracle [Registry](https://docs.cloud.oracle.com/iaas/Content/Registry/Concepts/registryoverview.htm) is available as a Docker image registry.
 
 ### Installation
 
-Download Halyard, the tool used to manage the lifecycle of your Spinnaker deployment: `curl -O https://raw.githubusercontent.com/spinnaker/halyard/master/install/macos/InstallHalyard.sh`
+Start by downloading Halyard, the tool used to manage the lifecycle of your Spinnaker deployment: `curl -O https://raw.githubusercontent.com/spinnaker/halyard/master/install/debian/InstallHalyard.sh`
 
 Install it with: `sudo bash InstallHalyard.sh`
+
+This requires Java 8 which can be installed with `sudo bash InstallHalyard.sh` 
 
 This should install the `hal` command in `/usr/local/bin`. You can test that you have the correct version in your path by running `hal -v`. `hal` will bring up a list of helpful commands. 
 
@@ -56,11 +58,41 @@ Enable the Oracle Cloud provider with: `hal config provider oracle enable`
 Output: 
 
 ```
-RUN COMMAND TO GET OUTPUT 
-``` 
+$ hal config provider oracle enable
++ Get current deployment
+  Success
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.fasterxml.jackson.databind.util.ClassUtil (file:/opt/halyard/lib/jackson-databind-2.9.6.jar) to constructor java.lang.Void()
+WARNING: Please consider reporting this to the maintainers of com.fasterxml.jackson.databind.util.ClassUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
++ Edit the oracle provider
+  Success
++ Successfully enabled oracle
+```
 You may see certain warnings pop up in output of your commands. These will not impact the successful deployment of Spinnaker and since Spinnaker is in continuous development they should no longer appear in more recent versions.
 
 Choose `localdebian` as the environment on which Halyard will install Spinnaker. This installation option means that Spinnaker will be downloaded and run on the machine Halyard is installed onto. Given that all Spinnaker services are running on a single machine, there will be downtime when Halyard updates Spinnaker. Halyard defaults to a Local Debian install when first run. If you have changed the deploy option, you will need to run `hal config deploy edit --type localdebian` to revert to a local install. 
+
+Output: 
+
+```
+$ hal config deploy edit --type localdebian
++ Get current deployment
+  Success
++ Get the deployment environment
+  Success
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.fasterxml.jackson.databind.util.ClassUtil (file:/opt/halyard/lib/jackson-databind-2.9.6.jar) to constructor java.lang.Void()
+WARNING: Please consider reporting this to the maintainers of com.fasterxml.jackson.databind.util.ClassUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
++ Edit the deployment environment
+  Success
++ Successfully updated your deployment environment.
+```
+
+
 
 
 The next step is to provide Spinnaker with a Persistent Storage source. In this case we will be connecting to Oracle Cloud Infrastructure Object Storage. 
@@ -86,22 +118,26 @@ $ hal config storage oracle edit \
 Output: 
 
 ```
+$ hal config storage oracle edit \
+>     --bucket-name spinnaker \
+>     --compartment-id ocid1.compartment.oc1..aaaaaaaa6xkpezjs764l2bhm7dxmd2cliykmuomd26tuwttbl7xifuliywqq \
+>     --fingerprint 8f:05:f4:94:f3:5f:e3:30:ec:35:8e:77:3e:40:34:10 \
+>     --namespace oracle-cloudnative \
+>     --region us-phoenix-1 \
+>     --ssh-private-key-file-path ~/.oci/oci_api_key.pem \
+>     --tenancy-id ocid1.tenancy.oc1..aaaaaaaa225wmphohi3iiyxxxjruojirfhbn6ewhd7jgskabtdve3d2qmq4a \
+>     --user-id ocid1.user.oc1..aaaaaaaagosdr3zsh67tvgpnmw42ywqc74yobsvjmik7tu53clobgeqqawsq
 + Get current deployment
-+ Get current deployments 
   Success
 + Get persistent store
   Success
 WARNING: An illegal reflective access operation has occurred
-WARNING: Illegal reflective access by com.fasterxml.jackson.databind.util.ClassUtil (file:/opt/halyard/lib/jackson-databind-2.8.8.jar) to constructor java.lang.Void()
+WARNING: Illegal reflective access by com.fasterxml.jackson.databind.util.ClassUtil (file:/opt/halyard/lib/jackson-databind-2.9.6.jar) to constructor java.lang.Void()
 WARNING: Please consider reporting this to the maintainers of com.fasterxml.jackson.databind.util.ClassUtil
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
 + Edit persistent store
   Success
-Problems in default.persistentStorage:
-- WARNING Your deployment will most likely fail until you configure
-  and enable a persistent store.
-
 + Successfully edited persistent store "oracle".
 ```
 
@@ -129,22 +165,50 @@ List the versions of Spinnaker available for deployment: `hal version list`
 Output:
 
 ```
+$ hal version list
 + Get current deployment
   Success
 + Get Spinnaker version
   Success
 + Get released versions
   Success
-+ You are on version "1.9.3", and the following are available:
- - 1.14.209 (OSS Spinnaker v1.8.6):
-   Changelog: https://docs.armory.io/release-notes/armoryspinnaker_v1.14.209/
-   Published: Thu Sep 13 15:42:49 PDT 2018
++ You are on version "1.11.3", and the following are available:
+ - 1.9.5 (Bright):
+   Changelog: https://gist.github.com/spinnaker-release/d24a2c737db49dda644169cf5fe6d56e
+   Published: Mon Oct 01 10:15:37 PDT 2018
    (Requires Halyard >= 1.0.0)
+ - 1.10.11 (Maniac):
+   Changelog: https://gist.github.com/spinnaker-release/8c6e6abe2a0016b823b900523e82cba1
+   Published: Tue Jan 15 05:41:25 PST 2019
+   (Requires Halyard >= 1.11)
+ - 1.11.6 (Cobra Kai):
+   Changelog: https://gist.github.com/spinnaker-release/5cbb402297feb85f82482a73e9428967
+   Published: Tue Jan 15 04:29:34 PST 2019
+   (Requires Halyard >= 1.11)
 ```
 
-Select the version you would like to deploy: `hal config version edit --version 1.11.3`
+Select the version you would like to deploy: `hal config version edit --version 1.11.8`
 
-Deploy Spinnaker: `hal deploy apply`
+Output: 
+
+```
+$ hal config version edit --version 1.11.6
++ Get current deployment
+  Success
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.fasterxml.jackson.databind.util.ClassUtil (file:/opt/halyard/lib/jackson-databind-2.9.6.jar) to constructor java.lang.Void()
+WARNING: Please consider reporting this to the maintainers of com.fasterxml.jackson.databind.util.ClassUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
++ Edit Spinnaker version
+  Success
++ Spinnaker has been configured to update/install version "1.11.6".
+  Deploy this version of Spinnaker with `hal deploy apply`
+```
+
+ 
+
+Deploy Spinnaker: `sudo hal deploy apply`
 
 Output: 
 
@@ -194,74 +258,21 @@ Let’s get familiar with Spinnaker concepts and terminology by deploying a samp
 
 ![create application](images/create-application.png)
 
-On the next page click "Create Server Group" and make sure to choose "my-k8s-v2-account", the Kubernetes provider configured for Spinnaker, from the "Account" pull down menu. A "Server Group" is a collection of servers all running the same Docker image.
+On the next page click "Create Server Group" and make sure to choose "my-oci-acct", the OCI Cloud Provider configured for Spinnaker, from the "Account" pull down menu. A "Server Group" is a collection of servers. Clicking "Create" will provision a virtual machine or group of virtual machines. 
 
-In the "Manifest" field, add the following helloworld yaml and then click "Create". 
+![Screen Shot 2019-01-28 at 5.24.42 PM](images/Screen Shot 2019-01-28 at 5.24.42 PM.png)
 
-```
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: helloworld
-spec:
-  selector:
-    matchLabels:
-      app: helloworld
-  replicas: 1 
-  template: 
-    metadata:
-      labels:
-        app: helloworld
-    spec:
-      containers:
-      - name: helloworld
-        image: karthequian/helloworld:latest
-        ports:
-        - containerPort: 80
-```
+You will receive a confirmation when your server group has been successfully created. Clicking on your cluster will provide additional information about the server group. 
 
-It is worth noting that if there is an error with your manifest, Spinnaker will not return an error code. The "Create" button will simply be disabled and not move you to the validation window. 
+![Screen Shot 2019-01-28 at 5.36.05 PM](images/Screen Shot 2019-01-28 at 5.36.05 PM.png)
 
-A successful installation will run through the following checks: 
+You can use the OCI conole to verify the server creation. 
 
-![deploy manifest](images/deploy-manifest.png)
-
-Running `kubectl get pods -n spinnaker` will show the running pod: 
-
-```
-NAME                               READY     STATUS    RESTARTS   AGE
-helloworld-64bc4cc75c-jf8w2        1/1       Running   0          1m 
-```
-
-The next step is to add a service to the pod. The Spinnaker "Load Balancer" is similar to a "Service" in Kubernetes. Click "Load Balancers" and then "Create Load Balancer". Make sure that the "Account" and "Application" fields match the ones for the application created in the previous step. 
-
-Add the following information to the "Manifest" field: 
-
-```
-apiVersion: v1
-kind: Service
-metadata:
- name: helloworld
-spec:
- type: NodePort
- selector:
-   app: helloworld
- ports:
-   - name: client
-     protocol: TCP
-     port: 80
-     nodePort: 32080
-```
-
-Running `kubectl get svc -n spinnaker` will return the information for the newly created service: 
-
-```
-NAME               TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
-helloworld         NodePort    10.96.70.62     <none>        80:32080/TCP   1m
-```
+![Screen Shot 2019-01-28 at 5.37.03 PM](images/Screen Shot 2019-01-28 at 5.37.03 PM.png)
 
 ### Clean Up 
-To delete everything created during this walkthrough, you can select the server group in the Spinnaker UI and click “Delete” from the dropdown menu. This will delete all pods, the replicaset, and the deployment from Kubernetes. Another option is to manually delete everything by means of Kubectl.  
+
+To delete everything created during this walkthrough, you can select the server group in the Spinnaker UI and click “Destroy” from the dropdown menu. This will delete the virtual machines and block storage created by Spinnaker. Another option is to manually delete everything by means of the OCI console.  
 
 Run `hal deploy clean` to purge the deployment of Spinnaker created using Halyard. 
 
