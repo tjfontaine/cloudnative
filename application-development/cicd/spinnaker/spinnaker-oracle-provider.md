@@ -1,4 +1,4 @@
-persitent # Spinnaker: Oracle Provider Local Debian Installation 
+# Spinnaker: Oracle Provider Local Debian Installation 
 
 ## Overview
 
