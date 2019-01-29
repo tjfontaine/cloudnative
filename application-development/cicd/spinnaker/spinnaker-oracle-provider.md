@@ -1,4 +1,4 @@
-# Spinnaker: Oracle Provider Local Debian Installation 
+persitent # Spinnaker: Oracle Provider Local Debian Installation 
 
 ## Overview
 
@@ -12,15 +12,13 @@ In Spinnaker, a **provider** is an integration to the cloud platform on which yo
 
 The Oracle Cloud provider supports both instance-based and Kubernetes-based deployments. The instance-based approach enables the creation of OCI Images, Instances, and Load Balancers. The Kubernetes-based approach supports the standard operations available to Oracle Container Engine for Kubernetes (OKE). In order to push to OKE you will need access to an OKE cluster. For more information about creating an OKE cluster follow this [guide](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html). Additionally, Spinnaker relies on `kubectl` to manage all API access. Ensure that the config file kubectl defaults to is the one you want to use. The current installer requires your `kubectl` to be version 1.10 or greater and installed on the same machine running Halyard.  
 
-[Oracle Object Storage](https://docs.cloud.oracle.com/iaas/Content/Object/Concepts/objectstorageoverview.htm) is available to be used as a storage provider for the persitent store and as an artifact repository. Oracle [Registry](https://docs.cloud.oracle.com/iaas/Content/Registry/Concepts/registryoverview.htm) is available as a Docker image registry.
+[Oracle Object Storage](https://docs.cloud.oracle.com/iaas/Content/Object/Concepts/objectstorageoverview.htm) is available to be used as a storage provider for the persistent store and as an artifact repository. Oracle [Registry](https://docs.cloud.oracle.com/iaas/Content/Registry/Concepts/registryoverview.htm) is available as a Docker image registry.
 
 ### Installation
 
 Start by downloading Halyard, the tool used to manage the lifecycle of your Spinnaker deployment: `curl -O https://raw.githubusercontent.com/spinnaker/halyard/master/install/debian/InstallHalyard.sh`
 
 Install it with: `sudo bash InstallHalyard.sh`
-
-This requires Java 8 which can be installed with `sudo bash InstallHalyard.sh` 
 
 This should install the `hal` command in `/usr/local/bin`. You can test that you have the correct version in your path by running `hal -v`. `hal` will bring up a list of helpful commands. 
 
