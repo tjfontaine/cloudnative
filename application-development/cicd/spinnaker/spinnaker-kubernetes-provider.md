@@ -12,7 +12,7 @@ The Kubernetes Provider V2 (Manifest Based) supports Kubernetes-based deployment
 
 In order to push to Oracle Cluster Engine for Kubernetes (OKE) you will need access to an OKE cluster. For more information about creating an OKE cluster follow this [guide](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html).
 
-[Oracle Object Storage](https://docs.cloud.oracle.com/iaas/Content/Object/Concepts/objectstorageoverview.htm) as a storage provider for the persitent store and as an artifact repository and Oracle [Registry](https://docs.cloud.oracle.com/iaas/Content/Registry/Concepts/registryoverview.htm) is available as a Docker image registry.
+[Oracle Object Storage](https://docs.cloud.oracle.com/iaas/Content/Object/Concepts/objectstorageoverview.htm) as a storage provider for the persistent store and as an artifact repository and Oracle [Registry](https://docs.cloud.oracle.com/iaas/Content/Registry/Concepts/registryoverview.htm) is available as a Docker image registry.
 
 ### Installation
 
