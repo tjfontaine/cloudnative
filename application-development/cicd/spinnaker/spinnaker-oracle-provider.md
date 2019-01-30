@@ -258,15 +258,15 @@ Let’s get familiar with Spinnaker concepts and terminology by deploying a samp
 
 On the next page click "Create Server Group" and make sure to choose "my-oci-acct", the OCI Cloud Provider configured for Spinnaker, from the "Account" pull down menu. A "Server Group" is a collection of servers. Clicking "Create" will provision a virtual machine or group of virtual machines. 
 
-![Screen Shot 2019-01-28 at 5.24.42 PM](images/Screen Shot 2019-01-28 at 5.24.42 PM.png)
+![create-server-group](images/create-server-group.png)
 
 You will receive a confirmation when your server group has been successfully created. Clicking on your cluster will provide additional information about the server group. 
 
-![Screen Shot 2019-01-28 at 5.36.05 PM](images/Screen Shot 2019-01-28 at 5.36.05 PM.png)
+![application-info](images/application-info.png)
 
 You can use the OCI conole to verify the server creation. 
 
-![Screen Shot 2019-01-28 at 5.37.03 PM](images/Screen Shot 2019-01-28 at 5.37.03 PM.png)
+![oci-console](images/oci-console.png)
 
 ### Clean Up 
 
