@@ -476,37 +476,37 @@
               "videotype": "youtube", 
               "header": "Cloud Native Summit Keynote", 
               "videoID": "dshiTDENWeE", 
-              "description": "Bob Quillin, vice president of developer relations, Oracle Cloud\nInfrastructure, kicks off a day with some of the industry's top cloud native\nminds for a concentrated dose of technical talks paired with hands-on learning\nat the Oracle Cloud Native Summit, co-located at KubeCon + CloudNativeCon 2018\nNorth America in Seattle."
+              "description": "Bob Quillin, vice president of developer relations, Oracle Cloud\nInfrastructure, kicks off a day with some of the industry's top cloud native\nminds for a concentrated dose of technical talks paired with hands-on learning\nat the Oracle Cloud Native Summit, co-located at KubeCon."
             }, 
             {
               "videotype": "youtube", 
               "header": "Cloud Native Past, Present, Future", 
               "videoID": "3wCd-K-4j-0", 
-              "description": "Hear from community leaders, end users, and open source contributors as they\ndiscuss the state of the cloud native ecosystem, what's driving key technology\nchoices today, and how innovation is being defined for the future. This video\nwas recorded at the Oracle Cloud Native Summit at KubeCon + CloudNativeCon 2018\nNorth America."
+              "description": "Hear from community leaders, end users, and open source contributors as they\ndiscuss the state of the cloud native ecosystem, what's driving key technology\nchoices today, and how innovation is being defined for the future."
             }, 
             {
               "videotype": "youtube", 
               "header": "Converging infrastructure and container orchestration with Kubernetes", 
               "videoID": "bGZswmJMbzc", 
-              "description": "Kubernetes and its model for container orchestration has won the battle, but\nwhen it comes to managing our infrastructure we still reach for old tools and\nmethodologies. Given Kubernetes' flexibility and extensibility, why aren't we\nusing it to orchestrate more? Kire Filipovski discusses this question during\nthe Oracle Cloud Native Summit at KubeCon + CloudNativeCon 2018 North America."
+              "description": "Kubernetes and its model for container orchestration has won the battle, but\nwhen it comes to managing our infrastructure we still reach for old tools and\nmethodologies. Given Kubernetes' flexibility and extensibility, why aren't we\nusing it to orchestrate more?"
             }, 
             {
               "videotype": "youtube", 
               "header": "Serverless and Events Ecosystem", 
               "videoID": "u8gAQDmauEo", 
-              "description": "The Cloud Native Computing Foundation Serverless Working Group explores the\nintersection of cloud native and serverless technology. In this talk from the\nOracle Cloud Native Summit at KubeCon + CloudNativeCon 2018 North America, Chad\nArimura, vice president of serverless advocacy at Oracle, shares the latest\nupdates from the group."
+              "description": "The Cloud Native Computing Foundation Serverless Working Group explores the\nintersection of cloud native and serverless technology. In this talk Chad\nArimura, vice president of serverless advocacy at Oracle, shares the latest\nupdates from the group."
             }, 
             {
               "videotype": "youtube", 
               "header": "Kubernetes service delivery at scale without magic: a FaaS case study", 
               "videoID": "pmuiyk7vaIE", 
-              "description": "Sift through the hype of Kubernetes to learn how to build a cloud scale\nFunctions-as-a-Service using the open source Fn Project. In this talk we'll\ncover being able to identify the key requirements for your service, how to\ntranslate those requirements into useful Kubernetes abstractions, understanding\nthe availability and blast radius for your service, when and when not to lean\ninto Kubernetes, and how to leverage Helm for deployments and rollbacks."
+              "description": "Sift through the hype of Kubernetes to learn how to build a cloud-scale\nFunctions as a Service using the open source Fn Project. This video was\nrecorded at the Oracle Cloud Native Summit at KubeCon + CloudNativeCon 2018\nNorth America."
             }, 
             {
               "videotype": "youtube", 
               "header": "Cloud Native Java: Not your grandfather's Cup of Joe", 
               "videoID": "-lpBS4lSgWY", 
-              "description": "Java has evolved in the last year; a 6-month release cadence, and powerful new\nfeatures. In this talk we will give a birds-eye view of how Java has evolved\nand present Helidon, a new framework to build microservices for a cloud native\nworld. Helidon includes powerful hooks for Prometheus and distributed tracing\nlibraries such as Zipkin. We will show how Helidon goes hand in hand with\nOracle's Cloud Native Platform, showcasing how to build, deploy and operate a\ncloud native Java application using this powerful new framework."
+              "description": "This talk provides a bird's-eye view of how Java has evolved and presents\nHelidon, a new framework to build microservices for a cloud native world. It\nwas recorded at the Oracle Cloud Native Summit at KubeCon + CloudNativeCon 2018\nNorth America."
             }, 
             {
               "videotype": "youtube", 
@@ -593,7 +593,7 @@
               "description": ""
             }
           ], 
-          "photos": "https://tjfontaine.github.io/cloudnative/images/events/kubecon18-na/"
+          "photos": "https://oracle.github.io/cloudnative/images/events/kubecon18-na/"
         }
       ]
     }
