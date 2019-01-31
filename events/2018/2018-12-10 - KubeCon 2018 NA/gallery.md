@@ -1,3 +1,56 @@
+## Cloud Native Summit Keynote
+
+Bob Quillin, vice president of developer relations, Oracle Cloud
+Infrastructure, kicks off a day with some of the industry's top cloud native
+minds for a concentrated dose of technical talks paired with hands-on learning
+at the Oracle Cloud Native Summit, co-located at KubeCon.
+
+[//]: # (module_video:https://youtu.be/dshiTDENWeE)
+
+## Cloud Native Past, Present, Future
+
+Hear from community leaders, end users, and open source contributors as they
+discuss the state of the cloud native ecosystem, what's driving key technology
+choices today, and how innovation is being defined for the future.
+
+[//]: # (module_video:https://youtu.be/3wCd-K-4j-0)
+
+## Converging infrastructure and container orchestration with Kubernetes
+
+Kubernetes and its model for container orchestration has won the battle, but
+when it comes to managing our infrastructure we still reach for old tools and
+methodologies. Given Kubernetes' flexibility and extensibility, why aren't we
+using it to orchestrate more?
+
+[//]: # (module_video:https://youtu.be/bGZswmJMbzc)
+
+## Serverless and Events Ecosystem
+
+The Cloud Native Computing Foundation Serverless Working Group explores the
+intersection of cloud native and serverless technology. In this talk Chad
+Arimura, vice president of serverless advocacy at Oracle, shares the latest
+updates from the group.
+
+[//]: # (module_video:https://youtu.be/u8gAQDmauEo)
+
+## Kubernetes service delivery at scale without magic: a FaaS case study
+
+Sift through the hype of Kubernetes to learn how to build a cloud-scale
+Functions as a Service using the open source Fn Project. This video was
+recorded at the Oracle Cloud Native Summit at KubeCon + CloudNativeCon 2018
+North America.
+
+[//]: # (module_video:https://youtu.be/pmuiyk7vaIE)
+
+## Cloud Native Java: Not your grandfather's Cup of Joe
+
+This talk provides a bird's-eye view of how Java has evolved and presents
+Helidon, a new framework to build microservices for a cloud native world. It
+was recorded at the Oracle Cloud Native Summit at KubeCon + CloudNativeCon 2018
+North America.
+
+[//]: # (module_video:https://youtu.be/-lpBS4lSgWY)
+
 ## Oracle at KubeCon + CloudNativeCon Week In Review
 
 [//]: # (module_video:https://www.youtube.com/watch?v=WuK6KDFVcig)
@@ -67,3 +120,7 @@ and how we can get more from serverless in the future.
 ## Running MySQL on Kubernetes
 
 [//]: # (module_video:https://www.youtube.com/watch?v=g924HDB81oc)
+
+## Photo Gallery
+
+[//]: # (module_photo_gallery:https://oracle.github.io/cloudnative/images/events/kubecon18-na/)
