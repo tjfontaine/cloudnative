@@ -1,12 +1,30 @@
 # Deploying Instrumented Helidon on Oracle Container Engine for Kubernetes 
 
+## Background
+
+Project Helidon is an open source set of Java libraries used to write microservices. According to the official documentation, "Helidon is a collection of Java libraries for writing microservices that run on a fast web core powered by Netty... There is no unique tooling or deployment model. Your microservice is just a Java SE application."
+
 ## Helidon on OKE 
 
 In this walkthrough we will create a Hello World application in Helidon, push it to the Oracle Container Registry, deploy it into an Oracle Container Engine for Kubernetes cluster, and then modify the application to collect service metrics that will be displayed in Prometheus. Check out [this article](https://cloudnative.oracle.com/template.html#observability-and-analysis/telemetry/prometheus/readme.md) for more information about deploying Prometheus on OKE. 
 
+## What Do You Need?
+
+The following list shows the minimum versions: 
+
+- [Java SE 8](https://www.oracle.com/technetwork/java/javase/downloads) or [Open JDK 8](http://jdk.java.net/)
+- [Maven 3.5](https://maven.apache.org/download.cgi) 
+- [Docker 18.02](https://docs.docker.com/install/)
+- [Kubectl 1.7.4](https://kubernetes.io/docs/tasks/tools/install-kubectl/) 
+- [Oracle Container Engine for Kubernetes (OKE)](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html)
+
+[Here](https://helidon.io/docs/latest/#/getting-started/01_prerequisites) is an updated list of pre-requisites for using Helidon.
+
 Begin by following the [Helidon Quickstart](https://helidon.io/docs/latest/#/getting-started/02_base-example). This will walk you through the steps to generate a project using either Helidon SE or Helidon MP. I will be using Helidon SE for my example. 
 
 ### Generate the Project
+
+Generate the project sources using the Helidon SE Maven archetypes. The Helidon SE example implements the REST service using the Helidon WebServer component directly. It shows the basics of configuring the WebServer and implementing basic routing rules. 
 
 Inside your development folder run the Helidon SE Example Maven archetype: 
 
@@ -20,7 +38,7 @@ mvn archetype:generate -DinteractiveMode=false \
     -Dpackage=io.helidon.examples.quickstart.se
 ```
 
-And change directories into the one created by the archetype: 
+Change directories into the one created by the archetype: 
 
 `cd quickstart-se`
 
@@ -38,7 +56,23 @@ To build the application run `mvn package` while in the /quickstart-se directory
 
 This will create a /target directory containing both the .jar file of your application and a .yaml file. The .yaml makes the process for deploying Helidon on Kubernetes simple. After building a Docker image of our application and uploading it to the Registry service we will modify the .yaml with the address of the image in the repository in order to deploy it to Kubernetes. 
 
-At this stage you are welcome to deploy the application locally with `java -jar target/quickstart-se.jar` If you navigate to the endpoint in the browser you will see a simple "Hello World!" greeting encoded using JSON. Alternatively you can cURL the URL with `curl -X GET http://localhost:8080/greet` to get the same response `{"message":"Hello World!"}`. 
+At this stage you are welcome to deploy the application locally with `java -jar target/quickstart-se.jar` If you navigate to the endpoint in the browser you will see a simple "Hello World!" greeting encoded using JSON. Alternatively you can CURL the URL with `curl -X GET http://localhost:8080/greet` to get the same response `{"message":"Hello World!"}`. 
+
+The example is a very simple "Hello World" greeting service. It supports GET requests for generating a greeting message, and a PUT request for changing the greeting itself. The response is encoded using JSON. For example: 
+
+```
+curl -X GET http://localhost:31431/greet
+{"message":"Hello World!"}
+
+curl -X GET http://localhost:31431/greet/Joe
+{"message":"Hello Joe!"}
+
+curl -X PUT http://localhost:31431/greet/greeting/Hola
+{"greeting":"Hola"}
+
+curl -X GET http://localhost:31431/greet/Jose
+{"message":"Hola Jose!"}
+```
 
 ### Build the Docker Image 
 
@@ -52,7 +86,12 @@ REPOSITORY 			TAG			IMAGE ID 		CREATED 		SIZE
 quickstart-se 		latest 		21f470edc862 	3 hours ago 	88.6MB
 ```
 
-You can test the Docker image by running: `docker run --rm -p 8080:8080 quickstart-se:latest` and then navigating to the same endpoint or using the same cURL commands as you did when previously deploying the application. 
+If you would like to start the application with Docker run: 
+
+```
+docker run --rm -p 8080:8080 quickstart-se:latest
+```
+You can access the application	at http://localhost:8080/greet
 
 ### Pushing the Image to OCIR 
 
@@ -282,3 +321,9 @@ Create a dashboard graphing the application:service_requests metric. Refresh the
 ## Conclusion 
 
 In this solution we walked through the process of creating a quickstart application using Helidon SE, pushing that application to a private Oracle Registry, and deploying it to an Oracle Container Engine for Kubernetes cluster. Next we instrumented that application to export service metrics and ingested those metrics into our monitoring tool, Prometheus. We hope that after reading this you have a better understanding of how you can run Helidon in your environment. 
+
+## Want to Learn More?
+
+- [Official Helidon Documentation](https://helidon.io/docs/latest/#/about/01_introduction)
+- [Metrics and Tracing Instrumentation with Helidon Lab](application-development/microservices/helidon/metrics_tracing)
+- [CICD with Helidon Lab](application-development/microservices/helidon/cicd)
