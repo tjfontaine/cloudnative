@@ -1,20 +1,13 @@
-# Log Like You Mean It!
+# A Closer look at the EFK Stack
 
-## Overview 
-
-Welcome to our EFK stack (Elastic Search, FluentD, Kibana) introduction series. This article will show you how to get up and running with EFK. 
-
-The old problem of identifying and eliminating bugs in production has become more complicated in today’s cloud native world. Tracking application logs has been a widely-adopted industry standard for addressing this issue over the last few decades, but how does this approach mesh with the dynamic nature of containers and schedulers? Special measures need to be taken to preserve logs when something fails. Fortunately, we have tools available to do just that.
-
-## Prerequisites 
-
-An [Oracle Cloud Infrastructure](https://cloud.oracle.com/en_US/iaas) account with a running Oracle Container Engine for Kubernetes (OKE) cluster. 
-
-## Enter Elasticsearch
 
 Over the last few years Elasticsearch has become an industry standard for storing and indexing logs. Setting up and operating an Elasticsearch cluster can be a challenge for your team and paying for a hosted service can be expensive. If only there were an easy way to run Elasticsearch on existing infrastructure. Luckily this is easy to do with Kubernetes. To do so, we will leverage Kubernetes stateful sets, the Oracle Cloud Infrastructure (OCI) volume provisioner, and Helm to coordinate deployments to our cluster. 
 
-Follow [the EFK quickstart guide](quickstart.md) for help creating a Kubernetes cluster with OKE and read this [article](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html) for getting Helm set up on your cluster.
+### Prerequisties 
+
+* Read this [article](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html) for getting Helm set up on your cluster.
+
+## Getting started 
 
 
 The first step is to modify our Helm chart template to fit your environment. 
@@ -712,15 +705,3 @@ Choose `@timestamp` as your Time Field filter name and then click `Create index 
 
 You should now have a running deployment of Elasticsearch to store logs, Fluentd to format and forward them along, and Kibana to view them. Those are all the pieces you need to get up and running with an EFK stack on Oracle Container Engine for Kubernetes. We hope this means you're one step closer to debugging all of those nasty production bugs!
 
-### More in this Series
-
-* [EFK Quickstart.](quickstart.md)
-
-#### License
-
-Copyright (c) 2018, Oracle and/or its affiliates. All rights
-reserved.
-
-This content is licensed under the Universal Permissive
-License 1.0.
-See LICENSE.txt for more details.

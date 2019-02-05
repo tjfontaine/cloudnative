@@ -1,10 +1,10 @@
-# Log Like You Mean It! 
-### A Quickstart for Logging Kubernetes Applications via an EFK Stack 
+# Log Like You Mean It! A Quickstart Guide
+### Logging Kubernetes Applications via an EFK Stack 
 
 
 Welcome to our EFK stack (Elastic Search, FluentD, Kibana) introduction series. This article will show you how to get up and running with EFK, quickly.
 
-In this quickstart we will apply the theory learned in our EFK Stack guide to create a production-ready logging and analysis stack installed on an Oracle Container Engine for Kubernetes (OKE) cluster through the use of Elasticsearch, FluentD, and Kibana. Check out our [EFK Stack Overview](logging.md) for a more in-depth explanation of how and why we are creating an EFK stack. 
+In this quickstart, we will apply the theory learned in our guide, [a closer look at the EFK stack](logging.md) to create a production-ready logging and analysis stack installed on an Oracle Container Engine for Kubernetes (OKE) cluster through the use of Elasticsearch, FluentD, and Kibana. If you are entirely new to the EFK stack, please check out the guide mentioned above for a more in-depth explanation of how and why we are creating an EFK stack before starting this one.  
 
 ## Requirements
 
@@ -108,19 +108,8 @@ This will output an endpoint for accessing your Kibana web interface!
 
 ### Conclusion
 
-By following the steps above, you have gone from a raw Kubernetes cluster to one with a complete logging and visualization solution by means of the EFK stack. To read more about what we just did, check out our in-depth [EFK Stack Overview](logging.md).
+By following the steps above, you have gone from a raw Kubernetes cluster to one with a complete logging and visualization solution by means of the EFK stack. To read more about what we just did, check out our in-depth guide, [A closer look at the EFK stack](logging.md).
 
-### More in this Series
-
-* [Log it like you mean it! Logging Kubernetes applications via an EFK stack](logging.md)
-
-#### License
-
-Copyright (c) 2018, Oracle and/or its affiliates. All rights
-reserved.
-This content is licensed under the Universal Permissive
-License 1.0.
-See LICENSE.txt for more details.
 
 
 

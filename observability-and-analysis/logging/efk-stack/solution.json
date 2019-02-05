@@ -4,7 +4,7 @@
       "section": "overview",
       "files": [
         {
-          "title": "The Elasticsearch, FluentD, Kibana (EFK) stack",
+          "title": "The EFK stack: Elasticsearch, FluentD and Kibana",
           "file": "readme.md"
         }
       ]
@@ -13,12 +13,12 @@
       "section": "guides",
       "files": [
         {
-          "title": "Quickstart",
-          "file": "quickstart.md"
+          "title": "A closer look at the EFK stack",
+          "file": "logging.md"
         },
         {
-          "title": "EFK stack details",
-          "file": "logging.md"
+          "title": "Log it like you mean it! An EFK Quickstart Guide",
+          "file": "quickstart.md"
         }
 
       ]
