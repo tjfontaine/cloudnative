@@ -32,6 +32,7 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
+            <!--
             <li id="signin-btn" style="display:none">
                 <div class="abcRioButton abcRioButtonBlue">
                   <div style="" class="abcRioButton abcRioButtonLightBlue">
@@ -56,6 +57,7 @@
                  <li><a id="signout-btn" href="#">Sign out</a></li>
                </ul>
             </li>
+            -->
           </ul>
         </div>
       </div>
@@ -123,12 +125,12 @@
       window.onLoadCallback = function() {
           $("#refresh-btn").click(loadPage);
           // gapi available
-          gapi.load('auth2', function () {
+        /*  gapi.load('auth2', function () {
               // on body load
               $(function () {
                   try {
                       gapi.auth2.init({
-                          client_id: '411141580938-22cb4vgedb5jgo8odatalqe4n0jpvc85.apps.googleusercontent.com'
+                          client_id: '96982665028-ktai1mcq9pl2rm9sgq7u6edmjpr4sg1q.apps.googleusercontent.com'
                       }).then(function (auth) {
                           auth.attachClickHandler('signin-btn', {}, loadPage0, clearPageError);
                           loadPage0();
@@ -138,6 +140,8 @@
                   }
               });
           });
+          */
+          loadPage0();
       };
     </script>
     <script src="https://apis.google.com/js/api:client.js?onload=onLoadCallback"></script>

@@ -12,20 +12,23 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-app:
-  greeting: "Hello"
+FROM maven:3.5.2-jdk-8-alpine AS MAVEN_TOOL_CHAIN
+#RUN mkdir /myvolume
+#VOLUME /myvolume 
+COPY pom.xml /tmp/ 
+WORKDIR /tmp/
+RUN mvn -B dependency:resolve-plugins dependency:resolve
+COPY src /tmp/src/
+RUN mvn package 
+#-Dmaven.repo.local=/myvolume
 
-services:
-  zipkin.endpoint: "http://localhost:9411"
-# Use this hostname if running in a docker container
-#  zipkin.endpoint: "http://docker.for.mac.localhost:9411"
 
-webserver:
-  port: 8080
-  host: 0.0.0.0
+#FROM openjdk:8-jre-slim
+FROM openjdk:8-jre-alpine
 
-security:
-  properties:
-    google-client-id: "96982665028-ktai1mcq9pl2rm9sgq7u6edmjpr4sg1q.apps.googleusercontent.com"
+RUN mkdir /app
+COPY --from=MAVEN_TOOL_CHAIN /tmp/target/libs /app/libs
+COPY --from=MAVEN_TOOL_CHAIN /tmp/target/quickstart-se.jar /app
+
+CMD ["java", "-jar", "/app/quickstart-se.jar"]

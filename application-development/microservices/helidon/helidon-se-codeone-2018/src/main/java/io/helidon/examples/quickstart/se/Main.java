@@ -66,7 +66,7 @@ public final class Main {
      */
     private static Routing createRouting(WebSecurity webSecurity) {
         return Routing.builder()
-                .register(webSecurity)
+               // .register(webSecurity)
                 .register(JsonSupport.get())
                 .register(MetricsSupport.create())
                 .get("/health", (req, res) -> {
