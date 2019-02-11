@@ -15,6 +15,10 @@
         {
           "title": "An Introduction to Distributed Application Logging with Zipkin",
           "file": "zipkin-an-introduction.md"
+        },
+        {
+          "title": "Instrumenting a Distributed Application with Zipkin",
+          "file": "instrumenting-a-distributed-application-with-zipkin.md"
         }
       ]
     }
