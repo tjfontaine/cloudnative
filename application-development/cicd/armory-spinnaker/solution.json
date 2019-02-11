@@ -15,6 +15,14 @@
         {
           "title": "Armory Spinnaker on Oracle Container Engine for Kubernetes",
           "file": "spinnaker.md"
+        },
+        {
+          "title": "Spinnaker Kubernetes Provider V2 on Oracle Container Engine for Kubernetes",
+          "file": "spinnaker-kubernetes-provider.md"
+        },
+        {
+          "title": "Oracle Provider for Local Debian Installation",
+          "file": "spinnaker-oracle-provider.md"
         }
       ]
     }
