@@ -18,11 +18,11 @@
         },
         {
           "title": "CI/CD for Helidon apps",
-          "file": "https://github.com/oracle/cloudnative/blob/master/application-development/microservices/helidon/cicd/readme.md"
+          "file": "https://raw.githubusercontent.com/oracle/cloudnative/master/application-development/microservices/helidon/cicd/readme.md"
         },
         {
           "title": "Instrumenting Helidon apps for metrics",
-          "file": "https://github.com/oracle/cloudnative/blob/master/application-development/microservices/helidon/metrics_tracing/readme.md"
+          "file": "https://raw.githubusercontent.com/oracle/cloudnative/master/application-development/microservices/helidon/metrics_tracing/readme.md"
         }
       ]
     }
