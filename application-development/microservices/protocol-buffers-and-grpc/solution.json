@@ -1,0 +1,25 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Introduction to gRPC and Protocol Buffers",
+          "file": "Readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "A crash course in Protocol Buffers",
+          "file": "grpc-part-one-protocol-buffers-theory.md"
+        },
+        {
+          "title": "An overview of gRPC",
+          "file": "grpc-part-two-grpc-theory.md"
+        }
+      ]
+    }]
+}
