@@ -15,6 +15,14 @@
         {
           "title": "Deploying Instrumented Helidon on Oracle Container Engine for Kubernetes",
           "file": "tutorial.md"
+        },
+        {
+          "title": "CI/CD for Helidon apps",
+          "file": "https://github.com/oracle/cloudnative/blob/master/application-development/microservices/helidon/cicd/readme.md"
+        },
+        {
+          "title": "Instrumenting Helidon apps for metrics",
+          "file": "https://github.com/oracle/cloudnative/blob/master/application-development/microservices/helidon/metrics_tracing/readme.md"
         }
       ]
     }
