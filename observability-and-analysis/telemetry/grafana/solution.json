@@ -1,0 +1,38 @@
+{
+	"sections": [{
+			"section": "overview",
+			"files": [{
+				"title": "Introduction to Grafana",
+				"file": "readme.md"
+			}]
+		},
+		{
+			"section": "guides",
+			"files": [{
+					"title": "Installation on a Linux Host",
+					"file": "linux.md"
+				},
+				{
+					"title": "Installation on a MacOS Host",
+					"file": "macos.md"
+				},
+				{
+					"title": "Installation on a Virtual Machine in Oracle Cloud",
+					"file": "linuxoci.md"
+				},
+				{
+					"title": "Installation on a Virtual Machine in Oracle Cloud with Terraform",
+					"file": "terraform.md"
+				},
+				{
+					"title": "Installation on a Kubernetes Cluster",
+					"file": "kubernetes.md"
+				},
+				{
+					"title": "Using Grafana with the Oracle Cloud Infrastructure Data Source",
+					"file": "using.md)"
+				}
+			]
+		}
+	]
+}
