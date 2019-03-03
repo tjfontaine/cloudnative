@@ -31,7 +31,14 @@
                 },
                 {
                     "fragment": "microservices",
-                    "solutions": [{
+                    "solutions": [
+                        {
+                        "fragment": "protocol-buffers-and-grpc",
+                        "title": "Protocol Buffers & gRPC",
+                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/microservices/protocol-buffers-and-grpc",
+                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/microservices/protocol-buffers-and-grpc/grpc_landing.png",
+                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/microservices/protocol-buffers-and-grpc/grpc_course_pg.png"
+                    },{
                         "fragment": "helidon",
                         "title": "Helidon",
                         "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/microservices/helidon",
@@ -171,7 +178,15 @@
             "fragment": "observability-and-analysis",
             "subcategories": [{
                     "fragment": "telemetry",
-                    "solutions": [{
+                    "solutions": [
+                    {
+                        "fragment": "grafana",
+                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/grafana",
+                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/grafana/grafana_stack_landing.png",
+                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/grafana/grafana_stack_course_pg.png",
+                        "title": "OCI Datasource for Grafana"
+                    },
+                    {
                         "fragment": "prometheus",
                         "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/prometheus",
                         "logoUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/prometheus/prometheus_stack_landing.png",
