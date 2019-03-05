@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Introduction to Kafka",
+          "file": "readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Installing Kafka on OKE",
+          "file": "quickstart.md"
+        }
+      ]
+    }
+  ]
+}
