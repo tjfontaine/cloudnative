@@ -132,11 +132,11 @@
                 "solutions": [{
                     "fragment": "queuing-and-streaming",
                     "title": "Queuing and Streaming",
-                    "githubUrl": "",
-                    "logoUrl": "",
-                    "logoUrlCoursePage": ""
+                    "githubUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/queuing-and-streaming/kafka",
+                    "logoUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/queuing-and-streaming/kafka/kafka_landing.png",
+                    "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/queuing-and-streaming/kafka/kafka_course_pg.png"
                 }],
-                "description": "",
+                "description": "Understanding customers' behaviors and frictions are essential to all organizations. Today most organizations have access to a vast stream of data, from transactional data such as orders, inventory, and shopping carts to likes, searches, views, analytics and so much more. Taking that data and feeding it into the correct channels so that it can be appropriately understood and used is a critical differentiator in the cloud-native world. Queuing and streaming have come a long way since the message brokers of old. Message brokers like CNCF’s NATS is deemed to be a simple, high-performance messaging system for cloud-native applications, IoT messaging, and microservices architectures. Message brokers like Kafka and NATS can be used for real-time website activity tracking, monitoring operational metrics of distributed applications, log aggregation from numerous servers, event sourcing, commit logs, and improving latency and reliability, to name a few.  ",
                 "title": "Queuing and Streaming"
             }
             ],
