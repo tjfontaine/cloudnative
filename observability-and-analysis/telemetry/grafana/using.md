@@ -1,6 +1,6 @@
 # Using Grafana with the Oracle Cloud Infrastructure Data Source 
 
-Here are a few tools for you to explore after installing and configuring the Oracle Cloud Infrastructure Data Source for Grafana. 
+Here are a few tools for you to explore after installing and configuring the Oracle Cloud Infrastructure Data Source for Grafana. Refer to [this page](https://docs.cloud.oracle.com/iaas/Content/Monitoring/Concepts/monitoringoverview.htm) for more information about how to use the Monitoring Service. 
 
 ## Query Editor
 
@@ -67,15 +67,13 @@ Choose the save icon to save your dashboard.
 
 Dimensions can be used to add specificity to your graphs. To use dimensions create a new graph or navigate to an existing one and click the **Metrics** tab. After selecting your variables click the **+** next to **Dimensions** and select one of the tag filters from the list. For example, select `availabilityDomain` from the list. Next, click **select tag value** and choose from the newly populated list of tag values. If you chose `availabilityDomain` as your tag filter, you should see tag values corresponding to the availability domains in which you currently have services provisioned, for example `US-ASHBURN-AD-1`. 
 
-
-
-![Screen Shot 2019-02-14 at 12.03.26 PM](images/Screen Shot 2019-02-14 at 12.03.26 PM.png)
+![Screen Shot 2019-02-14 at 12.03.26 PM](images/Screen%20Shot%202019-02-14%20at%2012.03.26%20PM.png)
 
 
 
 ## Custom Metrics and Namespaces
 
-Oracle Cloud Infrastructure allows for the creation of custom metrics namespaces, which can be used to ingest data from sources in addition to the native Oracle Cloud Infrastructure resources available by default. For example, an application could be instrumented to gather statistics about individual operations. The resource posting custom metrics must be able to authenticate to Oracle Cloud Infrastructure using either using the Oracle Cloud Infrastructure CLI authentication mentioned above or using [instance principals](https://docs.cloud.oracle.com/iaas/Content/Identity/Tasks/callingservicesfrominstances.htm). In the example below you can see the option to select `custom_namespace` from the **Namespace** drop down. 
+Oracle Cloud Infrastructure allows for the creation of [custom metrics namespaces](https://docs.cloud.oracle.com/iaas/Content/Monitoring/Tasks/publishingcustommetrics.htm), which can be used to ingest data from sources in addition to the native Oracle Cloud Infrastructure resources available by default. For example, an application could be instrumented to gather statistics about individual operations. The resource posting custom metrics must be able to authenticate to Oracle Cloud Infrastructure using either using the Oracle Cloud Infrastructure CLI authentication mentioned above or using [instance principals](https://docs.cloud.oracle.com/iaas/Content/Identity/Tasks/callingservicesfrominstances.htm). In the example below you can see the option to select `custom_namespace` from the **Namespace** drop down. 
 
 ![Screen_Shot_2019-02-15_at_2.53.37_PM](images/Screen_Shot_2019-02-15_at_2.53.37_PM.png)
 
