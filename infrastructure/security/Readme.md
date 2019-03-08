@@ -1,5 +1,3 @@
 # Security
 
-Keeping your infrastructure secure is a priority for any technology organization. The scope of cloud security is large and covers your infrastructure, data and software installed on your systems.
-
-The tutorials in this category will leave you with a good understanding of best practices, tooling and implementations of security with respect to the cloud native paradigm.
+Cloud Native security is a priority for any organization. It can broadly be classified as a combination of tooling, strategies and best practices for three areas: infrastructure, data and software. The tutorials in the category will allow you to understand how to better protect your infrastructure, secure your sensitive data, and help you understand how to protect your container assets.
