@@ -128,10 +128,10 @@
                 "title": "Service Mesh and Discovery"
             },
             {
-                "fragment": "queuing-and-streaming",
+                "fragment": "queuing-streaming",
                 "solutions": [{
-                    "fragment": "queuing-and-streaming",
-                    "title": "Queuing and Streaming",
+                    "fragment": "Kafka",
+                    "title": "Apache Kafka",
                     "githubUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/queuing-and-streaming/kafka",
                     "logoUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/queuing-and-streaming/kafka/kafka_landing.png",
                     "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/queuing-and-streaming/kafka/kafka_course_pg.png"
