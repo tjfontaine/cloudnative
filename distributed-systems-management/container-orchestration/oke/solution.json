@@ -15,7 +15,12 @@
         {
           "title": "Getting Started with Oracle Container Engine for Kubernetes",
           "file": "quickstart.md"
+        },
+        {
+          "title": "How to create a bastion host to access worker nodes in a private VCN",
+          "file": "creating-bastions.md"
         }
+
       ]
     }
   ]
