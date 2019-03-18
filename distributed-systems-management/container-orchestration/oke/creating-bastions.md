@@ -38,7 +38,7 @@ The resulting public subnet is shown in the OCI console:
 
 The image below shows an instance called bastion in the public subnet, "Bastion PUBLIC SUB1" in one of the availability domains (AD-1):
 
-![Bastion keys](images/bastion-igw.png)
+![Bastion keys](images/bastion05.png)
 
 <br />
 
