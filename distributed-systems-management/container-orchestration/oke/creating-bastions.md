@@ -10,8 +10,7 @@ Note:  Be sure to include an SSH public key when you initially set up your node 
 
 <br />
 
-
-The architecture diagram above shows three private worker subnets: WRK SUB1, WRK SUB2, and WRK SUB3. It also depicts two public load balancer subnets LB SUB1 and LB SUB2. Add the bastion instance in a public subnet called "Bastion Public SUB1" in one of the availability domains (AD) as shown in the diagram. It's not required to create bastion instances in all the ADs; however, you can create two public subnets "Bastion PUBLIC SUB2" and "Bastion PUBLIC SUB3", and add bastions to those as well.
+The architecture diagram above shows three private worker subnets: WRK SUB1, WRK SUB2, and WRK SUB3. It also depicts two public load balancer subnets LB SUB1 and LB SUB2. Create the bastion instance in a a new Public Subnet per the procedure below in one of the Availability Domains (AD's).
 
 1. Create a security list in the existing VCN created for the OKE cluster, to allow SSH access to the bastion instance from 0.0.0.0/0. This allows traffic from the internet on port 22 to access the bastion instance. You can further restrict the traffic by specifying a different source CIDR range.
 
@@ -38,7 +37,7 @@ The resulting public subnet is shown in the OCI console:
 
 The image below shows an instance called bastion in the public subnet, "Bastion PUBLIC SUB1" in one of the availability domains (AD-1):
 
-![Bastion keys](images/bastion05.png)
+![Bastion subnet](images/bastion05.png)
 
 <br />
 
