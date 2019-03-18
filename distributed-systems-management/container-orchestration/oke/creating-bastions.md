@@ -1,6 +1,6 @@
 # How to Create a Bastion Host to Access Worker Nodes in a Private VCN
 
-When you use the Oracle Container Engine for Kubernetes (OKE) [quick create](quickstart.md) option, it results in creating private nodes in a private subnet. To be able to access the nodes, you are required to either expose those nodes publically via the internet or create a bastion host to SSH to the workers. Use the example below to create a bastion host to access your workers via SSH.
+When you use the Oracle Container Engine for Kubernetes (OKE) [quick create](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html) option, it results in creating private nodes in a private subnet. To be able to access the nodes, you are required to either expose those nodes publically via the internet or create a bastion host to SSH to the workers. Use the example below to create a bastion host to access your workers via SSH.
 
 Note:  Be sure to include an SSH public key when you initially set up your node pools. For further information on cluster creation [click here](quickstart.md).
 
@@ -35,7 +35,7 @@ The resulting public subnet is shown in the OCI console:
 
 4. Create a compute instance which will be your bastion instance in the public subnet of OKE's VCN. While creating the bastion instance, ensure that you add the public SSH key that will let you log in to the bastion instance.
 
-The image below shows an instance called bastion in the public subnet, "Bastion PUBLIC SUB1" in one of the availability domains (AD-1):
+The image below shows an instance called `bastion` in the public subnet, Bastion in one of the availability domains (AD-2):
 
 ![Bastion subnet](images/bastion05.png)
 
