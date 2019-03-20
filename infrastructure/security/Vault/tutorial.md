@@ -13,14 +13,6 @@ First we will introduce you to Hashicorp Vault, a comprehensive tool for securel
 
 Then we'll take you through a Vault deployment scenario on [Oracle Container Engine for Kubernetes (OKE)][oke], whereby Vault will be integrated with the OKE cluster control plane using the Vault Kubernetes auth method. The Kubernetes auth method can be used facilitate authentication with Vault by using a Kubernetes Service Account Token. This method of authentication leverages native Kubernetes identity and access management, and makes it easy to introduce a Vault token into a Kubernetes Pod.
 
-## About [Vault][vault]
-
-Secret management is one of the core use cases for Vault. Vault enables organisations to secure, store and tightly control access to tokens, passwords, certificates, encryption keys for protecting secrets and other sensitive data using a UI, CLI, or HTTP API. Many organisations have credentials hard coded in source code, littered throughout configuration files and configuration management tools, and stored in plaintext in version control, wikis, and shared volumes. Vault provides a central place to store these credentials, ensuring they are encrypted, access is audit logged, and exposed only to authorized clients.
-
-Vault provides a wide array of features across the secrets management, data protecton, identity-based access, collaboration & operations, and governance and compliance.
-
-Vault tightly controls access to secrets and encryption keys by authenticating against trusted sources of identity such as Active Directory, LDAP, Kubernetes, and cloud platforms. Vault enables fine grained authorization of which users and applications are permitted access to secrets and keys.
-
 ## Tutorial Overview
 
 Let’s consider an example of how we can:
@@ -56,11 +48,6 @@ High level outline of the steps that will be followed:
 4. Create the Vault Key/Value (KV) store & associated policy for the test application
 5. Deploy the test application and authenticate to Vault using Kubernetes auth
 6. Create and read secrets from the KV store
-
-### Prerequisites
- - You will need to have deployed your OKE Kubernetes cluster prior to commencing implementation of the deployment scenario. Follow the link to [this tutorial](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html) for guidance on the process.
- - Create a 'kube config' authentication artefact. This will be used later in the tutorial to connect to the OKE cluster. Follow the link to [this tutorial](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html#DownloadthekubeconfigFilefortheCluster) for guidance on the process.
- - Install the Vault CLI on the host from which you will be following this work instruction. Follow the link to [this tutorial](https://learn.hashicorp.com/vault/getting-started/install) for guidance on the process.
 
 #### Clone the 'oke-hashicorp-vault-tutorial' git repository
 Clone the oke-hashicorp-vault-tutorial repository:
