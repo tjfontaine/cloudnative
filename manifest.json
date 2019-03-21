@@ -173,9 +173,9 @@
                     "solutions": [{
                         "fragment": "Vault",
                         "title": "Hashicorp Vault",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/security/vault",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/security/vault/vault_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/infrastructure/security/vault/vault_course_pg.png"
+                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/security/Vault",
+                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/security/Vault/vault_landing.png",
+                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/infrastructure/security/Vault/vault_course_pg.png"
                     }],
                     "description": "Cloud native security is a priority for any organization. It can be classified as a combination of tooling, strategies, and best practices for three areas: infrastructure, data, and software. The tutorials in this section will help you understand how to better protect your infrastructure, secure your sensitive data, and safeguard your container assets.",
                     "title": "Security"
