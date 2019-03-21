@@ -73,7 +73,7 @@ For simplicity, this example binds a Role to the 'default' service account in th
 1. Create the Role and RoleBinding from the RBAC manifest:
 
 ```
-$ kubectl -n default create -f kubernetes/vault/operator-rbac.yaml
+kubectl -n default create -f kubernetes/vault/operator-rbac.yaml
 ```
 
 ### Deploy the etcd operator
