@@ -52,7 +52,7 @@ High level outline of the steps that will be followed:
 #### Clone the 'oke-hashicorp-vault-tutorial' git repository
 Clone the oke-hashicorp-vault-tutorial repository:
 
-``` bash
+```
 git clone https://github.com/oracle/cloudnative/security/oke-hashicorp-vault-tutorial.git
 ```
 
@@ -72,7 +72,7 @@ For simplicity, this example binds a Role to the 'default' service account in th
 
 1. Create the Role and RoleBinding from the RBAC manifest:
 
-``` bash
+``` 
 $ kubectl -n default create -f kubernetes/vault/operator-rbac.yaml
 ```
 
@@ -81,7 +81,7 @@ $ kubectl -n default create -f kubernetes/vault/operator-rbac.yaml
 The Vault operator utilises the etcd operator to deploy an etcd cluster to be used as the storage backend for each Vault Cluster provisioned.
 The following will implement the etcd operator:
 
-``` bash
+``` 
 # Create the etcd operator Custom Resource Definitions (CRD)
 $ kubectl -n default create -f kubernetes/vault/etcd-crd.yaml
 
@@ -93,7 +93,7 @@ $ kubectl -n default create -f kubernetes/vault/etcd-operator-deployment.yaml
 
 The following will implement the Vault operator:
 
-``` bash
+``` 
 # Create the Vault operator Custom Resource Definitions (CRD)
 $ kubectl -n default create -f kubernetes/vault/vault-crd.yaml
 
@@ -107,7 +107,7 @@ A Vault cluster can be deployed by creating a VaultService Custom Resource (CR).
 
 The following will create a Vault CR that deploys a 2 node Vault cluster named 'example' in high availablilty (HA) mode:
 
-``` bash
+``` 
 $ kubectl -n default create -f kubernetes/vault/vault-example-cluster.yaml
 ```
 
@@ -181,7 +181,7 @@ Now that we have our Vault cluster up and running on OKE, this next section deal
 
 Let's create a dedicated service account 'vault-tokenreview' for Vault Kubernetes auth, and then provide the serviceaccount with the rights to perform delegated authentication and authorization checks (`system:auth-delegator` role):
 
-``` bash
+``` 
 $ kubectl -n default create serviceaccount vault-tokenreview
 $ kubectl -n default create -f kubernetes/vault/vault-tokenreview-rbac.yaml
 ```
@@ -190,20 +190,20 @@ $ kubectl -n default create -f kubernetes/vault/vault-tokenreview-rbac.yaml
 
 In order to connect to Vault, we will first configure port forwarding between the local machine and the first sealed Vault node. In a terminal window issue the following command:
 
-``` bash
+``` 
 $ kubectl -n default get vault example -o jsonpath='{.status.vaultStatus.sealed[0]}' | xargs -0 -I {} kubectl -n default port-forward {} 8200
 ```
 
 Next, open a new terminal and export the following environment for the Vault CLI client:
 
-``` bash
+``` 
 $ export VAULT_ADDR='https://localhost:8200'
 $ export VAULT_SKIP_VERIFY="true"
 ```
 
 Verify that the Vault server is accessible using the `vault status` command:
 
-``` bash
+``` 
 $ vault status
 
 Error checking seal status: Error making API request.
@@ -304,7 +304,7 @@ policies             ["root"]
 
 Before moving on to configure the Kubernetes auth method, let's create a Vault policy called 'testapp-kv-crud' which we will enable for Kubernetes auth in the following steps. The policy will be applied to a KV store (`secret/testapp/*`) where our test secrets will reside.
 
-``` bash
+```
 # Create a policy file, testapp-kv-crud.hcl
 $ tee testapp-kv-crud.hcl <<EOF
   path "secret/testapp/*" {
@@ -326,7 +326,7 @@ $ vault auth enable kubernetes
 
 Next, let's export the token for the 'vault-tokenreview' service account, which will be used in the Vault Kubernetes auth configuration:
 
-``` bash
+```
 # Set VAULT_SA_NAME to the service account created previously
 $ export VAULT_SA_NAME=$(kubectl get sa vault-tokenreview -o jsonpath="{.secrets[*]['name']}")
 
@@ -339,7 +339,7 @@ $ export SA_CA_CRT=$(kubectl get secret $VAULT_SA_NAME -o jsonpath="{.data['ca\.
 
 Now we configure Vault with the Kubernetes master server URL, token reviewer JWT, and certificate authority data for communicating with the OKE control plane:
 
-``` bash
+```
 $ vault write auth/kubernetes/config \
       token_reviewer_jwt="$SA_JWT_TOKEN" \
       kubernetes_host="https://kubernetes.default.svc:443" \
@@ -348,7 +348,7 @@ $ vault write auth/kubernetes/config \
 
 And finally, create a Kubernetes service account & Vault role named 'testapp' mapping the Kubernetes service account to the Vault policy testapp-kv-crud and setting the default Vault token TTL to 4h:
 
-``` bash
+```
 $ kubectl -n default create serviceaccount testapp
 $ vault write auth/kubernetes/role/testapp \
       bound_service_account_names=testapp \
@@ -367,7 +367,7 @@ In order to explore the Kubernetes auth method on OKE, the following creates a K
 
 First, create and connect to Pod with a container running alpine:3.7 image:
 
-``` bash
+```
 kubectl run testapp --rm -i --tty --serviceaccount=testapp --image alpine:3.7
 ```
 
