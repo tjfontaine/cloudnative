@@ -72,7 +72,7 @@ For simplicity, this example binds a Role to the 'default' service account in th
 
 1. Create the Role and RoleBinding from the RBAC manifest:
 
-``` 
+```
 $ kubectl -n default create -f kubernetes/vault/operator-rbac.yaml
 ```
 
@@ -81,7 +81,7 @@ $ kubectl -n default create -f kubernetes/vault/operator-rbac.yaml
 The Vault operator utilises the etcd operator to deploy an etcd cluster to be used as the storage backend for each Vault Cluster provisioned.
 The following will implement the etcd operator:
 
-``` 
+```
 # Create the etcd operator Custom Resource Definitions (CRD)
 $ kubectl -n default create -f kubernetes/vault/etcd-crd.yaml
 
@@ -93,7 +93,7 @@ $ kubectl -n default create -f kubernetes/vault/etcd-operator-deployment.yaml
 
 The following will implement the Vault operator:
 
-``` 
+```
 # Create the Vault operator Custom Resource Definitions (CRD)
 $ kubectl -n default create -f kubernetes/vault/vault-crd.yaml
 
@@ -107,7 +107,7 @@ A Vault cluster can be deployed by creating a VaultService Custom Resource (CR).
 
 The following will create a Vault CR that deploys a 2 node Vault cluster named 'example' in high availablilty (HA) mode:
 
-``` 
+```
 $ kubectl -n default create -f kubernetes/vault/vault-example-cluster.yaml
 ```
 
@@ -181,7 +181,7 @@ Now that we have our Vault cluster up and running on OKE, this next section deal
 
 Let's create a dedicated service account 'vault-tokenreview' for Vault Kubernetes auth, and then provide the serviceaccount with the rights to perform delegated authentication and authorization checks (`system:auth-delegator` role):
 
-``` 
+```
 $ kubectl -n default create serviceaccount vault-tokenreview
 $ kubectl -n default create -f kubernetes/vault/vault-tokenreview-rbac.yaml
 ```
@@ -190,20 +190,20 @@ $ kubectl -n default create -f kubernetes/vault/vault-tokenreview-rbac.yaml
 
 In order to connect to Vault, we will first configure port forwarding between the local machine and the first sealed Vault node. In a terminal window issue the following command:
 
-``` 
+```
 $ kubectl -n default get vault example -o jsonpath='{.status.vaultStatus.sealed[0]}' | xargs -0 -I {} kubectl -n default port-forward {} 8200
 ```
 
 Next, open a new terminal and export the following environment for the Vault CLI client:
 
-``` 
+```
 $ export VAULT_ADDR='https://localhost:8200'
 $ export VAULT_SKIP_VERIFY="true"
 ```
 
 Verify that the Vault server is accessible using the `vault status` command:
 
-``` 
+```
 $ vault status
 
 Error checking seal status: Error making API request.
