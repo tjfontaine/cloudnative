@@ -1,0 +1,21 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Secrets management with Vault",
+          "file": "Readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Running Hashicorp Vault on Oracle Container Engine for Kubernetes",
+          "file": "tutorial.md"
+        }
+      ]
+    }]
+}

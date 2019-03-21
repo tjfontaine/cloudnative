@@ -167,7 +167,20 @@
                     }],
                     "description": "Databases are a fundamental part of applications, and allow for data to be persisted over a long period of time. While the concepts of databases remain the same, the ways to deploy, manage, and scale them have changed in the cloud native era. Topics in this section cover these concepts.",
                     "title": "Database"
+                },
+                {
+                    "fragment": "security",
+                    "solutions": [{
+                        "fragment": "Vault",
+                        "title": "Hashicorp Vault",
+                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/security/vault",
+                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/security/vault/vault_landing.png",
+                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/infrastructure/security/vault/vault_course_pg.png"
+                    }],
+                    "description": "Cloud native security is a priority for any organization. It can be classified as a combination of tooling, strategies, and best practices for three areas: infrastructure, data, and software. The tutorials in this section will help you understand how to better protect your infrastructure, secure your sensitive data, and safeguard your container assets.",
+                    "title": "Security"
                 }
+
             ],
             "title": "Infrastructure"
         },
