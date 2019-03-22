@@ -1,7 +1,7 @@
-# A Walkthrough Of The Kubernetes Service Broker
+# A Walkthrough of the Kubernetes Service Broker
 
 
-### Five On A Secret Trail 
+### Five on a Secret Trail 
 
 Generally speaking there are The five building blocks of the service catalog.
 
@@ -9,16 +9,16 @@ Generally speaking there are The five building blocks of the service catalog.
 _source:kubernetes.io_
 
 
-1) The Open Service Broker API Server acts as an intermidiary for the Kuberenetes API server to negotiate initial provisioning and retrieve credentials to use the managed server. The rules and specifications go into great detail on the [Open Service Broker Project website](https://www.openservicebrokerapi.org/), but the TL;DR is that in order to be compliant as a service broker api you need to fulfil three criteria:  
+1) The Open Service Broker API Server acts as an intermediary for the Kuberenetes API server to negotiate initial provisioning and retrieve credentials to use the managed server. The rules and specifications go into great detail on the [Open Service Broker Project website](https://www.openservicebrokerapi.org/), but the TL;DR is that in order to be compliant as a service broker API you need to fulfil three criteria:  
 
 * Catalog endpoint - a JSON object list of your services offered. Each service should be composed of plans (small plan, medium plan, large plan etc.)
-* Create a new `ServiceInstance` - this can happen asynchronously and we go into detail further on what a `ServiceInstance` is further in the guide.
+* Create a new `ServiceInstance` - this can happen asynchronously and we go into detail further on what a `ServiceInstance` is further on this guide.
 * Credential generation - unique credentials need to be generated to access the service.
 
 
-2) `ClusterServiceBroker` is an in-cluster representation of a broker server. A resource of this type encapsulates connection details for that broker server. These are created and managed by cluster operators (the people or person who controls and configures clusters) who wish to use that broker server to make new types of managed services available within their cluster.
+2) `ClusterServiceBroker` is an in-cluster representation of a broker server. A resource of this type encapsulates connection details for that broker server. These are created and managed by cluster operators (the people who control and configure clusters) who wish to use that broker server to make new types of managed services available within their cluster.
 
-3) `ClusterServiceClass` is a type of managed service offered by a particular broker. Each time a new `ClusterServiceBroker` resource is added to the cluster, the service catalog controller connects to the corresponding broker server to obtain a list of service offerings (small plan, medium plan etc.). A new `ClusterServiceClass` resource will automatically be created for each.
+3) `ClusterServiceClass` is a type of managed service offered by a particular broker. Each time a new `ClusterServiceBroker` resource is added to the cluster, the service catalog controller connects to the corresponding broker server to obtain a list of service offerings (small plan, medium plan etc). A new `ClusterServiceClass` resource will automatically be created for each.
 
 4) `ServiceInstance` is a provisioned instance of a `ClusterServiceClass`. These are created by cluster users who wish to make a new concrete instance of some type of managed service to make that available for use by one or more in-cluster applications. When a new `ServiceInstance` resource is created, the service catalog controller will connect to the appropriate broker server and instruct it to provision the service instance.
 
@@ -27,7 +27,7 @@ _source:kubernetes.io_
 
 ### Installation
 
-Let's start locally. Here is a digested read of the [Service Catalog Documentation](https://svc-cat.io/docs/). With some additional downloads and comments with particular reference to a couple of sticky points. This article assumes that you do not have any of the below installed and are working on a mac: 
+Let's start locally. Here is a digested read of the [Service Catalog documentation](https://svc-cat.io/docs/), with some additional downloads and comments with particular reference to a couple of sticky points. This article assumes that you do not have any of the below installed and are working on a mac: 
 
 
 * HomeBrew
@@ -53,9 +53,9 @@ If you don't have HomeBrew copy this into your terminal:
 
 If you are not running on a Mac you'll need to consult the [Minikube documentation](https://kubernetes.io/docs/tasks/tools/install-minikube/) to get yourself set up. For all sorts of other information regarding Minikube you can refer to these [docs](https://kubernetes.io/docs/setup/minikube/)
 
-1) **Install a hypervisor**, we're obviously going to roll with Virtual Box and not only because we work at Oracle, but because its just a good little virtual machine. Follow this [link](https://www.virtualbox.org/wiki/Downloads) and install the OSX host. Please note, that if for some reason it fails to install check your system preferencese and allow "Oracle Inc America" to install the Hypervisor. 
+1) **Install a hypervisor**. We're obviously going to roll with Virtual Box and not only because we work at Oracle, but because its just a good little virtual machine. Follow this [link](https://www.virtualbox.org/wiki/Downloads) and install the OSX host. Please note, that if for some reason it fails to install, check your system preferencese and allow "Oracle Inc America" to install the Hypervisor. 
 
-2) **Install Kubectl**, you’ll be using kubectl as normal to interact with Service Catalog.
+2) **Install Kubectl**. You’ll  will use kubectl as usual to interact with Service Catalog.
 
 ```
 brew install kubernetes-cli
@@ -83,7 +83,7 @@ minikube start
 
 Minikube might keep crashing. This could be for a number of reasons: 
 
-1) It turns out that you had Virtual Box and skipped that step. There is a known issue with version 5.2 of Virtual Box. Upgrade to version 6 and up. 
+1) It turns out that you had Virtual Box and skipped that step. There is a known issue with version 5.2 of Virtual Box. Upgrade to version 6 or newer. 
 2) You're in the wrong context. 
 
 To check what context you are in type:
@@ -120,7 +120,7 @@ Context "minikube" created.
  minikube delete
  ```
  
-#### Helm And Tiller
+#### Helm and Tiller
 
 We've written a very comprehensive Helm guide [here](https://cloudnative.oracle.com/template.html#application-development/package-management/helm/helm.md) but for our purposes we only need to install it and set up Tiller. 
 
@@ -157,7 +157,7 @@ kubectl create clusterrolebinding tiller-cluster-admin \
     --serviceaccount=kube-system:default
 ```
 
-#### Service Catalog And Service Catalog CLI
+#### Service Catalog and Service Catalog CLI
 
 Now time to set up Service Catalog on your cluster and Interact with the Service Catalog API. 
 
@@ -190,7 +190,7 @@ To install the Service Catlog CLI:
 brew install kubernetes-service-catalog-client
 ```
 
-And, we're in! We have a Service Catalog and the CLI installed on our local cluster. Before we go on, let's clone the "dummy" server application courtesy of the service catalog team, the main repo can be found [here](https://github.com/kubernetes-incubator/service-catalog).
+And, we're in! We have a Service Catalog and the CLI installed on our local cluster. Before we go on, let's clone the "dummy" server application courtesy of the service catalog team the main repo can be found [here](https://github.com/kubernetes-incubator/service-catalog).
 
 #### Installing the Broker Server
 
@@ -207,9 +207,9 @@ helm install ./charts/ups-broker --name ups-broker --namespace ups-broker
 
 ```
 
-Earlier in this guide, we covered the "five building blocks of the service catalog," now that we have the service catalog and a dummy broker installed we're going to go through each block one by one. 
+Earlier in this guide, we covered the "five building blocks of the service catalog." Now that we have the service catalog and a dummy broker installed we're going to go through each block one by one. 
 
-By installing the chart we have added the `ClusterServiceBroker` resource to the Service Catalog, this triggers a call to the external service broker for a list of available services. The service broker returns a list of available managed services and a list of service plans, which are cached locally as `ClusterServiceClass` and `ClusterServicePlan` resources respectively. The image below illustrates what is happening. 
+By installing the chart we have added the `ClusterServiceBroker` resource to the Service Catalog. This triggers a call to the external service broker for a list of available services. The service broker returns a list of available managed services and a list of service plans, which are cached locally as `ClusterServiceClass` and `ClusterServicePlan` resources respectively. The image below illustrates what is happening. 
 
 
 ![Service-Broker_Architecture](images/servers-plans.png) 
@@ -250,7 +250,7 @@ Your out put should look like this:
  We can view the `ClusterServiceClass` resources available:
  
 
-Remember a each time a new `ClusterServiceBroker` resource is added to the cluster, the service catalog controller connects to the corresponding broker server to obtain a list of service offerings (small plan, medium plan etc.). A new `ClusterServiceClass` resource will automatically be created for each.
+Remember that each time a new `ClusterServiceBroker` resource is added to the cluster, the service catalog controller connects to the corresponding broker server to obtain a list of service offerings (small plan, medium plan etc). A new `ClusterServiceClass` resource will automatically be created for each.
 
 Let's look at our classes in the broker and in the Kubernetes cluster: 
 
@@ -306,7 +306,7 @@ Your output should look something like this:
 ![Service-Broker_Architecture](images/service-instance.png) 
 
 
-Create a `ServiceBinding` resource, remember, a`ServiceBinding` expresses intent to use a `ServiceInstance`. These are created by cluster users who wish for their applications to make use of a `ServiceInstance`. Upon creation, the service catalog controller will create a Kubernetes `Secret` containing connection details and credentials for the service represented by the `ServiceInstance`. Such `Secrets` can be used like any other– mounted into a container’s file system or injected into a container as environment variables.
+Create a `ServiceBinding` resource remember, a`ServiceBinding` expresses intent to use a `ServiceInstance`. These are created by cluster users who wish for their applications to make use of a `ServiceInstance`. Upon creation, the service catalog controller will create a Kubernetes `Secret` containing connection details and credentials for the service represented by the `ServiceInstance`. Such `Secrets` can be used like any other– mounted into a container’s file system or injected into a container as environment variables.
 
 To do this type: 
 
@@ -361,7 +361,7 @@ Delete the cluster:
 kubectl delete clusterservicebrokers ups-broker
 ```
 
-Purge the broker from helm:
+Purge the broker from Helm:
 
 ```
 helm delete --purge ups-broker
@@ -373,7 +373,7 @@ Delete the namespace from Kubernetes:
 kubectl delete ns test-ns ups-broker
 ```
 
-Delete the helm deployment and namespace:
+Delete the Helm deployment and namespace:
 
 ```
 helm delete --purge catalog
@@ -390,7 +390,7 @@ Stop minikube:
 minikube stop
 ```
 
-Please check out our other [Kubernetes](https://cloudnative.oracle.com/template.html#distributed-systems-management/container-orchestration/kubernetes/Readme.md) resources and here is the link to the [helm guide](https://cloudnative.oracle.com/template.html#application-development/package-management/helm/readme.md) I mentioned earlier. 
+Please check out our other [Kubernetes](https://cloudnative.oracle.com/template.html#distributed-systems-management/container-orchestration/kubernetes/Readme.md) resources and here is the link to the [Helm guide](https://cloudnative.oracle.com/template.html#application-development/package-management/helm/readme.md) I mentioned earlier. 
 
 
 
