@@ -1,8 +1,8 @@
 # Getting Started with Istio
 
-As discussed in our [Overview](Readme.md), in this tutorial we will deploy Istio and learn about some of its features. Istio has many features, too many to cover in an introductory tutorial. Our aim here is to get things up and running and position ourselves for more learning.
+As discussed in our [Overview](Readme.md), in this tutorial we will deploy Istio and learn about some of its features. Istio has many features, too many to cover in an introductory tutorial. Our aim here is to get things up and running and position ourselves for future exploration.
 
-Initially, we will deploy Istio on an existing Kubernetes cluster. In our deployment, we will enable useful features such as Jaeger for tracing, Prometheus for metrics and Grafana for visualization. Once we have our deployment up and running, we will get a sample application deployed and configured. Finally, we will borrow a few examples of using Istio from the upstream [Istio documentation](https://istio.io/docs) to demonstrate some features.
+In our deployment, we will enable useful features such as Grafana and Prometheus. We will also install Kiali, a very nice mesh visualization tool. Once we have our deployment up and running, we will get a sample application deployed and configured. Finally, we will borrow a few examples of using Istio from the upstream [Istio documentation](https://istio.io/docs) to demonstrate some features.
 
 You can find the prerequisites for this tutorial in the Overview as mentioned above.
 
@@ -14,7 +14,7 @@ Microservice architecture is ubiquitous in cloud native development, and this ty
 
 However, this is all software. Software is by its very nature dynamic and imperfect. With the shift to cloud, we've broken down our monoliths, and abstracted the resources where our processes run. In cloud native software, a distributed system architecture underlies even the most simple application. This provides powerful scalability and resource efficiency, but may result in a lack of observability and diagnosability.
 
-Istio works to address these issues by creating and monitoring a service mesh. For each service in a Kubernetes cluster that we wish to bring into the mesh, we inject a container running a proxy. This is called a sidecar, as it runs alongside the service container or containers within the pod. Istio uses Envoy as the proxy, which controls and mediates all of the network traffic between services within the mesh. These proxies work with Istio's other components to provide advanced traffic management capabilities, enhanced and simplified security and policy management configuration and vastly improved observability and awareness of what is running in the cloud estate.
+Istio works to address these issues by creating and monitoring a service mesh. For each pod in a Kubernetes cluster that we wish to bring into the mesh, we inject a container running a proxy. This pattern is called a sidecar, as the proxy container runs alongside your containers. Istio uses Envoy as the proxy, which controls and mediates all of the network traffic between services within the mesh. These proxies work with Istio's other components to provide advanced traffic management capabilities, enhanced and simplified security and policy management configuration and vastly improved observability and awareness of what is running in the cloud estate.
 
 To learn more about Istio's architecture, please refer to the project's [documentation](https://istio.io/docs/concepts/what-is-istio/#architecture).
 
@@ -22,7 +22,7 @@ To learn more about Istio's architecture, please refer to the project's [documen
 
 ### Preparing Our Cluster
 
-To get started learning, we'll need a cluster running on OKE. If you're new to OKE, you can follow this [tutorial](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html) to get rolling. Make sure to enable Helm on your cluster.
+To get started, we'll need a cluster running on OKE. If you're new to OKE, you can follow this [tutorial](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html) to get rolling. Make sure to enable Helm on your cluster.
 
 For a new cluster, grab the kubeconfig via the <samp>oci ce cluster create-kubeconfig</samp> command. We'll use this later when working with Istio, but Helm will also make use of it for the installation.
 
@@ -38,34 +38,26 @@ Now we're ready to move on to installing Istio.
 
 ### Installing Istio
 
-The quickest and simplest way to get the latest version of Istio is: 
+To get started with installation, get a copy of the latest version of Istio.
 
 ```
 $ curl -L https://git.io/getLatestIstio | sh -
 $ cd  istio-${version}
 ```
 
-Running with the latest version of Kubernetes available on OKE, it's unlikely that your Helm version is lower than 2.10.0. But if it is, you will need to manually install the Custom Resource Definitions (CRDs) used by Istio. CRDs are a way to extend the Kubernetes resource types for specific deployments; Istio uses a number of CRDs.
+Once you have a local copy of Istio, the easiest method of installation for the purposes of this tutorial is to use Helm as mentioned above. This provides a customizable, simple method of deploying Istio to your cluster, and it comes with some optional charts that can be used to install additional services to our cluster.
 
-So, if your Helm version is lower than 2.10.0, you can manually install Istio’s CRDs via:
+Istio is deployed in two parts. The <samp>istio-init</samp> chart will initialize your cluster and install the custome resource definitions (CRDs) provided by Istio, and the <samp>istio</samp> chart will install the Istio project services. There are a few options for the second chart; use the 'Istio Demo' chart, which will also deploy Kiali, Grafana, Zipkin and other useful services.
 
-```
-$ kubectl apply -f install/kubernetes/helm/istio/templates/crds.yaml
-```
-
-Wait a few seconds for the CRDs to be committed in the kube-apiserver, and carry on.
-
-As mentioned above, we'll want to enable some useful components in our deployment. While not part of Istio, its Helm chart makes it convenient to deploy fully integrated tracing, graphing and observability features. These are handled by well-known open source projects such as Jaeger, Prometheus and Grafana.
-
-To enable these features, we will modify the <samp>values.yaml</samp> file, which provides deployment configuration to Helm. It can be found in <samp>istio-${version}/install/kubernetes/helm/istio</samp>. Using your favorite editor, modify it as needed so that the <samp>enabled</samp> property is "true" for grafana, prometheus, servicegraph and tracing.
-
-Finally, we can install Istio via Helm.
+Follow the current [installation instructions](https://istio.io/docs/setup/kubernetes/install/helm/) in the online Istio documentation to get your install rolling.
 
 ```
-$ helm install install/kubernetes/helm/istio --name istio --namespace istio-system
+$ helm install install/kubernetes/helm/istio-init --name istio-init --namespace istio-system
+$ helm install install/kubernetes/helm/istio --name istio --namespace istio-system \
+    --values install/kubernetes/helm/istio/values-istio-demo.yaml
 ```
 
-This will take a minute or two, depending. The deployment of the ingress gateway load balancer will be the long pole, you can monitor this by watching the service for an external IP assignment.
+This will take a bit of time, depending. The deployment of the ingress gateway load balancer will be the long pole, you can monitor this by watching the service for an external IP assignment.
 
 ```
 $ kubectl get svc -w -n istio-system istio-ingressgateway
@@ -75,56 +67,48 @@ As soon as you see an external IP assigned, we can move on to verifying our inst
 
 ### Verifying the Install 
 
-Istio is deployed as a set of services. We can see these are all up and running in our <samp>istio-system</samp> namespace. Note these services include those which aren't strictly Istio components, for example Prometheus and Grafana.
+Istio is deployed as a set of services within your cluster, in the 'istio-system' namespace. We can see these are all up and running in the <samp>istio-system</samp> namespace. Note these services include those which aren't strictly Istio components, for example Prometheus and Grafana.
 
 ```
 $ kubectl get svc -n istio-system
-NAME                     TYPE           CLUSTER-IP      EXTERNAL-IP       PORT(S)                                                                                                                   AGE
-grafana                  ClusterIP      10.96.97.207    <none>            3000/TCP                                                                                                                  15m
-istio-citadel            ClusterIP      10.96.137.124   <none>            8060/TCP,9093/TCP                                                                                                         15m
-istio-egressgateway      ClusterIP      10.96.187.38    <none>            80/TCP,443/TCP                                                                                                            15m
-istio-galley             ClusterIP      10.96.216.106   <none>            443/TCP,9093/TCP                                                                                                          15m
-istio-ingressgateway     LoadBalancer   10.96.215.235   129.213.170.247   80:31380/TCP,443:31390/TCP,31400:31400/TCP,15011:30307/TCP,8060:31797/TCP,853:30846/TCP,15030:31079/TCP,15031:31260/TCP   15m
-istio-pilot              ClusterIP      10.96.96.103    <none>            15010/TCP,15011/TCP,8080/TCP,9093/TCP                                                                                     15m
-istio-policy             ClusterIP      10.96.208.127   <none>            9091/TCP,15004/TCP,9093/TCP                                                                                               15m
-istio-sidecar-injector   ClusterIP      10.96.170.94    <none>            443/TCP                                                                                                                   15m
-istio-telemetry          ClusterIP      10.96.32.128    <none>            9091/TCP,15004/TCP,9093/TCP,42422/TCP                                                                                     15m
-jaeger-agent             ClusterIP      None            <none>            5775/UDP,6831/UDP,6832/UDP                                                                                                15m
-jaeger-collector         ClusterIP      10.96.200.235   <none>            14267/TCP,14268/TCP                                                                                                       15m
-jaeger-query             ClusterIP      10.96.135.43    <none>            16686/TCP                                                                                                                 15m
-prometheus               ClusterIP      10.96.11.31     <none>            9090/TCP
-                  15m
-servicegraph             ClusterIP      10.96.126.219   <none>            8088/TCP                                                                                                                  15m
-tracing                  ClusterIP      10.96.97.10     <none>            80/TCP                                                                                                                    15m
-zipkin                   ClusterIP      10.96.122.184   <none>            9411/TCP                                                                                                                  15m
+NAME                     TYPE           CLUSTER-IP      EXTERNAL-IP       PORT(S)                                        AGE
+grafana                  ClusterIP      10.96.97.207    <none>            3000/TCP                                       15m
+istio-citadel            ClusterIP      10.96.137.124   <none>            8060/TCP,9093/TCP                              15m
+istio-egressgateway      ClusterIP      10.96.187.38    <none>            80/TCP,443/TCP                                 15m
+istio-galley             ClusterIP      10.96.216.106   <none>            443/TCP,9093/TCP                               15m
+istio-ingressgateway     LoadBalancer   10.96.215.235   129.213.170.247   80:31380/TCP,443:31390/TCP,31400:31400/TCP...  15m
+istio-pilot              ClusterIP      10.96.96.103    <none>            15010/TCP,15011/TCP,8080/TCP,9093/TCP          15m
+istio-policy             ClusterIP      10.96.208.127   <none>            9091/TCP,15004/TCP,9093/TCP                    15m
+istio-sidecar-injector   ClusterIP      10.96.170.94    <none>            443/TCP                                        15m
+istio-telemetry          ClusterIP      10.96.32.128    <none>            9091/TCP,15004/TCP,9093/TCP,42422/TCP          15m
+jaeger-agent             ClusterIP      None            <none>            5775/UDP,6831/UDP,6832/UDP                     15m
+jaeger-collector         ClusterIP      10.96.200.235   <none>            14267/TCP,14268/TCP                            15m
+jaeger-query             ClusterIP      10.96.135.43    <none>            16686/TCP                                      15m
+kiali                    ClusterIP      10.96.243.52    <none>            20001/TCP                                      15m
+prometheus               ClusterIP      10.96.11.31     <none>            9090/TCP                                       15m
+tracing                  ClusterIP      10.96.97.10     <none>            80/TCP                                         15m
+zipkin                   ClusterIP      10.96.122.184   <none>            9411/TCP                                       15m
 ```
 
-These services will be running as a set of pods in your cluster. Once all of the pods are ready and running, Istio is ready to use. Note the pod names have some randomization, so yours will be slightly different.
+Once all of the pods are ready and running, Istio is ready to use. Note the pod names have some randomization, so yours will be slightly different.
 
 ```
 $ kubectl get pods -n istio-system
-NAME                                     READY     STATUS      RESTARTS   AGE
-grafana-59b787b9b-vrt82                  1/1       Running     0          16m
-istio-citadel-78df8c67d9-fmbf6           1/1       Running     0          16m
-istio-egressgateway-674686c846-j8pbl     1/1       Running     0          16m
-istio-galley-58f566cb66-ts96z            1/1       Running     0          16m
-istio-grafana-post-install-xf2kh         0/1       Completed   0          16m
-istio-ingressgateway-6bbdd58f8c-9ktcb    1/1       Running     0          16m
-istio-pilot-7fc859bf4f-m2jvr             2/2       Running     0          16m
-istio-policy-68797d879-lkgqq             2/2       Running     0          16m
-istio-sidecar-injector-b88dfb954-sj6kv   1/1       Running     0          16m
-istio-telemetry-68787476f4-dxqfm         2/2       Running     0          16m
-istio-tracing-7596597bd7-4mbg5           1/1       Running     0          16m
-prometheus-76db5fddd5-fgpbp              1/1       Running     0          16m
-servicegraph-fc55fc579-964w9             1/1       Running     0          16m
-```
-
-We have one more action to take. As discussed above, each pod that you want to be observable by Istio will need a sidecar running within the pod. This can be deployed manually, or automatically. For the purposes of our tutorial, let's use the automatic sidecar injector. You can see that it was deployed in our list of services above.
-
-This service will automatically deploy a sidecar when deploying new pods and is enabled on a per-namespace basis. For the purposes of our tutorial, let's enable it on the <samp>default</samp> namespace.
-
-```
-$ kubectl label namespace default istio-injection=enabled
+NAME                                      READY   STATUS      RESTARTS   AGE
+grafana-7b46bf6b7c-7mvrk                  1/1     Running     0          15m
+istio-citadel-75fdb679db-bskwb            1/1     Running     0          15m
+istio-egressgateway-75d546b87f-fkxmd      1/1     Running     0          15m
+istio-galley-c864b5c86-vnwq9              1/1     Running     0          15m
+istio-ingressgateway-668676fbdb-nnl6d     1/1     Running     0          15m
+istio-init-crd-10-kdnnn                   0/1     Completed   0          15m
+istio-init-crd-11-k54jb                   0/1     Completed   0          15m
+istio-pilot-768db5615m5-q72wf             2/2     Running     0          15m
+istio-policy-6996948c6c-fghfm             2/2     Running     1          15m
+istio-sidecar-injector-7b47cb4689-kr797   1/1     Running     0          15m
+istio-telemetry-56d57d87f7-67vc5          2/2     Running     1          15m
+istio-tracing-75dd89b8b4-prpph            1/1     Running     0          15m
+kiali-5d68f4c676-ks7m4                    1/1     Running     0          15m
+prometheus-89bc5668c-5tsw4                1/1     Running     0          15m
 ```
 
 Now, let's continue on by deploying a sample application.
@@ -133,23 +117,34 @@ Now, let's continue on by deploying a sample application.
 
 To explore Istio's features, we'll need an application. The installation bundle we pulled down earlier has a sample application ready to deploy, which is quite handy. It's called <samp>"bookinfo"</samp>, and it works with the example tasks found in the [Istio documentation](https://istio.io/docs/examples/). We'll reproduce a couple of these examples below, but we encourage you to continue your investigation with the project documentation.
 
-To deploy the application, start by invoking the following command.
+Before we deploy our application, let's create a new namespace for it and set up sidecar auto-injection on it. As discussed above, each pod that you want to add to the service mesh will need a sidecar container running within it. This can be deployed manually, or automatically. For the purposes of our tutorial, let's use the automatic sidecar injector. You can see that it was deployed in our list of services above.
+
+This service will automatically deploy a sidecar when deploying new pods and is enabled on a per-namespace basis. So create a new <samp>bookinfo</samp> namespace and label it with <samp>istio-injection</samp>.
 
 ```
-$ kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
+$ kubectl create ns bookinfo
+namespace/bookinfo created
+$ kubectl label namespace bookinfo istio-injection=enabled
+namespace/bookinfo labeled
+```
+
+Now deploy the application.
+
+```
+$ kubectl apply -n bookinfo -f samples/bookinfo/platform/kube/bookinfo.yaml
 ```
 
 As we have set up automatic sidecar injection for the default namespace, this will deploy the application as well as the Istio proxy sidecar containers in each of the pods. Let's take a look and make sure our application services are all up and running.
 
 ```
-$ kubectl get pods -n default
-NAME                             READY     STATUS    RESTARTS   AGE
-details-v1-6764bbc7f7-pjtvx      2/2       Running   0          17m
-productpage-v1-54b8b9f55-htg47   2/2       Running   0          17m
-ratings-v1-7bc85949-8kjhq        2/2       Running   0          17m
-reviews-v1-fdbf674bb-7wkz9       2/2       Running   0          17m
-reviews-v2-5bdc5877d6-qt54t      2/2       Running   0          17m
-reviews-v3-dd846cc78-bdw4v       2/2       Running   0          17m
+$ kubectl get pods -n bookinfo
+NAME                              READY   STATUS    RESTARTS   AGE
+details-v1-68868454f5-wl7gq       2/2     Running   0          19s
+productpage-v1-5cb458d74f-7dt7d   2/2     Running   0          16s
+ratings-v1-76f4c9765f-phplk       2/2     Running   0          18s
+reviews-v1-56f6855586-s5ngd       2/2     Running   0          17s
+reviews-v2-65c9df47f8-7n6bn       2/2     Running   0          17s
+reviews-v3-6cf47594fd-wpwl9       2/2     Running   0          17s
 ```
 
 Note that the sample application deploys three different versions of the <samp>reviews</samp> service. This is for demonstrative purposes; you would typically not do this in production.
@@ -157,15 +152,15 @@ Note that the sample application deploys three different versions of the <samp>r
 If we take a quick peek into our <samp>productpage</samp> pod, as an example, we can see that the Istio proxy sidecar containers have been automatically spun up.
 
 ```
-$ kubectl get pods productpage-v1-54b8b9f55-htg47 -o jsonpath='{.spec.containers[*].name}'
+$ kubectl get pods -n bookinfo productpage-v1-54b8b9f55-htg47 -o jsonpath='{.spec.containers[*].name}'
 productpage istio-proxy
 ```
 
 Now that the application is up and running, we need to create an Istio Gateway to make it accessible outside the cluster. We can create a gateway by continuing to use the sample content, and we can confirm that it's been created by calling <samp>get</samp> on the <samp>gateway</samp> resource type.
 
 ```
-$ kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
-$ kubectl get gateway
+$ kubectl apply -n bookinfo -f samples/bookinfo/networking/bookinfo-gateway.yaml
+$ kubectl get gateway -n bookinfo
 NAME               AGE
 bookinfo-gateway   32s
 ```
@@ -173,7 +168,7 @@ bookinfo-gateway   32s
 Now, let's set a useful environment variable which holds the application gateway URL. This will be built from the ingress host and port, as shown below.
 
 ```
-$ kubectl get svc istio-ingressgateway -n istio-system
+$ kubectl get svc -n bookinfo istio-ingressgateway -n istio-system
 NAME                   TYPE           CLUSTER-IP     EXTERNAL-IP       PORT(S)                                                                                                                   AGE
 istio-ingressgateway   LoadBalancer   10.96.58.222   129.213.142.163   80:31380/TCP,443:31390/TCP,31400:31400/TCP,15011:32240/TCP,8060:32082/TCP,853:32703/TCP,15030:32350/TCP,15031:30768/TCP   2m
 
@@ -192,7 +187,7 @@ $ curl -o /dev/null -s -w "%{http_code}" http://${GATEWAY_URL}/productpage
 Now we have a sample application running in our Istio-enabled cluster. One final step is to define the available versions, called subsets, in our destination rules.  Once again, we can use the sample content.
 
 ```
-$ kubectl apply -f samples/bookinfo/networking/destination-rule-all.yaml
+$ kubectl apply -n bookinfo -f samples/bookinfo/networking/destination-rule-all.yaml
 ```
 
 It will take a few seconds for the rules to propagate, and now you're ready to explore Istio's features.
@@ -210,7 +205,7 @@ To accomplish this common use case in Istio, we configure rules that route a per
 To get started, run this command to route all traffic to the <samp>v1</samp> version of each microservice.
 
 ```
-$ kubectl apply -f samples/bookinfo/networking/virtual-service-all-v1.yaml
+$ kubectl apply -n bookinfo -f samples/bookinfo/networking/virtual-service-all-v1.yaml
 ```
 
 Now open the Bookinfo site in your browser. The URL is http://$GATEWAY_URL/productpage, where $GATEWAY_URL is the External IP address of the ingress that we set above.
@@ -220,13 +215,13 @@ Notice that the reviews part of the page displays with no rating stars, no matte
 Now let's transfer 50% of the traffic from <samp>reviews:v1</samp> to <samp>reviews:v3</samp> with the following command:
 
 ```
-$ kubectl apply -f samples/bookinfo/networking/virtual-service-reviews-50-v3.yaml
+$ kubectl apply -n bookinfo -f samples/bookinfo/networking/virtual-service-reviews-50-v3.yaml
 ```
 
 Wait a few seconds for the new rules to propagate. You can confirm the rule was replaced with:
 
 ```
-$ kubectl get virtualservice reviews -o yaml
+$ kubectl get virtualservice -n bookinfo reviews -o yaml
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
@@ -252,7 +247,7 @@ Now refresh the /productpage in your browser and you will see red colored star r
 Finally, with <samp>reviews:v3</samp> looking stable, let's route 100% of the traffic to it by applying this virtual service:
 
 ```
-$ kubectl apply -f samples/bookinfo/networking/virtual-service-reviews-v3.yaml
+$ kubectl apply -n bookinfo -f samples/bookinfo/networking/virtual-service-reviews-v3.yaml
 ```
 
 Now when you refresh the /productpage in your browser, you will always see book reviews with red colored star ratings for each review.
@@ -260,46 +255,44 @@ Now when you refresh the /productpage in your browser, you will always see book 
 When you've refreshed enough to observe the impact of the routing rules, you may clean up this example with:
 
 ```
-$ kubectl delete -f samples/bookinfo/networking/virtual-service-all-v1.yaml
+$ kubectl delete -n bookinfo -f samples/bookinfo/networking/virtual-service-all-v1.yaml
 ```
 
 This is just one quick example of the powerful traffic management features of Istio.
 
-### Generating a Service Graph
+### Observability and Kiali
 
-As another example, let's look briefly at how simple it can be to see how the services in a particular application work with each other by generating a service graph.
+As an example of powerful observability features, let's take a look at Kiali. It provides an attractive and easy-to-use web interface for various observability and debugging features. Let's use it to look at the topology of our application.
 
-[Servicegraph](https://github.com/istio/istio/tree/release-1.0/addons/servicegraph) is an Istio plugin what we deployed in our installation above. You can ensure it's running with:
-
-```
-$ kubectl -n istio-system get svc servicegraph
-NAME           TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)    AGE
-servicegraph   ClusterIP   10.96.126.219   <none>        8088/TCP   18m
-```
-
-Let's send some traffic to the mesh. Head to http://$GATEWAY_URL/productpage in your web browser and refresh it a few times, or issue a few curls.
+First, ensure it's running with:
 
 ```
-$ curl http://$GATEWAY_URL/productpage
+$ kubectl -n istio-system get svc kiali
+NAME    TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)     AGE
+kiali   ClusterIP   10.96.243.52   <none>        20001/TCP   18m
 ```
 
-Now, set up the Servicegraph UI by executing the following:
+You can access Kiali by first setting up port-forwarding on the service
 
 ```
-$ kubectl -n istio-system port-forward $(kubectl -n istio-system get pod -l app=servicegraph -o jsonpath='{.items[0].metadata.name}') 8088:8088 &
+$ kubectl -n istio-system port-forward $(kubectl -n istio-system get pod -l app=kiali -o jsonpath='{.items[0].metadata.name}') 20001:20001
+Forwarding from 127.0.0.1:20001 -> 20001
+Forwarding from [::1]:20001 -> 20001
 ```
 
-Open http://localhost:8088/force/forcegraph.html in your web browser. Clicking on a service will show details including real time traffic data in a panel below.
+Then, visit the Kiali console in a browser by opening http://localhost:20001/kiali/console. Log in with the default <samp>admin / admin</samp>.
 
-The default behavior can be modified by passing query parameters in the URL.
+You can look around the BUI to get an idea of what's available. On the overview page, you see a quick survey of your cluster's namespaces and the applications running within them. Clicking into one brings you into the application view, where you and drill down into the specific services and monitor the overall health of your deployed applications.
 
-* *filter_empty*  If set, Servicegraph will only show services that are currently receiving traffic within the time horizon. Default is false.
+![create application](images/kiali_app_overview.png)
 
-* *time_horizon*  Specifies the amount of time used to aggregate traffic information data. Defaults to 5 minutes.
 
-As an example, visit http://localhost:8088/force/forcegraph.html?time_horizon=15s&filter_empty=true in your web browser. Note that data is aggregated over 15 second periods, and inactive services are filtered from the output.
+Now click on the 'Graph' section on the left navigation pane, and select the <samp>bookinfo</samp> namespace in the dropdown in the top left. This provides a nice visualization of the various services deployed, and how the traffic is flowing between them. Note, you may need to send some traffic with curl, or hit refresh a few times in your browser to generate some traffic. Notice the HTTP traffic metrics on the right side.
 
-There is a lot more that can be done with Servicegraph, this is just a quick example of its ability to visualize the relationships and traffic flow between your deployed services.
+![graph](images/kiali_graph.png)
+
+
+There is a lot more to Kiali, and it is under active development. This was just a quick example of its ability to visualize the relationships and traffic flow between your deployed services.
 
 When you're done, you can clean up any kubectl port-forward processes that may still be running: 
 
