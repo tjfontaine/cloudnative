@@ -145,16 +145,22 @@
         {
             "fragment": "infrastructure",
             "subcategories": [{
-                    "fragment": "infrastructure-as-code",
+                    "fragment": "resource-management",
                     "solutions": [{
                         "fragment": "setup-k8s-on-oci-with-tf",
                         "title": "Kubernetes with Terraform",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/infrastructure-as-code/terraform",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/infrastructure-as-code/terraform/terraform_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/infrastructure/infrastructure-as-code/terraform/terraform_course_pg.png"
+                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/resource-management/terraform",
+                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/resource-management/terraform/terraform_landing.png",
+                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/infrastructure/resource-management/terraform/terraform_course_pg.png"
+                    },{
+                        "fragment": "service-broker",
+                        "title": "Service Broker",
+                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/resource-management/service-broker",
+                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/resource-management/service-broker/sb.png",
+                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/infrastructure/resource-management/service-broker/sb_pg.png"
                     }],
-                    "description": "Infrastructure as code (IaC) is the process of creating and using software that manages configuration and automated provisioning of infrastructure services. As an example, Terraform simplifies the adoption and management of IaC for building, changing, and versioning infrastructure safely and efficiently. Using code to provision and deploy servers and applications is attractive to software developers because it means that they do not have to rely on system administrators to provision and manage the operations aspect of an environment; such a developer can write an IaC process to provision and deploy a new application for quality assurance or experimental deployment.<br/><br/>However, IaC poses a learning curve and leaves little room for error, making tracking revisions via version control more important  and have comprehensive pre-release testing.<br/><br/>The articles in this category should leave you with a good understanding of successful adoption efforts, common pitfalls, and questions to ask yourself and your team regarding IaC.",
-                    "title": "Infrastructure as code"
+                    "description": "Resource management for the cloud infrastructure is an important topic with respect to creating new infrastructure in an automated fashion, managing existing resources, and controlling costs. Topics in this section will include configuration management, automated provisioning of infrastructure services with principles of infrastructure as code (IaC), tooling to manage your cloud resources, and techniques to allow you manage your cloud spend.",
+                    "title": "Resource Management"
                 },
                 {
                     "fragment": "database",

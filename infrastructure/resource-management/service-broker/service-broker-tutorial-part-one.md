@@ -391,34 +391,3 @@ minikube stop
 ```
 
 Please check out our other [Kubernetes](https://cloudnative.oracle.com/template.html#distributed-systems-management/container-orchestration/kubernetes/Readme.md) resources and here is the link to the [Helm guide](https://cloudnative.oracle.com/template.html#application-development/package-management/helm/readme.md) I mentioned earlier. 
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Service Brokers",
+          "file": "Readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Kubernetes Service Broker: Part One",
+          "file": "service-broker-tutorial-part-one.md"
+        }
+      ]
+    }
+  ]
+}

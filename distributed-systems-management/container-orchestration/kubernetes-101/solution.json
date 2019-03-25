@@ -27,10 +27,6 @@
         {
           "title": "Smoke Tests",
           "file": "smoke.md"
-        },
-        {
-          "title": "Kubernetes Service Broker: Part One",
-          "file": "service-broker-tutorial-part-one.md"
         }
       ]
     }

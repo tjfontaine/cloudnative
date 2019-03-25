@@ -1,0 +1,3 @@
+# Resource Management
+
+Resource management for the cloud infrastructure is an important topic with respect to creating new infrastructure in an automated fashion, managing existing resources, and controlling costs. Topics in this section will include configuration management, automated provisioning of infrastructure services with principles of infrastructure as code (IaC), tooling to manage your cloud resources, and techniques to allow you manage your cloud spend.
