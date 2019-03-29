@@ -7,30 +7,30 @@
                     "solutions": [{
                         "fragment": "spinnaker",
                         "title": "Armory Spinnaker",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/armory-spinnaker",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/armory-spinnaker/spinnaker_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/armory-spinnaker/spinnaker_course_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/cicd/armory-spinnaker",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/cicd/armory-spinnaker/spinnaker_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/cicd/armory-spinnaker/spinnaker_course_pg.png"
                     },
                     {
                         "fragment": "jenkinsx",
                         "title": "Jenkins X",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/jenkinsx",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/jenkinsx/jenkinsx_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/jenkinsx/jenkinsx_course_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/cicd/jenkinsx",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/cicd/jenkinsx/jenkinsx_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/cicd/jenkinsx/jenkinsx_course_pg.png"
                     },
                     {
                         "fragment": "skaffold",
                         "title": "Skaffold",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/skaffold",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/skaffold/skaffold_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/skaffold/skaffold_course_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/cicd/skaffold",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/cicd/skaffold/skaffold_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/cicd/skaffold/skaffold_course_pg.png"
                     },
                     {
                         "fragment": "wercker",
                         "title": "Wercker",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/wercker",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/wercker/wercker_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/wercker/wercker_course_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/cicd/wercker",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/cicd/wercker/wercker_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/cicd/wercker/wercker_course_pg.png"
                     }
                 ],
                     "description": "Continuous integration (CI) is the practice of building, testing, and shipping changes in software as they are committed, and continuous deployment (CD) is the practice of deploying the latest release of software into production. The marriage of these two practices, known as CI/CD, helps organizations identify and address issues early on and always be running the latest versions in production.",
@@ -42,15 +42,15 @@
                         {
                         "fragment": "protocol-buffers-and-grpc",
                         "title": "Protocol Buffers & gRPC",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/microservices/protocol-buffers-and-grpc",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/microservices/protocol-buffers-and-grpc/grpc_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/microservices/protocol-buffers-and-grpc/grpc_course_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/microservices/protocol-buffers-and-grpc",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/microservices/protocol-buffers-and-grpc/grpc_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/microservices/protocol-buffers-and-grpc/grpc_course_pg.png"
                     },{
                         "fragment": "helidon",
                         "title": "Helidon",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/microservices/helidon",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/microservices/helidon/helidon_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/microservices/helidon/helidon_course_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/microservices/helidon",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/microservices/helidon/helidon_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/microservices/helidon/helidon_course_pg.png"
                     }],
                     "description": "Microservice architecture is an application development paradigm which decomposes an application into modular, lightweight, discrete pieces. This eases development and testing and makes applications more resilient and easier to scale.",
                     "title": "Microservices"
@@ -61,21 +61,21 @@
                         {
                         "fragment": "draft",
                         "title": "Draft",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/draft",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/draft/draft_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/draft/draft_course_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/package-management/draft",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/package-management/draft/draft_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/package-management/draft/draft_course_pg.png"
                     },
                     {
                         "fragment": "helm",
                         "title": "Helm",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/helm",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/helm/helm_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/helm/helm_course_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/package-management/helm",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/package-management/helm/helm_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/package-management/helm/helm_course_pg.png"
                     },
                     {
                         "fragment": "tilt",
                         "title": "Tilt",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/tilt",
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/package-management/tilt",
                         "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/package-management/tilt/tilt_landing.png",
                         "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/package-management/tilt/tilt_course_pg.png"
                     }],
@@ -87,9 +87,9 @@
                     "solutions": [{
                         "fragment": "getting-started-with-fn",
                         "title": "Getting Started with the Fn Project",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/serverless/getting-started-with-fn",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/serverless/getting-started-with-fn/fn_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/serverless/getting-started-with-fn/fn_course_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/serverless/getting-started-with-fn",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/serverless/getting-started-with-fn/fn_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/serverless/getting-started-with-fn/fn_course_pg.png"
                     }],
                     "description": "Serverless is an event-driven application architecture that abstracts infrastructure resources and enables teams to focus on writing code. Applications are implemented as groups of loosely coupled functions, and these functions are deployed and invoked for the user by the platform. Resources are automatically scaled up and down without the user needing to worry about host provisioning, maintenance, and other infrastructure concerns.",
                     "title": "Serverless"
@@ -106,23 +106,23 @@
                     {
                         "fragment": "docker",
                         "title": "Docker",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/container-orchestration/docker-basics",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/container-orchestration/docker-basics/docker_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/container-orchestration/docker-basics/docker_course_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/container-orchestration/docker-basics",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/container-orchestration/docker-basics/docker_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/container-orchestration/docker-basics/docker_course_pg.png"
                     },
                     {
                         "fragment": "oke",
                         "title": "Oracle Container Engine for Kubernetes",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/container-orchestration/oke",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/container-orchestration/oke/oke_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/container-orchestration/oke/oke_course_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/container-orchestration/oke",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/container-orchestration/oke/oke_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/container-orchestration/oke/oke_course_pg.png"
                     },
                     {
                         "fragment": "kubernetes",
                         "title": "Kubernetes",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/container-orchestration/kubernetes-101",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/container-orchestration/kubernetes-101/kubernetes_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/container-orchestration/kubernetes-101/kubernetes_course_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/container-orchestration/kubernetes-101",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/container-orchestration/kubernetes-101/kubernetes_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/container-orchestration/kubernetes-101/kubernetes_course_pg.png"
                     }
                 ],
                 "description": "The advent of containers has significantly impacted how we ship and run software in the cloud. Managing containers at scale often means deploying and managing hundreds or thousands of containers at any given time. Container orchestration provides management of infrastructure resources as well as deployment and supervision of containers across those resources. Features such as scaling workloads up and down, restarting failed containers, and linking containers together into meaningful groups are all part of the orchestration ecosystem.",
@@ -134,16 +134,16 @@
                     {
                         "fragment": "envoy",
                         "title": "Envoy",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/service-mesh-and-discovery/Envoy",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/service-mesh-and-discovery/Envoy/envoy_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/service-mesh-and-discovery/Envoy/envoy_course_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/service-mesh-and-discovery/Envoy",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/service-mesh-and-discovery/Envoy/envoy_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/service-mesh-and-discovery/Envoy/envoy_course_pg.png"
                     },
                     {
                         "fragment": "istio",
                         "title": "Istio",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/service-mesh-and-discovery/Istio",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/service-mesh-and-discovery/Istio/istio_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/service-mesh-and-discovery/Istio/istio_course_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/service-mesh-and-discovery/Istio",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/service-mesh-and-discovery/Istio/istio_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/service-mesh-and-discovery/Istio/istio_course_pg.png"
                     }
                 ],
                 "description": "The service mesh is a configurable infrastructure layer for microservices applications, making communication between service instances flexible, reliable, and fast. It also provides service discovery, load balancing, encryption, authentication, and authorization. Service mesh makes developing, testing, and deploying applications more efficient and observable.",
@@ -154,9 +154,9 @@
                 "solutions": [{
                     "fragment": "Kafka",
                     "title": "Apache Kafka",
-                    "githubUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/queuing-and-streaming/kafka",
-                    "logoUrl": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/queuing-and-streaming/kafka/kafka_landing.png",
-                    "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/distributed-systems-management/queuing-and-streaming/kafka/kafka_course_pg.png"
+                    "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/queuing-and-streaming/kafka",
+                    "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/queuing-and-streaming/kafka/kafka_landing.png",
+                    "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/queuing-and-streaming/kafka/kafka_course_pg.png"
                 }],
                 "description": "Queuing and streaming are established concepts that have significantly evolved from the message brokers of old. The Cloud Native Computing Foundation (CNCF) has introduced many projects to bring these technologies into the new era of distributed systems. Topics here will include standards like CloudEvents, or streaming technologies such as Kafka and its integration into the cloud native world.",
                 "title": "Queuing and Streaming"
@@ -171,15 +171,15 @@
                     "solutions": [{
                         "fragment": "setup-k8s-on-oci-with-tf",
                         "title": "Kubernetes with Terraform",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/resource-management/terraform",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/resource-management/terraform/terraform_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/infrastructure/resource-management/terraform/terraform_course_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/infrastructure/resource-management/terraform",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/infrastructure/resource-management/terraform/terraform_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/infrastructure/resource-management/terraform/terraform_course_pg.png"
                     },{
                         "fragment": "service-broker",
                         "title": "Service Broker",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/resource-management/service-broker",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/resource-management/service-broker/sb.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/infrastructure/resource-management/service-broker/sb_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/infrastructure/resource-management/service-broker",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/infrastructure/resource-management/service-broker/sb.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/infrastructure/resource-management/service-broker/sb_pg.png"
                     }],
                     "description": "Resource management for the cloud infrastructure is an important topic with respect to creating new infrastructure in an automated fashion, managing existing resources, and controlling costs. Topics in this section will include configuration management, automated provisioning of infrastructure services with principles of infrastructure as code (IaC), tooling to manage your cloud resources, and techniques to allow you manage your cloud spend.",
                     "title": "Resource Management"
@@ -189,9 +189,9 @@
                     "solutions": [{
                         "fragment": "mysql-operator",
                         "title": "The MySQL Operator",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/database/mysql-operator",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/database/mysql-operator/mysql_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/infrastructure/database/mysql-operator/mysql_course_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/infrastructure/database/mysql-operator",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/infrastructure/database/mysql-operator/mysql_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/infrastructure/database/mysql-operator/mysql_course_pg.png"
                     }],
                     "description": "Databases are a fundamental part of applications, and allow for data to be persisted over a long period of time. While the concepts of databases remain the same, the ways to deploy, manage, and scale them have changed in the cloud native era. Topics in this section cover these concepts.",
                     "title": "Database"
@@ -201,9 +201,9 @@
                     "solutions": [{
                         "fragment": "Vault",
                         "title": "Hashicorp Vault",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/security/Vault",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/infrastructure/security/Vault/vault_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/infrastructure/security/Vault/vault_course_pg.png"
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/infrastructure/security/Vault",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/infrastructure/security/Vault/vault_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/infrastructure/security/Vault/vault_course_pg.png"
                     }],
                     "description": "Cloud native security is a priority for any organization. It can be classified as a combination of tooling, strategies, and best practices for three areas: infrastructure, data, and software. The tutorials in this section will help you understand how to better protect your infrastructure, secure your sensitive data, and safeguard your container assets.",
                     "title": "Security"
@@ -219,9 +219,9 @@
                 "solutions": [{
                     "fragment": "kubeflow",
                     "title": "Introduction to Kubeflow",
-                    "githubUrl": "https://rawgit.com/oracle/cloudnative/master/machine-learning/deployment/kubeflow",
-                    "logoUrl": "https://rawgit.com/oracle/cloudnative/master/machine-learning/deployment/kubeflow/kubeflow_landing.png",
-                    "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/machine-learning/deployment/kubeflow/kubeflow_course_pg.png"
+                    "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/machine-learning/deployment/kubeflow",
+                    "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/machine-learning/deployment/kubeflow/kubeflow_landing.png",
+                    "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/machine-learning/deployment/kubeflow/kubeflow_course_pg.png"
                 }],
                 "description": "Deploying machine learning (ML) at scale is a complex problem. As the paradigm grows and the ML stacks get more complicated, this problem will get even more complicated. The topics in this section are dedicated to integrating the cloud native and machine learning worlds together.",
                 "title": "Deployment"
@@ -235,23 +235,23 @@
                     "solutions": [
                     {
                         "fragment": "grafana",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/grafana",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/grafana/grafana_stack_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/grafana/grafana_stack_course_pg.png",
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/observability-and-analysis/telemetry/grafana",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/observability-and-analysis/telemetry/grafana/grafana_stack_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/observability-and-analysis/telemetry/grafana/grafana_stack_course_pg.png",
                         "title": "OCI Datasource for Grafana"
                     },
                     {
                         "fragment": "prometheus",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/prometheus",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/prometheus/prometheus_stack_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/prometheus/prometheus_stack_course_pg.png",
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/observability-and-analysis/telemetry/prometheus",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/observability-and-analysis/telemetry/prometheus/prometheus_stack_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/observability-and-analysis/telemetry/prometheus/prometheus_stack_course_pg.png",
                         "title": "Prometheus and Grafana"
                     },
                     {
                         "fragment": "zipkin",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/zipkin",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/prometheus/prometheus_stack_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/telemetry/prometheus/prometheus_stack_course_pg.png",
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/observability-and-analysis/telemetry/zipkin",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/observability-and-analysis/telemetry/prometheus/prometheus_stack_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/observability-and-analysis/telemetry/prometheus/prometheus_stack_course_pg.png",
                         "title": "Zipkin"
                     }],
                     "description": "Telemetry is broadly classified as a combination of three things: logging, monitoring, and metrics. In general, it allows you to understand the inner workings of your applications to operate more efficiently, better understand customer needs, improve decision-making, and increase the value of the business.",
@@ -261,9 +261,9 @@
                     "fragment": "logging",
                     "solutions": [{
                         "fragment": "efk-stack",
-                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack",
-                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack/efk_stack_landing.png",
-                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/observability-and-analysis/logging/efk-stack/efk_stack_course_pg.png",
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/observability-and-analysis/logging/efk-stack",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/observability-and-analysis/logging/efk-stack/efk_stack_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/observability-and-analysis/logging/efk-stack/efk_stack_course_pg.png",
                         "title": "Elasticsearch, Fluentd and Kibana"
                     }],
                     "description": "Logging is an integral part of production software deployment. When dealing with the layered abstractions and ephemeral components of cloud computing at scale, it’s more important than ever to have software and services that create clear, well-formed logging messages. Once created, these logs must be collected, managed, and made available to other services for analytic and reporting purposes. In the world of cloud native computing, logging provides vital data to other services that help us make sense of what is happening in our cloud estate.",
