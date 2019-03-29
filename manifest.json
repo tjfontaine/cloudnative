@@ -19,6 +19,13 @@
                         "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/jenkinsx/jenkinsx_course_pg.png"
                     },
                     {
+                        "fragment": "skaffold",
+                        "title": "Skaffold",
+                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/skaffold",
+                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/skaffold/skaffold_landing.png",
+                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/skaffold/skaffold_course_pg.png"
+                    },
+                    {
                         "fragment": "wercker",
                         "title": "Wercker",
                         "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/cicd/wercker",
@@ -50,12 +57,27 @@
                 },
                 {
                     "fragment": "package-management",
-                    "solutions": [{
+                    "solutions": [
+                        {
+                        "fragment": "draft",
+                        "title": "Draft",
+                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/draft",
+                        "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/draft/draft_landing.png",
+                        "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/draft/draft_course_pg.png"
+                    },
+                    {
                         "fragment": "helm",
                         "title": "Helm",
                         "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/helm",
                         "logoUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/helm/helm_landing.png",
                         "logoUrlCoursePage": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/helm/helm_course_pg.png"
+                    },
+                    {
+                        "fragment": "tilt",
+                        "title": "Tilt",
+                        "githubUrl": "https://rawgit.com/oracle/cloudnative/master/application-development/package-management/tilt",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/package-management/tilt/tilt_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/application-development/package-management/tilt/tilt_course_pg.png"
                     }],
                     "description": "Package managers are designed to ease installs and updates and manage dependencies. This is particularly useful in complex systems.",
                     "title": "Package Management"
