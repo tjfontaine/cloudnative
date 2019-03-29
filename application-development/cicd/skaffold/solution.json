@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Skaffold",
+          "file": "readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Introduction to Skaffold",
+          "file": "skaffold_tutorial_one.md"
+        }
+      ]
+    }
+  ]
+}

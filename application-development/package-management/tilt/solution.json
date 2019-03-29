@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Tilt",
+          "file": "readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Introduction to Tilt",
+          "file": "tilt_tutorial_one.md"
+        }
+      ]
+    }
+  ]
+}

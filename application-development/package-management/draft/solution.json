@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Draft",
+          "file": "readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Introduction to Draft",
+          "file": "draft_tutorial_one.md"
+        }
+      ]
+    }
+  ]
+}
