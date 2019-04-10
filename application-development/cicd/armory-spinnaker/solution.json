@@ -14,7 +14,7 @@
       "files": [
         {
           "title": "Armory Spinnaker on Oracle Container Engine for Kubernetes",
-          "file": "spinnaker.md"
+          "file": "armory-spinnaker.md"
         },
         {
           "title": "Spinnaker Kubernetes Provider V2 on Oracle Container Engine for Kubernetes",
