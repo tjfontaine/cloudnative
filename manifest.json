@@ -295,7 +295,19 @@
             "bgImage": "assets/images/learn_landing_banner3_1441.jpg"
         }
     ],
-    "events": [{
+    "events": [
+        {
+            "description": "Join some of the industry's top cloud native minds for a concentrated dose of technical talks paired with hands-on learning.",
+            "title": "KubeCon + CloudNativeCon Europe",
+            "subtitle": "Check out these awesome sessions and stop by the booth for lighting talks and hands-on labs!",
+            "ctaUrl": "events/2019/2019-05-20 KubeCon 2019 Barcelona/event",
+            "ctaText": "Learn More",
+            "location": "Barcelona, Spain",
+            "date": ["2019-05-20 00:00:00", "2019-05-23 00:00:00"],
+            "bgImage": "https://oracle.github.io/cloudnative/images/event_banners/large_auditorium3_sm.jpg",
+            "ribbonText": "Conference"
+        },
+        {
             "description": "Hear from technical instructors, contributors, and startup innovators as they share their real-world experience from developing with CNCF tools to building a cloud scale FaaS on Kubernetes.  \n\n ",
             "title": "Get Function'l with Kubernetes",
             "subtitle": "",

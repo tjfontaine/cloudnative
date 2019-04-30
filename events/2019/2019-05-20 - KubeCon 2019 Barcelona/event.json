@@ -1,0 +1,283 @@
+{
+  "title": "KubeCon + CloudNativeCon Europe", 
+  "subtitle": "Check out these awesome sessions and stop by the booth for lighting talks and hands-on labs!", 
+  "registerLinkText": "REGISTER", 
+  "registerLink": "https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2019/register/", 
+  "date": [
+    "2019-05-20 00:00:00", 
+    "2019-05-23 00:00:00"
+  ], 
+  "location": "Barcelona, Spain", 
+  "pages": [
+    {
+      "pageTitle": "About", 
+      "pageType": "default", 
+      "modules": [
+        {
+          "header": "JOIN US", 
+          "type": "basic", 
+          "htmlBlock": "<p>As a Diamond sponsor at KubeCon Europe, we're drumming up a whole host of\nfun.Check out the agenda to plan your schedule, stop by our booth for lighting\ntalks and try your hand at a lab to win prizes!</p>"
+        }, 
+        {
+          "header": "Watch the teaser", 
+          "type": "video", 
+          "videotype": "youtube", 
+          "videoID": "hxGwm_o6tpo", 
+          "subtitle": null, 
+          "description": ""
+        }, 
+        {
+          "header": "Featured Speakers", 
+          "type": "speakers-featured"
+        }
+      ]
+    }, 
+    {
+      "pageTitle": "Speakers", 
+      "pageType": "default", 
+      "modules": [
+        {
+          "header": "Speakers", 
+          "type": "speakers-all"
+        }
+      ]
+    }, 
+    {
+      "pageTitle": "Agenda", 
+      "pageType": "default", 
+      "modules": [
+        {
+          "header": "Agenda", 
+          "type": "agenda-all", 
+          "days": [
+            {
+              "date": "Mon May 20", 
+              "items": [
+                {
+                  "title": "Lightning Talk: Hot, Fresh Containers - How Containers Are Like Cookies!", 
+                  "startTime": "18:30pm", 
+                  "endTime": "18:35pm", 
+                  "description": "Have you heard the container hype but don't really get what it's about? Have\nyou ever had trouble explaining containers to someone unfamiliar with the\ntechnology? Analogies can help - and this one's delicious!  Come to this talk\nto learn how container technology - a topic which has gone from 0 to\n\"Everybody's doing it\" in the last 5 years - and delicious fresh-baked cookies,\naren't really so different. You'll walk away having gained a new way to frame\nyour discussions around container technology, whether you're explaining them to\nsomeone who's hearing about it for the first time, or discussing them with\nsomeone who uses them on a daily basis.\n<a href=\"https://sched.co/MPg2\">https://sched.co/MPg2</a>", 
+                  "location": "Hall 8.0 A1", 
+                  "speakers": [
+                    "Kaslin Fields"
+                  ]
+                }
+              ]
+            }, 
+            {
+              "date": "Tue May 21", 
+              "items": [
+                {
+                  "title": "The New Stack Pancake Breakfast", 
+                  "startTime": "07:30am", 
+                  "endTime": "08:45am", 
+                  "description": "It's time for pancakes in Barcelona! Come have a short stack with The New Stack\nfor a Q&amp;A with our expert panelists about the issues and options for managing\nidentity in service mesh environments. Cloud native security and how it affects\nthe pace of enterprise adoption will be the mainstay of our conversation for\nthis latest stop on the pancake breakfast circuit.\n<a href=\"https://sched.co/NxQl\">https://sched.co/NxQl</a>", 
+                  "location": "Hall 8.0 F1"
+                }, 
+                {
+                  "title": "Keynote: Building a Bigger Cloud Native Tent: Addressing Cultural Change and Complexity Challenges", 
+                  "startTime": "09:27am", 
+                  "endTime": "09:32am", 
+                  "description": "The Cloud Native ecosystem continues to expand dramatically but many\nenterprises and traditional development teams are being left behind. The top\ntwo issues facing our industry are cultural change for developers and\ncomplexity -- thus we need to find ways to build a bigger cloud native tent\nthat is more inclusive of modern and traditional applications, cloud and\non-premises users. This keynote focuses on the challenges and opportunities to\ncreate a more inclusive, sustainable cloud native community.\n<a href=\"https://sched.co/MRz1\">https://sched.co/MRz1</a>", 
+                  "location": "Hall 6", 
+                  "speakers": [
+                    "Bob Quillin"
+                  ]
+                }
+              ]
+            }, 
+            {
+              "date": "Wed May 22", 
+              "items": [
+                {
+                  "title": "Democratizing HPC & AI: Startups Scale Up with Cloud Native", 
+                  "startTime": "14:00pm", 
+                  "endTime": "14:35pm", 
+                  "description": "Innovativeness, resourcefulness, and responsiveness are all part of the startup\nDNA, and with the aid of the cloud native era and ecosystem, they are\nunstoppable. Hear how these European startups are leveraging technologies such\nas Kubernetes, containers, GPUs, Singularity and more to gain efficiencies\nacross architecture, time, and team to reach global scale, reshape user\ninteractions, and even, save lives. In this panel, startups from Barcelona and\nthe UK will discuss how cloud native technologies have helped unlock access to\nunlimited potential across such diverse case studies as identifying and fixing\ngender pay gap issues, creating computational models of virtual patients,\nreinventing cloud-based video collaboration, and interpreting travel and\nnavigation based on time, all to transform their businesses to match behavioral\npatterns within their industries.\n<a href=\"https://sched.co/MPed\">https://sched.co/MPY0</a>", 
+                  "location": "Hall 8.0 D1", 
+                  "speakers": [
+                    "Emily Tanaka-Delgado", 
+                    "Charlie Davies", 
+                    "Priya Shah", 
+                    "Dr. Zara Nanu", 
+                    "Alfonson Santiago"
+                  ]
+                }
+              ]
+            }, 
+            {
+              "date": "Thu May 23", 
+              "items": [
+                {
+                  "title": "Ouch! What I Learned From Being Hit by a Serverless, Ruby Boomerang!", 
+                  "startTime": "11:05am", 
+                  "endTime": "11:40am", 
+                  "description": "Have you ever done something that's come back and bitten you? I have\n(frequently). Asking an open source project to put more effort into supporting\nyour favourite language (Ruby in my case) is asking to be hit by your own\nboomerang - \"that's a great idea, why don't you get started?\" In this talk I'll\ndescribe how I got hit by my own Ruby boomerang and wound up maintaining the\nRuby FDK for the Fn project (not my day job).\n<a href=\"https://sched.co/MPed\">https://sched.co/MPed</a>", 
+                  "location": "Hall 8.1 G2", 
+                  "speakers": [
+                    "Ewan Slater"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ], 
+  "speakers": [
+    {
+      "name": "Priya Shah", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Wednesday May 22 | 14:00 - 14:35| Hall 8.0 D1</em>\nDemocratizing HPC &amp; AI: Startups Scale Up with Cloud Native</p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Priya is the Co-founder and CMO of Sauce, the video creation platform that\nenables businesses to collaborate and co-create with their global communities\nof employees, customers and fans. Priya and her Co-founders developed Sauce\nwhen they discovered the huge barriers that brands were facing when producing\nvideo - the cost, time and admin required was not fit for today's video content\nneeds. So they launched their intelligent cloud platform that makes video\ncreation fast, easy and affordable - all powered bythe smartphone camera. Priya\nleads the Sales &amp; Marketing team - who's clients include Accenture and Oracle.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@PriyaShah110\">@PriyaShah110</a></p>"
+      }, 
+      "featured": true, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2019/2019-05-20%20-%20KubeCon%202019%20Barcelona/images/priya-shah.jpg", 
+      "title": "<p>Co-Founder, Sauce</p>"
+    }, 
+    {
+      "name": "Dr. Zara Nanu", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Wednesday May 22 | 14:00 - 14:35| Hall 8.0 D1</em>\n<a href=\"https://sched.co/MPed\">Democratizing HPC &amp; AI: Startups Scale Up with Cloud Native</a></p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Zara Nanu is CEO and co-founder of Gapsquare, a leading provider of pay\ntransparency; gender and ethnicity pay gap analysis. Zara is an expert on how\ndiversity and inclusion can shape more dynamic and productive teams and a more\nengaging and empowering workplace. She is an entrepreneur who believes business\ncan generate social impact as well as revenues and profits. She is not a talker\n-- she is a doer. Zara is a Business Insider 42 under 42, Top 100 most\ninfluential women in the West, and SPARKies Founder of theYear. Zara holds a\nPhD in Politics from the University of the West of England.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@ZaraNanu\">@ZaraNanu</a></p>"
+      }, 
+      "featured": true, 
+      "photoUrl": "images/dr-zara-nanu.jpg", 
+      "title": "<p>CEO and Co-Founder, Gapsquare</p>"
+    }, 
+    {
+      "name": "Emily Tanaka-Delgado", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Wednesday May 22 | 14:00 - 14:35| Hall 8.0 D1</em>\nDemocratizing HPC &amp; AI: Startups Scale Up with Cloud Native</p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Emily Tanaka-Delgado leads cloud native DevRel Engagement at Oracle, where she\nhas trail blazed content and programs designed to enable, enrich, and\naccelerate end users. She has a long tenure in the tech industry with a heavy\nconcentration in cloud and open source technologies. Before joining Oracle,\nEmily ran marketing and DevRel at Joyent, with a special focus on the Node.js\nstewardship, from acquisition to foundation. There, she worked with core\ncontributors and community leaders to grow theuser base, enable the ecosystem,\nand improve developer engagement.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@mle_tanaka\">@mle_tanaka</a></p>"
+      }, 
+      "featured": true, 
+      "photoUrl": "../../../images/speakers/emil-tanaka-delgado.jpg", 
+      "title": "<p>Director of DevRel, Oracle</p>"
+    }, 
+    {
+      "name": "Charlie Davies", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Wednesday May 22 | 14:00 - 14:35| Hall 8.0 D1</em>\nDemocratizing HPC &amp; AI: Startups Scale Up with Cloud Native</p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Charlie Davies is the co-founder and CTO of iGeolise, a location-based software\ncompany based in London. Charlie began iGeolise when he noticed that all map\ndata was searched by distance (miles radius), but everyone around him discussed\ntravel using time (minutes). iGeolise developed an API that makes maps\nsearchable by time. iGeolise builds applications that add real value to local\ndata in order to enable successful local searches. The first application is\ncalled Travel Time and it converts distance into journey time -- miles into\nminutes.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@igeolise\">@igeolise</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2019/2019-05-20%20-%20KubeCon%202019%20Barcelona/images/charlie-davies.jpg", 
+      "title": "<p>CTO and Co-Founder, iGeolise</p>"
+    }, 
+    {
+      "name": "Alfonso Santiago", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Wednesday May 22 | 14:00 - 14:35| Hall 8.0 D1</em>\nDemocratizing HPC &amp; AI: Startups Scale Up with Cloud Native</p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Alfonso Santiago is an R&amp;D Engineer at Elem biotech and a postdoctoral\nresearcher at the Barcelona Supercomputing Center (BSC). During his PhD at the\nBSC, he developed the fluid-electro-mechanical model of the human heart that\nworked as a primer for Elem biotech. Today, Elem biotech is building a\ncloud-based computer simulation technology to aid pacemaker design.He holds a\nBioengineering degree and a PhD in Biomedical Engineering and has been recently\nappointed as a member ASME Codes and Standards committee V&amp;V40. Nowadays, his\nmain focus is to transfer the technology developed at the BSC to business\nthrough Elem Biotech.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@alfstg\">@alfstg</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2019/2019-05-20%20-%20KubeCon%202019%20Barcelona/images/alfonso-santiago.png", 
+      "title": "<p>R&amp;D Engineer, ELEM Biotech</p>"
+    }, 
+    {
+      "name": "Kaslin Fields", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Monday, May 20 / 18:30 - 18:35 / Hall 8.0 A1</em>\nLightning Talk: Hot, Fresh Containers - How Containers Are Like Cookies!</p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Kaslin Fields is a Solutions Architect focusing on containers (particularly\nKubernetes) at Oracle Cloud Infrastructure. As a Solutions Architect, she\nspends most of her time creating blog posts, demos, and other materials to help\nguide Oracle's customers into the world of containerization. Kaslin has spoken\nabout the cloud and containers at the Kubernetes, Docker, CloudTalk, and\nCloud-Native and Kubernetes meetup groups in the Seattle area.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@kaslinfields\">@kaslinfields</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/kaslin-fields.jpg", 
+      "title": "<p>SOLUTIONS ARCHITECT, ORACLE</p>"
+    }, 
+    {
+      "name": "Bob Quillin", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Wednesday, May 22 | 09:27 - 09:32 | Hall 6</em>\nKeynote: Building a Bigger Cloud Native Tent: Addressing Cultural Change and Complexity Challenges</p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>As Vice President of Developer Relations for Oracle Cloud Infrastructure (OCI),\nBob Quillin leads the Cloud Native Labs team who are responsible for OCI cloud\nnative developer relations, advocacy, engagement, solutions, and lighthouse\nadoption. Bob joined Oracle as part of the StackEngine acquisition by Oracle in\nDecember 2015, where he was co-founder and CEO.  Based in Austin, TX,\nStackEngine was an early container-native pioneer building services and\nplatforms designed to help developers and devops teams build, orchestrate, and\nscale enterprise-grade container apps.</p>\n<p>Prior to his role as co-founder and CEO of StackEngine, Bob was CEO of\nAustin-based CopperEgg, a cloud monitoring SaaS startup acquired by Idera in\n2013.  With previous executive and startup leadership roles at CopperEgg,\nnLayers, EMC, and VMware, Bob has focused his career on applying automation to\nsimplify complex cloud, IT and developer challenges.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@bobquillin\">@bobquillin</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/bob-quillin.jpeg", 
+      "title": "<p>VP Developer Relations, Oracle</p>"
+    }, 
+    {
+      "name": "Ewan Slater", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Thursday, May 23 | 11:05 - 11:40 | Hall 8.1 G2</em>\nOuch! What I Learned From Being Hit by a Serverless, Ruby Boomerang!</p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>I started out as a research scientist and then drifted into IT. These days I'm\nan architect in Oracle's EMEA Technology Cloud Team, have over twenty years\nexperience in the technology industry and a lot less hair. I joined Oracle when\nthey acquired Thor Technology in 2005. I intended to stay for six months and\nI'm still here. I'm currently focused on helping Oracle's customers and\npartners adopt a cloud native approach to development. I contribute to the Fn\nproject and I'm one of the organisers of the DevEast conference in the UK.</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@ewanslater\">@ewanslater</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/ewan-slater.jpg", 
+      "title": "<p>Cloud Architect, Oracle</p>"
+    }
+  ]
+}
