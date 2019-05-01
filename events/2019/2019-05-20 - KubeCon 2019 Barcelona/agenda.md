@@ -36,6 +36,8 @@ this latest stop on the pancake breakfast circuit.
 
 Hall 8.0 F1
 
+# 2019-05-22
+
 ## 09:27am - 09:32am Keynote: Building a Bigger Cloud Native Tent: Addressing Cultural Change and Complexity Challenges
 
 The Cloud Native ecosystem continues to expand dramatically but many
@@ -55,7 +57,6 @@ Hall 6
 
 Bob Quillin
 
-# 2019-05-22
 
 ## 14:00pm - 14:35pm Democratizing HPC & AI: Startups Scale Up with Cloud Native 
 

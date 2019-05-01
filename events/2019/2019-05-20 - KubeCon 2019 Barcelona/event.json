@@ -74,7 +74,12 @@
                   "endTime": "08:45am", 
                   "description": "It's time for pancakes in Barcelona! Come have a short stack with The New Stack\nfor a Q&amp;A with our expert panelists about the issues and options for managing\nidentity in service mesh environments. Cloud native security and how it affects\nthe pace of enterprise adoption will be the mainstay of our conversation for\nthis latest stop on the pancake breakfast circuit.\n<a href=\"https://sched.co/NxQl\">https://sched.co/NxQl</a>", 
                   "location": "Hall 8.0 F1"
-                }, 
+                }
+              ]
+            }, 
+            {
+              "date": "Wed May 22", 
+              "items": [
                 {
                   "title": "Keynote: Building a Bigger Cloud Native Tent: Addressing Cultural Change and Complexity Challenges", 
                   "startTime": "09:27am", 
@@ -84,12 +89,7 @@
                   "speakers": [
                     "Bob Quillin"
                   ]
-                }
-              ]
-            }, 
-            {
-              "date": "Wed May 22", 
-              "items": [
+                }, 
                 {
                   "title": "Democratizing HPC & AI: Startups Scale Up with Cloud Native", 
                   "startTime": "14:00pm", 
