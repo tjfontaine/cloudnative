@@ -162,7 +162,7 @@
         "Twitter": "<p><a href=\"https://twitter.com/@ZaraNanu\">@ZaraNanu</a></p>"
       }, 
       "featured": true, 
-      "photoUrl": "images/dr-zara-nanu.jpg", 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2019/2019-05-20%20-%20KubeCon%202019%20Barcelona/images/dr-zara-nanu.jpg", 
       "title": "<p>CEO and Co-Founder, Gapsquare</p>"
     }, 
     {
@@ -181,7 +181,7 @@
         "Twitter": "<p><a href=\"https://twitter.com/@mle_tanaka\">@mle_tanaka</a></p>"
       }, 
       "featured": true, 
-      "photoUrl": "../../../images/speakers/emil-tanaka-delgado.jpg", 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/emily-tanaka-delgado.jpg", 
       "title": "<p>Director of DevRel, Oracle</p>"
     }, 
     {

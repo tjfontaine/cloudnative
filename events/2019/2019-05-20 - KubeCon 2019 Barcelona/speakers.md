@@ -60,7 +60,7 @@ PhD in Politics from the University of the West of England.
 
 ## Emily Tanaka-Delgado
 
-![Emily Tanaka-Delgado](../../../images/speakers/emil-tanaka-delgado.jpg)
+![Emily Tanaka-Delgado](../../../images/speakers/emily-tanaka-delgado.jpg)
 
 ### Twitter
 
