@@ -151,13 +151,22 @@
             },
             {
                 "fragment": "queuing-streaming",
-                "solutions": [{
-                    "fragment": "Kafka",
-                    "title": "Apache Kafka",
-                    "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/queuing-and-streaming/kafka",
-                    "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/queuing-and-streaming/kafka/kafka_landing.png",
-                    "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/queuing-and-streaming/kafka/kafka_course_pg.png"
-                }],
+                "solutions": [
+                    {
+                        "fragment": "Kafka",
+                        "title": "Apache Kafka",
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/queuing-and-streaming/kafka",
+                        "logoUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/queuing-and-streaming/kafka/kafka_landing.png",
+                        "logoUrlCoursePage": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/queuing-and-streaming/kafka/kafka_course_pg.png"
+                    },
+                    {
+                        "fragment": "oracle-streaming-service",
+                        "title": "Oracle Streaming Service",
+                        "githubUrl": "https://cdn.jsdelivr.net/gh/oracle/cloudnative@master/distributed-systems-management/queuing-and-streaming/oracle-streaming-service",
+                        "logoUrl": "",
+                        "logoUrlCoursePage": ""
+                    }
+                ],
                 "description": "Queuing and streaming are established concepts that have significantly evolved from the message brokers of old. The Cloud Native Computing Foundation (CNCF) has introduced many projects to bring these technologies into the new era of distributed systems. Topics here will include standards like CloudEvents, or streaming technologies such as Kafka and its integration into the cloud native world.",
                 "title": "Queuing and Streaming"
             }

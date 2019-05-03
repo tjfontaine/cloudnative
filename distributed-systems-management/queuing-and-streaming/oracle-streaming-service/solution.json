@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "section": "overview",
+      "files": [
+        {
+          "title": "Introduction to Oracle Streaming Service",
+          "file": "readme.md"
+        }
+      ]
+    },
+    {
+      "section": "guides",
+      "files": [
+        {
+          "title": "Getting started with Oracle Streaming Service",
+          "file": "quickstart.md"
+        }
+      ]
+    }
+  ]
+}
