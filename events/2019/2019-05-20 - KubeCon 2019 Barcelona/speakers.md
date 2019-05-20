@@ -565,7 +565,7 @@ Java sidecars, ultra-lightweight with the help of GraalVM.
 
 ## Gregg Altschul
 
-![Gregg Altschul]
+![Gregg Altschul](images/gregg-altschul.png)
 
 ### Role
 
