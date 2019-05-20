@@ -74,6 +74,76 @@
                   "endTime": "08:45am", 
                   "description": "It's time for pancakes in Barcelona! Come have a short stack with The New Stack\nfor a Q&amp;A with our expert panelists about the issues and options for managing\nidentity in service mesh environments. Cloud native security and how it affects\nthe pace of enterprise adoption will be the mainstay of our conversation for\nthis latest stop on the pancake breakfast circuit.\n<a href=\"https://sched.co/NxQl\">https://sched.co/NxQl</a>", 
                   "location": "Hall 8.0 F1"
+                }, 
+                {
+                  "title": "Java Functions??", 
+                  "startTime": "10:20am", 
+                  "endTime": "10:35am", 
+                  "description": "Java is one of the dominant enterprise development language, but it is not\noften used for serverless functions. Should it be? Can it be? In this short\nsession we'll explore how Java has evolved and continues to evolve to be an\nexcellent choice for functions.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Shaun Smith"
+                  ]
+                }, 
+                {
+                  "title": "Hot, Fresh Containers - How Containers Are Like Cookies!", 
+                  "startTime": "10:45am", 
+                  "endTime": "11:05am", 
+                  "description": "Have you heard the container hype but don't really get what it's about? Have\nyou ever had trouble explaining containers to someone unfamiliar with the\ntechnology? Analogies can help - and this one's delicious!  Come to this talk\nto learn how container technology - a topic which has gone from 0 to\n\"Everybody's doing it\" in the last 5 years - and delicious fresh-baked cookies,\naren't really so different. You'll walk away having gained a new way to frame\nyour discussions around container technology, whether you're explaining them to\nsomeone who's hearing about it for the first time, or discussing them with\nsomeone who uses them on a daily basis.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Kaslin Fields"
+                  ]
+                }, 
+                {
+                  "title": "Open Serverless and the Future of Social Coding", 
+                  "startTime": "12:35pm", 
+                  "endTime": "12:50pm", 
+                  "description": "Open source changed the way we code, but open serverless is going to change the\nway software products are built. With autom(8), functions can be deployed as\nopen by default, discovered by others, and pulled into applications to make the\ntime-to-market much faster for software products. Instead of relying on number\nof stars or downloads to find quality code, developers can see a rich set of\nstatistics that indicate the quality of functions and the developer who wrote\nthem. And since autom(8) is a social coding platform, developers can\ncollaborate on function sets to achieve a best-in-class set of funcitons for\nML/AI, graphing, trading algorithms, and much more. Join autom(8) for a talk\nabout the future of open source, open services and social software product\ndevelopment.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Gregg Altschul"
+                  ]
+                }, 
+                {
+                  "title": "You've deployed your app in K8s, now what?", 
+                  "startTime": "12:55pm", 
+                  "endTime": "13:10pm", 
+                  "description": "With Oracle Kubernetes Engine (OKE) and other managed kubernetes services it is\neasier than ever to get up and running and deployed your containerized\napplications, but what should you be doing to make sure. This talk will take\nyou through some CNCF projects (and provide example deployments) that when\nintegrated into your environment allow you to begin understanding the system\nbehaviour as a whole. Once these tools are in place you can then start planning\nfor the future of your platform and beyond!", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Ant Kennedy"
+                  ]
+                }, 
+                {
+                  "title": "The Secret Sauce for creating video with GPUs & Kubernetes Jobs", 
+                  "startTime": "13:35pm", 
+                  "endTime": "13:50pm", 
+                  "description": "Sauce Video is a video collaboration app for teams. We have brands and their\nemployees uploading content from around the world, in thousands of different\nformats, and often in significant bursts. We'll talk about how the Sauce team\nuse a combination of Python containers, GPUs and Kubernetes Jobs to transcode\nall of that content into formats suitable for streaming on both our web and\nmobile platforms. We'll also show off the easiest way to edit video on your\nphone, and how the data we capture from those edits is powering the intelligent\nvideo editing assistant, our Saucerors.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Jonathan Girven"
+                  ]
+                }, 
+                {
+                  "title": "Considerations when adopting Cloud based Enterprise Container Platforms", 
+                  "startTime": "15:25pm", 
+                  "endTime": "15:40pm", 
+                  "description": "Cloud based Enterprise Container Platforms go beyond Kubernetes, to provide\nenterprises with a complete, integrated and open way to transform and modernize\ntheir applications. In this talk, we'll look at some key considerations\nEnterprises should be considering when adopting these platforms.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Jon Reeve"
+                  ]
+                }, 
+                {
+                  "title": "Building a Global API Gateway Service", 
+                  "startTime": "15:45pm", 
+                  "endTime": "16:00pm", 
+                  "description": "You've written your application. Maybe this consists of some micro-services,\nmaybe even some \"serverless\" functions. What you need now is a way to route\nexternal traffic to your app. Just stick an NGINX in front, right? Enter the\nAPI gateway service. We'll talk about the architecture of Oracle APIGW service\nwhich is currently being built by teams in California and Bristol and is a\nglobal-scale multi-tenant service. We'll pull back the curtain on the\nimplementation choices/trade-offs we are making, describe how we ensure\nefficient/secure use of our hardware and describe the supporting infrastructure\nrequired to run this kind of service at scale.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Maddie Patrichi"
+                  ]
                 }
               ]
             }, 
@@ -91,6 +161,66 @@
                   ]
                 }, 
                 {
+                  "title": "The Secret Sauce for creating video with GPUs & Kubernetes Jobs", 
+                  "startTime": "10:25am", 
+                  "endTime": "10:40am", 
+                  "description": "Sauce Video is a video collaboration app for teams. We have brands and their\nemployees uploading content from around the world, in thousands of different\nformats, and often in significant bursts. We'll talk about how the Sauce team\nuse a combination of Python containers, GPUs and Kubernetes Jobs to transcode\nall of that content into formats suitable for streaming on both our web and\nmobile platforms. We'll also show off the easiest way to edit video on your\nphone, and how the data we capture from those edits is powering the intelligent\nvideo editing assistant, our Saucerors.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Jonathan Girven"
+                  ]
+                }, 
+                {
+                  "title": "Changing the paradigm on cardiovascular devices design", 
+                  "startTime": "10:45am", 
+                  "endTime": "11:00am", 
+                  "description": "The heart is a complex system. It gathers electrical depolarization, mechanical\ndeformation and fluid dynamics, tightly coupled in a very intricate geometry.\nDuring the last ten years, the Barcelona Supercomputing Center (BSC) has been\ndeveloping a computational simulator that is able to reproduce patients\nheartbeats on the computer to design and test patient-specific and more\nefficient biomedical heart devices. The natural users of this tool are\ncardiologist, and device manufacturers, but two main reasons hampered them to\nexploit this tool for a greater good. First, the large and complex relationship\nof the input parameters. Second, the large computational cost of these computer\nsimulations. This is why ELEM biotech, as a spin-off of the BSC, is in charge\nof democratising this tool to make it available for the hands that can make\nthis a better world by reducing time-to-market of life-saving devices, reducing\nanimal experimentation and making tailor-suited treatments to each patients\ndisease. ELEM is targeting the complexity of the input parameters with a\nbiomedical interface that makes transparent all the fine-tuning numerical\nparameters, to leave only the main physiologic parameters. The second main\nissue is attacked with Oracle Cloud Services (OCS), that has provided with the\ninfrastructure to deliver the power of supercomputers at the clinician's\nfingertips. Through this biomedical interface, delivered as a web application,\nthe simulations are configured and analysed. Afterwards, in Oracle's cloud\nsimulation jobs are packaged in virtual machines or containers and afterwards\nexecuted through a workload manager. Twenty years ago, designing an airplane\nthrough computational simulation was an impossible and crazy dream. Now,\nsimulation software is a critical every-day tool for automotive and aerospace\nmanufacturing. Today we're creating the first company targeting biomedical\nsimulations. Imagine how this could change the world twenty years from now.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Alfonso Santiago"
+                  ]
+                }, 
+                {
+                  "title": "Autonomous Database the Native way!", 
+                  "startTime": "12:35pm", 
+                  "endTime": "12:50pm", 
+                  "description": "Oracle has announced the availability of our OCI Service Broker, our\nimplementation of the Open Service Broker API, which will enable developers to\nnatively provision and get connection info to Oracle Cloud services natively\nthrough Kubernetes. In this talk, we'll show how to to provision an Autonomous\nDatabase with the OCI Service Broker, and how Open Service Broker simplifies\nthe delivery of Oracle Cloud services to k8s.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Jonathan Schreiber"
+                  ]
+                }, 
+                {
+                  "title": "Open Serverless and the Future of Social Coding", 
+                  "startTime": "12:55pm", 
+                  "endTime": "13:10pm", 
+                  "description": "Open source changed the way we code, but open serverless is going to change the\nway software products are built. With autom(8), functions can be deployed as\nopen by default, discovered by others, and pulled into applications to make the\ntime-to-market much faster for software products. Instead of relying on number\nof stars or downloads to find quality code, developers can see a rich set of\nstatistics that indicate the quality of functions and the developer who wrote\nthem. And since autom(8) is a social coding platform, developers can\ncollaborate on function sets to achieve a best-in-class set of funcitons for\nML/AI, graphing, trading algorithms, and much more. Join autom(8) for a talk\nabout the future of open source, open services and social software product\ndevelopment.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Gregg Altschul"
+                  ]
+                }, 
+                {
+                  "title": "How the Blockchain Democratizes Serverless", 
+                  "startTime": "13:15pm", 
+                  "endTime": "13:30pm", 
+                  "description": "Imagine if every line of code was shareable -- not just as a static repository,\nbut as a running service. Every Function can be an API. Serverless makes\nnanoservices possible. The blockchain makes them practical. Whole new kinds of\nbusinesses can be built by stringing together Serverless functions running as\npublic services with micropayments and accoutnig built in. Join autom(8) for a\ntalk exploring whats possible when serverless, containerization and blockchian\nget together.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Will McLeod"
+                  ]
+                }, 
+                {
+                  "title": "Modern Site Reliability Engineering Toolkit", 
+                  "startTime": "13:35pm", 
+                  "endTime": "13:50pm", 
+                  "description": "The adoption of container native and cloud native development practices\npresents new operational challenges that need to be addressed. Observability,\ndesigning and operating a more visible system, and Site Reliability\nEngineering, a modern approach to software operations, provide a framework for\ndoing so. We will walk through the process of installing and using a modern set\nof tools to help developers build, deploy, and operate microservices and\nachieve operational excellence for running container-based workloads on top of\nOracle Cloud Infrastructure.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Mickey Boxell"
+                  ]
+                }, 
+                {
                   "title": "Democratizing HPC & AI: Startups Scale Up with Cloud Native", 
                   "startTime": "14:00pm", 
                   "endTime": "14:35pm", 
@@ -103,12 +233,52 @@
                     "Dr. Zara Nanu", 
                     "Alfonson Santiago"
                   ]
+                }, 
+                {
+                  "title": "Building a Global API Gateway Service", 
+                  "startTime": "15:25pm", 
+                  "endTime": "15:40pm", 
+                  "description": "You've written your application. Maybe this consists of some micro-services,\nmaybe even some \"serverless\" functions. What you need now is a way to route\nexternal traffic to your app. Just stick an NGINX in front, right? Enter the\nAPI gateway service. We'll talk about the architecture of Oracle APIGW service\nwhich is currently being built by teams in California and Bristol and is a\nglobal-scale multi-tenant service. We'll pull back the curtain on the\nimplementation choices/trade-offs we are making, describe how we ensure\nefficient/secure use of our hardware and describe the supporting infrastructure\nrequired to run this kind of service at scale.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Maddie Patrichi"
+                  ]
+                }, 
+                {
+                  "title": "Accelerating Your Cloud-Native DevOps", 
+                  "startTime": "15:45pm", 
+                  "endTime": "16:00pm", 
+                  "description": "In this session we'll show you how you can accelerate your DevOps with new\ncloud-native offerings from Oracle.  See how to simplify your application\ndevelopment and deployment with a curated set of open source software selected\nfrom the Cloud Native Computing Foundation projects such as Kubernetes, Docker,\nKata Containers and Gluster.  Create, maintain and deploy your apps with\nconfidence across hybrid cloud environments with  an open source stack that is\ntested, integrated and supported worldwide by Oracle.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Jaap Romers"
+                  ]
                 }
               ]
             }, 
             {
               "date": "Thu May 23", 
               "items": [
+                {
+                  "title": "Serverless with Oracle Functions!", 
+                  "startTime": "10:25am", 
+                  "endTime": "10:40am", 
+                  "description": "Learn how you can build serverless applications on Oracle Cloud Infrastructure\nwith core building blocks like Oracle Functions, OCI Cloud Events, API Gateway,\nand more!", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Sachin Pikle"
+                  ]
+                }, 
+                {
+                  "title": "Deploying OKE Clusters as Infrastructure as Code", 
+                  "startTime": "10:45am", 
+                  "endTime": "11:00am", 
+                  "description": "The Oracle Cloud Infrastructure Container Engine for Kubernetes (OKE) supports\nInfrastructure as code (IaC) tools to better manage the rapid and reliable\ndeployment of your clusters. In this talk, we will show how to provision an OKE\ncluster using the recent public release of the Terraform OKE script on Github.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Rishi Johari"
+                  ]
+                }, 
                 {
                   "title": "Ouch! What I Learned From Being Hit by a Serverless, Ruby Boomerang!", 
                   "startTime": "11:05am", 
@@ -117,6 +287,56 @@
                   "location": "Hall 8.1 G2", 
                   "speakers": [
                     "Ewan Slater"
+                  ]
+                }, 
+                {
+                  "title": "5 tools later: Cloudnative devops tooling", 
+                  "startTime": "12:35pm", 
+                  "endTime": "12:50pm", 
+                  "description": "In this talk, I'll run through demos of popular opensource devops tools in the\nCloud Native ecosystem that will be helpful when you build and manage your\nclusters from a devops perspective. I'll cover tooling around cluster testing\nincluding Sonobuoy and kubeaudit, cluster switching including kubectx and\ndevelopment including KIND. Come on out to learn something new, and see how the\ntooling can make you a more efficient cloud native admin!", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Karthik Gaekwad"
+                  ]
+                }, 
+                {
+                  "title": "Java sidecars, ultra-lightweight with the help of GraalVM.", 
+                  "startTime": "12:55pm", 
+                  "endTime": "13:10pm", 
+                  "description": "Sidecar containers should be small, fast starting and should not use many\nresources. Is Java a good choice for implementing such a service? - Of course\nit is! In this talk, we will show how GraalVM can help to implement a simple\nJava microservice sidecar, with a very low footprint.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Manuel Zach"
+                  ]
+                }, 
+                {
+                  "title": "Building a Global API Gateway Service", 
+                  "startTime": "13:15pm", 
+                  "endTime": "13:30pm", 
+                  "description": "You've written your application. Maybe this consists of some micro-services,\nmaybe even some \"serverless\" functions. What you need now is a way to route\nexternal traffic to your app. Just stick an NGINX in front, right? Enter the\nAPI gateway service. We'll talk about the architecture of Oracle APIGW service\nwhich is currently being built by teams in California and Bristol and is a\nglobal-scale multi-tenant service. We'll pull back the curtain on the\nimplementation choices/trade-offs we are making, describe how we ensure\nefficient/secure use of our hardware and describe the supporting infrastructure\nrequired to run this kind of service at scale.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Maddie Patrichi"
+                  ]
+                }, 
+                {
+                  "title": "Accelerating Your Cloud-Native DevOps", 
+                  "startTime": "13:35pm", 
+                  "endTime": "13:50pm", 
+                  "description": "In this session we'll show you how you can accelerate your DevOps with new\ncloud-native offerings from Oracle.  See how to simplify your application\ndevelopment and deployment with a curated set of open source software selected\nfrom the Cloud Native Computing Foundation projects such as Kubernetes, Docker,\nKata Containers and Gluster.  Create, maintain and deploy your apps with\nconfidence across hybrid cloud environments with  an open source stack that is\ntested, integrated and supported worldwide by Oracle.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Jaap Romers"
+                  ]
+                }, 
+                {
+                  "title": "Service Mesh: Real World Use Cases", 
+                  "startTime": "15:25pm", 
+                  "endTime": "15:40pm", 
+                  "description": "Pushing beyond buzz words and hype, service mesh projects like Istio and\nLinkerd can solve real world problems elegantly and simply, often with little\nor no changes to your code. In this quick session, we'll run through a quick\ntour of what a service mesh is (and is not), and then talk about some real\nworld use cases that you can get started with today.", 
+                  "location": "Fira Hall 8, Oracle Booth D5", 
+                  "speakers": [
+                    "Jesse Butler"
                   ]
                 }
               ]
@@ -278,6 +498,270 @@
       "featured": false, 
       "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/ewan-slater.jpg", 
       "title": "<p>Cloud Architect, Oracle</p>"
+    }, 
+    {
+      "name": "Mickey Boxell", 
+      "info": [
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Mickey Boxell is a Developer Advocate on the Cloud Native Labs team at Oracle.\nHe is focused on building customer-deployable cloud native/container native\nsolutions to bridge the gap between open source communities and the core Oracle\nCloud Infrastructure services. This includes solution tutorials, sample code,\ntechnical blog posts all related to the Kubernetes platform</p>"
+        }, 
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Wed, May 22 / 13:35pm / Fira Hall 8, Oracle Booth D5</em>\nModern Site Reliability Engineering Toolkit </p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@mickeyboxell\">@mickeyboxell</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/mickey-boxell.jpg", 
+      "title": "<p>Product Management, Oracle</p>"
+    }, 
+    {
+      "name": "Jaap Romers", 
+      "info": [
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Jaap Romers is a Principal Solution Engineer within the Oracle EMEA Open Cloud\nInfrastructure team. He supports customers with the design and implementation\nof open-source and cloud-native initiatives and has extensive knowledge of\nLinux and  containerized applications.  Over the years Jaap has used open\nsource and cloud-native technologies to help various organisations with their\nDevOps and architecture discussions.</p>"
+        }, 
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Wed, May 22 / 15:45pm / Fira Hall 8, Oracle Booth D5</em>\nAccelerating your cloud-native DevOps</p>\n<p><em>Thu, May 23 / 13:35pm / Fira Hall 8, Oracle Booth D5</em>\nAccelerating your cloud-native DevOps</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@jaapromers\">@jaapromers</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2019/2019-05-20%20-%20KubeCon%202019%20Barcelona/images/jaap-romers.png", 
+      "title": "<p>Principal Solution Engineer, Oracle</p>"
+    }, 
+    {
+      "name": "Jon Reeve", 
+      "info": [
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Jon Reeve, Senior Director of Product Management, Oracle, owns product\nmanagement for Oracle's container management solutions.  He has served in\nnumerous product and leadership roles at companies such as StackEngine, Hyper9,\nSolarWinds, SMARTS, EMC and VMTurbo.  Having previously served as VP of Product\nfor StackEngine, he was responsible for the company's flagship container\nmanagement product, Container Application Center. His experience spans more\nthan 20 years across computer networking, systems management, virtualization,\ncloud and container technologies, helping numerous start-ups and established\ncompanies generate market traction.  He has a degree in Electrical Engineering\nand a PhD in Computer Networking from the University of Durham (UK).</p>"
+        }, 
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Tue, May 21 / 15:25pm / Fira Hall 8, Oracle Booth D5</em>\nConsiderations when adopting Cloud based Enterprise Container Platforms</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@j_m_reeve\">@j_m_reeve</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/jon-reeve.jpg", 
+      "title": "<p>Product Management, Oracle</p>"
+    }, 
+    {
+      "name": "Jonathan Schreiber", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Wed, May 22 / 13:15pm / Fira Hall 8, Oracle Booth D5</em>\nAutonomous Database the Native way!</p>"
+        }
+      ], 
+      "social": {}, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2019/2019-05-20%20-%20KubeCon%202019%20Barcelona", 
+      "title": "<p>Product Management, Oracle</p>"
+    }, 
+    {
+      "name": "Rishi Johari", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Thu, May 23 / 10:45am / Fira Hall 8, Oracle Booth D5</em>\nDeploying OKE Clusters as Infrastructure as Code</p>"
+        }
+      ], 
+      "social": {}, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2019/2019-05-20%20-%20KubeCon%202019%20Barcelona", 
+      "title": "<p>Product Management, Oracle</p>"
+    }, 
+    {
+      "name": "Maddie Patrichi", 
+      "info": [
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Maddie Patrichi is a Senior Software Developer for Oracle Cloud Infrastructure,\ncurrently working for the API Gateway team and was part of various teams\nworking on integrating Oracle services with Kubernetes while here. She has\ngraduated in 2010 from the University of Bristol with an MEng in Computer\nScience. Prior to working at Oracle she worked for Hewlett Packard Enterprise\nand focused on developing an Object Storage solution and integrating Storage\nappliances with Cloud services.</p>"
+        }, 
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Tue, May 21 / 15:45pm / Fira Hall 8, Oracle Booth D5</em>\nBuilding a global API Gateway Service</p>\n<p><em>Wed, May 22 / 15:25pm / Fira Hall 8, Oracle Booth D5</em>\nBuilding a global API Gateway Service</p>\n<p><em>Thu, May 23 / 13:15pm / Fira Hall 8, Oracle Booth D5</em>\nBuilding a global API Gateway Service</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@maddie_patrichi\">@maddie_patrichi</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2019/2019-05-20%20-%20KubeCon%202019%20Barcelona/images/madalina-patrichi.jpg", 
+      "title": "<p>Senior Software Engineer, Oracle</p>"
+    }, 
+    {
+      "name": "Karthik Gaekwad", 
+      "info": [
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Thu, May 23 / 12:35pm / Fira Hall 8, Oracle Booth D5</em>\n5 tools later: Cloudnative devops tooling</p>"
+        }, 
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Karthik Gaekwad is a Principal Engineer for Oracle Cloud.  He's been in many\nengineering roles inside Oracle and was on the product teams that released\nvarious container based products including Oracle Kubernetes Engine. Before\nOracle, he has worked in both startups and large enterprises including\nStackEngine, Signal Sciences, Mentor Graphics, and National Instruments. He is\nan innovator in the devops, agile and container technologies. He is an author\non LinkedIn Learning, a frequent presenter at conferences, and organizes many\ntechnical events including Devopsdays Austin. He frequently writes at\ncloudnative.oracle.com. In his free time, Karthik enjoys spending time with\nfamily, keeping up with the latest trends in software, dabbling in new product\nideas, and blogging on theagileadmin.com</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@iteration1\">@iteration1</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/karthik-gaekwad.jpg", 
+      "title": "<p>Cloud Native Developer Advocate, Oracle</p>"
+    }, 
+    {
+      "name": "Sachin Pikle", 
+      "info": [
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Sachin Pikle is a Product Strategy Director at Oracle working on Serverless and\nFunctions as a Service. Previously, he was a product manager for Oracle\nMicroservices, Oracle Cloud Machine, and Oracle Exalogic. He has over 20 years\nof experience spanning product management, technology consulting and\napplication delivery. Prior to joining Oracle, he worked on large application\ndevelopment projects for clients like Walmart, Westpac, American Express, JP\nMorgan and more. He also founded and managed an online eCommerce startup. He is\na technical reviewer of the book Microservices for Modern Commerce published by\nO'Reilly Media in October 2016</p>"
+        }, 
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Thu, May 23 / 10:25am / Fira Hall 8, Oracle Booth D5</em>\nServerless with Oracle Functions!</p>"
+        }
+      ], 
+      "social": {}, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2019/2019-05-20%20-%20KubeCon%202019%20Barcelona/images/sachin-pikle.jpg", 
+      "title": "<p>Product Strategy Director, Oracle</p>"
+    }, 
+    {
+      "name": "Jesse Butler", 
+      "info": [
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Jesse is a cloud advocate with Oracle Cloud. He comes from a systems and OS\ndevelopment background and has been working with containers for several years,\nfirst in Solaris and later in Linux. He now works in the OCI organization as a\nCloud Advocate focused on Kubernetes, containers, serverless and other cloud\nnative technologies.</p>"
+        }, 
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Thu, May 23 / 15:25pm / Fira Hall 8, Oracle Booth D5</em>\nService Mesh: Real World Use Cases</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@jlb13\">@jlb13</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/images/speakers/jesse-butler.jpg", 
+      "title": "<p>Principal Cloud Advocate, Oracle</p>"
+    }, 
+    {
+      "name": "Jonathan Girven", 
+      "info": [
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Jon completed a PhD in Astronomy &amp; Astrophysics at the University of Warwick in\n2012 with a thesis about the future of the sun and the earth after the sun dies\nand becomes a white dwarf star. He developed algorithms in Python to search\nbillions of entries across multiple databases of stars. After a summer in a\nBedouin village in Egypt teaching windsurfing, he decided shift his career to\nsomething closer to home and co-founded Sauce.</p>"
+        }, 
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Tue, May 21 / 13:35pm / Fira Hall 8, Oracle Booth D5</em>\nThe secret Sauce for creating video with GPUs &amp; Kubernetes Jobs</p>\n<p><em>Wed, May 22 / 10:25am / Fira Hall 8, Oracle Booth D5</em>\nThe secret Sauce for creating video with GPUs &amp; Kubernetes Jobs</p>"
+        }
+      ], 
+      "social": {}, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2019/2019-05-20%20-%20KubeCon%202019%20Barcelona/images/jonathan-girven.png", 
+      "title": "<p>Co-founder &amp; CTO, Sauce</p>"
+    }, 
+    {
+      "name": "Ant Kennedy", 
+      "info": [
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Ant Kennedy is currently CTO at Gapsquare where he is currently focusing on\ngrowing the engineering team, establishing best practice in the processes being\nused, the future architecture and growing Gapsquare's AI/ML capabilities.\nPreviously he has worked at JustEat, Adarga and Boeing focusing (or rather not\nfocusing) on Full Stack Engineering.</p>"
+        }, 
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Tue, May 21 / 12:55pm / Fira Hall 8, Oracle Booth D5</em>\nYou've deployed your app in k8s, now what?</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@antjkennedy\">@antjkennedy</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2019/2019-05-20%20-%20KubeCon%202019%20Barcelona/images/ant-kennedy.jpg"
+    }, 
+    {
+      "name": "Shaun Smith", 
+      "info": [
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Shaun Smith is a Director of Product Management at Oracle responsible for\nServerless technologies including Functions as a Service. He's an experienced\ntechnical product manager, enterprise framework architect, and software\ndeveloper active in open source and cloud development. Shaun is a past\ncommitter on a number of Eclipse Foundation projects and is an experienced\nspeaker who has presented frequently at JavaOne, Devoxx, EclipseCon, JAX, and\nmany other developer conferences and user groups around the world.</p>"
+        }, 
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Tue, May 21 / 10:25am / Fira Hall 8, Oracle Booth D5</em>\nJava Functions??</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@shaunMsmith\">@shaunMsmith</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2019/2019-05-20%20-%20KubeCon%202019%20Barcelona/images/shaun-smith.jpg", 
+      "title": "<p>Director of Product Management, Oracle</p>"
+    }, 
+    {
+      "name": "Manuel Zach", 
+      "info": [
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Manuel Zach is a Principal DevOps Engineer at Oracle Labs working for the GraalVM project.</p>"
+        }, 
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Thu, May 23 / 12:55pm / Fira Hall 8, Oracle Booth D5</em>\nJava sidecars, ultra-lightweight with the help of GraalVM.</p>"
+        }
+      ], 
+      "social": {}, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2019/2019-05-20%20-%20KubeCon%202019%20Barcelona", 
+      "title": "<p>Principal Engineer, Oracle</p>"
+    }, 
+    {
+      "name": "Gregg Altschul", 
+      "info": [
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Gregg is a serial entrepreneur, system architect, fullstack software engineer,\nand tech team leader with two decades of experience building and overseeing the\ndevelopment of software solutions ranging from consumer web products to\nmission-critical enterprise systems. As CTO of autom(8), Gregg leads the\ndevelopment of the world's first decentralized and open Function as a Service\nplatform. Prior autom(8), Gregg was the Chief Information Officer at Keen Home\nwhere he architected and built a world-class IoT platform. Before joining Keen\nHome, Gregg held lead software engineering roles at firms including BlackRock,\nFactSet and Amano Cincinnati as well as Co-Founder roles at several startups.</p>"
+        }, 
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Tue, May 21 / 12:35pm / Fira Hall 8, Oracle Booth D5</em>\nOpen Serverless and the Future of Social Coding</p>\n<p><em>Wed, May 22 / 12:55pm / Fira Hall 8, Oracle Booth D5</em>\nOpen Serverless and the Future of Social Coding</p>"
+        }
+      ], 
+      "social": {
+        "Twitter": "<p><a href=\"https://twitter.com/@greggaltschul\">@greggaltschul</a></p>"
+      }, 
+      "featured": false, 
+      "photoUrl": "![Gregg Altschul]", 
+      "title": "<p>Co-founder &amp; CTO, autom(8)</p>"
+    }, 
+    {
+      "name": "Will McLeod", 
+      "info": [
+        {
+          "title": "Bio", 
+          "htmlBlock": "<p>Will is a serial entrepreneur, Mechanical Engineer/Product Designer and Forbes\n\"30 Under 30\" award recipient with over a decade of experience building and\nscaling tech startups.  As CPO of autom(8), Will heads up all product\ndevelopment, UI/UX, and IP strategy.  At his first startup, SmarterShade, Will\ninvented and commercialized an affordable technology to make windows tint on\ncommand. As Keen Home's Co-Founder and Chief Product Officer, Will led the\ncompany's hardware and software product development efforts from concept to\ndeployment at scale in addition to the company's IP and grant strategy.  Will\nis a Techstars mentor and has been successful in winning more than a dozen\nbusiness plan competitions, federal and local grants, and other fundraising\nefforts that have totaled more than $6 million in funding.  Will has studied\ncomputer science, entrepreneurship, and optics to supplement his M.S., B.S. and\nB.A. engineering degrees from the University of Notre Dame, where he is\ncurrently an adjunct professor.</p>"
+        }, 
+        {
+          "title": "Sessions", 
+          "htmlBlock": "<p><em>Wed, May 22 / 13:15pm / Fira Hall 8, Oracle Booth D5</em>\nHow the Blockchain Democratizes Serverless</p>"
+        }
+      ], 
+      "social": {}, 
+      "featured": false, 
+      "photoUrl": "https://oracle.github.io/cloudnative/events/2019/2019-05-20%20-%20KubeCon%202019%20Barcelona/images/will-mcleod.png", 
+      "title": "<p>Co-founder &amp; CPO, autom(8)</p>"
     }
   ]
 }
