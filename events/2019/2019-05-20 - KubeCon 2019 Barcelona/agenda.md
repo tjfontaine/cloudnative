@@ -93,7 +93,7 @@ Fira Hall 8, Oracle Booth D5
 
 Gregg Altschul
 
-## 12:55pm - 13:10pm You've deployed your app in K8s, now what?
+## 12:55pm - 13:10pm You've Deployed Your App in K8s, Now What?
 
 With Oracle Kubernetes Engine (OKE) and other managed kubernetes services it is
 easier than ever to get up and running and deployed your containerized
@@ -111,7 +111,7 @@ Fira Hall 8, Oracle Booth D5
 
 Ant Kennedy
 
-## 13:35pm - 13:50pm The Secret Sauce for creating video with GPUs & Kubernetes Jobs
+## 13:35pm - 13:50pm The Secret Sauce for Creating Video with GPUs & Kubernetes Jobs
 
 Sauce Video is a video collaboration app for teams. We have brands and their
 employees uploading content from around the world, in thousands of different
@@ -130,7 +130,7 @@ Fira Hall 8, Oracle Booth D5
 
 Jonathan Girven
 
-## 15:25pm - 15:40pm Considerations when adopting Cloud based Enterprise Container Platforms
+## 15:25pm - 15:40pm Considerations when Adopting Cloud Based Enterprise Container Platforms
 
 Cloud based Enterprise Container Platforms go beyond Kubernetes, to provide
 enterprises with a complete, integrated and open way to transform and modernize
@@ -186,7 +186,7 @@ Hall 6
 
 Bob Quillin
 
-## 10:25am - 10:40am The Secret Sauce for creating video with GPUs & Kubernetes Jobs
+## 10:25am - 10:40am The Secret Sauce for Creating Video with GPUs & Kubernetes Jobs
 
 Sauce Video is a video collaboration app for teams. We have brands and their
 employees uploading content from around the world, in thousands of different
@@ -205,7 +205,7 @@ Fira Hall 8, Oracle Booth D5
 
 Jonathan Girven
 
-## 10:45am - 11:00am Changing the paradigm on cardiovascular devices design
+## 10:45am - 11:00am Changing the Paradigm on Cardiovascular Devices Design
 
 The heart is a complex system. It gathers electrical depolarization, mechanical
 deformation and fluid dynamics, tightly coupled in a very intricate geometry.

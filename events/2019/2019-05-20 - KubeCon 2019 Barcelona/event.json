@@ -106,7 +106,7 @@
                   ]
                 }, 
                 {
-                  "title": "You've deployed your app in K8s, now what?", 
+                  "title": "You've Deployed Your App in K8s, Now What?", 
                   "startTime": "12:55pm", 
                   "endTime": "13:10pm", 
                   "description": "With Oracle Kubernetes Engine (OKE) and other managed kubernetes services it is\neasier than ever to get up and running and deployed your containerized\napplications, but what should you be doing to make sure. This talk will take\nyou through some CNCF projects (and provide example deployments) that when\nintegrated into your environment allow you to begin understanding the system\nbehaviour as a whole. Once these tools are in place you can then start planning\nfor the future of your platform and beyond!", 
@@ -116,7 +116,7 @@
                   ]
                 }, 
                 {
-                  "title": "The Secret Sauce for creating video with GPUs & Kubernetes Jobs", 
+                  "title": "The Secret Sauce for Creating Video with GPUs & Kubernetes Jobs", 
                   "startTime": "13:35pm", 
                   "endTime": "13:50pm", 
                   "description": "Sauce Video is a video collaboration app for teams. We have brands and their\nemployees uploading content from around the world, in thousands of different\nformats, and often in significant bursts. We'll talk about how the Sauce team\nuse a combination of Python containers, GPUs and Kubernetes Jobs to transcode\nall of that content into formats suitable for streaming on both our web and\nmobile platforms. We'll also show off the easiest way to edit video on your\nphone, and how the data we capture from those edits is powering the intelligent\nvideo editing assistant, our Saucerors.", 
@@ -126,7 +126,7 @@
                   ]
                 }, 
                 {
-                  "title": "Considerations when adopting Cloud based Enterprise Container Platforms", 
+                  "title": "Considerations when Adopting Cloud Based Enterprise Container Platforms", 
                   "startTime": "15:25pm", 
                   "endTime": "15:40pm", 
                   "description": "Cloud based Enterprise Container Platforms go beyond Kubernetes, to provide\nenterprises with a complete, integrated and open way to transform and modernize\ntheir applications. In this talk, we'll look at some key considerations\nEnterprises should be considering when adopting these platforms.", 
@@ -161,7 +161,7 @@
                   ]
                 }, 
                 {
-                  "title": "The Secret Sauce for creating video with GPUs & Kubernetes Jobs", 
+                  "title": "The Secret Sauce for Creating Video with GPUs & Kubernetes Jobs", 
                   "startTime": "10:25am", 
                   "endTime": "10:40am", 
                   "description": "Sauce Video is a video collaboration app for teams. We have brands and their\nemployees uploading content from around the world, in thousands of different\nformats, and often in significant bursts. We'll talk about how the Sauce team\nuse a combination of Python containers, GPUs and Kubernetes Jobs to transcode\nall of that content into formats suitable for streaming on both our web and\nmobile platforms. We'll also show off the easiest way to edit video on your\nphone, and how the data we capture from those edits is powering the intelligent\nvideo editing assistant, our Saucerors.", 
@@ -171,7 +171,7 @@
                   ]
                 }, 
                 {
-                  "title": "Changing the paradigm on cardiovascular devices design", 
+                  "title": "Changing the Paradigm on Cardiovascular Devices Design", 
                   "startTime": "10:45am", 
                   "endTime": "11:00am", 
                   "description": "The heart is a complex system. It gathers electrical depolarization, mechanical\ndeformation and fluid dynamics, tightly coupled in a very intricate geometry.\nDuring the last ten years, the Barcelona Supercomputing Center (BSC) has been\ndeveloping a computational simulator that is able to reproduce patients\nheartbeats on the computer to design and test patient-specific and more\nefficient biomedical heart devices. The natural users of this tool are\ncardiologist, and device manufacturers, but two main reasons hampered them to\nexploit this tool for a greater good. First, the large and complex relationship\nof the input parameters. Second, the large computational cost of these computer\nsimulations. This is why ELEM biotech, as a spin-off of the BSC, is in charge\nof democratising this tool to make it available for the hands that can make\nthis a better world by reducing time-to-market of life-saving devices, reducing\nanimal experimentation and making tailor-suited treatments to each patients\ndisease. ELEM is targeting the complexity of the input parameters with a\nbiomedical interface that makes transparent all the fine-tuning numerical\nparameters, to leave only the main physiologic parameters. The second main\nissue is attacked with Oracle Cloud Services (OCS), that has provided with the\ninfrastructure to deliver the power of supercomputers at the clinician's\nfingertips. Through this biomedical interface, delivered as a web application,\nthe simulations are configured and analysed. Afterwards, in Oracle's cloud\nsimulation jobs are packaged in virtual machines or containers and afterwards\nexecuted through a workload manager. Twenty years ago, designing an airplane\nthrough computational simulation was an impossible and crazy dream. Now,\nsimulation software is a critical every-day tool for automotive and aerospace\nmanufacturing. Today we're creating the first company targeting biomedical\nsimulations. Imagine how this could change the world twenty years from now.", 
